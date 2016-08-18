@@ -1,0 +1,68 @@
+@font-face
+{
+font-family: interstate;
+src: url('assets/heh.ttf'),
+url('assets/chewy.ttf');
+}
+
+html{
+  background-image: url();
+  background-color: black;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img.title{
+  position: fixed;
+  margin: 0 50%;
+  left: -800px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -moz-transform:scale(0.2);
+  -webkit-transform:scale(0.2);
+  transform:scale(0.2);
+}
+
+img.vsco{
+  position: fixed;
+  margin: 0 50%;
+  left: -200px;
+  right: 0;
+  top: 100px;
+  bottom: 0;
+  border: 2px solid white;
+}
+
+.links{
+  width: 225px;
+  color: white;
+  background-color: transparent;
+  position: fixed;
+  padding: 5px;
+  left: 37%;
+  right: 0;
+  top: 640px;
+  bottom: 0;
+  z-index: +1;
+}
+
+img.face{
+  position: fixed;
+  margin: 0 50%;
+  left: -175px;
+  right: 0;
+  top: 150px;
+  bottom: 0;
+}
+
+img.soundcloud{
+  position: relative;
+  bottom: 30%;
+  left: 70%;
+  width: 5%;
+}
