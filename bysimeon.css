@@ -1,19 +1,5 @@
-@font-face
-{
-font-family: interstate;
-src: url('assets/heh.ttf'),
-url('assets/chewy.ttf');
-}
-
 html{
-  background-image: url();
-  background-color: black;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: pink;
 }
 
 img.title{
@@ -33,7 +19,7 @@ img.title{
   -ms-user-select: none;
 }
 
-img.vsco{
+img.main{
   position: fixed;
   margin: 0 50%;
   left: -200px;
@@ -41,6 +27,7 @@ img.vsco{
   top: 100px;
   bottom: 0;
   border: 2px solid white;
+  box-shadow: 2px 2px 2px;
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -54,39 +41,10 @@ img.vsco{
   color: white;
   background-color: transparent;
   position: fixed;
-  padding: 5px;
-  left: 37%;
+  margin: 0 50%;
+  left: -30px;
   right: 0;
-  top: 640px;
+  top: 650px;
   bottom: 0;
   z-index: +1;
 }
-
-img.face{
-  position: fixed;
-  margin: 0 50%;
-  left: -175px;
-  right: 0;
-  top: 150px;
-  bottom: 0;
-}
-
-img.soundcloud{
-  position: relative;
-  bottom: 30%;
-  left: 70%;
-  width: 5%;
-}
-
-a.instagram:link {color: #ffffff; text-decoration: none;}
-a.instagram:visited {color: #ffffff; text-decoration: none;}
-a.instagram:hover {color: #B97D7F; text-decoration: none;}
-a.soundcloud:link {color: #ffffff; text-decoration: none;}
-a.soundcloud:visited {color: #ffffff; text-decoration: none;}
-a.soundcloud:hover {color: #B97D7F; text-decoration: none;}
-a.vsco:link {color: #ffffff; text-decoration: none;}
-a.vsco:visited {color: #ffffff; text-decoration: none;}
-a.vsco:hover {color: #B97D7F; text-decoration: none;}
-a.resume:link {color: #ffffff; text-decoration: none;}
-a.resume:visited {color: #ffffff; text-decoration: none;}
-a.resume:hover {color: #859EBB; text-decoration: none;}

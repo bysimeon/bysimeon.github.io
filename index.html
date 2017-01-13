@@ -1,24 +1,26 @@
 <!doctype html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
   <title>bysimeon</title>
-</head>
 
 <link rel="stylesheet" type="text/css" href="bysimeon.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-<body>
-<img class="vsco" id="vsco" src="assets/grain.png"/>
-<img class="title" id="title" src="assets/bysimeon.gif"/>
-<div class="links" id="links">
-  <a class="resume" href="resume.pdf" target="_blank">resume</a>
-  <a class="instagram" href="https://www.instagram.com/simeyawn" target="_blank">instagram</a>
-  <a class="soundcloud" href="https://soundcloud.com/bysimeon" target="_blank">soundcloud</a>
-  <a class="vsco" href="https://vsco.co/simeyawn" target="_blank">vsco</a>
-</div>
+<script>
+$(document).ready(function(){
+  $("#resume").click(function(){
+    $("#main").hide();
+  });
+});
+</script>
+</head>
 
-<p class="hey"> hey there, this website is incomplete</p>
+<body>
+  <img class="main" id="main"  src="assets/grain.png"/>
+  <img class="title" id="title" src="assets/bysimeon.gif"/>
+  <div class="links">
+    <span class="resume" id="resume"> did </span>
+    <span class="photos" id="photos"> see </span>
+    <span class="sounds" id="sounds"> hear </span>
+  </div>
 </body>
