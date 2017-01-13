@@ -26,6 +26,11 @@ img.title{
   -moz-transform:scale(0.2);
   -webkit-transform:scale(0.2);
   transform:scale(0.2);
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 img.vsco{
@@ -36,6 +41,12 @@ img.vsco{
   top: 100px;
   bottom: 0;
   border: 2px solid white;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .links{
@@ -66,3 +77,16 @@ img.soundcloud{
   left: 70%;
   width: 5%;
 }
+
+a.instagram:link {color: #ffffff; text-decoration: none;}
+a.instagram:visited {color: #ffffff; text-decoration: none;}
+a.instagram:hover {color: #B97D7F; text-decoration: none;}
+a.soundcloud:link {color: #ffffff; text-decoration: none;}
+a.soundcloud:visited {color: #ffffff; text-decoration: none;}
+a.soundcloud:hover {color: #B97D7F; text-decoration: none;}
+a.vsco:link {color: #ffffff; text-decoration: none;}
+a.vsco:visited {color: #ffffff; text-decoration: none;}
+a.vsco:hover {color: #B97D7F; text-decoration: none;}
+a.resume:link {color: #ffffff; text-decoration: none;}
+a.resume:visited {color: #ffffff; text-decoration: none;}
+a.resume:hover {color: #859EBB; text-decoration: none;}
