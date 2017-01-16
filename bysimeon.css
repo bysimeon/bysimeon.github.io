@@ -16,6 +16,11 @@ html{
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  transition: all.2s ease-in-out;
+}
+
+#logo:hover{
+  transform: scale(1.05);
 }
 
 #title{
@@ -47,13 +52,9 @@ html{
   -ms-user-select: none;
 }
 
-.links{
-  padding-left:
-  text-align: center;
-  color: white;
-  background-color: transparent;
-  border: 2px;
-  position: relative;
-  z-index: +1;
-  height: 1em;
+.transition {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
 }
