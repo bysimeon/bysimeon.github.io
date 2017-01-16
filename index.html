@@ -8,19 +8,27 @@
 
 <script>
 $(document).ready(function(){
-  $("#resume").click(function(){
-    $("#main").hide();
+  $("#logo").click(function(){
+    $("#title").hide();
+  });
+});
+$(document).ready(function(){
+  $("#logo").mouseover(function(){
+    $("#logo").animate({
+      width: "5.4em"
+    });
   });
 });
 </script>
 </head>
 
 <body>
-  <img class="main" id="main"  src="assets/grain.png"/>
-  <img class="title" id="title" src="assets/bysimeon.gif"/>
-  <div class="links">
-    <span class="resume" id="resume"> did </span>
-    <span class="photos" id="photos"> see </span>
-    <span class="sounds" id="sounds"> hear </span>
-  </div>
+  <img src="assets/braces.png" id="logo">
+    <img id="title" src="assets/bysimeon.gif"/>
+    <!-- <img id="main"  src="assets/grain.png"/> -->
+    <div class="links">
+      <span class="resume" id="resume"> did </span>
+      <span class="photos" id="photos"> see </span>
+      <span class="sounds" id="sounds"> les </span>
+    </div>
 </body>

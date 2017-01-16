@@ -1,17 +1,16 @@
 html{
   background-color: pink;
+  background-image: url(assets/test.gif);
+  background-repeat: no-repeat;
+  background-size: 140%;
 }
 
-img.title{
-  position: fixed;
-  margin: 0 50%;
-  left: -800px;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  -moz-transform:scale(0.2);
-  -webkit-transform:scale(0.2);
-  transform:scale(0.2);
+#logo{
+  position: absolute;
+  left: 50%;
+  top: 2em;
+  margin-left: -2.5em;
+  width: 5em;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -19,16 +18,28 @@ img.title{
   -ms-user-select: none;
 }
 
-img.main{
-  position: fixed;
-  margin: 0 50%;
-  left: -200px;
-  right: 0;
-  top: 100px;
-  bottom: 0;
-  border: 2px solid white;
-  box-shadow: 2px 2px 2px;
-  user-drag: none;
+#title{
+  width: 75em;
+  top: 50%;
+  margin-top: -13em;
+  left: 50%;
+  margin-left: -38.4em;
+  position: absolute;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#main{
+  position: absolute;
+  left: 50%;
+  margin-left: -13.5em;
+  top: 50%;
+  margin-top: -15.5em;
+  height: 35em;
+  border: 2px solid black;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -37,14 +48,12 @@ img.main{
 }
 
 .links{
-  width: 225px;
+  padding-left:
+  text-align: center;
   color: white;
   background-color: transparent;
-  position: fixed;
-  margin: 0 50%;
-  left: -30px;
-  right: 0;
-  top: 650px;
-  bottom: 0;
+  border: 2px;
+  position: relative;
   z-index: +1;
+  height: 1em;
 }
