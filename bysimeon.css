@@ -2,7 +2,7 @@ html{
   background-color: pink;
   background-image: url(assets/test.gif);
   background-repeat: no-repeat;
-  background-size: 140%;
+  background-size: 180%;
 }
 
 #logo{
@@ -52,9 +52,10 @@ html{
   -ms-user-select: none;
 }
 
-.transition {
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    transform: scale(2);
+#pageindicator{
+  position: absolute;
+  left: 50%;
+  margin-left: -6em;
+  width: 12em;
+  top: 90%;
 }

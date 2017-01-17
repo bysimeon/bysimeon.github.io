@@ -2,21 +2,40 @@
 <head>
   <title>bysimeon</title>
 
+<link rel="shortcut icon" href="assets/favicon.ico">
 <link rel="stylesheet" type="text/css" href="bysimeon.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
 
 <script>
 $(document).ready(function(){
+  var page = 1;
   $("#logo").click(function(){
-    $("#title").hide();
-  });
-});
+    switch (page) {
+      case 1:
+      $(".page1").fadeOut();
+      $(".page2").fadeIn();
+      page = 2;
+      break;
+      case 2:
+      $(".page2").fadeOut();
+      $(".page3").fadeIn();
+      page = 3;
+      break;
+      case 3:
+      $(".page3").fadeOut();
+      $(".page1").fadeIn();
+      page = 1;
+      break;
+      default: break;
+}});});
 </script>
 </head>
 
 <body>
   <img src="assets/braces.png" id="logo">
-    <img id="title" src="assets/bysimeon.gif"/>
-    <div class="pageindicator"></div>
+  <div hidden class="page2"> heya </div>
+  <div hidden class="page3"> hiya </div>
+  <img id="title" class="page1" src="assets/bysimeon.gif"/>
+  <img src="assets/navbad.png" id="pageindicator"></img>
 </body>
