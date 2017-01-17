@@ -59,3 +59,11 @@ html{
   width: 12em;
   top: 90%;
 }
+
+#one,#two,#three{
+  position: absolute;
+  left: 50%;
+  margin-left: -5.5em;
+  width: 10em;
+  top: 91.2%;
+}
