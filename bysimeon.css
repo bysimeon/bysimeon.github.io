@@ -5,7 +5,7 @@ html{
   background-size: 180%;
 }
 
-#logo{
+#braces,#mouth{
   position: absolute;
   left: 50%;
   top: 2em;
@@ -19,16 +19,16 @@ html{
   transition: all.2s ease-in-out;
 }
 
-#logo:hover{
-  transform: scale(1.2);
+#back:hover,#for:hover{
+  transform: scale(1.17);
 }
 
 #title{
-  width: 75em;
+  width: 85%;
   top: 50%;
   margin-top: -15em;
   left: 50%;
-  margin-left: -38.4em;
+  margin-left: -43.5%;
   position: absolute;
   user-select: none;
   -moz-user-select: none;
@@ -52,10 +52,92 @@ html{
   -ms-user-select: none;
 }
 
-#pageindicator,#one,#two,#three{
+.dot{
   position: absolute;
   left: 50%;
   margin-left: -6em;
   width: 12em;
   top: 90%;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#slideshow{
+  align-items: center;
+  width: 50em;
+  position: absolute;
+  height: 25em;
+  top: 50%;
+  margin-top: -12.5em;
+  left: 50%;
+  margin-left: -25em;
+}
+
+.photo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 5px solid pink;
+  border-top: 5px solid #859dbe;
+  border-right: 5px solid #859dbe;
+  border-bottom: 5px solid pink;
+  /*border-radius: 6px;*/
+  display: none;
+  height:25em;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#back,#for{
+  position: absolute;
+  width: 3em;
+  margin-top: -1.5em;
+  margin-left: -1.5em;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  transition: all.2s ease-in-out;
+}
+
+#back{
+  top: 50%;
+  left: 25%;
+}
+
+#for{
+  top: 50%;
+  left: 75%;
+}
+
+.realdot{
+  position: absolute;
+  width: 12em;
+  height: 3.5em;
+  left: 50%;
+  margin-left: -6em;
+  top: 91%;
+}
+
+.dotreal{
+  border: 1px solid black
+  width: 4em;
+  height: 3.5em;
+}
+
+#two{
+  position: relative;
+  left: 4em;
+  top: -3.6em;
+}
+#three{
+  position: relative;
+  left: 8em;
+  top: -7.3em;
 }

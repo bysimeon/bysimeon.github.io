@@ -9,34 +9,94 @@
 
 <script>
 $(document).ready(function(){
-  var page = 1;
-  $("#logo").click(function(){
-    switch (page) {
-      case 1:
-      $(".page1").fadeOut();
-      $(".page2").fadeIn();
-      page = 2;
-      break;
-      case 2:
-      $(".page2").fadeOut();
-      $(".page3").fadeIn();
-      page = 3;
-      break;
-      case 3:
-      $(".page3").fadeOut();
-      $(".page1").fadeIn();
-      page = 1;
-      break;
-      default: break;
-}});});
+$("#back").click(function(){
+  function plusDivs(-1);
+});
+$("#for").click(function(){
+function plusDivs(1);
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#one").click(function(){
+  $(".page1").fadeIn();
+  $(".page2").hide();
+  $(".page3").hide();
+});
+$("#two").click(function(){
+  $(".page1").hide();
+  $(".page2").fadeIn();
+  $(".page3").hide();
+});
+$("#three").click(function(){
+  $(".page1").hide();
+  $(".page2").hide();
+  $(".page3").fadeIn();
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("#braces").click(function(){
+    $("#mouth").show();
+    $("#braces").hide();
+  });
+  $("#mouth").click(function(){
+    $("#braces").show();
+    $("#mouth").hide();
+  });
+});
 </script>
 </head>
 
 <body>
-  <img src="assets/braces.png" id="logo">
-  <img id="title" class="page1" src="assets/bysimeon.gif"/>
-  <img src="assets/navbad.png" id="pageindicator"></img>
-  <img src="assets/one.png" id="one" class="page1"></img>
-  <img hidden src="assets/two.png" id="two" class="page2"></img>
-  <img hidden src="assets/thr.png" id="three" class="page3"></img>
+  <img src="assets/braces.png" id="braces"></img>
+  <img hidden src="assets/mouth.png" id="mouth"></img>
+  <img id="title" class="page1" src="assets/bysimeon.gif"/></img>
+  <img src="assets/navbad.png" class="dot"></img>
+  <img src="assets/one.png" class="page1 dot"></img>
+  <img hidden src="assets/two.png" class="page2 dot"></img>
+  <img hidden src="assets/thr.png" class="page3 dot"></img>
+
+  <!-- <img hidden src="assets/photos/.png" class="page3" id="top"></img> -->
+
+  <div hidden class="page3" id="slideshow">
+    <img src="assets/photos/1.jpg" class="photo"></img>
+    <img src="assets/photos/2.jpg" class="photo"></img>
+    <img src="assets/photos/3.jpg" class="photo"></img>
+    <img src="assets/photos/4.jpg" class="photo"></img>
+    <img src="assets/photos/5.jpg" class="photo"></img>
+  </div>
+
+  <img hidden class="page3" id="back" src="assets/backfor.png"
+  onclick="plusDivs(-1)"></img>
+  <img hidden class="page3" id="for" src="assets/gofor.png"
+  onclick="plusDivs(1)"></img>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("photo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
+
+  <div class="realdot">
+    <div id="one" class="dotreal"></div>
+    <div id="two" class="dotreal"></div>
+    <div id="three" class="dotreal"></div>
+  </div>
 </body>
