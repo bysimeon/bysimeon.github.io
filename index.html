@@ -40,17 +40,31 @@ $("#three").click(function(){
 $(document).ready(function(){
   $("#braces").click(function(){
     $("#mouth").show();
+    $(".links").fadeIn();
     $("#braces").hide();
   });
   $("#mouth").click(function(){
     $("#braces").show();
     $("#mouth").hide();
+    $(".links").fadeOut();
   });
 });
 </script>
 </head>
 
 <body>
+  <div hidden id="links1" class="links">
+    <a href="https://twitter.com/simeyawn" target="_blank"
+    class="t">twitter</a>
+    <a href="https://instagram.com/simeyawn" target="_blank"
+    class="i">instagram</a>
+  </div>
+  <div hidden id="links2" class="links">
+    <a href="http://vsco.co/simeyawn/" target="_blank"
+    class="v">vsco</a>
+    <a href="https://soundcloud.com/bysimeon" target="_blank"
+    class="s">soundcloud</a>
+  </div>
   <img src="assets/braces.png" id="braces"></img>
   <img hidden src="assets/mouth.png" id="mouth"></img>
   <img id="title" class="page1" src="assets/bysimeon.gif"/></img>
@@ -59,14 +73,15 @@ $(document).ready(function(){
   <img hidden src="assets/two.png" class="page2 dot"></img>
   <img hidden src="assets/thr.png" class="page3 dot"></img>
 
-  <!-- <img hidden src="assets/photos/.png" class="page3" id="top"></img> -->
-
   <div hidden class="page3" id="slideshow">
     <img src="assets/photos/1.jpg" class="photo"></img>
     <img src="assets/photos/2.jpg" class="photo"></img>
     <img src="assets/photos/3.jpg" class="photo"></img>
     <img src="assets/photos/4.jpg" class="photo"></img>
     <img src="assets/photos/5.jpg" class="photo"></img>
+    <img src="assets/photos/6.jpg" class="photo"></img>
+    <img src="assets/photos/7.jpg" class="photo"></img>
+    <img src="assets/photos/8.jpg" class="photo"></img>
   </div>
 
   <img hidden class="page3" id="back" src="assets/backfor.png"
