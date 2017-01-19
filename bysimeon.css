@@ -18,43 +18,29 @@ html{
   -ms-user-select: none;
   transition: all.2s ease-in-out;
 }
-
-#back:hover,#for:hover{
-  transform: scale(1.17);
+#back,#for{
+  transition: .2s;
 }
-#links1,#links2{
+#back:hover,#for:hover{
+  transform: scale(1.05);
+}
+#back:active,#for:active{
+  transform: scale(.95);
+}
+
+.links{
   position: absolute;
-  left: 50%;
+  left: 60%;
   top: 3.5em;
 }
-#links1{
-  margin-left: -10em;
-}
-#links2{
-  margin-left: 3.2em;
-}
+
 #title{
   width: 85%;
   top: 50%;
-  margin-top: -15em;
+  margin-top: -15%;
   left: 50%;
   margin-left: -43.5%;
   position: absolute;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-}
-
-#main{
-  position: absolute;
-  left: 50%;
-  margin-left: -13.5em;
-  top: 50%;
-  margin-top: -15.5em;
-  height: 35em;
-  border: 2px solid black;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -68,6 +54,7 @@ html{
   margin-left: -6em;
   width: 12em;
   top: 90%;
+  margin-top: -1em;
   -moz-user-select: none;
   -webkit-user-drag: none;
   -webkit-user-select: none;
@@ -76,13 +63,13 @@ html{
 
 #slideshow{
   align-items: center;
-  width: 50em;
+  width: 38em;
   position: absolute;
   height: 25em;
   top: 50%;
   margin-top: -12.5em;
   left: 50%;
-  margin-left: -25em;
+  margin-left: -19em;
 }
 
 .photo{
