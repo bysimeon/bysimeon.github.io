@@ -40,34 +40,38 @@ $("#three").click(function(){
 $(document).ready(function(){
   $("#braces").click(function(){
     $("#mouth").show();
-    $(".links").fadeIn();
+    $("#twit,#gram").fadeIn();
     $("#braces").hide();
   });
   $("#mouth").click(function(){
     $("#braces").show();
     $("#mouth").hide();
-    $(".links").fadeOut();
+    $("#twit,#gram").fadeOut();
   });
 });
 </script>
 </head>
 
 <body>
-  <div hidden class="links">
-    <a href="https://twitter.com/simeyawn" target="_blank"
-    class="t">twitter</a>
-    <a href="https://instagram.com/simeyawn" target="_blank"
-    class="i">instagram</a>
-    <a href="http://vsco.co/simeyawn/" target="_blank"
-    class="v">vsco</a>
+  <div id="posmark">
+    <div hidden id="gram">
+      <a href="https://instagram.com/simeyawn" target="_blank">
+        <img src="assets/links/instagram.png" id="gram"></img>
+      </a>
+    </div>
+    <div hidden id="twit">
+      <a href="https://twitter.com/simeyawn" target="_blank">
+        <img src="assets/links/twitter.png" id="twit"></img>
+      </a>
+    </div>
   </div>
   <img src="assets/braces.png" id="braces"></img>
   <img hidden src="assets/mouth.png" id="mouth"></img>
   <img id="title" class="page1" src="assets/bysimeon.png"/></img>
-  <img src="assets/navbad.png" class="dot"></img>
-  <img src="assets/one.png" class="page1 dot"></img>
-  <img hidden src="assets/two.png" class="page2 dot"></img>
-  <img hidden src="assets/thr.png" class="page3 dot"></img>
+  <img src="assets/navigation/navbad.png" class="dot"></img>
+  <img src="assets/navigation/one.png" class="page1 dot"></img>
+  <img hidden src="assets/navigation/two.png" class="page2 dot"></img>
+  <img hidden src="assets/navigation/thr.png" class="page3 dot"></img>
 
   <div hidden class="page3" id="slideshow">
     <img src="assets/photos/1.jpg" class="photo"></img>
@@ -80,9 +84,9 @@ $(document).ready(function(){
     <img src="assets/photos/8.jpg" class="photo"></img>
   </div>
 
-  <img hidden class="page3" id="back" src="assets/backfor.png"
+  <img hidden class="page3" id="back" src="assets/navigation/backfor.png"
   onclick="plusDivs(-1)"></img>
-  <img hidden class="page3" id="for" src="assets/gofor.png"
+  <img hidden class="page3" id="for" src="assets/navigation/gofor.png"
   onclick="plusDivs(1)"></img>
 
   <script>

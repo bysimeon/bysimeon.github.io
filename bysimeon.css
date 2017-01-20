@@ -28,10 +28,25 @@ html{
   transform: scale(.95);
 }
 
-.links{
+#posmark{
   position: absolute;
-  left: 60%;
-  top: 3.5em;
+  left: 50%;
+  top: 2.7em;
+  margin-left: -2.5em;
+  width: 5em;
+}
+
+#gram{
+  position: relative;
+  left: 3em;
+  width: 1.8em;
+}
+
+#twit{
+  position: relative;
+  left: -1.5em;
+  top: -1em;
+  width: 2em;
 }
 
 #title{
@@ -123,7 +138,6 @@ html{
 }
 
 .dotreal{
-  border: 1px solid black
   width: 4em;
   height: 3.5em;
 }
@@ -138,16 +152,3 @@ html{
   left: 8em;
   top: -7.3em;
 }
-
-a.t:link {color: #ffffff; text-decoration: none;}
-a.t:visited {color: #ffffff; text-decoration: none;}
-a.t:hover {color: #a27b89; text-decoration: none;}
-a.v:link {color: #ffffff; text-decoration: none;}
-a.v:visited {color: #ffffff; text-decoration: none;}
-a.v:hover {color: #a27b89; text-decoration: none;}
-a.s:link {color: #ffffff; text-decoration: none;}
-a.s:visited {color: #ffffff; text-decoration: none;}
-a.s:hover {color: #a27b89; text-decoration: none;}
-a.i:link {color: #ffffff; text-decoration: none;}
-a.i:visited {color: #ffffff; text-decoration: none;}
-a.i:hover {color: #a27b89; text-decoration: none;}
