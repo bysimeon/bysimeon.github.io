@@ -4,6 +4,28 @@ html{
   background-repeat: repeat;
   background-size: 180%;
 }
+body {
+    overflow: hidden;
+}
+
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:pink;
+    z-index:99;
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-100px 0 0 -100px;
+}
 
 #braces,#mouth{
   position: absolute;

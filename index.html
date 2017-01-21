@@ -52,7 +52,21 @@ $(document).ready(function(){
 </script>
 </head>
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+
+<script type="text/javascript">
+        $(window).on('load', function() {
+            $('#status').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow');
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+</script>
+
 <body>
+  <div id="preloader">
+      <img src="assets/loading.gif" id="status"></div>
+  </div>
+
   <div id="posmark">
     <div hidden id="gram">
       <a href="https://instagram.com/simeyawn" target="_blank">
