@@ -4,6 +4,15 @@ html{
   background-repeat: repeat;
   background-size: 180%;
 }
+
+img{
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 body {
     overflow: hidden;
 }
@@ -16,6 +25,17 @@ body {
     bottom: 0;
     background-color: pink;
     z-index: 10;
+}
+
+#temp{
+  position: absolute;
+  top: 50%;
+  margin-top: -1em;
+  left: 50%;
+  margin-left: -25%;
+  height: 30%;
+  color: white;
+  font-size: 4em;
 }
 
 #status {
@@ -33,31 +53,7 @@ body {
   top: 2em;
   margin-left: -2.5em;
   width: 5em;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   transition: all.2s ease-in-out;
-}
-#back,#for{
-  transition: .1s;
-}
-#back:hover,#for:hover{
-  transform: scale(1.05);
-}
-#back:active,#for:active{
-  transform: scale(.95);
-}
-
-#back{
-  top: 50%;
-  left: 20%;
-}
-
-#for{
-  top: 50%;
-  left: 80%;
 }
 
 #posmark{
@@ -66,7 +62,7 @@ body {
   top: 2.7em;
   margin-left: -2.5em;
   width: 5em;
-  height: 60%;
+  height: 5em;
 }
 
 #gram{
@@ -83,41 +79,31 @@ body {
 }
 
 #title{
-  width: 85%;
+  width: 70%;
   top: 50%;
   margin-top: -16%;
   left: 50%;
-  margin-left: -43.5%;
+  margin-left: -35%;
   position: absolute;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 .dot{
   position: absolute;
   left: 50%;
-  margin-left: -6em;
-  width: 12em;
-  top: 90%;
+  margin-left: -5em;
+  width: 10em;
+  top: 93%;
   margin-top: -1em;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 #slideshow{
-  align-items: center;
-  width: 38em;
   position: absolute;
-  height: 25em;
+  width: 41em;
+  height: auto;
   top: 50%;
-  margin-top: -12.5em;
   left: 50%;
-  margin-left: -19em;
+  margin-left: -20.5em;
+  margin-top: -15em;
 }
 
 .photo{
@@ -129,50 +115,54 @@ body {
   border-right: 5px solid #e8eff9;
   border-bottom: 5px solid #f9e8f3;
   display: none;
-  height:25em;
-  max-width: 100%;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  height: 30em;
+  max
 }
 
 #back,#for{
   position: absolute;
-  z-index: 5;
-  width: 3em;
-  margin-top: -1.5em;
-  margin-left: -1.5em;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  width: 6em;
   transition: all.2s ease-in-out;
+}
+
+#back{
+  top: 50%;
+  left: 5%;
+}
+
+#for{
+  top: 50%;
+  right: 5%;
+}
+
+#back:hover,#for:hover{
+  transform: scale(1.05);
+}
+#back:active,#for:active{
+  transform: scale(.95);
 }
 
 .realdot{
   position: absolute;
-  width: 12em;
-  height: 3.5em;
+  width: 9em;
+  height: 3em;
   left: 50%;
-  margin-left: -6em;
-  top: 91%;
+  margin-left: -4.5em;
+  top: 91.5%;
 }
 
 .dotreal{
-  width: 4em;
-  height: 3.5em;
+  width: 3em;
+  height: 3em;
 }
 
 #two{
   position: relative;
-  left: 4em;
-  top: -3.6em;
+  left: 3em;
+  top: -3em;
 }
 #three{
   position: relative;
-  left: 8em;
-  top: -7.3em;
+  left: 6em;
+  top: -6em;
 }

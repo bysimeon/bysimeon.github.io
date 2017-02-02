@@ -1,58 +1,20 @@
+
 <!doctype html>
 <head>
   <title>bysimeon</title>
-
-<link rel="shortcut icon" href="assets/favicon.ico">
-<link rel="stylesheet" type="text/css" href="bysimeon.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
-</script>
-
-<script>
-$(document).ready(function(){
-$("#one").click(function(){
-  $(".page1").fadeIn();
-  $(".page2").hide();
-  $(".page3").hide();
-});
-$("#two").click(function(){
-  $(".page1").hide();
-  $(".page2").fadeIn();
-  $(".page3").hide();
-});
-$("#three").click(function(){
-  $(".page1").hide();
-  $(".page2").hide();
-  $(".page3").fadeIn();
-});
-});
-</script>
-<script>
-$(document).ready(function(){
-  $("#braces").click(function(){
-    $("#mouth").show();
-    $("#twit,#gram").fadeIn();
-    $("#braces").hide();
-  });
-  $("#mouth").click(function(){
-    $("#braces").show();
-    $("#mouth").hide();
-    $("#twit,#gram").fadeOut();
-  });
-});
-</script>
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="bysimeon.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="script.js"></script>
 </head>
-
-<script type="text/javascript">
-        $(window).on('load', function() {
-            $('#status').fadeOut();
-            $('#preloader').delay(350).fadeOut('slow');
-            $('body').delay(350).css({'overflow':'visible'});
-          })
-</script>
 
 <body>
   <div id="preloader">
       <img src="assets/loading.gif" id="status"></div>
+  </div>
+
+  <div hidden src="assets/exclaim.png" class="page2" id="temp">
+    i'm working on this page. 
   </div>
 
   <div id="posmark">
@@ -81,14 +43,11 @@ $(document).ready(function(){
     <img src="assets/photos/3.jpg" class="photo"></img>
     <img src="assets/photos/4.jpg" class="photo"></img>
     <img src="assets/photos/5.jpg" class="photo"></img>
-    <img src="assets/photos/6.jpg" class="photo"></img>
-    <img src="assets/photos/7.jpg" class="photo"></img>
     <img src="assets/photos/8.jpg" class="photo"></img>
   </div>
-
-  <img hidden class="page3" id="back" src="assets/navigation/backfor.png"
+  <img hidden class="page3" id="back" src="assets/navigation/back.png"
   onclick="plusDivs(-1)"></img>
-  <img hidden class="page3" id="for" src="assets/navigation/gofor.png"
+  <img hidden class="page3" id="for" src="assets/navigation/next.png"
   onclick="plusDivs(1)"></img>
 
   <script>
