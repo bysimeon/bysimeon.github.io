@@ -3,34 +3,30 @@
 <head>
   <title>bysimeon</title>
   <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="stylesheet" type="text/css" href="bysimeon.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="script.js"></script>
 </head>
 
 <body>
   <div id="preloader">
-      <img src="assets/loading.gif" id="status"></div>
-  </div>
-
-  <div hidden src="assets/exclaim.png" class="page2" id="temp">
-    i'm working on this page. 
+    <img src="assets/loading.gif" id="status"></div>
   </div>
 
   <div id="posmark">
-    <div hidden id="gram">
+    <div id="gram">
       <a href="https://instagram.com/simeyawn" target="_blank">
         <img src="assets/links/instagram.png" id="gram"></img>
       </a>
     </div>
-    <div hidden id="twit">
+    <div id="twit">
       <a href="https://twitter.com/simeyawn" target="_blank">
         <img src="assets/links/twitter.png" id="twit"></img>
       </a>
     </div>
   </div>
-  <img src="assets/braces.png" id="braces"></img>
-  <img hidden src="assets/mouth.png" id="mouth"></img>
+  <img hidden src="assets/braces.png" id="braces"></img>
+  <img src="assets/mouth.png" id="mouth"></img>
   <img id="title" class="page1" src="assets/bysimeon.png"/></img>
   <img src="assets/navigation/navbad.png" class="dot"></img>
   <img src="assets/navigation/one.png" class="page1 dot"></img>
@@ -45,30 +41,11 @@
     <img src="assets/photos/5.jpg" class="photo"></img>
     <img src="assets/photos/8.jpg" class="photo"></img>
   </div>
+
   <img hidden class="page3" id="back" src="assets/navigation/back.png"
   onclick="plusDivs(-1)"></img>
   <img hidden class="page3" id="for" src="assets/navigation/next.png"
   onclick="plusDivs(1)"></img>
-
-  <script>
-  var slideIndex = 1;
-    showDivs(slideIndex);
-
-  function plusDivs(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("photo");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
-  }
-  </script>
 
   <div class="realdot">
     <div id="one" class="dotreal"></div>
@@ -76,3 +53,23 @@
     <div id="three" class="dotreal"></div>
   </div>
 </body>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("photo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
