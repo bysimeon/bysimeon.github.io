@@ -87,7 +87,6 @@ body {
 
 img.photo:empty{
   position: absolute;
-  max-width: 60%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -103,10 +102,10 @@ img.photo:empty{
   display: none;
 }
 @media screen and (orientation: portrait) {
-  img.photo { max-width: 55%; }
+  img.photo { max-width: 45%; }
 }
 @media screen and (orientation: landscape) {
-  img.photo { max-height: 55%; }
+  img.photo { max-height: 45%; }
 }
 
 #back,#for{
