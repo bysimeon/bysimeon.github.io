@@ -76,13 +76,20 @@ body {
   position: absolute;
 }
 
-.dot{
+#textbox {
   position: absolute;
+  background-color: black;
+  top: 50%;
   left: 50%;
-  margin-left: -5em;
-  width: 10em;
-  top: 93%;
-  margin-top: -1em;
+  width: 20em;
+  height: 25em;
+  margin-left: -10em;
+  margin-top: -12.5em;
+  color: white;
+  border-left: 5px solid #f9e8f3;
+  border-top: 5px solid #e8eff9;
+  border-right: 5px solid #e8eff9;
+  border-bottom: 5px solid #f9e8f3;
 }
 
 img.photo:empty{
@@ -128,6 +135,14 @@ img.photo:empty{
   transform: scale(.95);
 }
 
+.dot{
+  position: absolute;
+  left: 50%;
+  margin-left: -5em;
+  width: 10em;
+  top: 93%;
+  margin-top: -1em;
+}
 .realdot{
   position: absolute;
   width: 9em;
