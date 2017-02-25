@@ -78,18 +78,19 @@ body {
 
 #textbox {
   position: absolute;
-  background-color: black;
+  background-color: rgba(249, 231, 242, 0.95);
   top: 50%;
   left: 50%;
   width: 20em;
   height: 25em;
   margin-left: -10em;
   margin-top: -12.5em;
-  color: white;
+  color: black;
   border-left: 5px solid #f9e8f3;
   border-top: 5px solid #e8eff9;
   border-right: 5px solid #e8eff9;
   border-bottom: 5px solid #f9e8f3;
+  text-align: center;
 }
 
 img.photo:empty{
