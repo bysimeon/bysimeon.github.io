@@ -1,8 +1,8 @@
 html{
   background-color: pink;
   background-image: url(assets/test.gif);
-  background-repeat: repeat;
-  background-size: 180%;
+  background-repeat: no-repeat;
+  background-size: 200%;
 }
 
 img{
@@ -70,9 +70,12 @@ body {
 #title{
   width: 70%;
   top: 50%;
-  margin-top: -16%;
   left: 50%;
-  margin-left: -35%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   position: absolute;
 }
 
@@ -81,15 +84,16 @@ body {
   background-color: rgba(249, 231, 242, 0.95);
   top: 50%;
   left: 50%;
-  width: 20em;
-  height: 25em;
-  margin-left: -10em;
-  margin-top: -12.5em;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  max-width: 20em;
+  max-height: 25em;
   color: black;
-  border-left: 5px solid #f9e8f3;
-  border-top: 5px solid #e8eff9;
-  border-right: 5px solid #e8eff9;
-  border-bottom: 5px solid #f9e8f3;
+  border: 5px solid #e8eff9;
+  padding: .5rem;
   text-align: center;
 }
 
@@ -141,7 +145,7 @@ img.photo:empty{
   left: 50%;
   margin-left: -5em;
   width: 10em;
-  top: 93%;
+  bottom: 10px;
   margin-top: -1em;
 }
 .realdot{
@@ -150,7 +154,7 @@ img.photo:empty{
   height: 3em;
   left: 50%;
   margin-left: -4.5em;
-  top: 91.5%;
+  bottom: 10px;
 }
 .dotreal{
   width: 3em;
