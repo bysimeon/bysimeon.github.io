@@ -43,7 +43,7 @@ body {
   width: 5em;
   transition: all.2s ease-in-out;
 }
-#braces:hover,#mouth:hover{
+#braces:hover,#mouth:hover,#code:hover{
   transform: scale(1.05);
 }
 
@@ -95,6 +95,15 @@ body {
   border: 5px solid #e8eff9;
   padding: .5rem;
   text-align: center;
+}
+
+#code{
+  position: absolute;
+  left: 20%;
+  top: 60%;
+  margin-left: -2.5em;
+  width: 5em;
+  transition: all.2s ease-in-out;
 }
 
 img.photo:empty{

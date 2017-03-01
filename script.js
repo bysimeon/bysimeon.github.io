@@ -15,6 +15,10 @@ $(document).ready(function(){
     $("#mouth").hide();
     $("#twit,#gram").fadeOut();
   });
+  $("#code").click(function(){
+    $("#code_text").show();
+    $("#base").hide();
+  });
 });
 
 $(document).ready(function(){
