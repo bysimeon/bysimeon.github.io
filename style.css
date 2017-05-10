@@ -1,8 +1,8 @@
 html{
   background-color: pink;
-  /*background-image: url(assets/test.gif);*/
+  background-image: url(assets/test.gif);
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size: 300%;
 }
 
 img{
@@ -15,6 +15,10 @@ img{
 
 body {
     overflow: hidden;
+}
+
+ul {
+  text-align: left;
 }
 
 #preloader {
@@ -90,12 +94,13 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 20em;
+  max-width: 45em;
   max-height: 25em;
   color: black;
   border: 5px solid #e8eff9;
   padding: .5rem;
   text-align: center;
+  overflow: scroll;
 }
 
 #code{
