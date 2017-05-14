@@ -3,6 +3,7 @@ html{
   background-image: url(assets/test.gif);
   background-repeat: repeat-y;
   background-size: 200%;
+  font-family: 'Roboto', sans-serif;
 }
 
 img{
@@ -11,10 +12,6 @@ img{
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-}
-
-body {
-    overflow: hidden;
 }
 
 #preloader {
@@ -80,6 +77,7 @@ body {
 }
 
 #textbox {
+  overflow: hidden;
   position: absolute;
   background-color: rgba(249, 231, 242, 0.95);
   top: 50%;
