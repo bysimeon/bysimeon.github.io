@@ -3,6 +3,7 @@ html{
   background-image: url(assets/test.gif);
   background-repeat: repeat-y;
   background-size: 300%;
+  font-family: 'Playfair Display', serif;
 }
 
 img{
@@ -57,7 +58,7 @@ ul {
   top: 2.7em;
   margin-left: -2.5em;
   width: 5em;
-  height: 5em;
+  height: 80%%;
 }
 #gram{
   position: relative;
@@ -86,7 +87,7 @@ ul {
 
 #textbox {
   position: absolute;
-  background-color: rgba(249, 231, 242, 0.95);
+  font-size: .8em;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -94,13 +95,34 @@ ul {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 45em;
-  max-height: 25em;
+  max-width: 60em;
+  max-height: 27em;
+  color: black;
+  padding: .5rem;
+  text-align: center;
+  overflow: visible;
+}
+
+#textboxcontent {
+  overflow: auto;
+  font-size: .8em;
+  background-color: rgba(249, 231, 242, 0.95);
+  max-width: 60em;
+  max-height: 27em;
   color: black;
   border: 5px solid #e8eff9;
   padding: .5rem;
   text-align: center;
-  overflow: scroll;
+}
+
+#down {
+  position: relative;
+  top: 1.5em;
+  transition: all.2s ease-in-out;
+}
+
+#downimg {
+  width: 3em;
 }
 
 #code{
@@ -137,8 +159,10 @@ img.photo:empty{
 
 #back,#for{
   position: absolute;
-  width: 6em;
-  transition: all.2s ease-in-out;
+  max-width: 6em;
+  width: 15%;
+  min-width: 3em;
+  transition: all.1.5s ease-in-out;
 }
 #back{
   top: 50%;
@@ -148,10 +172,10 @@ img.photo:empty{
   top: 50%;
   right: 1%;
 }
-#back:hover,#for:hover{
+#back:hover,#for:hover,#downimg:hover{
   transform: scale(1.05);
 }
-#back:active,#for:active{
+#back:active,#for:active,#downimg:active{
   transform: scale(.95);
 }
 
