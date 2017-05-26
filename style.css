@@ -115,16 +115,6 @@ ul {
   text-align: center;
 }
 
-#down {
-  position: relative;
-  top: 1.5em;
-  transition: all.2s ease-in-out;
-}
-
-#downimg {
-  width: 3em;
-}
-
 #code{
   position: absolute;
   left: 20%;
@@ -172,10 +162,10 @@ img.photo:empty{
   top: 50%;
   right: 1%;
 }
-#back:hover,#for:hover,#downimg:hover{
+#back:hover,#for:hover{
   transform: scale(1.05);
 }
-#back:active,#for:active,#downimg:active{
+#back:active,#for:active{
   transform: scale(.95);
 }
 
