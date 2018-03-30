@@ -1,74 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <head>
   <title>bysimeon</title>
-  <meta name="theme-color" content="#FFC0CB"/>
-  <link rel="shortcut icon" href="assets/sprites/favicon.ico">
+  <script src="blotter/blotter.min.js"></script>
+  <script src="blotter/ChannelSplitMaterial.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 </head>
 
 <body>
-  <div id="preloader">
-    <img src="assets/sprites/loading.gif" id="status"></div>
+  <div id="container">
+      <div id="title"></div>
   </div>
-
-  <div id="posmark">
-    <div id="gram">
-      <a href="https://instagram.com/simeyawn" target="_blank">
-        <img src="assets/links/instagram.png" id="gram"></img>
-      </a>
-    </div>
-    <div id="twit">
-      <a href="https://twitter.com/simeyawn" target="_blank">
-        <img src="assets/links/twitter.png" id="twit"></img>
-      </a>
-    </div>
-  </div>
-  <img hidden src="assets/sprites/braces.png" id="braces"></img>
-  <img src="assets/sprites/mouth.png" id="mouth"></img>
-  <img id="title" class="page1" src="assets/sprites/bysimeon.png"/></img>
-
-  <div hidden class="page3" id="slideshow">
-    <img src="assets/photos/1.jpg" class="photo"></img>
-    <img src="assets/photos/2.jpg" class="photo"></img>
-    <img src="assets/photos/3.jpg" class="photo"></img>
-    <img src="assets/photos/4.jpg" class="photo"></img>
-    <img src="assets/photos/5.jpg" class="photo"></img>
-    <img src="assets/photos/6.jpg" class="photo"></img>
-  </div>
-  <img hidden class="page3" id="back" src="assets/navigation/back.png"
-  onclick="plusDivs(-1)"></img>
-  <img hidden class="page3" id="for" src="assets/navigation/next.png"
-  onclick="plusDivs(1)"></img>
-
-  <img src="assets/navigation/one.png" class="page1 dot"></img>
-  <img hidden src="assets/navigation/two.png" class="page2 dot"></img>
-  <img hidden src="assets/navigation/thr.png" class="page3 dot"></img>
-  <div class="realdot">
-    <div id="one" class="dotreal"></div>
-    <div id="two" class="dotreal"></div>
-    <div id="three" class="dotreal"></div>
+  <div class="content">
+    <a href=" ">
+      <h1> ... </h1>
+    </a>
+    <p> this is temporary... new site coming in hot :fire: </p>
   </div>
 </body>
 
 <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+  var rotation = 14.0 % 360;
+  var offset = 0.02;
+  var textsize = document.getElementById("container").offsetWidth / 6;
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("photo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  function fontSize() {
+    textsize = document.getElementById("container").offsetWidth / 6;
+    if (textsize > 200) {
+      textsize = 200;
+    }
+    console.log(textsize);
   }
-  x[slideIndex-1].style.display = "block";
-}
+  fontSize();
+
+  var text = new Blotter.Text("bysimeon", {
+    family : "'Futura', sans-serif",
+    size : textsize,
+    fill : "#202020"
+  });
+
+  var material = new Blotter.ChannelSplitMaterial();
+      material.uniforms.uOffset.value = offset;
+      material.uniforms.uApplyBlur.value = 1.0;
+      material.uniforms.uAnimateNoise.value = 1.0;
+      material.uniforms.uRotation.value = rotation;
+
+  var blotter = new Blotter(material, { texts : text });
+
+  var elem = document.getElementById("title");
+  var scope = blotter.forText(text);
+  scope.appendTo(elem);
+
+  function update() {
+    fontSize();
+    scope.play()
+  }
+
+  window.onresize = update;
 </script>
