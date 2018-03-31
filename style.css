@@ -5,7 +5,7 @@ html {
 
 #container {
   height: 90vh;
-  width: 99vw;
+  width: calc(100vw - 16px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,4 +21,9 @@ html {
 .content a {
   color: black;
   text-decoration: none;
+}
+
+#fallback {
+  width: 0px;
+  height: 0px;
 }

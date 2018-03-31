@@ -10,12 +10,16 @@
 <body>
   <div id="container">
       <div id="title"></div>
+      <canvas id="fallback">
+        bysimeon
+      </canvas>
   </div>
+
   <div class="content">
     <a href=" ">
-      <h1> ... </h1>
+      <h1> *** </h1>
     </a>
-    <p> this is temporary... new site coming in hot :fire: </p>
+    <p> this is temporary (preview) ... new site coming in hot :fire: </p>
   </div>
 </body>
 
@@ -29,7 +33,9 @@
     if (textsize > 200) {
       textsize = 200;
     }
-    console.log(textsize);
+    var div = document.getElementById("title");
+    var currentFont = div.style.fontSize.replace("px", "");
+    div.style.fontSize = parseInt(textsize) + "px";
   }
   fontSize();
 
@@ -53,7 +59,6 @@
 
   function update() {
     fontSize();
-    scope.play()
   }
 
   window.onresize = update;
