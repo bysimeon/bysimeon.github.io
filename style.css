@@ -4,23 +4,41 @@ html {
 }
 
 #container {
-  /* height: 90vh; */
+  height: 90vh;
   /* width: calc(100vw - 16px); */
   display: flex;
   /* align-items: center; */
   justify-content: center;
 }
 
-.content {
-  height: 20vh;
+.navigation {
+  /* height: 20vh; */
   margin: 0 9vw 0 9vw;
   padding: 0.5em 2em 0.5em 2em;
-  background-color: rgba(255, 0, 0, 1);
+  /* background-color: rgba(255, 0, 0, 0.7); */
 }
 
-.content a {
+.navigation div {
+  text-align: center;
+}
+
+.navigation img {
+  position: fixed;
+  margin-top: -35vh;
+  margin-left: calc(-20vh - 2rem);
+  max-height: 40vh;
+}
+
+.navigation div a {
+  margin-right: 1rem;
+  font-size: 2rem;
   color: black;
   text-decoration: none;
+}
+
+.navigation div a:hover {
+  -webkit-animation: bounce 1s;
+  animation: bounce 1s;
 }
 
 #fallback {

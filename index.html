@@ -6,6 +6,7 @@
   <script src="assets/libraries/channel.js"></script>
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
   <link rel="stylesheet" href="assets/libraries/tachyons.min.css">
+  <link rel="stylesheet" href="assets/libraries/animate.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -17,11 +18,17 @@
       </canvas>
   </div>
 
-  <div class="content">
-    <a href=" ">
-      <h1> *** </h1>
-    </a>
-    <p> this is temporary (preview) ... new site coming in hot :fire: </p>
+  <div class="navigation">
+    <div>
+      <a href=" " onmouseover="showElement('scream1')" onmouseout="hideElement('scream1')"> * </a>
+      <img hidden id="scream1"src="assets/scream.gif">
+      <a href=" " onmouseover="showElement('scream2')" onmouseout="hideElement('scream2')"> * </a>
+      <img hidden id="scream2"src="assets/scream.gif">
+      <a href=" " onmouseover="showElement('scream')" onmouseout="hideElement('scream')"> * </a>
+      <img hidden id="scream"src="assets/scream.gif">
+    </div>
+    <section>
+    </section>
   </div>
 </body>
 
@@ -29,6 +36,9 @@
   var rotation = 14.0 % 360;
   var offset = 0.02;
   var textsize = document.getElementById("container").offsetWidth / 6;
+  if (textsize > 200) {
+    textsize = 200;
+  }
 
   function fontSize() {
     textsize = document.getElementById("container").offsetWidth / 6;
@@ -54,16 +64,35 @@
       material.uniforms.uRotation.value = rotation;
 
   var blotter = new Blotter(material, { texts : text });
+      text.autostart = true;
+      text.autoplay = true;
 
   var elem = document.getElementById("title");
   var scope = blotter.forText(text);
   scope.appendTo(elem);
 
+  blotter.start()
+  blotter.addTexts(text);
+  blotter.needsUpdate = true;
+
   function update() {
     fontSize();
-    console.log(textsize)
-    blotter.needsUpdate = true;
+    text.needsUpdate = true;
+  };
+
+  function rotanimate() {
+    scope.material.uniforms.uOffset.value = Math.random() / 15;
+    scope.material.uniforms.uRotation.value = Math.random() * 360;
+  };
+
+  window.setInterval(rotanimate, 100)
+  window.onresize = update;
+
+  function showElement(id) {
+    document.getElementById(id).removeAttribute("hidden");
   }
 
-  window.onresize = update;
+  function hideElement(id) {
+    document.getElementById(id).setAttribute("hidden", true);
+  }
 </script>
