@@ -4,10 +4,10 @@ html {
 }
 
 #container {
-  height: 90vh;
-  width: calc(100vw - 16px);
+  /* height: 90vh; */
+  /* width: calc(100vw - 16px); */
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
