@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <div id="container" class="items-center items-center-l items-center-m items-center-ns w-100-ns w-100 vh-50 vh-75-ns">
+  <div id="container" class="items-center">
       <div id="title"></div>
       <canvas id="fallback">
         bysimeon
@@ -85,7 +85,7 @@
     scope.material.uniforms.uRotation.value = Math.random() * 360;
   };
 
-  window.setInterval(rotanimate, 100)
+  window.setInterval(rotanimate, 75)
   window.onresize = update;
 
   function showElement(id) {
