@@ -13,21 +13,28 @@
 <body>
   <div id="container" class="items-center">
       <div id="title"></div>
-      <canvas id="fallback">
-        bysimeon
-      </canvas>
   </div>
 
   <div class="navigation">
     <div>
-      <a href=" " onmouseover="showElement('scream1')" onmouseout="hideElement('scream1')"> * </a>
+      <a href=" " onmouseover="showElement('scream1')" onmouseout="hideElement('scream1')"> not </a>
       <img hidden id="scream1"src="assets/scream.gif">
-      <a href=" " onmouseover="showElement('scream2')" onmouseout="hideElement('scream2')"> * </a>
+      <a href=" " onmouseover="showElement('scream2')" onmouseout="hideElement('scream2')"> done </a>
       <img hidden id="scream2"src="assets/scream.gif">
-      <a href=" " onmouseover="showElement('scream')" onmouseout="hideElement('scream')"> * </a>
+      <a href=" " onmouseover="showElement('scream')" onmouseout="hideElement('scream')"> yet </a>
       <img hidden id="scream"src="assets/scream.gif">
     </div>
-    <section>
+  </div>
+    <section id="about_mobile" class="mobile_sect">
+      <h1>about</h1>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </section>
+    <section id="work_mobile" class="mobile_sect">
+      <h1>projects</h1>
+      <ul>
+        <li> associated student government</li>
+        <li> ingria bicycles </li>
+        <li> tiilt lab </li>
     </section>
   </div>
 </body>
@@ -36,14 +43,14 @@
   var rotation = 14.0 % 360;
   var offset = 0.02;
   var textsize = document.getElementById("container").offsetWidth / 6;
-  if (textsize > 200) {
-    textsize = 200;
-  }
 
   function fontSize() {
     textsize = document.getElementById("container").offsetWidth / 6;
-    if (textsize > 200) {
-      textsize = 200;
+    if (textsize > 225) {
+      textsize = 225;
+    }
+    if (textsize < 125) {
+      textsize = 125;
     }
     var div = document.getElementById("title");
     var currentFont = div.style.fontSize.replace("px", "");
@@ -81,7 +88,7 @@
   };
 
   function rotanimate() {
-    scope.material.uniforms.uOffset.value = Math.random() / 15;
+    scope.material.uniforms.uOffset.value = Math.random() / 14;
     scope.material.uniforms.uRotation.value = Math.random() * 360;
   };
 
