@@ -9,18 +9,21 @@ h1 {
   font-weight: normal;
 }
 
-@media screen and (max-width: 35rem) {
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
   #container {
     padding: 6rem 0 5rem 0;
-    height: 20vh;
-    margin: 0 0 50vh 0;
+    height:20vh;
+    margin: 0 0 40vh 0;
   }
   .navigation {
     display: none;
   }
 }
 
-@media screen and (min-width: 35rem) {
+@media screen and (min-width: 40em) {
   #container {
     height: 90vh;
   }
@@ -30,10 +33,14 @@ h1 {
 }
 
 #container {
-  width: calc(100vw - 16px);
+  width: calc(100vw);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#container div {
+  overflow: hidden;
 }
 
 .navigation {
