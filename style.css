@@ -9,10 +9,7 @@ h1 {
   font-weight: normal;
 }
 
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px)
-and (orientation : portrait) {
+@media screen and (max-width: 40rem) {
   #container {
     padding: 6rem 0 5rem 0;
     height:20vh;
@@ -23,14 +20,14 @@ and (orientation : portrait) {
   }
 }
 
-/* @media screen and (min-width: 40em) {
+@media screen and (min-width: 40em) {
   #container {
     height: 90vh;
   }
   .mobile_sect {
     display: none;
   }
-} */
+}
 
 #container {
   width: calc(100vw);
