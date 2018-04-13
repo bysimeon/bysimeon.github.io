@@ -102,7 +102,7 @@
         window.onload = () => {
             let xhr = new XMLHttpRequest();
             // Request to open weather map
-            xhr.open('GET', 'https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?zip=60201,us&units=metric&appid=4119dfca25e96bf1f10f35a975835f6c');
+            xhr.open('GET', 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=60201,us&units=metric&appid=4119dfca25e96bf1f10f35a975835f6c');
             xhr.onload = () => {
                 if (xhr.readyState === 4) {
                     if (xhr.status === 200) {
