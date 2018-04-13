@@ -4,6 +4,7 @@ html {
   font-size: 24px;
   font-family: Inconsolata, serif;
 }
+
 body {
     background-color: #fff;
     /* #8EA4D2 */
@@ -21,7 +22,7 @@ body {
 
 #clock {
     font-size: 6rem;
-    font-weight: 800;
+    /* font-weight: 400; */
     color: #000;
     margin-bottom: .25em;
 }
