@@ -106,7 +106,7 @@
     // break with any of the following in a query
     if (e.keyCode == 13) {
       if (soundcloud) {
-        window.open("https://soundcloud.com/search?q=" + val.substr(cutoff(3, val)));
+        window.open("https://soundcloud.com/search?q=" + val.trim());
         clear();
       }
       else if (youtube) {
