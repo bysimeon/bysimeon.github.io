@@ -76,6 +76,9 @@ body {
     .container {
         height: auto;
     }
+    .weather-container {
+      width: 95%;
+    }
     #clock {
         margin-top: 1em;
     }
