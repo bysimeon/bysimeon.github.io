@@ -80,6 +80,7 @@
   youtube = false;
   twitch = false;
   myanimelist = false;
+  reddit = false;
   
   // Search on enter key event
   function clear() {
@@ -88,6 +89,7 @@
     youtube = false;
     twitch = false;
     myanimelist = false;
+    reddit = false;
   }
 
   function cutoff(num, str) {
@@ -119,9 +121,14 @@
         window.open("https://myanimelist.net/search/all?q=" + val.substr(cutoff(3, val)));
         clear();
       }
+      else if (reddit) {
+        window.open("https://www.reddit.com/search?q=" + val.substr(cutoff(3, val)));
+        clear();
+      }
       else if (val.includes('.com') || val.includes('.net') || val.includes('.co') || val.includes('.io') || val.includes('.xyz') || val.includes('.gov')) {
         window.open("http://" + val.substr(cutoff(1, val)));
-      } else {
+      } 
+      else {
        window.open("https://google.com/search?q=" + val.substr(cutoff(1, val)));
       }
       document.getElementById('search-field').value = '';
@@ -155,6 +162,13 @@
       myanimelist = true;
       document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #1488cc, #2e51a2)";
       document.getElementById("search-field").style.background = "linear-gradient(to right, #1488cc, #2e51a2)";
+    }
+    if (val.endsWith('r:') || val.endsWith('R:')) {
+      console.log("reddit");
+      clear();
+      reddit = true;
+      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #5f99cf, #cee3f8)";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #5f99cf, #cee3f8)";
     }
   }
 
