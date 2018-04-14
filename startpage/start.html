@@ -40,8 +40,8 @@
           <a class="bookmark" href="https://netflix.com" target="_blank">netflix</a>
           <a class="bookmark" href="https://youtube.com" target="_blank">youtube</a>
           <a class="bookmark" href="https://twitch.tv" target="_blank">twitch</a>
-          <a class="bookmark" href="https://horriblesubs.com" target="_blank">badsubs</a>
-          <a class="bookmark" href="https://myanimelist.com" target="_blank">myanimelist</a>
+          <a class="bookmark" href="http://horriblesubs.info" target="_blank">badsubs</a>
+          <a class="bookmark" href="https://myanimelist.net" target="_blank">myanimelist</a>
         </div>
       </div>
       <div class="bookmark-set">
@@ -79,12 +79,15 @@
   soundcloud = false;
   youtube = false;
   twitch = false;
+  myanimelist = false;
+    
   // Search on enter key event
   function clear() {
     document.getElementById("search-field").style.background = "#000"
     soundcloud = false;
     youtube = false;
     twitch = false;
+    myanimelist = false;
   }
 
   function cutoff(num, str) {
@@ -112,6 +115,10 @@
         window.open("https://www.twitch.tv/directory/game/" + val.substr(cutoff(4, val)));
         clear();
       }
+      else if (myanimelist) {
+        window.open("https://myanimelist.net/search/all?q=" + val.substr(cutoff(4, val)));
+        clear();
+      }
       else if (val.includes('.com') || val.includes('.net') || val.includes('.co') || val.includes('.io') || val.includes('.xyz') || val.includes('.gov')) {
         window.open("http://" + val.substr(cutoff(1, val)));
       } else {
@@ -125,22 +132,29 @@
       console.log("soundcloud");
       clear();
       soundcloud = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #fe8c00, #f83600)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #fe8c00, #f83600)";
+      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #fe8c00, #f83600);";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #fe8c00, #f83600);";
     }
     if (val.endsWith('y:') || val.endsWith('Y:')) {
       console.log("youtube");
       clear();
       youtube = true;
       document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #e52d27, #b31217);";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #e52d27, #b31217)";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #e52d27, #b31217);";
     }
     if (val.endsWith('t:') || val.endsWith('T:')) {
-      console.log("youtube");
+      console.log("twitch");
       clear();
       twitch = true;
       document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #6441a5, #2a0845);";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #6441a5, #2a0845)";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #6441a5, #2a0845);";
+    }
+    if (val.endsWith('a:') || val.endsWith('A:')) {
+      console.log("myanimelist");
+      clear();
+      myanimelist = true;
+      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #1488cc, #2e51a2);";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #1488cc, #2e51a2);";
     }
   }
 
