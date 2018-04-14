@@ -104,19 +104,19 @@
     // break with any of the following in a query
     if (e.keyCode == 13) {
       if (soundcloud) {
-        window.open("https://soundcloud.com/search?q=" + val.substr(cutoff(4, val)));
+        window.open("https://soundcloud.com/search?q=" + val.substr(cutoff(3, val)));
         clear();
       }
       else if (youtube) {
-        window.open("https://www.youtube.com/results?search_query=" + val.substr(cutoff(4, val)));
+        window.open("https://www.youtube.com/results?search_query=" + val.substr(cutoff(3, val)));
         clear();
       }
       else if (twitch) {
-        window.open("https://www.twitch.tv/directory/game/" + val.substr(cutoff(4, val)));
+        window.open("https://www.twitch.tv/directory/game/" + val.substr(cutoff(3, val)));
         clear();
       }
       else if (myanimelist) {
-        window.open("https://myanimelist.net/search/all?q=" + val.substr(cutoff(4, val)));
+        window.open("https://myanimelist.net/search/all?q=" + val.substr(cutoff(3, val)));
         clear();
       }
       else if (val.includes('.com') || val.includes('.net') || val.includes('.co') || val.includes('.io') || val.includes('.xyz') || val.includes('.gov')) {
