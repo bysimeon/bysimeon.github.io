@@ -80,7 +80,7 @@
   youtube = false;
   twitch = false;
   myanimelist = false;
-    
+  
   // Search on enter key event
   function clear() {
     document.getElementById("search-field").style.background = "#000"
@@ -132,29 +132,29 @@
       console.log("soundcloud");
       clear();
       soundcloud = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #fe8c00, #f83600);";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #fe8c00, #f83600);";
+      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #fe8c00, #f83600)";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #fe8c00, #f83600)";
     }
     if (val.endsWith('y:') || val.endsWith('Y:')) {
       console.log("youtube");
       clear();
       youtube = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #e52d27, #b31217);";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #e52d27, #b31217);";
+      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #e52d27, #b31217)";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #e52d27, #b31217)";
     }
     if (val.endsWith('t:') || val.endsWith('T:')) {
       console.log("twitch");
       clear();
       twitch = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #6441a5, #2a0845);";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #6441a5, #2a0845);";
+      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #6441a5, #2a0845)";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #6441a5, #2a0845)";
     }
     if (val.endsWith('a:') || val.endsWith('A:')) {
       console.log("myanimelist");
       clear();
       myanimelist = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #1488cc, #2e51a2);";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #1488cc, #2e51a2);";
+      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #1488cc, #2e51a2)";
+      document.getElementById("search-field").style.background = "linear-gradient(to right, #1488cc, #2e51a2)";
     }
   }
 
