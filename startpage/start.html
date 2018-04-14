@@ -12,10 +12,11 @@
 </head>
 <body>
   <div id="search">
-    <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
+    <input id="search-field" type="text" name="search-field" onkeyup="return search(event)"/>
   </div>
   <div class="container">
     <div id="clock"></div>
+    <!-- <div id="date"> april fourtheenth </div> -->
     <div class="weather-container">
       <div class="row">
         <div id="weather-description"class="inline"></div>
@@ -51,7 +52,6 @@
           <a class="bookmark" href="https://reddit.com/r/fixedgearbicycle" target="_blank">/r/fixedgears</a>
           <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank">/r/mechkeyboards</a>
           <a class="bookmark" href="https://reddit.com/r/hiphopheads" target="_blank">/r/hiphopheads</a>
-          <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank">/r/unixporn</a>
           <a class="bookmark" href="https://reddit.com/r/minimalism" target="_blank">/r/minimalism</a>
           <a class="bookmark" href="https://reddit.com/r/startpages" target="_blank">/r/startpages</a>
         </div>
@@ -81,8 +81,7 @@
   twitch = false;
   myanimelist = false;
   reddit = false;
-  
-  // Search on enter key event
+
   function clear() {
     document.getElementById("search-field").style.background = "#000"
     soundcloud = false;
@@ -103,7 +102,7 @@
 
   function search(e) {
     var val = document.getElementById("search-field").value;
-    // break with any of the following in a query
+
     if (e.keyCode == 13) {
       if (soundcloud) {
         window.open("https://soundcloud.com/search?q=" + val.substr(cutoff(3, val)));
@@ -125,9 +124,14 @@
         window.open("https://www.reddit.com/search?q=" + val.substr(cutoff(3, val)));
         clear();
       }
-      else if (val.includes('.com') || val.includes('.net') || val.includes('.co') || val.includes('.io') || val.includes('.xyz') || val.includes('.gov')) {
-        window.open("http://" + val.trim());
-      } 
+      // break with any of the following in a query
+      else if (val.includes('.com') || val.includes('.net') || val.includes('.co') || val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org')) {
+        if (val.includes('http')) {
+          window.open(val.trim());
+        } else {
+          window.open("http://" + val.trim());
+        }
+      }
       else {
        window.open("https://google.com/search?q=" + val.trim());
       }
@@ -135,40 +139,48 @@
       document.getElementById('search-field').blur();
       document.getElementById('search').style.display = 'none';
     }
-    if (val.endsWith('s:') || val.endsWith('S:')) {
-      console.log("soundcloud");
+
+    if (! val.includes(":")) {
       clear();
-      soundcloud = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #fe8c00, #f83600)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #fe8c00, #f83600)";
     }
-    if (val.endsWith('y:') || val.endsWith('Y:')) {
-      console.log("youtube");
-      clear();
-      youtube = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #e52d27, #b31217)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #e52d27, #b31217)";
-    }
-    if (val.endsWith('t:') || val.endsWith('T:')) {
-      console.log("twitch");
-      clear();
-      twitch = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #6441a5, #2a0845)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #6441a5, #2a0845)";
-    }
-    if (val.endsWith('a:') || val.endsWith('A:')) {
-      console.log("myanimelist");
-      clear();
-      myanimelist = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #1488cc, #2e51a2)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #1488cc, #2e51a2)";
-    }
-    if (val.endsWith('r:') || val.endsWith('R:')) {
-      console.log("reddit");
-      clear();
-      reddit = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #5f99cf, #cee3f8)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #5f99cf, #cee3f8)";
+    if (val.length <= cutoff(3, val)) {
+      if (val.endsWith('s:') || val.endsWith('S:')) {
+        if (! val.endsWith('tps:')) {
+          console.log("soundcloud");
+          clear();
+          soundcloud = true;
+          document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #fe8c00, #f83600)";
+          document.getElementById("search-field").style.background = "linear-gradient(to right, #fe8c00, #f83600)";
+        }
+      }
+      if (val.endsWith('y:') || val.endsWith('Y:')) {
+        console.log("youtube");
+        clear();
+        youtube = true;
+        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #e52d27, #b31217)";
+        document.getElementById("search-field").style.background = "linear-gradient(to right, #e52d27, #b31217)";
+      }
+      if (val.endsWith('t:') || val.endsWith('T:')) {
+        console.log("twitch");
+        clear();
+        twitch = true;
+        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #6441a5, #2a0845)";
+        document.getElementById("search-field").style.background = "linear-gradient(to right, #6441a5, #2a0845)";
+      }
+      if (val.endsWith('a:') || val.endsWith('A:')) {
+        console.log("myanimelist");
+        clear();
+        myanimelist = true;
+        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #1488cc, #2e51a2)";
+        document.getElementById("search-field").style.background = "linear-gradient(to right, #1488cc, #2e51a2)";
+      }
+      if (val.endsWith('r:') || val.endsWith('R:')) {
+        console.log("reddit");
+        clear();
+        reddit = true;
+        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #5f99cf, #cee3f8)";
+        document.getElementById("search-field").style.background = "linear-gradient(to right, #5f99cf, #cee3f8)";
+      }
     }
   }
 

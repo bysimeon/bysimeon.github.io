@@ -7,7 +7,6 @@ html {
 
 body {
     background-color: #fff;
-    /* #8EA4D2 */
     margin: 0px;
 }
 
@@ -18,13 +17,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-#clock {
-    font-size: 6rem;
-    /* font-weight: 400; */
-    color: #000;
-    margin-bottom: .25em;
 }
 
 #search {
@@ -44,25 +36,30 @@ body {
     padding: .75em 1em;
     box-sizing: border-box;
     background-color: #000;
-    border: solid 0px #272727;
+    border: solid 0px #000;
     font-family: Inconsolata;
     font-size: 4rem;
     color: #f2f2f2;
     outline: none;
-    border-radius: 3px;
     margin-bottom: 1em;
     text-align: center;
+}
+
+#clock {
+    font-size: 6rem;
+    color: #000;
+    margin-bottom: .20em;
 }
 
 .weather-container {
     width: 30%;
     background-color: #fff;
     padding: 1em;
-    border-radius: 3px;
     font-size: 1.5rem;
     color: #000;
     text-align: center;
 }
+
 .inline {
     display: inline-block;
 }
@@ -71,7 +68,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 50%;
+    width: 55%;
     margin: 1em 0em;
 }
 
@@ -84,7 +81,7 @@ body {
     }
     .container > .bookmark-container {
         flex-direction: column;
-        width: 60%;
+        width: 80%;
     }
     .bookmark-container > .bookmark-set {
         width: auto;
@@ -94,8 +91,6 @@ body {
 
 .bookmark-set{
     padding: 1em;
-    background-color: #fff;
-    border-radius: px;
     font-size: .85rem;
     width: 25%;
     height: 15em;
