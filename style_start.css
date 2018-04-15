@@ -10,6 +10,12 @@ body {
     margin: 0px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -17,6 +23,48 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+#back {
+  position: fixed;
+  font-size: 1em;
+  padding: 1em;
+}
+
+#help {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  font-size: 1em;
+  padding: 1em;
+}
+
+#command {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#command-list {
+    width: 90%;
+    padding: 2em;
+    box-sizing: border-box;
+    background-color: #000;
+    border: solid 0px #000;
+    font-family: Inconsolata;
+    color: #f2f2f2;
+    outline: none;
+    margin-bottom: 1em;
+}
+
+#command-list > span {
+  text-transform: uppercase;
 }
 
 #search {
@@ -54,7 +102,7 @@ body {
 .weather-container {
     width: 70%;
     background-color: #fff;
-    padding: 1em;
+    padding: 1em 1em 0em 1em;
     font-size: 1.5rem;
     color: #000;
     text-align: center;
@@ -68,7 +116,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 55%;
     margin: 1em 0em;
 }
 

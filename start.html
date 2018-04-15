@@ -11,12 +11,32 @@
   <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
+  <div id="back">
+    <a href="index.html">back</a>
+  </div>
+  <div id="help">
+    <a onclick="commands()">help</a>
+  </div>
+  <div id="command">
+    <div id="command-list">
+      press <span> space </span> to search, <span> google </span> is searched by default. enter a <span> url </span> open that site.
+      search specific sites by writing a shortcut before your query:
+      <ul>
+        <li> reddit (r:) </li>
+        <li> youtube (y:) </li>
+        <li> soundcloud (s:) </li>
+        <li> twitch (t:) [game names] </li>
+        <li> myanimelist (a:)</li>
+      </ul>
+      press <span> esc </span> to close searchbox and this help page.
+    </div>
+  </div>
   <div id="search">
     <input id="search-field" type="text" name="search-field" onkeyup="return search(event)"/>
   </div>
   <div class="container">
     <div id="clock"></div>
-    <!-- <div id="date"> april fourtheenth </div> -->
+    <div id="date"> 4 / 14 / 2018 </div>
     <div class="weather-container">
       <div class="row">
         <div id="weather-description"class="inline"></div>
@@ -41,6 +61,7 @@
           <a class="bookmark" href="https://netflix.com" target="_blank">netflix</a>
           <a class="bookmark" href="https://youtube.com" target="_blank">youtube</a>
           <a class="bookmark" href="https://twitch.tv" target="_blank">twitch</a>
+          <a class="bookmark" href="https://last.fm" target="_blank">last.fm</a>
           <a class="bookmark" href="http://horriblesubs.info" target="_blank">badsubs</a>
           <a class="bookmark" href="https://myanimelist.net" target="_blank">myanimelist</a>
         </div>
@@ -103,46 +124,6 @@
   function search(e) {
     var val = document.getElementById("search-field").value;
 
-    if (e.keyCode == 13) {
-      if (soundcloud) {
-        window.open("https://soundcloud.com/search?q=" + val.substr(cutoff(3, val)));
-        clear();
-      }
-      else if (youtube) {
-        window.open("https://www.youtube.com/results?search_query=" + val.substr(cutoff(3, val)));
-        clear();
-      }
-      else if (twitch) {
-        window.open("https://www.twitch.tv/directory/game/" + val.substr(cutoff(3, val)));
-        clear();
-      }
-      else if (myanimelist) {
-        window.open("https://myanimelist.net/search/all?q=" + val.substr(cutoff(3, val)));
-        clear();
-      }
-      else if (reddit) {
-        window.open("https://www.reddit.com/search?q=" + val.substr(cutoff(3, val)));
-        clear();
-      }
-      // break with any of the following in a query
-      else if (val.includes('.com') || val.includes('.net') || val.includes('.co') || val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org')) {
-        if (val.includes('http')) {
-          window.open(val.trim());
-        } else {
-          window.open("http://" + val.trim());
-        }
-      }
-      else {
-       window.open("https://google.com/search?q=" + val.trim());
-      }
-      document.getElementById('search-field').value = '';
-      document.getElementById('search-field').blur();
-      document.getElementById('search').style.display = 'none';
-    }
-
-    if (! val.includes(":")) {
-      clear();
-    }
     if (val.length <= cutoff(3, val)) {
       if (val.endsWith('s:') || val.endsWith('S:')) {
         if (! val.endsWith('tps:')) {
@@ -182,9 +163,58 @@
         document.getElementById("search-field").style.background = "linear-gradient(to right, #5f99cf, #cee3f8)";
       }
     }
+
+    if (! val.includes(":")) {
+      clear();
+    }
+
+    if (e.keyCode == 13) {
+      if (soundcloud) {
+        window.open("https://soundcloud.com/search?q=" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (youtube) {
+        window.open("https://www.youtube.com/results?search_query=" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (twitch) {
+        window.open("https://www.twitch.tv/directory/game/" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (myanimelist) {
+        window.open("https://myanimelist.net/search/all?q=" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (reddit) {
+        window.open("https://www.reddit.com/search?q=" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (val.includes('.com') || val.includes('.net') || val.includes('.co') ||
+      val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org')) {
+        if (val.includes('http')) {
+          window.open(val.trim());
+        } else {
+          window.open("http://" + val.trim());
+        }
+      }
+      else {
+       window.open("https://google.com/search?q=" + val.trim());
+      }
+      document.getElementById('search-field').value = '';
+      document.getElementById('search-field').blur();
+      document.getElementById('search').style.display = 'none';
+    }
   }
 
-  // Get current time and format
+  const monthNames = ["january", "february", "march", "april", "may", "june",
+  "july", "august", "september", "october", "november", "december" ];
+
+  const dayNames = ["", "first", "second", "third", "fourth", "fifth", "sixth",
+  "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth",
+  "fiftheenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentyith", "twentyfirst",
+  "wentysecond", "twentythird", "twentyfourth", "twentyfifth", "twentysixth", "twenyseventh", "twentyeight",
+  "twentyninth", "thirtyith", "thirtyfirst"];
+
   function getTime() {
     let date = new Date(),
     min = date.getMinutes(),
@@ -197,6 +227,14 @@
     (sec < 10 ? ("0" + sec) : sec);
   }
 
+  function getDay() {
+    let date = new Date(),
+    day = dayNames[date.getDate()];
+    month = monthNames[date.getMonth()];
+
+    return "" + month + " " + day;
+  }
+
   window.onload = () => {
     let xhr = new XMLHttpRequest();
     // Request to open weather map
@@ -206,7 +244,7 @@
         if (xhr.status === 200) {
           let json = JSON.parse(xhr.responseText);
           console.log(json);
-          document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + " c";
+          document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + "&#176 c";
           document.getElementById("weather-description").innerHTML = json.weather[0].description;
         } else {
           console.log('error msg: ' + xhr.status);
@@ -216,9 +254,11 @@
     xhr.send();
     // Set up the clock
     document.getElementById("clock").innerHTML = getTime();
+    document.getElementById("date").innerHTML = getDay();
     // Set clock interval to tick clock
     setInterval( () => {
       document.getElementById("clock").innerHTML = getTime();
+      document.getElementById("date").innerHTML = getDay();
     },100);
   }
 
@@ -230,9 +270,16 @@
       document.getElementById('search-field').value = '';
       document.getElementById('search-field').blur();
       document.getElementById('search').style.display = 'none';
+      document.getElementById('command').style.display = 'none';
+      document.getElementById('command-list').blur();
       clear();
     }
   });
+
+  function commands() {
+    document.getElementById('command').style.display = 'flex';
+    document.getElementById('command-list').focus();
+  }
   </script>
 </body>
 </html>

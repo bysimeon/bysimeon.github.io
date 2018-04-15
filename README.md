@@ -1,3 +1,4 @@
-# zzz
+# bysimeon.com
 
-personal site
+my personal site,
+also where my startpage is
