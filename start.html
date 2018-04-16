@@ -3,24 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <title>Home</title>
+  <title>launch</title>
   <link rel="stylesheet" href="style_start.css">
-  <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
-  <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <link href="assets/favicon.png" rel="shortcut icon" type="image/x-icon"/>
 </head>
 <body>
   <div id="back">
-    <a href="index.html">back</a>
+    <a href="./">back</a>
+  </div>
+  <div id="songb">
+    <a id="song" href="#" target="_blank"></a>
+  </div>
+  <div id="searchlink">
+    <a onclick="opensearchbox()">search</a>
   </div>
   <div id="help">
     <a onclick="commands()">help</a>
   </div>
   <div id="command">
+    <div id="close1">
+      <a onclick="closeall()"> close </a>
+    </div>
     <div id="command-list">
-      press <span> space </span> to search, <span> google </span> is searched by default. enter a <span> url </span> open that site.
-      search specific sites by writing a shortcut before your query:
+      press <span> space </span> to open searchbox, <span> google </span> is used by default. enter a <span> url </span> to open that webpage.
+      search specific sites by using one of the following shortcuts before your query:
       <ul>
         <li> reddit (r:) </li>
         <li> youtube (y:) </li>
@@ -28,10 +34,14 @@
         <li> twitch (t:) [game names] </li>
         <li> myanimelist (a:)</li>
       </ul>
-      press <span> esc </span> to close searchbox and this help page.
+      press <span> esc </span> to close searchbox and this help page. <br> <br>
+      p.s. the song displayed at the bottom right is my most recent track from last.fm
     </div>
   </div>
   <div id="search">
+    <div id="close2">
+      <a onclick="closeall()"> close </a>
+    </div>
     <input id="search-field" type="text" name="search-field" onkeyup="return search(event)"/>
   </div>
   <div class="container">
@@ -190,7 +200,9 @@
         clear();
       }
       else if (val.includes('.com') || val.includes('.net') || val.includes('.co') ||
-      val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org')) {
+      val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org') || val.includes('.se') ||
+      val.includes('.fm') || val.includes('.de') || val.includes('.uk') || val.includes('.gg') || val.includes('.info') ||
+      val.includes('.ai') || val.includes('.ch')) {
         if (val.includes('http')) {
           window.open(val.trim());
         } else {
@@ -235,27 +247,53 @@
     return "" + month + " " + day;
   }
 
+  apikey = "a7f8dd0989ae6f42d1be2c4427767c6f";
+  apibase = "http://ws.audioscrobbler.com/2.0/";
+  user = "theblindlookout";
+
   window.onload = () => {
     let xhr = new XMLHttpRequest();
     // Request to open weather map
-    xhr.open('GET', 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=60201,us&units=metric&appid=4119dfca25e96bf1f10f35a975835f6c');
+    xhr.open('GET', 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=60201,us&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c');
     xhr.onload = () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           let json = JSON.parse(xhr.responseText);
           console.log(json);
-          document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + "&#176 c";
+          document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + "&#176 f";
           document.getElementById("weather-description").innerHTML = json.weather[0].description;
         } else {
           console.log('error msg: ' + xhr.status);
         }
       }
     }
+
+    function recenttrack() {
+      let xhr2 = new XMLHttpRequest();
+      xhr2.open('GET', apibase + "?method=user.getrecenttracks&user=" + user +  "&api_key=" + apikey + "&format=json");
+      xhr2.onload = () => {
+        if (xhr2.readyState === 4) {
+          if (xhr2.status === 200) {
+            let json2 = JSON.parse(xhr2.responseText);
+            console.log(json2);
+            document.getElementById('song').innerHTML = json2.recenttracks.track[0].name + " - " + json2.recenttracks.track[0].artist['#text'];
+            document.getElementById('song').setAttribute("href", json2.recenttracks.track[0].url);
+          }
+        }
+      }
+      xhr2.send();
+    }
+
+    recenttrack();
+
     xhr.send();
+
     // Set up the clock
     document.getElementById("clock").innerHTML = getTime();
     document.getElementById("date").innerHTML = getDay();
     // Set clock interval to tick clock
+    setInterval(recenttrack, 5000);
+
     setInterval( () => {
       document.getElementById("clock").innerHTML = getTime();
       document.getElementById("date").innerHTML = getDay();
@@ -280,6 +318,21 @@
     document.getElementById('command').style.display = 'flex';
     document.getElementById('command-list').focus();
   }
+
+  function opensearchbox() {
+    document.getElementById('search').style.display = 'flex';
+    document.getElementById('search-field').focus();
+  }
+
+  function closeall() {
+    document.getElementById('search-field').value = '';
+    document.getElementById('search-field').blur();
+    document.getElementById('search').style.display = 'none';
+    document.getElementById('command').style.display = 'none';
+    document.getElementById('command-list').blur();
+    clear();
+  }
+
   </script>
 </body>
 </html>
