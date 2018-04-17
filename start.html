@@ -28,7 +28,8 @@
       press <span> space </span> to open searchbox, <span> google </span> is used by default. enter a <span> url </span> to open that webpage.
       search specific sites by using one of the following shortcuts before your query:
       <ul>
-        <li> reddit (r:) </li>
+        <li> reddit (r:)</li>
+        <li> subreddits (r/examplesubreddit goes to examplesubreddit) </li>
         <li> youtube (y:) </li>
         <li> soundcloud (s:) </li>
         <li> twitch (t:) [game names] </li>
@@ -113,6 +114,10 @@
   twitch = false;
   myanimelist = false;
   reddit = false;
+  redditlink = false;
+  gdrive = false;
+  lastfm = false;
+  github = false;
 
   function clear() {
     document.getElementById("search-field").style.background = "#000"
@@ -121,6 +126,10 @@
     twitch = false;
     myanimelist = false;
     reddit = false;
+    redditlink = false;
+    gdrive = false;
+    lastfm = false;
+    github = false;
   }
 
   function cutoff(num, str) {
@@ -173,9 +182,40 @@
         document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #5f99cf, #cee3f8)";
         document.getElementById("search-field").style.background = "linear-gradient(to right, #5f99cf, #cee3f8)";
       }
+      if (val.endsWith('r/') || val.endsWith('R/')) {
+        console.log("redditlink");
+        clear();
+        redditlink = true;
+        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #5f99cf, #cee3f8)";
+        document.getElementById("search-field").style.background = "linear-gradient(to right, #5f99cf, #cee3f8)";
+      }
+      if (val.endsWith('d:') || val.endsWith('D:')) {
+        console.log("google drive");
+        clear();
+        gdrive = true;
+        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #4285f4, #fbbc05)";
+        document.getElementById("search-field").style.background = "linear-gradient(to right, #4285f4, #fbbc05)";
+      }
+      if (val.endsWith('l:') || val.endsWith('L:')) {
+        console.log("lastfm");
+        clear();
+        lastfm = true;
+        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #d51007, #d32d27)";
+        document.getElementById("search-field").style.background = "linear-gradient(to right, #d51007, #d32d27)";
+      }
+      if (val.endsWith('g:') || val.endsWith('G:')) {
+        console.log("github");
+        clear();
+        github = true;
+        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #767676, #999)";
+        document.getElementById("search-field").style.background = "linear-gradient(to right, #767676, #999)";
+      }
     }
 
-    if (! val.includes(":")) {
+    if (! val.includes(":") && ! val.includes("/")) {
+      if (soundcloud || twitch || youtube || reddit || myanimelist || redditlink || gdrive || lastfm || github) {
+
+      }
       clear();
     }
 
@@ -198,6 +238,22 @@
       }
       else if (reddit) {
         window.open("https://www.reddit.com/search?q=" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (redditlink) {
+        window.open("https://www.reddit.com/r/" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (gdrive) {
+        window.open("https://drive.google.com/drive/u/0/search?q=" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (lastfm) {
+        window.open("https://www.last.fm/search?q=" + val.substr(cutoff(3, val)).trim());
+        clear();
+      }
+      else if (github) {
+        window.open("https://github.com/search?utf8=%E2%9C%93&q=" + val.substr(cutoff(3, val)).trim());
         clear();
       }
       else if (val.includes('.com') || val.includes('.net') || val.includes('.co') ||
@@ -253,20 +309,22 @@
   user = "theblindlookout";
 
   window.onload = () => {
-    let xhr = new XMLHttpRequest();
-    // Request to open weather map
-    xhr.open('GET', 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=60201,us&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c');
-    xhr.onload = () => {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          let json = JSON.parse(xhr.responseText);
-          console.log(json);
-          document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + "&#176 f";
-          document.getElementById("weather-description").innerHTML = json.weather[0].description;
-        } else {
-          console.log('error msg: ' + xhr.status);
+    function theweather() {
+      let xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=60201,us&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c');
+      xhr.onload = () => {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            let json = JSON.parse(xhr.responseText);
+            console.log(json);
+            document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + "&#176 f";
+            document.getElementById("weather-description").innerHTML = json.weather[0].description;
+          } else {
+            console.log('error msg: ' + xhr.status);
+          }
         }
       }
+      xhr.send();
     }
 
     function recenttrack() {
@@ -279,6 +337,8 @@
             console.log(json2);
             document.getElementById('song').innerHTML = json2.recenttracks.track[0].name + " - " + json2.recenttracks.track[0].artist['#text'];
             document.getElementById('song').setAttribute("href", json2.recenttracks.track[0].url);
+          } else {
+            console.log('error msg: ' + xhr.status);
           }
         }
       }
@@ -286,14 +346,13 @@
     }
 
     recenttrack();
+    setInterval(recenttrack, 500);
 
-    xhr.send();
+    theweather();
+    setInterval(theweather, 6000000);
 
-    // Set up the clock
     document.getElementById("clock").innerHTML = getTime();
     document.getElementById("date").innerHTML = getDay();
-    // Set clock interval to tick clock
-    setInterval(recenttrack, 5000);
 
     setInterval( () => {
       document.getElementById("clock").innerHTML = getTime();
