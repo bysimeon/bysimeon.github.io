@@ -7,6 +7,17 @@ html {
   background-color: #ffffff;
 }
 
+html {
+  font-size: 24px;
+  font-family: Inconsolata, serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 body {
   overscroll-behavior: none;
 }
