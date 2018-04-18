@@ -229,7 +229,7 @@ window.onload = () => {
           let json2 = JSON.parse(xhr2.responseText);
           songname = json2.recenttracks.track[0].name;
           artistname = json2.recenttracks.track[0].artist['#text'];
-          noscrobble = "currenly listening to nothing"
+          noscrobble = "nothing scrobbling"
           if (typeof json2.recenttracks.track[0]['@attr'] === 'undefined') {
             playing = false;
           } else {
@@ -249,6 +249,7 @@ window.onload = () => {
           }
           else {
             document.getElementById('song').innerHTML = noscrobble;
+            document.getElementById('song').setAttribute("href", "https://www.last.fm/user/theblindlookout");
           }
         } else {
           console.log('error msg: ' + xhr.status);
