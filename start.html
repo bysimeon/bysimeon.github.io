@@ -216,10 +216,15 @@
     }
 
     if (! val.includes(":") && ! val.includes("/")) {
-      if (soundcloud || twitch || youtube || reddit || myanimelist || redditlink || gdrive || lastfm || github) {
-
-      }
       clear();
+      if (soundcloud || twitch || youtube || reddit || myanimelist || redditlink || gdrive || lastfm || github) {
+        if (redditlink) {
+          clear();
+        }
+        else {
+          clear();
+        }
+      }
     }
 
     if (e.keyCode == 13) {
@@ -262,7 +267,7 @@
       else if (val.includes('.com') || val.includes('.net') || val.includes('.co') ||
       val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org') || val.includes('.se') ||
       val.includes('.fm') || val.includes('.de') || val.includes('.uk') || val.includes('.gg') || val.includes('.info') ||
-      val.includes('.ai') || val.includes('.ch') || val.includes('.edu')) {
+      val.includes('.ai') || val.includes('.ch') || val.includes('.edu') || val.includes('.gl')) {
         if (val.includes('http')) {
           window.open(val.trim());
         } else {
@@ -319,7 +324,7 @@
         if (xhr.readyState === 4) {
           if (xhr.status === 200) {
             let json = JSON.parse(xhr.responseText);
-            console.log(json);
+            // console.log(json);
             document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + "&#176 f";
             document.getElementById("weather-description").innerHTML = json.weather[0].description;
           } else {
@@ -337,9 +342,29 @@
         if (xhr2.readyState === 4) {
           if (xhr2.status === 200) {
             let json2 = JSON.parse(xhr2.responseText);
-            console.log(json2);
-            document.getElementById('song').innerHTML = json2.recenttracks.track[0].name + " - " + json2.recenttracks.track[0].artist['#text'];
-            document.getElementById('song').setAttribute("href", json2.recenttracks.track[0].url);
+            songname = json2.recenttracks.track[0].name;
+            artistname = json2.recenttracks.track[0].artist['#text'];
+            playing = json2.recenttracks.track[0]['@attr'].nowplaying;
+            if (typeof playing === 'undefined') {
+              playing = false;
+            }
+            noscrobble = "currenly listening to nothing"
+            console.log(playing);
+            if (songname.length >= 50) {
+              if (songname.includes('(f')) {
+                songname = (songname.substr(0,songname.indexOf(' (f')));
+              }
+              else {
+                songname = (songname.substr(0,50)) + "...";
+              }
+            }
+            if (playing) {
+              document.getElementById('song').innerHTML = songname  + " - " + artistname;
+              document.getElementById('song').setAttribute("href", json2.recenttracks.track[0].url);
+            }
+            else {
+              document.getElementById('song').innerHTML = noscrobble;
+            }
           } else {
             console.log('error msg: ' + xhr.status);
           }
