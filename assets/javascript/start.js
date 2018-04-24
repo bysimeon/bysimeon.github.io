@@ -1,30 +1,28 @@
-soundcloud = false;
-youtube = false;
-twitch = false;
-myanimelist = false;
-reddit = false;
-redditlink = false;
-gdrive = false;
-lastfm = false;
-github = false;
+var searchengine = "";
+
+var searchmod = {
+  "s:": ["soundcloud", "https://soundcloud.com/search?q=", "(to right, #fe8c00, #f83600)", "#fe8c00"],
+  "y:": ["youtube", "https://www.youtube.com/results?search_query=", "(to right, #e52d27, #b31217)", "#e52d27"],
+  "t:": ["twitch", "https://www.twitch.tv/directory/game/", "(to right, #6441a5, #2a0845)", "#6441a5"],
+  "a:": ["myanimelist", "https://myanimelist.net/search/all?q=", "(to right, #1488cc, #2e51a2)", "#1488cc"],
+  "r:": ["reddit", "https://www.reddit.com/search?q=", "(to right, #5f99cf, #cee3f8)", "#5f99cf", "#1488cc"],
+  "r:": ["subreddit", "https://www.reddit.com/r/", "(to right, #5f99cf, #cee3f8)", "#5f99cf"],
+  "d:": ["google drive", "https://drive.google.com/drive/u/0/search?q=", "(to right, #4285f4, #fbbc05)", "#4285f4"],
+  "l:": ["lastfm", "https://www.last.fm/search?q=", "(to right, #d51007, #d32d27)", "#d51007"],
+  "g:": ["github", "https://github.com/search?utf8=%E2%9C%93&q=", "(to right, #767676, #999)", "#767676"],
+  "u:": ["unsplash", "https://unsplash.com/search/photos/", "(to right, #485563, #29323c)", "#485563"],
+};
 
 function clear() {
-  document.getElementById("search-field").style.background = "#000"
-  soundcloud = false;
-  youtube = false;
-  twitch = false;
-  myanimelist = false;
-  reddit = false;
-  redditlink = false;
-  gdrive = false;
-  lastfm = false;
-  github = false;
+  document.getElementById("search-field").style.background = "#000";
+  searchengine = "";
+  document.getElementById("search-mode").innerHTML = "google";
+  document.getElementById("search-mode").style.color = "black ";
 }
 
 function cutoff(num, str) {
   if (str.substring(0,1) != " ") {
     num2 = num - 1;
-    return num2;
   }
   num2 = num;
   return num2
@@ -32,140 +30,40 @@ function cutoff(num, str) {
 
 function search(e) {
   var val = document.getElementById("search-field").value;
+  var key = val.substr(0,(cutoff(3, val))).trim().toLowerCase();
 
   if (val.length <= cutoff(3, val)) {
-    if (val.endsWith('s:') || val.endsWith('S:')) {
-      if (! val.endsWith('tps:')) {
-        console.log("soundcloud");
-        clear();
-        soundcloud = true;
-        document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #fe8c00, #f83600)";
-        document.getElementById("search-field").style.background = "linear-gradient(to right, #fe8c00, #f83600)";
-      }
-    }
-    if (val.endsWith('y:') || val.endsWith('Y:')) {
-      console.log("youtube");
-      clear();
-      youtube = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #e52d27, #b31217)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #e52d27, #b31217)";
-    }
-    if (val.endsWith('t:') || val.endsWith('T:')) {
-      console.log("twitch");
-      clear();
-      twitch = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #6441a5, #2a0845)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #6441a5, #2a0845)";
-    }
-    if (val.endsWith('a:') || val.endsWith('A:')) {
-      console.log("myanimelist");
-      clear();
-      myanimelist = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #1488cc, #2e51a2)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #1488cc, #2e51a2)";
-    }
-    if (val.endsWith('r:') || val.endsWith('R:')) {
-      console.log("reddit");
-      clear();
-      reddit = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #5f99cf, #cee3f8)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #5f99cf, #cee3f8)";
-    }
-    if (val.endsWith('r/') || val.endsWith('R/')) {
-      console.log("redditlink");
-      clear();
-      redditlink = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #5f99cf, #cee3f8)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #5f99cf, #cee3f8)";
-    }
-    if (val.endsWith('d:') || val.endsWith('D:')) {
-      console.log("google drive");
-      clear();
-      gdrive = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #4285f4, #fbbc05)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #4285f4, #fbbc05)";
-    }
-    if (val.endsWith('l:') || val.endsWith('L:')) {
-      console.log("lastfm");
-      clear();
-      lastfm = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #d51007, #d32d27)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #d51007, #d32d27)";
-    }
-    if (val.endsWith('g:') || val.endsWith('G:')) {
-      console.log("github");
-      clear();
-      github = true;
-      document.getElementById("search-field").style.background = "-webkit-linear-gradient(to right, #767676, #999)";
-      document.getElementById("search-field").style.background = "linear-gradient(to right, #767676, #999)";
+    if (key in searchmod) {
+      searchengine = key;
+      document.getElementById("search-field").style.background ="-webkit-linear-gradient" + searchmod[key][2];
+      document.getElementById("search-field").style.background ="linear-gradient" + searchmod[key][2];
+      document.getElementById("search-mode").style.color = searchmod[key][3];
+      document.getElementById("search-mode").style.color = searchmod[key][3];
+      document.getElementById("search-mode").innerHTML = searchmod[key][0];
     }
   }
 
   if (! val.includes(":") && ! val.includes("/")) {
     clear();
-    if (soundcloud || twitch || youtube || reddit || myanimelist || redditlink || gdrive || lastfm || github) {
-      if (redditlink) {
-        clear();
-      }
-      else {
-        clear();
-      }
-    }
   }
 
   if (e.keyCode == 13) {
-    if (soundcloud) {
-      window.open("https://soundcloud.com/search?q=" + val.substr(cutoff(3, val)).trim());
-      clear();
-    }
-    else if (youtube) {
-      window.open("https://www.youtube.com/results?search_query=" + val.substr(cutoff(3, val)).trim());
-      clear();
-    }
-    else if (twitch) {
-      window.open("https://www.twitch.tv/directory/game/" + val.substr(cutoff(3, val)).trim());
-      clear();
-    }
-    else if (myanimelist) {
-      window.open("https://myanimelist.net/search/all?q=" + val.substr(cutoff(3, val)).trim());
-      clear();
-    }
-    else if (reddit) {
-      window.open("https://www.reddit.com/search?q=" + val.substr(cutoff(3, val)).trim());
-      clear();
-    }
-    else if (redditlink) {
-      window.open("https://www.reddit.com/r/" + val.substr(cutoff(3, val)).trim());
-      clear();
-    }
-    else if (gdrive) {
-      window.open("https://drive.google.com/drive/u/0/search?q=" + val.substr(cutoff(3, val)).trim());
-      clear();
-    }
-    else if (lastfm) {
-      window.open("https://www.last.fm/search?q=" + val.substr(cutoff(3, val)).trim());
-      clear();
-    }
-    else if (github) {
-      window.open("https://github.com/search?utf8=%E2%9C%93&q=" + val.substr(cutoff(3, val)).trim());
-      clear();
+    if (searchengine != "") {
+      window.open((searchmod[key][1])+ val.substr(cutoff(3, val)).trim(), "_self");
     }
     else if (val.includes('.com') || val.includes('.net') || val.includes('.co') ||
     val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org') || val.includes('.se') ||
     val.includes('.fm') || val.includes('.de') || val.includes('.uk') || val.includes('.gg') || val.includes('.info') ||
-    val.includes('.ai') || val.includes('.ch') || val.includes('.edu') || val.includes('.gl')) {
+    val.includes('.ai') || val.includes('.ch') || val.includes('.edu') || val.includes('.gl') ||  val.includes('.nz')) {
       if (val.includes('http')) {
-        window.open(val.trim());
+        window.open(val.trim(), "_self");
       } else {
-        window.open("http://" + val.trim());
+        window.open("http://" + val.trim(), "_self");
       }
     }
     else {
-     window.open("https://google.com/search?q=" + val.trim());
+     window.open("https://google.com/search?q=" + val.trim(), "_self");
     }
-    document.getElementById('search-field').value = '';
-    document.getElementById('search-field').blur();
-    document.getElementById('search').style.display = 'none';
   }
 }
 
@@ -203,6 +101,10 @@ apibase = "https://ws.audioscrobbler.com/2.0/";
 user = "theblindlookout";
 
 window.onload = () => {
+  // Clear Everything on Load
+  document.getElementById('search-field').value = '';
+  clear();
+
   function theweather() {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=60201,us&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c');
@@ -276,15 +178,9 @@ window.onload = () => {
 
 document.addEventListener("keydown", event => {
   if (event.keyCode == 32) {          // Spacebar code to open search
-    document.getElementById('search').style.display = 'flex';
-    document.getElementById('search-field').focus();
+    opensearchbox();
   } else if (event.keyCode == 27) {   // Esc to close search
-    document.getElementById('search-field').value = '';
-    document.getElementById('search-field').blur();
-    document.getElementById('search').style.display = 'none';
-    document.getElementById('command').style.display = 'none';
-    document.getElementById('command-list').blur();
-    clear();
+    closeall();
   }
 });
 

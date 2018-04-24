@@ -139,6 +139,11 @@ a:hover {
     margin-bottom: 1em;
     text-align: center;
 }
+#search-mode {
+   text-align: left;
+     width: 90%;
+     padding-bottom: .3em;
+}
 
 #clock {
     font-size: 6rem;
