@@ -6,7 +6,7 @@ var searchmod = {
   "t:": ["twitch", "https://www.twitch.tv/directory/game/", "(to right, #6441a5, #2a0845)", "#6441a5"],
   "a:": ["myanimelist", "https://myanimelist.net/search/all?q=", "(to right, #1488cc, #2e51a2)", "#1488cc"],
   "r:": ["reddit", "https://www.reddit.com/search?q=", "(to right, #5f99cf, #cee3f8)", "#5f99cf", "#1488cc"],
-  "r:": ["subreddit", "https://www.reddit.com/r/", "(to right, #5f99cf, #cee3f8)", "#5f99cf"],
+  "r/": ["subreddit", "https://www.reddit.com/r/", "(to right, #5f99cf, #cee3f8)", "#5f99cf"],
   "d:": ["google drive", "https://drive.google.com/drive/u/0/search?q=", "(to right, #4285f4, #fbbc05)", "#4285f4"],
   "l:": ["lastfm", "https://www.last.fm/search?q=", "(to right, #d51007, #d32d27)", "#d51007"],
   "g:": ["github", "https://github.com/search?utf8=%E2%9C%93&q=", "(to right, #767676, #999)", "#767676"],
