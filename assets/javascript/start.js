@@ -74,8 +74,8 @@ const monthNames = ["january", "february", "march", "april", "may", "june",
 const dayNames = ["", "first", "second", "third", "fourth", "fifth", "sixth",
   "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth",
   "fiftheenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentyith", "twentyfirst",
-  "twentysecond", "twentythird", "twentyfourth", "twentyfifth", "twentysixth", "twenyseventh", "twentyeight",
-  "twentyninth", "thirtyith", "thirtyfirst"
+  "twenysecond", "twentythird", "twenyfourth", "twenyfifth", "twenysixth", "twenysevenph", "twenyeith",
+  "twenyninth", " thirtyith", "thirtyfirst"
 ];
 
 function getTime() {

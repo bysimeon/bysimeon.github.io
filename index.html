@@ -8,99 +8,115 @@
   <link rel="stylesheet" href="assets/libraries/animate.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/index.css">
   <link href="assets/favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <script src="assets/javascript/index.js"></script>
 </head>
 
 <body>
   <div id="container" class="items-center">
-      <div id="title"></div>
+    <div id="title"></div>
   </div>
 
   <div class="navigation">
     <div>
-      <a href="start.html"> launcher </a>
+      take me to...
+    </div>
+    <div>
+      <a href="start.html"> </a>
+      <a href="start.html"> about</a>
+      <a href="start.html"> work </a>
+      <a href="start.html"> contact </a>
     </div>
   </div>
-    <section id="about_mobile" class="mobile_sect">
-      <h1>about</h1>
-      <p> a little about me for people to read when they visit my site. i'll definitely talk about my interest in learning and
-      creative pursuits. all that stuff i think. i need to write more so that it looks a bit chunky, so i can talk about the pyschological
-      research in the past. that'll be interesing. actually nah it should be short and trendy or more about me as a person.</p>
-    </section>
-    <section id="work_mobile" class="mobile_sect">
-      <h1>projects</h1>
-      <ul>
-        <li> <a href="http://www.thehighly.co">the highly</a></li>
-        <!-- <li> associated student government</li>
-        <li> ingria bicycles </li>
-        <li> tiilt lab </li>
-        <li> blackboard magazine </li>
-        <li> generalpartnerbd </li> -->
-    </section>
+  <div class="bottom">
+    <div class="corner" id="songb">
+      <a id="song" href="#"> loading... </a>
+    </div>
+    <div class="corner" id="help">
+      <a>lnchr</a>
+    </div>
   </div>
+  <!-- </div>
+  <section id="about" class="mobile_sect">
+    <h1>about</h1>
+    <p> a little about me for people to read when they visit my site. i'll definitely talk about my interest in learning and creative pursuits. all that stuff i think. i need to write more so that it looks a bit chunky, so i can talk about some research.
+      that'll be interesing. actually nah it should be short w/ bulletpoints.</p>
+  </section>
+  <section id="contact" class="mobile_sect">
+    <h1>work</h1>
+    <ul>
+      <li> <a href="http://www.thehighly.co">the highly</a></li>
+      <li> associated student government </li>
+      <li> ingria bicycles </li>
+      <li> tiilt lab </li>
+      <li> blackboard magazine </li>
+      <li> generalpartnerbd </li>
+  </section> -->
 </body>
 
 <script>
-  var rotation = 14.0 % 360;
-  var offset = 0.02;
-  var textsize = document.getElementById("container").offsetWidth / 6;
-
-  function fontSize() {
-    textsize = document.getElementById("container").offsetWidth / 6;
-    if (textsize > 225) {
-      textsize = 225;
-    }
-    if (textsize < 150) {
-      textsize = 150;
-    }
-    var div = document.getElementById("title");
-    var currentFont = div.style.fontSize.replace("px", "");
-    div.style.fontSize = parseInt(textsize) + "px";
-  }
-  fontSize();
-
-  var text = new Blotter.Text("bysimeon", {
-    family : "'Inconsolata', sans-serif",
-    size : textsize,
-    weight : 800,
-    fill : "#202020"
-  });
-
-  var material = new Blotter.ChannelSplitMaterial();
-      material.uniforms.uOffset.value = offset;
-      material.uniforms.uApplyBlur.value = 1.0;
-      material.uniforms.uAnimateNoise.value = 1.0;
-      material.uniforms.uRotation.value = rotation;
-
-  var blotter = new Blotter(material, { texts : text });
-      text.autostart = true;
-      text.autoplay = true;
-
-  var elem = document.getElementById("title");
-  var scope = blotter.forText(text);
-  scope.appendTo(elem);
-
-  blotter.start()
-  blotter.addTexts(text);
-  blotter.needsUpdate = true;
-
-  function update() {
-    fontSize();
-    text.needsUpdate = true;
-  };
-
-  function rotanimate() {
-    scope.material.uniforms.uOffset.value = Math.random() / 14;
-    scope.material.uniforms.uRotation.value = Math.random() * 360;
-  };
-
-  window.setInterval(rotanimate, 75)
-  window.onresize = update;
-
-  function showElement(id) {
-    document.getElementById(id).removeAttribute("hidden");
-  }
-
-  function hideElement(id) {
-    document.getElementById(id).setAttribute("hidden", true);
-  }
+  // var rotation = 14.0 % 360;
+  // var offset = 0.02;
+  // var textsize = document.getElementById("container").offsetWidth / 6;
+  //
+  // function fontSize() {
+  //   textsize = document.getElementById("container").offsetWidth / 6;
+  //   if (textsize > 225) {
+  //     textsize = 225;
+  //   }
+  //   if (textsize < 150) {
+  //     textsize = 150;
+  //   }
+  //   var div = document.getElementById("title");
+  //   var currentFont = div.style.fontSize.replace("px", "");
+  //   div.style.fontSize = parseInt(textsize) + "px";
+  // }
+  // fontSize();
+  //
+  // var text = new Blotter.Text("bysimeon", {
+  //   family: "'Inconsolata', sans-serif",
+  //   size: textsize,
+  //   weight: 800,
+  //   fill: "#202020"
+  // });
+  //
+  // var material = new Blotter.ChannelSplitMaterial();
+  // material.uniforms.uOffset.value = offset;
+  // material.uniforms.uApplyBlur.value = 1.0;
+  // material.uniforms.uAnimateNoise.value = 1.0;
+  // material.uniforms.uRotation.value = rotation;
+  //
+  // var blotter = new Blotter(material, {
+  //   texts: text
+  // });
+  // text.autostart = true;
+  // text.autoplay = true;
+  //
+  // var elem = document.getElementById("title");
+  // var scope = blotter.forText(text);
+  // scope.appendTo(elem);
+  //
+  // blotter.start()
+  // blotter.addTexts(text);
+  // blotter.needsUpdate = true;
+  //
+  // function update() {
+  //   fontSize();
+  //   text.needsUpdate = true;
+  // };
+  //
+  // function rotanimate() {
+  //   scope.material.uniforms.uOffset.value = Math.random() / 14;
+  //   scope.material.uniforms.uRotation.value = Math.random() * 360;
+  // };
+  //
+  // window.setInterval(rotanimate, 75);
+  // window.onresize = update;
+  //
+  // function showElement(id) {
+  //   document.getElementById(id).removeAttribute("hidden");
+  // }
+  //
+  // function hideElement(id) {
+  //   document.getElementById(id).setAttribute("hidden", true);
+  // }
 </script>

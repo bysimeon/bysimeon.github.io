@@ -9,8 +9,7 @@ html {
   -ms-user-select: none;
   user-select: none;
   font-size: calc(12px + .75vw);
-  /* font: caption; */
-  outline: solid;
+  text-transform: lowercase;
 }
 
 body {
@@ -72,7 +71,6 @@ a:hover {
 }
 
 #searchlink {
-  text-transform: lowercase;
   position: fixed;
   right: 0px;
   top: 0px;
@@ -81,7 +79,6 @@ a:hover {
 }
 
 #close1 {
-  text-transform: lowercase;
   position: fixed;
   right: 0px;
   bottom: 0px;
@@ -90,7 +87,6 @@ a:hover {
 }
 
 #close2 {
-  text-transform: lowercase;
   position: fixed;
   right: 0px;
   top: 0px;
