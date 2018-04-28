@@ -74,7 +74,7 @@ const monthNames = ["january", "february", "march", "april", "may", "june",
 const dayNames = ["", "first", "second", "third", "fourth", "fifth", "sixth",
   "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth",
   "fiftheenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentyith", "twentyfirst",
-  "twenysecond", "twentythird", "twenyfourth", "twenyfifth", "twenysixth", "twenysevenph", "twenyeith",
+  "twenysecond", "twentythird", "twenyfourth", "twenyfifth", "twenysixth", "twenysevenph", "twenyayth",
   "twenyninth", " thirtyith", "thirtyfirst"
 ];
 
