@@ -18,6 +18,13 @@ body {
     overscroll-behavior: none;
 }
 
+img {
+  height: 90vh;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+}
+
 .navigation {
   width: 100vw;
   /* border-bottom: black 1px solid; */
