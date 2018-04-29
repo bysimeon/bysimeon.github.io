@@ -1,0 +1,27 @@
+.container {
+  margin: 5em 3em 3em 3em;
+  overflow-x: scroll;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links a {
+
+}
+
+.preview {
+  overflow: hidden;
+  height: calc(100vh - 10rem);
+  display: flex;
+  justify-content: flex-end;
+  /* width: 70vw; */
+  /* border: 1px solid; */
+}
+
+.preview img {
+  height: 100%;
+  /* margin: auto; */
+}

@@ -1,0 +1,14 @@
+.container {
+  margin: 4em 3em 3em 3em;
+  overflow-x: scroll;
+}
+
+.drawing {
+  height: 50vh;
+  position: fixed;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}

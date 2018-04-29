@@ -67,115 +67,6 @@ function search(e) {
   }
 }
 
-const monthNames = ["january", "february", "march", "april", "may", "june",
-  "july", "august", "september", "october", "november", "december"
-];
-
-const dayNames = ["", "first", "second", "third", "fourth", "fifth", "sixth",
-  "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth",
-  "fiftheenth", "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentyith", "twentyfirst",
-  "twenysecond", "twentythird", "twenyfourth", "twenyfifth", "twenysixth", "twenysevenph", "twenyayth",
-  "twenyninth", " thirtyith", "thirtyfirst"
-];
-
-function getTime() {
-  let date = new Date(),
-    min = date.getMinutes(),
-    sec = date.getSeconds(),
-    hour = date.getHours();
-
-  return "" +
-    (hour < 10 ? ("0" + hour) : hour) + ":" +
-    (min < 10 ? ("0" + min) : min) + ":" +
-    (sec < 10 ? ("0" + sec) : sec);
-}
-
-function getDay() {
-  let date = new Date(),
-    day = dayNames[date.getDate()];
-  month = monthNames[date.getMonth()];
-
-  return "" + month + " " + day;
-}
-
-apikey = "a7f8dd0989ae6f42d1be2c4427767c6f";
-apibase = "https://ws.audioscrobbler.com/2.0/";
-user = "theblindlookout";
-
-window.onload = () => {
-  // Clear Everything on Load
-  document.getElementById('search-field').value = '';
-  clear();
-
-  function theweather() {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?zip=60201,us&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c');
-    xhr.onload = () => {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          let json = JSON.parse(xhr.responseText);
-          document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + "&#176 f";
-          document.getElementById("weather-description").innerHTML = json.weather[0].description;
-        } else {
-          console.log('error msg: ' + xhr.status);
-        }
-      }
-    }
-    xhr.send();
-  }
-
-  function recenttrack() {
-    let xhr2 = new XMLHttpRequest();
-    xhr2.open('GET', apibase + "?method=user.getrecenttracks&user=" + user + "&api_key=" + apikey + "&format=json");
-    xhr2.onload = () => {
-      if (xhr2.readyState === 4) {
-        if (xhr2.status === 200) {
-          let json2 = JSON.parse(xhr2.responseText);
-          songname = json2.recenttracks.track[0].name;
-          artistname = json2.recenttracks.track[0].artist['#text'];
-          noscrobble = "nothing scrobbling"
-          if (typeof json2.recenttracks.track[0]['@attr'] === 'undefined') {
-            playing = false;
-          } else {
-            playing = json2.recenttracks.track[0]['@attr'].nowplaying;
-          }
-          if (songname.length >= 50) {
-            if (songname.includes('(f')) {
-              songname = (songname.substr(0, songname.indexOf(' (f')));
-            } else {
-              songname = (songname.substr(0, 50)) + "...";
-            }
-          }
-          if (playing) {
-            document.getElementById('song').innerHTML = songname + " - " + artistname;
-            document.getElementById('song').setAttribute("href", json2.recenttracks.track[0].url);
-          } else {
-            document.getElementById('song').innerHTML = noscrobble;
-            document.getElementById('song').setAttribute("href", "https://www.last.fm/user/theblindlookout");
-          }
-        } else {
-          console.log('error msg: ' + xhr.status);
-        }
-      }
-    }
-    xhr2.send();
-  }
-
-  recenttrack();
-  setInterval(recenttrack, 500);
-
-  theweather();
-  setInterval(theweather, 6000000);
-
-  document.getElementById("clock").innerHTML = getTime();
-  document.getElementById("date").innerHTML = getDay();
-
-  setInterval(() => {
-    document.getElementById("clock").innerHTML = getTime();
-    document.getElementById("date").innerHTML = getDay();
-  }, 100);
-}
-
 document.addEventListener("keydown", event => {
   if (event.keyCode == 32) { // Spacebar code to open search
     opensearchbox();
@@ -200,5 +91,11 @@ function closeall() {
   document.getElementById('search').style.display = 'none';
   document.getElementById('command').style.display = 'none';
   document.getElementById('command-list').blur();
+  clear();
+}
+
+window.onload = () => {
+  // Clear Everything on Load
+  document.getElementById('search-field').value = '';
   clear();
 }

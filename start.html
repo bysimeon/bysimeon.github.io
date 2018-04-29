@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>launch</title>
-  <link rel="stylesheet" href="assets/stylesheets/start.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/start.css">
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/universal.css">
   <link href="assets/favicon.png" rel="shortcut icon" type="imtage/x-icon" />
-  <script src="assets/javascript/start.js"></script>
+  <script src="assets/javascript/lastfm.js"></script>
+  <script src="assets/javascript/search.js"></script>
+  <script src="assets/javascript/time.js"></script>
+  <script src="assets/javascript/weather.js"></script>
 </head>
 
 <body>
@@ -115,4 +119,25 @@
   </div>
 </body>
 
+<script>
+window.onload = () => {
+  // Clear Everything on Load
+  document.getElementById('search-field').value = '';
+  clear();
+
+  theweather();
+  setInterval(theweather, 6000000);
+
+  document.getElementById("clock").innerHTML = getTime();
+  document.getElementById("date").innerHTML = getDay();
+
+  setInterval(() => {
+    document.getElementById("clock").innerHTML = getTime();
+    document.getElementById("date").innerHTML = getDay();
+  }, 100);
+
+  recenttrack();
+  setInterval(recenttrack, 500);
+}
+</script>
 </html>
