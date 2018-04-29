@@ -1,12 +1,4 @@
 .container {
   margin: 4em 3em 3em 3em;
-  overflow-x: scroll;
-}
-
-#WIP {
-  font-size: 40vw;
-}
-
-#WIP p {
-  font-size: 1rem;
+  overflow: hidden;
 }
