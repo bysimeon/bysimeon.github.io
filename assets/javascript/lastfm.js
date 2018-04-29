@@ -27,10 +27,10 @@ function recenttrack() {
         if (playing) {
           document.getElementById('song').innerHTML = songname + " - " + artistname;
           document.getElementById('song').setAttribute("href", json2.recenttracks.track[0].url);
-          localStorage.setItem('song', songname + " - " + artistname);
-          localStorage.setItem('songurl', json2.recenttracks.track[0].url);
+          sessionStorage.setItem('song', songname + " - " + artistname);
+          sessionStorage.setItem('songurl', json2.recenttracks.track[0].url);
         } else {
-          document.getElementById('song').innerHTML = noscrobble;
+          // document.getElementById('song').innerHTML = noscrobble;
           document.getElementById('song').setAttribute("href", "https://www.last.fm/user/theblindlookout");
         }
       } else {
@@ -42,8 +42,8 @@ function recenttrack() {
 }
 
 window.onload = () => {
-  document.getElementById('song').innerHTML = localStorage.getItem('song');
-  document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
+  // document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+  // document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
   recenttrack();
   setInterval(recenttrack, 500);
 }

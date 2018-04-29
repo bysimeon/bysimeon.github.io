@@ -4,7 +4,7 @@
   <title>home | bysimeon</title>
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/index.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/universal.css">
-  <link rel="stylesheet" href="https://maxbeier.github.io/text-spinners/spinners.css">
+  <link rel="stylesheet" href="assets/libraries/spinners.css">
   <link href="assets/favicon.png" rel="shortcut icon" type="image/x-icon" />
   <script src="assets/javascript/switcher.js"></script>
   <script src="assets/javascript/lastfm.js"></script>
@@ -23,7 +23,7 @@
   </div>
   <div class="bottom">
     <div class="corner" id="songb">
-      <a id="song" href="#"></a>
+      <a id="song" href="#"><span class="loading"</span></a>
     </div>
     <div class="corner">
       <a href="start.html">lnchr</a>
@@ -40,8 +40,8 @@
 window.onload = () => {
   document.body.style.background = localStorage.getItem('back1');
   document.body.style.background = localStorage.getItem('back2');
-  document.getElementById('song').innerHTML = localStorage.getItem('song');
-  document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
+  // document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+  // document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
   recenttrack();
   setInterval(recenttrack, 500);
 }

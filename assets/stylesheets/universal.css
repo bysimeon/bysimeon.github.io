@@ -22,18 +22,6 @@ html {
   text-transform: lowercase;
 }
 
-@media screen and (max-width: 640px) {
-  html {
-    font-size: 30px;
-  }
-  #WIP {
-    font-size: 5rem;
-  }
-  .bottom {
-    height: auto !important;
-  }
-}
-
 body {
     margin: 0px;
     overscroll-behavior: none;
