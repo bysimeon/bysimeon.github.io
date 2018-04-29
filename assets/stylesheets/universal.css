@@ -27,6 +27,9 @@ body {
   text-decoration: line-through;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
 .current-page {
   text-decoration: underline !important;
 }
@@ -76,5 +79,5 @@ body {
   color: black;
 }
 .top a:hover, .bottom a:hover {
-  color: red;
+  text-decoration: line-through;
 }
