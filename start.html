@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>bysimeon.launch</title>
+  <title>launcher | bysimeon</title>
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/start.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/universal.css">
+  <link rel="stylesheet" type="text/css" href="assets/libraries/spinners.css">
   <link href="assets/favicon.png" rel="shortcut icon" type="imtage/x-icon" />
   <script src="assets/javascript/lastfm.js"></script>
   <script src="assets/javascript/search.js"></script>
@@ -25,7 +26,7 @@
   </div>
   <div class="bottom">
     <div class="corner" id="songb">
-      <a id="song" href="#"> loading... </a>
+      <a id="song" href="#">nothing playing</a>
     </div>
     <div class="corner" id="help">
       <a onclick="commands()">help</a>
@@ -47,6 +48,8 @@
         <li> google drive (d:)</li>
         <li> github (g:)</li>
         <li> lastfm (l:)</li>
+        <li> netflix (n:)</li>
+        <li> unsplash (u:)</li>
       </ul>
       press <span> esc </span> to close searchbox and this help page. <br> <br> p.s. the song displayed at the bottom right is my most recent track from last.fm
     </div>
@@ -120,24 +123,25 @@
 </body>
 
 <script>
-window.onload = () => {
-  // Clear Everything on Load
-  document.getElementById('search-field').value = '';
-  clear();
+  window.onload = () => {
+    // Clear Everything on Load
+    document.getElementById('search-field').value = '';
+    clear();
 
-  theweather();
-  setInterval(theweather, 6000000);
+    theweather();
+    setInterval(theweather, 6000000);
 
-  document.getElementById("clock").innerHTML = getTime();
-  document.getElementById("date").innerHTML = getDay();
-
-  setInterval(() => {
     document.getElementById("clock").innerHTML = getTime();
     document.getElementById("date").innerHTML = getDay();
-  }, 100);
 
-  recenttrack();
-  setInterval(recenttrack, 500);
-}
+    setInterval(() => {
+      document.getElementById("clock").innerHTML = getTime();
+      document.getElementById("date").innerHTML = getDay();
+    }, 100);
+
+    recenttrack();
+    setInterval(recenttrack, 500);
+  }
 </script>
+
 </html>

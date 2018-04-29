@@ -7,6 +7,10 @@ a {
 a:hover {
   text-decoration: line-through;
 }
+.bullet {
+  color: black;
+  font-size: 10rem;
+}
 
 .container {
     width: 100%;

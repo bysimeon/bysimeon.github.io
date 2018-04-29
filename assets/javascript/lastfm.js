@@ -11,7 +11,7 @@ function recenttrack() {
         let json2 = JSON.parse(xhr2.responseText);
         songname = json2.recenttracks.track[0].name;
         artistname = json2.recenttracks.track[0].artist['#text'];
-        noscrobble = "nothing scrobbling"
+        noscrobble = "nothing playing"
         if (typeof json2.recenttracks.track[0]['@attr'] === 'undefined') {
           playing = false;
         } else {
