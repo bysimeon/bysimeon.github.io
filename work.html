@@ -2,18 +2,17 @@
 
 <head>
   <title>work | bysimeon</title>
-  <script src="assets/libraries/blotter.min.js"></script>
-  <script src="assets/libraries/channel.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/work.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/universal.css">
   <link href="assets/favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <script src="assets/javascript/switcher.js"></script>
   <script src="assets/javascript/lastfm.js"></script>
 </head>
 
 <body>
   <div class="top">
     <div class="corner">
-      ???
+      <img onclick="nextbackground()" class="button" src="assets/favicon.png">
     </div>
     <div class="corner">
       <a href="./"> home </a>
@@ -23,7 +22,7 @@
   </div>
   <div class="bottom">
     <div class="corner" id="songb">
-      <a id="song" href="#">nothing playing</a>
+      <a id="song" href="#"></a>
     </div>
     <div class="corner">
       <a href="start.html">lnchr</a>
@@ -34,3 +33,14 @@
       <p> hello person, i am working on my site today and i will probably be working on my site tommorrow. so y'know feel free to take a peek or maybe check in when it's done.</p>
     </div>
 </body>
+
+<script>
+window.onload = () => {
+  document.body.style.background = localStorage.getItem('back1');
+  document.body.style.background = localStorage.getItem('back2');
+  document.getElementById('song').innerHTML = localStorage.getItem('song');
+  document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
+  recenttrack();
+  setInterval(recenttrack, 500);
+}
+</script>

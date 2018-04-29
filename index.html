@@ -2,19 +2,18 @@
 
 <head>
   <title>home | bysimeon</title>
-  <script src="assets/libraries/blotter.min.js"></script>
-  <script src="assets/libraries/channel.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/index.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/universal.css">
   <link rel="stylesheet" href="https://maxbeier.github.io/text-spinners/spinners.css">
   <link href="assets/favicon.png" rel="shortcut icon" type="image/x-icon" />
-  <!-- <script src="assets/javascript/lastfm.js"></script> -->
+  <script src="assets/javascript/switcher.js"></script>
+  <script src="assets/javascript/lastfm.js"></script>
 </head>
 
 <body>
   <div class="top">
     <div class="corner">
-      ???
+      <img onclick="nextbackground()" class="button" src="assets/favicon.png">
     </div>
     <div class="corner">
       <a href="./" class="current-page"> home </a>
@@ -24,7 +23,7 @@
   </div>
   <div class="bottom">
     <div class="corner" id="songb">
-      <a id="song" href="#">nothing playing</a>
+      <a id="song" href="#"></a>
     </div>
     <div class="corner">
       <a href="start.html">lnchr</a>
@@ -38,69 +37,12 @@
 </body>
 
 <script>
-  // var rotation = 14.0 % 360;
-  // var offset = 0.02;
-  // var textsize = document.getElementById("container").offsetWidth / 6;
-  //
-  // function fontSize() {
-  //   textsize = document.getElementById("container").offsetWidth / 6;
-  //   if (textsize > 225) {
-  //     textsize = 225;
-  //   }
-  //   if (textsize < 150) {
-  //     textsize = 150;
-  //   }
-  //   var div = document.getElementById("title");
-  //   var currentFont = div.style.fontSize.replace("px", "");
-  //   div.style.fontSize = parseInt(textsize) + "px";
-  // }
-  // fontSize();
-  //
-  // var text = new Blotter.Text("bysimeon", {
-  //   family: "'Inconsolata', sans-serif",
-  //   size: textsize,
-  //   weight: 800,
-  //   fill: "#202020"
-  // });
-  //
-  // var material = new Blotter.ChannelSplitMaterial();
-  // material.uniforms.uOffset.value = offset;
-  // material.uniforms.uApplyBlur.value = 1.0;
-  // material.uniforms.uAnimateNoise.value = 1.0;
-  // material.uniforms.uRotation.value = rotation;
-  //
-  // var blotter = new Blotter(material, {
-  //   texts: text
-  // });
-  // text.autostart = true;
-  // text.autoplay = true;
-  //
-  // var elem = document.getElementById("title");
-  // var scope = blotter.forText(text);
-  // scope.appendTo(elem);
-  //
-  // blotter.start()
-  // blotter.addTexts(text);
-  // blotter.needsUpdate = true;
-  //
-  // function update() {
-  //   fontSize();
-  //   text.needsUpdate = true;
-  // };
-  //
-  // function rotanimate() {
-  //   scope.material.uniforms.uOffset.value = Math.random() / 14;
-  //   scope.material.uniforms.uRotation.value = Math.random() * 360;
-  // };
-  //
-  // window.setInterval(rotanimate, 75);
-  // window.onresize = update;
-  //
-  // function showElement(id) {
-  //   document.getElementById(id).removeAttribute("hidden");
-  // }
-  //
-  // function hideElement(id) {
-  //   document.getElementById(id).setAttribute("hidden", true);
-  // }
+window.onload = () => {
+  document.body.style.background = localStorage.getItem('back1');
+  document.body.style.background = localStorage.getItem('back2');
+  document.getElementById('song').innerHTML = localStorage.getItem('song');
+  document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
+  recenttrack();
+  setInterval(recenttrack, 500);
+}
 </script>

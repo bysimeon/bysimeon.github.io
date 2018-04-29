@@ -20,13 +20,13 @@ html {
   user-select: none;
   font-size: calc(12px + .75vw);
   text-transform: lowercase;
-  /* background: -webkit-linear-gradient(to right, #c9d6ff, #e2e2e2);
-  background: linear-gradient(to right, #c9d6ff, #e2e2e2); */
 }
 
 body {
     margin: 0px;
     overscroll-behavior: none;
+    /* background: -webkit-linear-gradient(to bottom, #c9d6ff, #e2e2e2);
+    background: linear-gradient(to bottom, #c9d6ff, #e2e2e2); */
 }
 
 /* TEXT STYLING */
@@ -41,7 +41,15 @@ body {
 .current-page {
   text-decoration: underline !important;
 }
-
+.button {
+  transition: transform .11s;
+  margin-top: .1rem;
+  height: 1.2rem;
+}
+.button:active {
+  color: red;
+  transform: translate(.1em, 0px);
+  }
 /* TOP AND BOTTOM BARS */
 
 .top {
@@ -49,7 +57,7 @@ body {
   /* border-bottom: black 1px solid; */
   /* background: -webkit-linear-gradient(to right, #c9d6ff, #e2e2e2);
   background: linear-gradient(to right, #c9d6ff, #e2e2e2); */
-  background: rgba(255,255,255,.95);
+  background: rgba(255,255,255,.55);
   position: fixed;
   left: 0px;
   top: 0px;
