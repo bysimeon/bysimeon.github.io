@@ -21,56 +21,62 @@
 /* PHONES */
 
 @media screen and (max-width: 640px) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
@@ -78,20 +84,23 @@
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
   html { font-size: 30px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
 }
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
-  html { font-size: 30px; }
+  html { font-size: 60px; }
+  .container { margin: 4em 1em 3em; } 
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }
