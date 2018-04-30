@@ -78,6 +78,7 @@
 
 @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   html { font-size: 30px; }
+  .container { margin: 4em 1em 3em; }
   #WIP { font-size: 25vw; }
   .bottom { height: auto !important; }
   .drawing { position: relative !important; }

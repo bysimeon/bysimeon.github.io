@@ -1,6 +1,6 @@
 .container {
   margin: 4em 3em 3em 3em;
-  overflow-x: scroll;
+  overflow: hidden;
 }
 
 .drawing {
