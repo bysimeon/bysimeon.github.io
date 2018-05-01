@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -10,6 +12,8 @@
 
     gtag('config', 'UA-118586159-1');
   </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>about | bysimeon</title>
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/about.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/universal.css">
@@ -33,35 +37,39 @@
   </div>
   <div class="bottom">
     <div class="corner" id="songb">
-      <a id="song" href="#"><span class="loading"></span></a>
+      <a id="song" href="#">
+        <span class="loading"></span>
+      </a>
     </div>
     <div class="corner">
       <a href="start.html">lnchr</a>
     </div>
   </div>
   <div class="container">
-      <div class="textbox">
-        <p> a little about me for people to read when they visit my site. i'll definitely talk about my interests in <span class="strike">learning</span> and creative pursuits. all that stuff i think. i need to write more so that it looks a bit chunky, so i can talk about some research.
-          that'll be interesing. actually nah it should be short with bulletpoints.</p>
-          <ul>
-            <li> developer </li>
-            <li> designer </li>
-            <li> researcher </li>
-            <li> cooler </li>
-          </ul>
-          <p> tryna link and build? oh... well, my email is <a href="mailto:mail@bysimeon.com">mail@bysimeon.com</a>, tell a friend. </p>
-      </div>
-      <img class="drawing" src="assets/photos/me2.png">
+    <div class="textbox">
+      <p> a little about me for people to read when they visit my site. i'll definitely talk about my interests in
+        <span class="strike">learning</span> and creative pursuits. all that stuff i think. i need to write more so that it looks a bit chunky,
+        so i can talk about some research. that'll be interesing. actually nah it should be short with bulletpoints.</p>
+      <ul>
+        <li> developer </li>
+        <li> designer </li>
+        <li> researcher </li>
+        <li> cooler </li>
+      </ul>
+      <p> tryna link and build? oh... well, my email is
+        <a href="mailto:mail@bysimeon.com">mail@bysimeon.com</a>, tell a friend. </p>
+    </div>
+    <img class="drawing" src="assets/photos/me2.png">
   </div>
 </body>
 
 <script>
-window.onload = () => {
-  document.body.style.background = localStorage.getItem('back1');
-  document.body.style.background = localStorage.getItem('back2');
-  // document.getElementById('song').innerHTML = localStorage.getItem('song');
-  // document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
-  recenttrack();
-  setInterval(recenttrack, 500);
-}
+  window.onload = () => {
+    document.body.style.background = localStorage.getItem('back1');
+    document.body.style.background = localStorage.getItem('back2');
+    // document.getElementById('song').innerHTML = localStorage.getItem('song');
+    // document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
+    recenttrack();
+    setInterval(recenttrack, 500);
+  }
 </script>

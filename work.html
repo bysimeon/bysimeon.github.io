@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -10,6 +11,8 @@
 
     gtag('config', 'UA-118586159-1');
   </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>work | bysimeon</title>
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/work.css">
   <link rel="stylesheet" type="text/css" href="assets/stylesheets/universal.css">
@@ -33,25 +36,29 @@
   </div>
   <div class="bottom">
     <div class="corner" id="songb">
-      <a id="song" href="#"><span class="loading"></span></a>
+      <a id="song" href="#">
+        <span class="loading"></span>
+      </a>
     </div>
     <div class="corner">
       <a href="start.html">lnchr</a>
     </div>
   </div>
   <div class="container">
-    <div id="WIP"> <span class="uppercase">WIP*</span>
-      <p> hello person, i am working on my site today and i will probably be working on my site tommorrow. so y'know feel free to take a peek or maybe check in when it's done.</p>
+    <div id="WIP">
+      <span class="uppercase">WIP*</span>
+      <p> hello person, i am working on my site today and i will probably be working on my site tommorrow. so y'know feel free
+        to take a peek or maybe check in when it's done.</p>
     </div>
 </body>
 
 <script>
-window.onload = () => {
-  document.body.style.background = localStorage.getItem('back1');
-  document.body.style.background = localStorage.getItem('back2');
-  // document.getElementById('song').innerHTML = localStorage.getItem('song');
-  // document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
-  recenttrack();
-  setInterval(recenttrack, 500);
-}
+  window.onload = () => {
+    document.body.style.background = localStorage.getItem('back1');
+    document.body.style.background = localStorage.getItem('back2');
+    // document.getElementById('song').innerHTML = localStorage.getItem('song');
+    // document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
+    recenttrack();
+    setInterval(recenttrack, 500);
+  }
 </script>
