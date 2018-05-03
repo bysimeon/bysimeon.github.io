@@ -24,6 +24,7 @@ html {
 
 body {
     margin: 0px;
+    height: 90vh;
     overscroll-behavior: none;
     /* background: -webkit-linear-gradient(to bottom, #c9d6ff, #e2e2e2);
     background: linear-gradient(to bottom, #c9d6ff, #e2e2e2); */
