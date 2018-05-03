@@ -6,7 +6,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118586159-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-118586159-1');
@@ -22,15 +25,18 @@
   <script src="assets/javascript/search.js"></script>
   <script src="assets/javascript/time.js"></script>
   <script src="assets/javascript/weather.js"></script>
+  <script src="assets/javascript/switcher.js"></script>
 </head>
 
 <body>
   <div class="top">
-    <div class="corner" id="back">
-      <a href="./">back</a>
+    <div class="corner">
+      <img onclick="nextbackground()" class="button" src="assets/favicon.png">
     </div>
-    <div class="corner" id="searchlink">
-      <a onclick="opensearchbox()">search</a>
+    <div class="corner">
+      <a href="./" class="current-page"> home </a>
+      <a href="about.html"> about</a>
+      <a href="work.html"> work </a>
     </div>
   </div>
   <div class="bottom">
@@ -141,6 +147,8 @@
 
 <script>
   window.onload = () => {
+    document.body.style.background = localStorage.getItem('back1');
+    document.body.style.background = localStorage.getItem('back2');
     // Clear Everything on Load
     document.getElementById('search-field').value = '';
     clear();
