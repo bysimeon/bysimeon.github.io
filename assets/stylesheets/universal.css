@@ -13,7 +13,6 @@ html {
   font-family: Inconsolata, serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -43,14 +42,18 @@ body {
 }
 
 .button {
+  -webkit-transition: -webkit-transform .11s;
+  transition: -webkit-transform .11s;
   transition: transform .11s;
+  transition: transform .11s, -webkit-transform .11s;
   margin-top: .1rem;
   height: 1.2rem;
 }
 
 .button:active {
   color: red;
-  transform: translate(.1em, 0px);
+  -webkit-transform: translate(.1em, 0px);
+          transform: translate(.1em, 0px);
 }
 
 /* TOP AND BOTTOM BARS */
@@ -65,8 +68,12 @@ body {
   left: 0px;
   top: 0px;
   height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 10;
 }
 
@@ -80,8 +87,12 @@ body {
   left: 0px;
   bottom: 0px;
   height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 10;
 }
 
@@ -90,8 +101,12 @@ body {
 }
 
 .top div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .top a:not(:last-child) {

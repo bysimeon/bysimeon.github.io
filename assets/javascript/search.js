@@ -82,6 +82,7 @@ function commands() {
 
 function opensearchbox() {
   document.getElementById('search').style.display = 'flex';
+  document.getElementById('search').setAttribute("class","show");
   document.getElementById('search-field').focus();
 }
 
