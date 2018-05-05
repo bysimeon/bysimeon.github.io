@@ -51,7 +51,7 @@
     <div id="WIP">
       <span class="uppercase"></span>
     </div>
-    <p class="placeholder"> placeholder: more descriptive project logs coming in hot.</p>
+    <p class="placeholder"> placeholder: more descriptive project logs coming soon.</p>
     <ul>
       <li>
         <a href="https://www.thehighly.co">the highly</a>
@@ -67,8 +67,8 @@
   window.onload = () => {
     document.body.style.background = localStorage.getItem('back1');
     document.body.style.background = localStorage.getItem('back2');
-    // document.getElementById('song').innerHTML = localStorage.getItem('song');
-    // document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
+    document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+    document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     recenttrack();
     setInterval(recenttrack, 500);
   }

@@ -142,6 +142,8 @@
   window.onload = () => {
     document.body.style.background = localStorage.getItem('back1');
     document.body.style.background = localStorage.getItem('back2');
+    document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+    document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     // Clear Everything on Load
     document.getElementById('search-field').value = '';
     clear();

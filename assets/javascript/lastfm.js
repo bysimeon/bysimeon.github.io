@@ -11,7 +11,7 @@ function recenttrack() {
         let json2 = JSON.parse(xhr2.responseText);
         songname = json2.recenttracks.track[0].name;
         artistname = json2.recenttracks.track[0].artist['#text'];
-        noscrobble = "nothing playing"
+        noscrobble = "<span class=loading></span>"
         if (typeof json2.recenttracks.track[0]['@attr'] === 'undefined') {
           playing = false;
         } else {
@@ -32,6 +32,8 @@ function recenttrack() {
         } else {
           // document.getElementById('song').innerHTML = noscrobble;
           document.getElementById('song').setAttribute("href", "https://www.last.fm/user/theblindlookout");
+          sessionStorage.setItem("song", noscrobble);
+          sessionStorage.setItem("songurl", "https://www.last.fm/user/theblindlookout");
         }
       } else {
         console.log('error msg: ' + xhr.status);
@@ -42,7 +44,7 @@ function recenttrack() {
 }
 
 window.onload = () => {
-  // document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+  document.getElementById('song').innerHTML = sessionStorage.getItem('song');
   // document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
   recenttrack();
   setInterval(recenttrack, 500);

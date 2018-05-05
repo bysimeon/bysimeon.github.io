@@ -25,7 +25,7 @@
 </head>
 
 <body>
-  <div class="top">
+  <header class="top">
     <div class="corner">
       <img onclick="nextbackground()" class="button" src="assets/favicon.png">
     </div>
@@ -34,7 +34,7 @@
       <a href="about.html" class="current-page"> about</a>
       <a href="work.html"> work </a>
     </div>
-  </div>
+  </header>
   <div class="bottom">
     <div class="corner" id="songb">
       <a id="song" href="#">
@@ -57,9 +57,14 @@
         <li> cooler </li>
       </ul>
       <p>
-        contact: <a href="mailto:mail@bysimeon.com">mail@bysimeon.com</a> <br>
-        pull request: <a href="https://github.com/bysimeon">github/bysimeon</a> <br>
-        listen: <a href="https://www.last.fm/user/theblindlookout"> last.fm/thblndlkt</a> & <a href="https://soundcloud.com/bysimeon">soundcloud/&!</a> <br>
+        contact:
+        <a href="mailto:mail@bysimeon.com">mail@bysimeon.com</a>
+        <br> pull request:
+        <a href="https://github.com/bysimeon">github/bysimeon</a>
+        <br> listen:
+        <a href="https://www.last.fm/user/theblindlookout"> last.fm/thblndlkt</a> &
+        <a href="https://soundcloud.com/bysimeon">soundcloud/&!</a>
+        <br>
       </p>
     </div>
     <img class="drawing" src="assets/photos/me2.png">
@@ -70,6 +75,8 @@
   window.onload = () => {
     document.body.style.background = localStorage.getItem('back1');
     document.body.style.background = localStorage.getItem('back2');
+    document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+    document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     // document.getElementById('song').innerHTML = localStorage.getItem('song');
     // document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
     recenttrack();
