@@ -45,9 +45,11 @@ a:hover {
 }
 
 .fade {
+  display: flex !important;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 3s;
+  transition: visibility 0s, opacity .4s;
+  z-index: -1;
 }
 
 .show {
@@ -59,7 +61,6 @@ a:hover {
   width: 100%;
   height: 100vh;
   background-color: #fff;
-  display: none;
   position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -93,7 +94,6 @@ a:hover {
   width: 100%;
   height: 100vh;
   background-color: #fff;
-  display: none;
   position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

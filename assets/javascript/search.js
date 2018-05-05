@@ -76,21 +76,24 @@ document.addEventListener("keydown", event => {
 });
 
 function commands() {
-  document.getElementById('command').style.display = 'flex';
+  document.getElementById("command").style.visibility = "visible";
+  document.getElementById("command").style.opacity = 1;
   document.getElementById('command-list').focus();
 }
 
 function opensearchbox() {
-  document.getElementById('search').style.display = 'flex';
-  document.getElementById('search').setAttribute("class","show");
+  document.getElementById("search").style.visibility = 'visible';
+  document.getElementById("search").style.opacity = 1;
   document.getElementById('search-field').focus();
 }
 
 function closeall() {
   document.getElementById('search-field').value = '';
   document.getElementById('search-field').blur();
-  document.getElementById('search').style.display = 'none';
-  document.getElementById('command').style.display = 'none';
+  document.getElementById("search").style.visibility = "hidden";
+  document.getElementById("search").style.opacity = 0;
+  document.getElementById("command").style.visibility = "hidden";
+  document.getElementById("command").style.opacity = 0;
   document.getElementById('command-list').blur();
   clear();
 }
