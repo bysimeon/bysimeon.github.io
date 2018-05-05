@@ -3,9 +3,8 @@
   overflow: hidden;
 }
 
-.projects {
-  display: flex;
-  justify-content: space-between;
+.projects li {
+  margin-bottom: .2rem;
 }
 
 .placeholder {
