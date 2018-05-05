@@ -31,7 +31,7 @@ a:hover {
 #close1 {
   position: fixed;
   right: 0px;
-  bottom: 0px;
+  top: 0px;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -48,13 +48,13 @@ a:hover {
   display: flex !important;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity .4s;
+  transition: visibility 0s, opacity 0.4s;
   z-index: -1;
 }
 
 .show {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 #command {
@@ -145,6 +145,7 @@ a:hover {
 }
 
 .bookmark-container {
+  border-top: solid black 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -156,6 +157,9 @@ a:hover {
 }
 
 @media screen and (max-width: 50rem) {
+  html {
+    font-size: 25px !important;
+  }
   .container {
     height: auto;
   }
@@ -164,6 +168,7 @@ a:hover {
   }
   #clock {
     margin-top: 1rem;
+    font-size: 3rem;
   }
   .container > .bookmark-container {
     -ms-flex-direction: column;
@@ -175,9 +180,10 @@ a:hover {
     margin: 1rem 0rem;
     height: auto;
   }
-  .corner:not(#songb) {
-    display: none;
+  .top {
+    display: none !important;
   }
+  .bottom { height: auto !important; }
 }
 
 .bookmark-set {

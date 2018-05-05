@@ -64,6 +64,7 @@ function search(e) {
     } else {
       window.open("https://google.com/search?q=" + val.trim(), "_self");
     }
+    document.getElementById("search-mode").innerHTML = searchmod[searchengine][0] + '<span class="loading"></span>';
   }
 }
 

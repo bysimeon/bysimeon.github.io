@@ -34,9 +34,7 @@
       <img onclick="nextbackground()" class="button" src="assets/favicon.png">
     </div>
     <div class="corner">
-      <a href="./"> home </a>
-      <a href="about.html"> about</a>
-      <a href="work.html"> work </a>
+      <a onclick="commands()">help</a>
     </div>
   </div>
   <div class="bottom">
@@ -46,7 +44,7 @@
       </a>
     </div>
     <div class="corner" id="help">
-      <a onclick="commands()">help</a>
+      <a href="./"> home</a>
     </div>
   </div>
   <div id="command" class="fade">
@@ -79,9 +77,9 @@
   </div>
   <div id="search" class="fade">
     <div id="close2">
-      <a onclick="closeall()"> close </a>
+      <a onclick="closeall()"> close </a> 
     </div>
-    <div id="search-mode"> google </div>
+    <div id="search-mode"> <span class="loading"></span> </div>
     <input id="search-field" type="text" name="search-field" onkeyup="return search(event)" />
   </div>
   <div class="container">
@@ -96,7 +94,6 @@
     </div>
     <div class="bookmark-container">
       <div class="bookmark-set">
-        <div class="bookmark-title">...</div>
         <div class="bookmark-inner-container">
           <a class="bookmark" href="https://keep.google.com/">keep</a>
           <a class="bookmark" href="https://inbox.google.com/">inbox</a>
@@ -106,7 +103,6 @@
         </div>
       </div>
       <div class="bookmark-set">
-        <div class="bookmark-title">...</div>
         <div class="bookmark-inner-container">
           <a class="bookmark" href="https://youtube.com">youtube</a>
           <a class="bookmark" href="https://netflix.com">netflix</a>
@@ -115,7 +111,6 @@
         </div>
       </div>
       <div class="bookmark-set">
-        <div class="bookmark-title">...</div>
         <div class="bookmark-inner-container">
           <a class="bookmark" href="https://reddit.com/r/fixedgearbicycle">/r/fixedgearbikes</a>
           <a class="bookmark" href="https://reddit.com/r/mechanicalkeyboards">/r/mechkeyboards</a>
@@ -125,7 +120,6 @@
         </div>
       </div>
       <div class="bookmark-set">
-        <div class="bookmark-title">...</div>
         <div class="bookmark-inner-container">
           <a class="bookmark" href="https://hangouts.google.com/">hangouts</a>
           <a class="bookmark" href="https://allo.google.com/web">allo</a>
@@ -133,7 +127,6 @@
         </div>
       </div>
       <div class="bookmark-set">
-        <div class="bookmark-title">...</div>
         <div class="bookmark-inner-container">
           <a class="bookmark" href="https://humanity.com/app">humanity</a>
           <a class="bookmark" href="https://canvas.northwestern.edu">canvas</a>
