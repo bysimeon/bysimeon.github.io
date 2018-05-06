@@ -78,12 +78,15 @@
 
 <script>
   window.onload = () => {
-    document.body.style.background = localStorage.getItem('back1');
-    document.body.style.background = localStorage.getItem('back2');
-    document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+    if (sessionStorage.getItem('song') === null) {
+      document.getElementById("song").innerHTML = "<span class='loading'></span>";
+      console.log('fuck');
+    } else {
+      document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+    }
     document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
-    // document.getElementById('song').innerHTML = localStorage.getItem('song');
-    // document.getElementById('song').setAttribute("href", localStorage.getItem('songurl'));
+        document.body.style.background = localStorage.getItem('back1');
+    document.body.style.background = localStorage.getItem('back2');
     recenttrack();
     setInterval(recenttrack, 500);
   }

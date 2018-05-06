@@ -11,7 +11,7 @@ function recenttrack() {
         let json2 = JSON.parse(xhr2.responseText);
         songname = json2.recenttracks.track[0].name;
         artistname = json2.recenttracks.track[0].artist['#text'];
-        noscrobble = "<span class=loading></span>"
+        noscrobble = "<span class='loading'></span>";
         if (typeof json2.recenttracks.track[0]['@attr'] === 'undefined') {
           playing = false;
         } else {
@@ -44,8 +44,11 @@ function recenttrack() {
 }
 
 window.onload = () => {
+  if (localStorage.getItem('song') === null) {
+    document.getElementById("song").innerHTML = "<span class='loading'></span>"
+  }
   document.getElementById('song').innerHTML = sessionStorage.getItem('song');
-  // document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
+  document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
   recenttrack();
   setInterval(recenttrack, 500);
 }

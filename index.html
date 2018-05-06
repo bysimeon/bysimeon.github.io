@@ -60,10 +60,15 @@
 
 <script>
   window.onload = () => {
+    if (sessionStorage.getItem('song') === null) {
+      document.getElementById("song").innerHTML = "<span class='loading'></span>";
+      console.log('fuck');
+    } else {
+      document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+    }
+    document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     document.body.style.background = localStorage.getItem('back1');
     document.body.style.background = localStorage.getItem('back2');
-    document.getElementById('song').innerHTML = sessionStorage.getItem('song');
-    document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     recenttrack();
     setInterval(recenttrack, 500);
   }
