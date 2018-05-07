@@ -24,6 +24,7 @@ html {
 body {
   margin: 0px;
   overscroll-behavior: none;
+  overflow-x: hidden;
   /* background: -webkit-linear-gradient(to bottom, #c9d6ff, #e2e2e2);
     background: linear-gradient(to bottom, #c9d6ff, #e2e2e2); */
 }
@@ -52,7 +53,6 @@ body {
 }
 
 .button:active {
-  color: red;
   -webkit-transform: translate(0.1em, 0px);
   transform: translate(0.1em, 0px);
 }
@@ -75,6 +75,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   z-index: 10;
+  overflow: hidden;
 }
 
 .bottom {
@@ -93,6 +94,7 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   z-index: 10;
+  overflow: hidden;
 }
 
 .corner {
