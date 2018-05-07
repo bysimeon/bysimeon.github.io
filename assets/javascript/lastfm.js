@@ -1,6 +1,7 @@
 apikey = "a7f8dd0989ae6f42d1be2c4427767c6f";
 apibase = "https://ws.audioscrobbler.com/2.0/";
 user = "theblindlookout";
+paused = true;
 
 function recenttrack() {
   let xhr2 = new XMLHttpRequest();
@@ -25,12 +26,16 @@ function recenttrack() {
           }
         }
         if (playing) {
+          paused = false;
           document.getElementById('song').innerHTML = songname + " - " + artistname;
           document.getElementById('song').setAttribute("href", json2.recenttracks.track[0].url);
           sessionStorage.setItem('song', songname + " - " + artistname);
           sessionStorage.setItem('songurl', json2.recenttracks.track[0].url);
         } else {
-          // document.getElementById('song').innerHTML = noscrobble;
+          if (!paused) {
+            document.getElementById("song").innerHTML = noscrobble;
+          }
+          paused = true;
           document.getElementById('song').setAttribute("href", "https://www.last.fm/user/theblindlookout");
           sessionStorage.setItem("song", noscrobble);
           sessionStorage.setItem("songurl", "https://www.last.fm/user/theblindlookout");
