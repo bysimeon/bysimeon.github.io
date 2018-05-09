@@ -100,6 +100,7 @@ function closeall() {
 }
 
 window.onload = () => {
+  document.getElementById("search").focus();
   // Clear Everything on Load
   document.getElementById('search-field').value = '';
   clear();
