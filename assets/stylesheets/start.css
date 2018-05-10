@@ -28,6 +28,11 @@ a:hover {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 
+.move-off-right {
+    transition: transform .3s;
+    transform: translate(80vw, 0px);
+  }
+
 #close1 {
   position: fixed;
   right: 0px;

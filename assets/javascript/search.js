@@ -51,19 +51,26 @@ function search(e) {
   if (e.keyCode == 13) {
     if (searchengine != "") {
       window.open((searchmod[key][1]) + val.substr(cutoff(3, val)).trim(), "_self");
+      document.getElementById("search-mode").innerHTML = searchmod[searchengine][0] + '<span class="loading"></span>';
     } else if (val.includes('.com') || val.includes('.net') || val.includes('.co') ||
-      val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org') || val.includes('.se') ||
-      val.includes('.fm') || val.includes('.de') || val.includes('.uk') || val.includes('.gg') || val.includes('.info') ||
-      val.includes('.ai') || val.includes('.ch') || val.includes('.edu') || val.includes('.gl') || val.includes('.nz') || val.includes('.so')) {
+      val.includes('.io') || val.includes('.xyz') || val.includes('.gov') || val.includes('.org') || val.includes(
+        '.se') ||
+      val.includes('.fm') || val.includes('.de') || val.includes('.uk') || val.includes('.gg') || val.includes(
+        '.info') ||
+      val.includes('.ai') || val.includes('.ch') || val.includes('.edu') || val.includes('.gl') || val.includes('.nz') ||
+      val.includes('.so')) {
+      document.getElementById("search-mode").innerHTML = 'url' + '<span class="loading"></span>';
       if (val.includes('http')) {
         window.open(val.trim(), "_self");
       } else {
         window.open("http://" + val.trim(), "_self");
       }
     } else {
+      document.getElementById("search-mode").innerHTML = 'google' + '<span class="loading"></span>';
       window.open("https://google.com/search?q=" + val.trim(), "_self");
     }
-    document.getElementById("search-mode").innerHTML = searchmod[searchengine][0] + '<span class="loading"></span>';
+    document.getElementById("search-field").setAttribute('class', 'move-off-right');
+    document.getElementById("search-mode").setAttribute('class', 'move-off-right');
   }
 }
 
