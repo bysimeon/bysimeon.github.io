@@ -51,7 +51,7 @@
   </div>
   <div class="container">
     <div id="WIP">
-      <span class="uppercase">WIP*</span>
+      <span class="uppercase">wip*</span>
       <p> hello visitor, i am working on my site today and i will probably be working on my site tommorrow. so y'know feel free
         to take a peek or maybe check in when it's done.</p>
     </div>
@@ -62,7 +62,6 @@
   window.onload = () => {
     if (sessionStorage.getItem('song') === null) {
       document.getElementById("song").innerHTML = "<span class='loading'></span>";
-      console.log('fuck');
     } else {
       document.getElementById('song').innerHTML = sessionStorage.getItem('song');
     }

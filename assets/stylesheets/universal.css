@@ -81,8 +81,6 @@ body {
 .bottom {
   width: 100vw;
   border-top: black 1px solid;
-  /* background: -webkit-linear-gradient(to right, #c9d6ff, #e2e2e2);
-  background: linear-gradient(to right, #c9d6ff, #e2e2e2); */
   background: #fff;
   position: fixed;
   left: 0px;

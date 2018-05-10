@@ -32,7 +32,6 @@ function cutoff(num, str) {
 function search(e) {
   var val = document.getElementById("search-field").value;
   var key = val.substr(0, (cutoff(3, val))).trim().toLowerCase();
-  console.log(key);
 
   if (val.length <= cutoff(3, val)) {
     if (key in searchmod) {

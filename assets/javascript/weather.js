@@ -9,7 +9,6 @@
           document.getElementById("temp").innerHTML = json.main.temp.toFixed(0) + "&#176 f";
           document.getElementById("weather-description").innerHTML = json.weather[0].description;
         } else {
-          console.log('error msg: ' + xhr.status);
         }
       }
     }

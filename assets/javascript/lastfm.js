@@ -41,7 +41,6 @@ function recenttrack() {
           sessionStorage.setItem("songurl", "https://www.last.fm/user/theblindlookout");
         }
       } else {
-        console.log('error msg: ' + xhr.status);
       }
     }
   }
