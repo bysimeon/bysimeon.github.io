@@ -147,10 +147,9 @@
 
 <script>
   window.onload = () => {
-    document.getElementById("search").focus();
+    document.getElementById("search-field").focus();
     if (sessionStorage.getItem('song') === null) {
       document.getElementById("song").innerHTML = "<span class='loading'></span>";
-      console.log('fuck');
     } else {
       document.getElementById('song').innerHTML = sessionStorage.getItem('song');
     }
