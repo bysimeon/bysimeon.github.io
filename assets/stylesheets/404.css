@@ -4,7 +4,7 @@
 }
 
 .error {
-  animation: fadeout 7s linear 3s 1;
+  animation: fadeout 4s linear 1s 1;
   -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
   -moz-animation-fill-mode: forwards; /* FF 5+ */
   -o-animation-fill-mode: forwards; /* Not implemented yet */
