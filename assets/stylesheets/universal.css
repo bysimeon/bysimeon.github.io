@@ -17,7 +17,7 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: calc(12px + 0.75vw);
+  font-size: calc(10px + 0.75vw);
   text-transform: lowercase;
 }
 
