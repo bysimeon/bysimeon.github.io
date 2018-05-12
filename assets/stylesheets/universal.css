@@ -114,12 +114,15 @@ body {
 a {
   text-decoration: none;
   color: black;
+  transition: all .1s linear;
 }
 
 .container a {
   text-decoration: underline;
 }
 
-a:hover {
+a:not('.bookmark'):hover {
   text-decoration: line-through;
+  letter-spacing: 1px;
+  transition: get wide
 }
