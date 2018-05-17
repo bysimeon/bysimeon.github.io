@@ -22,26 +22,26 @@
   <meta name="description" content="launcher bysimeon">
   <title>launcher | bysimeon</title>
   <!-- linked assets -->
-  <link rel="stylesheet" type="text/css" href="assets/stylesheets/start.css">
-  <link rel="stylesheet" type="text/css" href="assets/stylesheets/universal.css">
-  <link rel="stylesheet" type="text/css" href="assets/libraries/spinners.css">
-  <link href="assets/favicon.png" rel="shortcut icon" type="imtage/x-icon" />
-  <script src="assets/javascript/time.js"></script>
-  <script src="assets/javascript/weather.js"></script>
-  <script src="assets/javascript/search.js"></script>
-  <script src="assets/javascript/switcher.js"></script>
-  <script src="assets/javascript/lastfm.js"></script>
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/start.css">
+  <link rel="stylesheet" type="text/css" href="../assets/stylesheets/universal.css">
+  <link rel="stylesheet" type="text/css" href="../assets/libraries/spinners.css">
+  <link href="../assets/favicon.png" rel="shortcut icon" type="imtage/x-icon" />
+  <script src="../assets/javascript/time.js"></script>
+  <script src="../assets/javascript/weather.js"></script>
+  <script src="../assets/javascript/search.js"></script>
+  <script src="../assets/javascript/switcher.js"></script>
+  <script src="../assets/javascript/lastfm.js"></script>
 </head>
 
 <body>
   <div class="top">
     <div class="corner">
-      <img onclick="nextbackground()" class="button" src="assets/favicon.png">
+      <img onclick="nextbackground()" class="button" src="../assets/favicon.png">
     </div>
     <div class="corner">
-      <a href="./"> home </a>
-      <a href="about.html"> about </a>
-      <a href="work.html"> work </a>
+      <a href="/"> home </a>
+      <a href="../about/"> about </a>
+      <a href="../work/"> work </a>
        |&nbsp;&nbsp;
       <a onclick="commands()"> help </a>
     </div>
@@ -53,7 +53,7 @@
       </a>
     </div>
     <div class="corner" id="help">
-      <a href="./"> home</a>
+      <a href="/"> home</a>
     </div>
   </div>
   <div id="command" class="fade">
@@ -77,6 +77,7 @@
         <li> lastfm (l:)</li>
         <li> netflix (n:)</li>
         <li> unsplash (u:)</li>
+        <li> localhost (::)</li>
       </ul>
       press
       <span> esc </span> to close searchbox and this help page.
