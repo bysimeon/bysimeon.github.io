@@ -7,12 +7,12 @@ var searchmod = {
     "(to right, #fe8c00, #f83600)",
     "#fe8c00"
   ],
-  // "m:": [
-  //   "genius",
-  //   "https://genius.com/search?q=",
-  //   "(to right, #000 , #ffff65)",
-  //   "#000"
-  // ],
+  "l:": [
+    "lyrics@genius",
+    "https://genius.com/search?q=",
+    "(to right, #FAD961 , #F7F21C)",
+    "#FAD961"
+  ],
   "::": [
     "localhost",
     "http://localhost:",
@@ -56,12 +56,6 @@ var searchmod = {
     "(to right, #4285f4, #fbbc05)",
     "#4285f4"
   ],
-  "l:": [
-    "lastfm",
-    "https://www.last.fm/search?q=",
-    "(to right, #d51007, #d32d27)",
-    "#d51007"
-  ],
   "g:": [
     "github",
     "https://github.com/search?utf8=%E2%9C%93&q=",
@@ -98,11 +92,8 @@ function cutoff(num, str) {
 }
 
 function search(e) {
-  var val = document.getElementById("search-field").value;
-  var key = val
-    .substr(0, cutoff(3, val))
-    .trim()
-    .toLowerCase();
+  val = document.getElementById("search-field").value;
+  key = val.substr(0, cutoff(3, val)).trim().toLowerCase();
 
   if (val.length <= cutoff(3, val)) {
     if (key in searchmod) {
