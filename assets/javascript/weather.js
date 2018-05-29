@@ -1,5 +1,8 @@
 
   function theweather(lat, lon) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      theweather(position.coords.latitude, position.coords.longitude);
+    });
     let xhr = new XMLHttpRequest();
     xhr.open("GET", "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c");
     xhr.onload = () => {
@@ -16,8 +19,6 @@
   }
 
   window.onload = () => {
-    navigator.geolocation.getCurrentPosition(function (position) {
-      theweather(position.coords.latitude, position.coords.longitude);
-    });
-    setInterval(theweather, 6000000);
+    theweather();
+    setInterval(theweather, 60000);
   }
