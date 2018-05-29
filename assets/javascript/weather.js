@@ -1,7 +1,9 @@
 
   function theweather(lat, lon) {
     navigator.geolocation.getCurrentPosition(function(position) {
-      theweather(position.coords.latitude, position.coords.longitude);
+      lat = position.coords.latitude; 
+      lon = position.coords.longitude;
+      theweather(lat, lon);
     });
     let xhr = new XMLHttpRequest();
     xhr.open("GET", "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c");
