@@ -1,12 +1,7 @@
 
-  function theweather(lat, lon) {
-    navigator.geolocation.getCurrentPosition(function(position) {
-      lat = position.coords.latitude; 
-      lon = position.coords.longitude;
-      theweather(lat, lon);
-    });
+  function theweather() {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c");
+    xhr.open("GET", "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" + sessionStorage.getItem('lat') + "&lon=" + sessionStorage.getItem('lon') + "&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c");
     xhr.onload = () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
@@ -21,6 +16,10 @@
   }
 
   window.onload = () => {
-    theweather();
+    navigator.geolocation.getCurrentPosition(function(position) {
+      sessionStorage.setItem('lat', position.coords.latitude);
+      sessionStorage.setItem('lon', position.coords.longitude);
+      theweather();
+    });
     setInterval(theweather, 60000);
   }
