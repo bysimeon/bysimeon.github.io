@@ -170,8 +170,12 @@
     document.getElementById('search-field').value = '';
     clear();
 
-    theweather();
-    setInterval(theweather, 6000000);
+    navigator.geolocation.getCurrentPosition(function(position) {
+      sessionStorage.setItem('lat', position.coords.latitude);
+      sessionStorage.setItem('lon', position.coords.longitude);
+      theweather();
+    });
+    setInterval(theweather, 60000);
 
     document.getElementById("clock").innerHTML = getTime();
     document.getElementById("date").innerHTML = getDay();
