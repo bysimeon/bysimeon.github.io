@@ -23,7 +23,7 @@ html {
 
 * {
   box-sizing: border-box;
-  transition: all 0.1s linear;
+  transition: font-size 0.1s linear;
 }
 
 body {
