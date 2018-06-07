@@ -83,19 +83,11 @@ function clear() {
   document.getElementById("search-mode").style.color = "black ";
 }
 
-function cutoff(num, str) {
-  if (str.substring(0, 1) != " ") {
-    num2 = num - 1;
-  }
-  num2 = num;
-  return num2;
-}
-
 function search(e) {
   val = document.getElementById("search-field").value;
-  key = val.substr(0, cutoff(3, val)).trim().toLowerCase();
+  key = val.trim().substr(0, 2).toLowerCase();
 
-  if (val.length <= cutoff(3, val)) {
+  if (val.trim().length <= 2) {
     if (key in searchmod) {
       searchengine = key;
       document.getElementById("search-field").style.background =
@@ -115,7 +107,7 @@ function search(e) {
   if (e.keyCode == 13) {
     if (searchengine != "") {
       window.open(
-        searchmod[key][1] + val.substr(cutoff(3, val)).trim(),
+        searchmod[key][1] + val.trim().substr(2).trim(),
         "_self"
       );
       document.getElementById("search-mode").innerHTML =
