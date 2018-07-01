@@ -85,15 +85,6 @@
       <br> p.s. the song displayed at the bottom right is my most recent track from <a href="https://www.last.fm/user/theblindlookout">last.fm</a>
     </div>
   </div>
-  <div id="search" class="fade">
-    <div id="close2">
-      <a onclick="closeall()"> close </a>
-    </div>
-    <div id="search-mode">
-      <span class="loading"></span>
-    </div>
-    <input id="search-field" type="text" name="search-field" onkeyup="return search(event)" />
-  </div>
   <div class="container">
     <div id="clock"></div>
     <div id="date"> 4 / 14 / 2018 </div>
@@ -104,52 +95,58 @@
         <div id="temp" class="inline"></div>
       </div>
     </div>
-    <div class="bookmark-container">
-      <div class="bookmark-set">
-        <div class="bookmark-inner-container">
-          <a class="bookmark" href="https://keep.google.com/">keep</a>
-          <a class="bookmark" href="https://mail.google.com/">gmail</a>
-          <a class="bookmark" href="https://github.com/">github</a>
-          <a class="bookmark" href="https://drive.google.com/">drive</a>
-          <a class="bookmark" href="https://calendar.google.com/">calendar</a>
-        </div>
+    <div id="inline-search">
+      <div id="search-mode">
+        <span class="loading"></span>
       </div>
-      <div class="bookmark-set">
-        <div class="bookmark-inner-container">
-          <a class="bookmark" href="https://soundcloud.com">soundcloud</a>
-          <a class="bookmark" href="https://play.pokemonshowdown.com/">showdown</a>
-          <a class="bookmark" href="https://photos.google.com">photos</a>
-          <a class="bookmark" href="https://youtube.com">youtube</a>
-          <a class="bookmark" href="https://netflix.com">netflix</a>
-        </div>
-      </div>
-      <div class="bookmark-set">
-        <div class="bookmark-inner-container">
-          <a class="bookmark" href="https://reddit.com/r/fixedgearbicycle">/r/fixedgearbikes</a>
-          <a class="bookmark" href="https://reddit.com/r/mechanicalkeyboards">/r/mechkeyboards</a>
-          <a class="bookmark" href="https://reddit.com/r/freshalbumart">/r/freshalbumart</a>
-          <a class="bookmark" href="https://reddit.com/r/hiphopheads">/r/hiphopheads</a>
-          <a class="bookmark" href="https://reddit.com/r/android">/r/android</a>
-        </div>
-      </div>
-      <div class="bookmark-set">
-        <div class="bookmark-inner-container">
-          <a class="bookmark" href="https://hangouts.google.com/">hangouts</a>
-          <a class="bookmark" href="https://groupme.com">groupme</a>
-          <a class="bookmark" href="https://allo.google.com/web">allo</a>
-          
-        </div>
-      </div>
-      <div class="bookmark-set">
-        <div class="bookmark-inner-container">
-          <a class="bookmark" href="https://humanity.com/app">humanity</a>
-          <a class="bookmark" href="https://www-kronos.itcs.northwestern.edu/wfc/applications/wtk/html/ess/logon.jsp">kronos</a>
-          <a class="bookmark" href="https://canvas.northwestern.edu">canvas</a>
-          <a class="bookmark" href="https://caesar.northwestern.edu">caesar</a>
-          <a class="bookmark" href="https://myhr.northwestern.edu">myhr</a>
-        </div>
-      </div>
+      <input id="search-field" type="text" name="search-field" onkeyup="return search(event)" />
     </div>
+    <!-- <div class="bookmark-container"> -->
+    <!--   <div class="bookmark-set"> -->
+    <!--     <div class="bookmark-inner-container"> -->
+    <!--       <a class="bookmark" href="https://keep.google.com/">keep</a> -->
+    <!--       <a class="bookmark" href="https://mail.google.com/">gmail</a> -->
+    <!--       <a class="bookmark" href="https://github.com/">github</a> -->
+    <!--       <a class="bookmark" href="https://drive.google.com/">drive</a> -->
+    <!--       <a class="bookmark" href="https://calendar.google.com/">calendar</a> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!--   <div class="bookmark-set"> -->
+    <!--     <div class="bookmark-inner-container"> -->
+    <!--       <a class="bookmark" href="https://soundcloud.com">soundcloud</a> -->
+    <!--       <a class="bookmark" href="https://play.pokemonshowdown.com/">showdown</a> -->
+    <!--       <a class="bookmark" href="https://photos.google.com">photos</a> -->
+    <!--       <a class="bookmark" href="https://youtube.com">youtube</a> -->
+    <!--       <a class="bookmark" href="https://netflix.com">netflix</a> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!--   <div class="bookmark-set"> -->
+    <!--     <div class="bookmark-inner-container"> -->
+    <!--       <a class="bookmark" href="https://reddit.com/r/fixedgearbicycle">/r/fixedgearbikes</a> -->
+    <!--       <a class="bookmark" href="https://reddit.com/r/mechanicalkeyboards">/r/mechkeyboards</a> -->
+    <!--       <a class="bookmark" href="https://reddit.com/r/freshalbumart">/r/freshalbumart</a> -->
+    <!--       <a class="bookmark" href="https://reddit.com/r/hiphopheads">/r/hiphopheads</a> -->
+    <!--       <a class="bookmark" href="https://reddit.com/r/android">/r/android</a> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!--   <div class="bookmark-set"> -->
+    <!--     <div class="bookmark-inner-container"> -->
+    <!--       <a class="bookmark" href="https://hangouts.google.com/">hangouts</a> -->
+    <!--       <a class="bookmark" href="https://groupme.com">groupme</a> -->
+    <!--       <a class="bookmark" href="https://allo.google.com/web">allo</a> -->
+          
+    <!--     </div> -->
+    <!--   </div> -->
+    <!--   <div class="bookmark-set"> -->
+    <!--     <div class="bookmark-inner-container"> -->
+    <!--       <a class="bookmark" href="https://humanity.com/app">humanity</a> -->
+    <!--       <a class="bookmark" href="https://www-kronos.itcs.northwestern.edu/wfc/applications/wtk/html/ess/logon.jsp">kronos</a> -->
+    <!--       <a class="bookmark" href="https://canvas.northwestern.edu">canvas</a> -->
+    <!--       <a class="bookmark" href="https://caesar.northwestern.edu">caesar</a> -->
+    <!--       <a class="bookmark" href="https://myhr.northwestern.edu">myhr</a> -->
+    <!--     </div> -->
+    <!--   </div> -->
+    <!-- </div> -->
   </div>
 </body>
 
