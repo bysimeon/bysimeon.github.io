@@ -130,6 +130,7 @@ function search(e) {
       val.includes(".ch") ||
       val.includes(".edu") ||
       val.includes(".gl") ||
+      val.includes(".na") ||
       val.includes(".nz") ||
       val.includes(".so")
     ) {
@@ -138,7 +139,14 @@ function search(e) {
       if (val.includes("http")) {
         window.open(val.trim(), "_self");
       } else {
-        window.open("http://" + val.trim(), "_self");
+        try {
+          window.open("http://" + val.trim(), "_self");
+        } 
+        catch(err) {
+          document.getElementById("search-mode").innerHTML = 
+            "google" + '<span class="loading"></span>';
+           window.open("https://google.com/search?q=" + val.trim(), "_self");
+        }
       }
     } else {
       document.getElementById("search-mode").innerHTML =
