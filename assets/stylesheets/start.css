@@ -21,7 +21,7 @@
 
 .move-off-right {
     transition: transform .3s;
-    transform: translate(80vw, 0px);
+    transform: translate(60vw, 0px);
   }
 
 #close1 {
