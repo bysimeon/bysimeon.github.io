@@ -41,9 +41,9 @@
   </div>
   <div class="bottom">
     <div class="corner" id="songb">
-      <a id="song" href="#">
-        <span class="loading" </span>
-      </a>
+      listening to:
+      <a id="song_name" href="#"></a>
+      <a id="song_artist" href="#"></a>
     </div>
     <div class="corner">
       <a href="/start/">lnchr</a>
@@ -51,9 +51,9 @@
   </div>
   <div class="container">
     <div id="WIP">
-      <span class="uppercase">wip*</span>
-      <p> hello visitor, i am working on my site today and i will probably be working on my site tommorrow. so y'know feel free
-        to take a peek or maybe check in when it's done.</p>
+      <span class="uppercase">bysimeon</span>
+      <!-- <p> hello visitor, i am working on my site today and i will probably be working on my site tommorrow. so y'know feel free
+        to take a peek or maybe check in when it's done.</p> -->
     </div>
   </div>
 </body>
@@ -61,9 +61,9 @@
 <script>
   window.onload = () => {
     if (sessionStorage.getItem('song') === null) {
-      document.getElementById("song").innerHTML = "<span class='loading'></span>";
+      document.getElementById("song_name").innerHTML = "<span class='loading'></span>";
     } else {
-      document.getElementById('song').innerHTML = sessionStorage.getItem('song');
+      document.getElementById('song_name').innerHTML = sessionStorage.getItem('songname');
     }
     document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     document.body.style.background = localStorage.getItem('back1');
