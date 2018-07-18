@@ -60,9 +60,9 @@
 <script>
   window.onload = () => {
     if (sessionStorage.getItem('song') === null) {
-      document.getElementById("song_name").innerHTML = "<span class='loading'></span>";
+      document.getElementById("song").innerHTML = "<span class='loading'></span>";
     } else {
-      document.getElementById('song_name').innerHTML = sessionStorage.getItem('songname');
+      document.getElementById('song').innerHTML = sessionStorage.getItem('songname');
     }
     document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     document.body.style.background = localStorage.getItem('back1');
