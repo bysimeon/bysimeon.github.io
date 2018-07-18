@@ -41,8 +41,10 @@
   </div>
   <div class="bottom">
     <div class="corner" id="songb">
-      <a id="song" href="#"></a>
-      <a id="song_artist" href="#"></a>
+      <a id="song" href="#">
+        <span class="loading"></span>
+      </a>
+      <!-- <a id="song_artist" href="#"></a> -->
     </div>
     <div class="corner">
       <a href="/start/">lnchr</a>
@@ -62,7 +64,7 @@
     if (sessionStorage.getItem('song') === null) {
       document.getElementById("song").innerHTML = "<span class='loading'></span>";
     } else {
-      document.getElementById('song').innerHTML = sessionStorage.getItem('songname');
+      document.getElementById('song').innerHTML = sessionStorage.getItem('song');
     }
     document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     document.body.style.background = localStorage.getItem('back1');
