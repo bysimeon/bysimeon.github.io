@@ -71,6 +71,10 @@ body {
   transform: translate(0.1em, 0px);
 }
 
+#song {
+  text-decoration: underline;
+}
+
 /* TOP AND BOTTOM BARS */
 
 .top {
