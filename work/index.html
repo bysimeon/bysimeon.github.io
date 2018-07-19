@@ -43,48 +43,61 @@
     </div>
   </div>
   <div class="bottom">
-    <div class="corner" id="songb">
-      <a id="song" href="#">
-        <span class="loading"></span>
-      </a>
+    <div class="corner" id="song">
+      listening to:
+      <a id="song_name" href="#"></a>
+      <span id="filler"> by </span>
+      <a id="artist_name" href="#"></a>
     </div>
     <div class="corner">
-      <a href="/start/">lnchr</a>
+      <a href="/start/">strtpg</a>
     </div>
   </div>
   <div class="container">
     <div id="WIP">
       <span class="uppercase"></span>
     </div>
-    <p class="placeholder"> some personal some paid some unfinished *<p>
-    <ul class="projects">
-      <li>
-        the highly (w/
-        <a href="https://teahkbrands.com"> teah</a>) |
-        <a href="https://www.thehighly.co">live</a>
-      </li>
-      <li>
-        startpage |
-        <a href="/start/">live</a>
-        <a href="https://github.com/bysimeon/startpage">github </a>
-      </li>
-      <li>
-        tiilt lab website (w/ durell) [wip] |
-        <a href="http://tiilt.northwestern.edu/">live</a>
-      </li>
-    </ul>
+    <p class="placeholder"> some personal some paid some unfinished *
+      <p>
+        <ul class="projects">
+          <li>
+            the highly (w/
+            <a href="https://teahkbrands.com"> teah</a>) |
+            <a href="https://www.thehighly.co">live</a>
+          </li>
+          <li>
+            startpage |
+            <a href="/start/">live</a>
+            <a href="https://github.com/bysimeon/startpage">github </a>
+          </li>
+          <li>
+            tiilt lab website (w/ durell) [wip] |
+            <a href="http://tiilt.northwestern.edu/">live</a>
+          </li>
+        </ul>
 </body>
 
 <script>
   window.onload = () => {
-    if (sessionStorage.getItem('song') === null) {
-      document.getElementById("song").innerHTML = "<span class='loading'></span>";
-    } else {
-      document.getElementById('song').innerHTML = sessionStorage.getItem('song');
-    }
-    document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     document.body.style.background = localStorage.getItem('back1');
     document.body.style.background = localStorage.getItem('back2');
+
+    if (sessionStorage.getItem("song_name") === null) {
+      document.getElementById("song_name").innerHTML =
+        noscrobble;
+    }
+    document.getElementById("song_name").innerHTML = sessionStorage.getItem(
+      "song_name"
+    );
+    document
+      .getElementById("song_name")
+      .setAttribute("href", sessionStorage.getItem("song_url"));
+    document.getElementById("artist_name").innerHTML = sessionStorage.getItem(
+      "artist_name"
+    );
+    document
+      .getElementById("artist_name")
+      .setAttribute("href", sessionStorage.getItem("artist_url"));
     recenttrack();
     setInterval(recenttrack, 500);
   }

@@ -5,54 +5,94 @@ paused = true;
 
 function recenttrack() {
   let xhr2 = new XMLHttpRequest();
-  xhr2.open('GET', apibase + "?method=user.getrecenttracks&user=" + user + "&api_key=" + apikey + "&format=json");
+  xhr2.open(
+    "GET",
+    apibase +
+      "?method=user.getrecenttracks&user=" +
+      user +
+      "&api_key=" +
+      apikey +
+      "&format=json"
+  );
   xhr2.onload = () => {
     if (xhr2.readyState === 4) {
       if (xhr2.status === 200) {
         let json2 = JSON.parse(xhr2.responseText);
-        songname = json2.recenttracks.track[0].name;
-        artistname = json2.recenttracks.track[0].artist['#text'];
-        noscrobble = "<span class='loading'></span>";
-        if (typeof json2.recenttracks.track[0]['@attr'] === 'undefined') {
+        song_name = json2.recenttracks.track[0].name;
+        artist_name = json2.recenttracks.track[0].artist["#text"];
+        noscrobble = "nothing, but recently heard";
+        if (typeof json2.recenttracks.track[0]["@attr"] === "undefined") {
           playing = false;
         } else {
-          playing = json2.recenttracks.track[0]['@attr'].nowplaying;
+          playing = json2.recenttracks.track[0]["@attr"].nowplaying;
         }
-        if (songname.length >= 50) {
-          if (songname.includes('(f')) {
-            songname = (songname.substr(0, songname.indexOf(' (f')));
+        if (song_name.length >= 50) {
+          if (song_name.includes("(f")) {
+            song_name = song_name.substr(0, song_name.indexOf(" (f"));
           } else {
-            songname = (songname.substr(0, 50)) + "...";
+            song_name = song_name.substr(0, 50) + "...";
           }
         }
         if (playing) {
           paused = false;
-          document.getElementById('song').innerHTML = songname + " - " + artistname;
-          document.getElementById('song').setAttribute("href", json2.recenttracks.track[0].url);
-          sessionStorage.setItem('song', songname + " - " + artistname);
-          sessionStorage.setItem('songurl', json2.recenttracks.track[0].url);
+          document.getElementById("song_name").innerHTML = song_name;
+          document
+            .getElementById("song_name")
+            .setAttribute("href", json2.recenttracks.track[0].url);
+          sessionStorage.setItem("song_name", song_name);
+          sessionStorage.setItem("songurl", json2.recenttracks.track[0].url);
+
+          document.getElementById("artist_name").innerHTML = artist_name;
+          document
+            .getElementById("artist_name")
+            .setAttribute("href", "https://www.last.fm/music/" + artist_name);
+          sessionStorage.setItem("artist_name", artist_name);
+          sessionStorage.setItem(
+            "artist_url",
+            "https://www.last.fm/music/" + artist_name
+          );
+
+          document.getElementById("filler").innerHTML = "by";
         } else {
           if (!paused) {
-            document.getElementById("song").innerHTML = noscrobble;
+            document.getElementById("song_name").innerHTML = noscrobble;
+            document.getElementById("artist_name").innerHTML = "";
           }
           paused = true;
-          document.getElementById('song').setAttribute("href", "https://www.last.fm/user/theblindlookout");
-          sessionStorage.setItem("song", noscrobble);
-          sessionStorage.setItem("songurl", "https://www.last.fm/user/theblindlookout");
+          document.getElementById("filler").innerHTML = "";
+          document
+            .getElementById("song_name")
+            .setAttribute("href", "https://www.last.fm/user/theblindlookout");
+          sessionStorage.setItem("song_name", noscrobble);
+          sessionStorage.setItem("artist_name", "");
+          sessionStorage.setItem(
+            "song_url",
+            "https://www.last.fm/user/theblindlookout"
+          );
         }
       } else {
       }
     }
-  }
+  };
   xhr2.send();
 }
 
 window.onload = () => {
-  if (localStorage.getItem('song') === null) {
-    document.getElementById("song").innerHTML = "<span class='loading'></span>"
+  if (sessionStorage.getItem("song_name") === null) {
+    document.getElementById("song_name").innerHTML =
+      noscrobble;
   }
-  document.getElementById('song').innerHTML = sessionStorage.getItem('song');
-  document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
-  recenttrack();
+  document.getElementById("song_name").innerHTML = sessionStorage.getItem(
+    "song_name"
+  );
+  document
+    .getElementById("song_name")
+    .setAttribute("href", sessionStorage.getItem("song_url"));
+  document.getElementById("artist_name").innerHTML = sessionStorage.getItem(
+    "artist_name"
+  );
+  document
+    .getElementById("artist_name")
+    .setAttribute("href", sessionStorage.getItem("artist_url"));
   setInterval(recenttrack, 500);
-}
+};
