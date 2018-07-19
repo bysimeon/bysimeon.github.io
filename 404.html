@@ -67,7 +67,7 @@
 
         if (sessionStorage.getItem("song_name") === null) {
             document.getElementById("song_name").innerHTML =
-                noscrobble;
+                "nothing, but recently heard";
         }
         document.getElementById("song_name").innerHTML = sessionStorage.getItem(
             "song_name"
