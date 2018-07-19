@@ -42,15 +42,16 @@
       <a href="/"> home </a>
       <a href="/about/"> about </a>
       <a href="/work/"> work </a>
-       |&nbsp;&nbsp;
+      |&nbsp;&nbsp;
       <a onclick="commands()"> help </a>
     </div>
   </div>
   <div class="bottom">
-    <div class="corner" id="songb">
-      <a id="song" href="#">
-        <span class="loading"></span>
-      </a>
+    <div class="corner" id="song">
+      listening to:
+      <a id="song_name" href="#"></a>
+      <span id="filler"> by </span>
+      <a id="artist_name" href="#"></a>
     </div>
     <div class="corner" id="help">
       <a href="/"> home</a>
@@ -82,7 +83,8 @@
       press
       <span> esc </span> to close searchbox and this help page.
       <br>
-      <br> p.s. the song displayed at the bottom right is my most recent track from <a href="https://www.last.fm/user/theblindlookout">last.fm</a>
+      <br> p.s. the song displayed at the bottom right is my most recent track from
+      <a href="https://www.last.fm/user/theblindlookout">last.fm</a>
     </div>
   </div>
   <div class="container">
@@ -134,7 +136,7 @@
     <!--       <a class="bookmark" href="https://hangouts.google.com/">hangouts</a> -->
     <!--       <a class="bookmark" href="https://groupme.com">groupme</a> -->
     <!--       <a class="bookmark" href="https://allo.google.com/web">allo</a> -->
-          
+
     <!--     </div> -->
     <!--   </div> -->
     <!--   <div class="bookmark-set"> -->
@@ -153,27 +155,42 @@
 <script>
   window.onload = () => {
     document.getElementById("search-field").focus();
-    if (sessionStorage.getItem('song') === null) {
-      document.getElementById("song").innerHTML = "<span class='loading'></span>";
-    } else {
-      document.getElementById('song').innerHTML = sessionStorage.getItem('song');
-    }
-    document.getElementById('song').setAttribute("href", sessionStorage.getItem('songurl'));
     document.body.style.background = localStorage.getItem('back1');
     document.body.style.background = localStorage.getItem('back2');
+
+    // get track
+    if (sessionStorage.getItem("song_name") === null) {
+      document.getElementById("song_name").innerHTML =
+        noscrobble;
+    }
+    document.getElementById("song_name").innerHTML = sessionStorage.getItem(
+      "song_name"
+    );
+    document
+      .getElementById("song_name")
+      .setAttribute("href", sessionStorage.getItem("song_url"));
+    document.getElementById("artist_name").innerHTML = sessionStorage.getItem(
+      "artist_name"
+    );
+    document
+      .getElementById("artist_name")
+      .setAttribute("href", sessionStorage.getItem("artist_url"));
     recenttrack();
     setInterval(recenttrack, 500);
+
     // Clear Everything on Load
     document.getElementById('search-field').value = '';
     clear();
 
-    navigator.geolocation.getCurrentPosition(function(position) {
+    // get weather
+    navigator.geolocation.getCurrentPosition(function (position) {
       sessionStorage.setItem('lat', position.coords.latitude);
       sessionStorage.setItem('lon', position.coords.longitude);
       theweather();
     });
     setInterval(theweather, 60000);
 
+    // get time
     document.getElementById("clock").innerHTML = getTime();
     document.getElementById("date").innerHTML = getDay();
 
@@ -181,9 +198,6 @@
       document.getElementById("clock").innerHTML = getTime();
       document.getElementById("date").innerHTML = getDay();
     }, 100);
-
-    recenttrack();
-    setInterval(recenttrack, 500);
   }
 </script>
 

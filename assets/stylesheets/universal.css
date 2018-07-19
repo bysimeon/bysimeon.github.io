@@ -71,8 +71,8 @@ body {
   transform: translate(0.1em, 0px);
 }
 
-#song {
-  text-decoration: underline;
+#song a {
+  border-bottom: 1px solid black;
 }
 
 /* TOP AND BOTTOM BARS */
@@ -137,7 +137,7 @@ a {
 }
 
 .container a {
-  text-decoration: underline;
+  border-bottom: 1px solid #000;
 }
 
 a:hover {
