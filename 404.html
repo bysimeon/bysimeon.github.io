@@ -46,7 +46,7 @@
         <div class="corner" id="song">
             listening to:
             <a id="song_name" href="#"></a>
-            <span id="filler"> by </span>
+            <span id="filler"> </span>
             <a id="artist_name" href="#"></a>
         </div>
         <div class="corner">
@@ -68,10 +68,11 @@
         if (sessionStorage.getItem("song_name") === null) {
             document.getElementById("song_name").innerHTML =
                 "nothing, but recently heard";
+        } else {
+            document.getElementById("song_name").innerHTML = sessionStorage.getItem(
+                "song_name"
+            );
         }
-        document.getElementById("song_name").innerHTML = sessionStorage.getItem(
-            "song_name"
-        );
         document
             .getElementById("song_name")
             .setAttribute("href", sessionStorage.getItem("song_url"));

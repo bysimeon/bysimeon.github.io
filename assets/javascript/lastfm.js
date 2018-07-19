@@ -79,12 +79,13 @@ function recenttrack() {
 
 window.onload = () => {
   if (sessionStorage.getItem("song_name") === null) {
-    document.getElementById("song_name").innerHTML =
-      noscrobble;
+    document.getElementById("song_name").innerHTML = noscrobble;
+  } else {
+    document.getElementById("song_name").innerHTML = sessionStorage.getItem(
+      "song_name"
+    );
   }
-  document.getElementById("song_name").innerHTML = sessionStorage.getItem(
-    "song_name"
-  );
+
   document
     .getElementById("song_name")
     .setAttribute("href", sessionStorage.getItem("song_url"));
