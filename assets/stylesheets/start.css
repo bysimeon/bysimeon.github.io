@@ -173,8 +173,15 @@
     width: 95%;
   }
   #clock {
-    margin-top: 1rem;
+    margin-top: 20vh;
     font-size: 3rem;
+  }
+  #inline-search {
+      margin-top: 2vh;
+    width: 90vw;
+  }
+  #command-list {
+    display: none;
   }
   .container > .bookmark-container {
     -ms-flex-direction: column;
@@ -186,10 +193,10 @@
     margin: 1rem 0rem;
     height: auto;
   }
-  .top {
-    display: none !important;
-  }
   .bottom { height: auto !important; }
+  .top > .corner:nth-child(2) {
+      display: none;
+  }
 }
 
 .bookmark-set {
