@@ -179,16 +179,12 @@ function commands() {
 }
 
 function opensearchbox() {
-  document.getElementById("search").style.visibility = "visible";
-  document.getElementById("search").style.opacity = 1;
   document.getElementById("search-field").focus();
 }
 
 function closeall() {
   document.getElementById("search-field").value = "";
   document.getElementById("search-field").blur();
-  document.getElementById("search").style.visibility = "hidden";
-  document.getElementById("search").style.opacity = 0;
   document.getElementById("command").style.visibility = "hidden";
   document.getElementById("command").style.opacity = 0;
   document.getElementById("command-list").blur();
