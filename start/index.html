@@ -36,7 +36,7 @@
 <body>
   <div class="top">
     <div class="corner">
-      <img onclick="nextbackground()" class="button" src="/assets/favicon.png">
+    <span onclick="nextbackground()" class="button">
     </div>
     <div class="corner">
       <a href="/"> home </a>
@@ -50,7 +50,7 @@
     <div class="corner" id="song">
       listening to:
       <a id="song_name" href="#"></a>
-      <span id="filler">  </span>
+      <span id="filler"> </span>
       <a id="artist_name" href="#"></a>
     </div>
     <div class="corner" id="help">
@@ -154,9 +154,25 @@
 
 <script>
   window.onload = () => {
-    document.getElementById("search-field").focus();
     document.body.style.background = localStorage.getItem('back1');
     document.body.style.background = localStorage.getItem('back2');
+
+    // get time
+    document.getElementById("clock").innerHTML = getTime();
+    document.getElementById("date").innerHTML = getDay();
+
+    setInterval(() => {
+      document.getElementById("clock").innerHTML = getTime();
+      document.getElementById("date").innerHTML = getDay();
+    }, 100);
+
+    // get weather
+    navigator.geolocation.getCurrentPosition(function (position) {
+      sessionStorage.setItem('lat', position.coords.latitude);
+      sessionStorage.setItem('lon', position.coords.longitude);
+      theweather();
+    });
+    setInterval(theweather, 60000);
 
     // get track
     if (sessionStorage.getItem("song_name") === null) {
@@ -181,25 +197,11 @@
 
     // Clear Everything on Load
     document.getElementById('search-field').value = '';
+    document.getElementById("search-field").focus();
     clear();
-
-    // get weather
-    navigator.geolocation.getCurrentPosition(function (position) {
-      sessionStorage.setItem('lat', position.coords.latitude);
-      sessionStorage.setItem('lon', position.coords.longitude);
-      theweather();
-    });
-    setInterval(theweather, 60000);
-
-    // get time
-    document.getElementById("clock").innerHTML = getTime();
-    document.getElementById("date").innerHTML = getDay();
-
-    setInterval(() => {
-      document.getElementById("clock").innerHTML = getTime();
-      document.getElementById("date").innerHTML = getDay();
-    }, 100);
   }
+
+
 </script>
 
 </html>
