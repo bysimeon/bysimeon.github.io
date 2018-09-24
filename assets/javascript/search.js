@@ -1,6 +1,9 @@
-var searchengine = "";
+var selectedSearch = "";
+var selectedSearchLength = 0;
+var selectedBookmark = "";
 
-var searchmod = {
+// all my searchengines
+var searchEngines = {
   "s:": [
     "soundcloud",
     "https://soundcloud.com/search?q=",
@@ -8,7 +11,7 @@ var searchmod = {
     "#fe8c00"
   ],
   "l:": [
-    "lyrics@genius",
+    "lyrics @ genius",
     "https://genius.com/search?q=",
     "(to right, #FAD961 , #F7F21C)",
     "#FAD961"
@@ -76,82 +79,135 @@ var searchmod = {
   ]
 };
 
+// all my bookmarks
+var bookmarks = {
+  "showdown": ["showdown", "https://play.pokemonshowdown.com/"],
+  "simple": ["simple", "https://bank.simple.com/"],
+  "subs": ["subs", "https://horriblesubs.info/"],
+  "amex": ["american express", "https://www.americanexpress.com/"],
+  "music": ["plus premieres", "https://www.pluspremieres.in/"],
+  "caesar": ["caesar", "http://caesar.northwestern.edu"],
+  "canvas": ["canvas", "http://canvas.northwestern.edu"],
+  "myhr": ["myhr", "http://myhr.northwestern.edu"],
+  "work": ["whentowork", "https://whentowork.com"],
+  "calendar": ["calendar", "https://calendar.google.com"],
+  "photos": ["photos", "http://photos.google.com"],
+  "teah": ["teah", "http://teahkbrands.com"],
+  "notion": ["notion", "http://notion.so"]
+};
+
+// clear everything except text
 function clear() {
+  selectedSearch = "";
+  selectedSearchLength = 0;
+  selectedBookmark = "";
   document.getElementById("search-field").style.background = "#000";
-  searchengine = "";
   document.getElementById("search-mode").innerHTML = "google";
   document.getElementById("search-mode").style.color = "black ";
 }
 
 function search(e) {
-  val = document.getElementById("search-field").value;
-  key = val.trim().substr(0, 2).toLowerCase();
+  currentText = document.getElementById("search-field").value;
+  key = currentText
+    .trim()
+    .substr(0, 2)
+    .toLowerCase();
 
-  if (val.trim().length <= 2) {
-    if (key in searchmod) {
-      searchengine = key;
-      document.getElementById("search-field").style.background =
-        "-webkit-linear-gradient" + searchmod[key][2];
-      document.getElementById("search-field").style.background =
-        "linear-gradient" + searchmod[key][2];
-      document.getElementById("search-mode").style.color = searchmod[key][3];
-      document.getElementById("search-mode").style.color = searchmod[key][3];
-      document.getElementById("search-mode").innerHTML = searchmod[key][0];
+  // first check for bookmarks and searchengines
+  if (key in searchEngines || currentText.trim() in searchEngines) {
+    if (!(key in searchEngines) && selectedSearchLength == 0) {
+      selectedSearch = currentText.trim();
+      selectedSearchLength = currentText.trim().length;
+    } else if (key in searchEngines) {
+      selectedSearch = key;
+      selectedSearchLength = key.length;
+    }
+    document.getElementById("search-field").style.background =
+      "-webkit-linear-gradient" + searchEngines[selectedSearch][2];
+    document.getElementById("search-field").style.background =
+      "linear-gradient" + searchEngines[selectedSearch][2];
+    document.getElementById("search-mode").style.color =
+      searchEngines[selectedSearch][3];
+    document.getElementById("search-mode").style.color =
+      searchEngines[selectedSearch][3];
+    document.getElementById("search-mode").innerHTML =
+      searchEngines[selectedSearch][0];
+  } else if (currentText.trim() in bookmarks) {
+    selectedBookmark = currentText.trim();
+    document.getElementById("search-field").style.background = "";
+    document.getElementById("search-mode").innerHTML = "bookmark";
+    document.getElementById("search-mode").style.color = "#ee0979 ";
+    document.getElementById("search-field").style.background =
+      "linear-gradient" + "(to right, #ee0979, #ff6a00)";
+  } else if (!(key in searchEngines) && !(currentText.trim() in bookmarks)) {
+    if (
+      currentText.substr(0, selectedSearchLength) != selectedSearch ||
+      selectedSearchLength == 0
+    ) {
+      clear();
     }
   }
 
-  if (!val.includes(":") && !val.includes("/")) {
-    clear();
-  }
-
+  // then search on spacebar
   if (e.keyCode == 13) {
-    if (searchengine != "") {
+    if (selectedSearch != "") {
       window.open(
-        searchmod[key][1] + val.trim().substr(2).trim(),
+        searchEngines[selectedSearch][1] +
+          currentText
+            .trim()
+            .substr(selectedSearch.length)
+            .trim(),
         "_self"
       );
       document.getElementById("search-mode").innerHTML =
-        searchmod[searchengine][0] + '<span class="loading"></span>';
+        searchEngines[selectedSearch][0] + '<span class="loading"></span>';
+    } else if (selectedBookmark != "") {
+      window.open(bookmarks[selectedBookmark][1], "_self");
     } else if (
-      val.includes(".com") ||
-      val.includes(".net") ||
-      val.includes(".co") ||
-      val.includes(".io") ||
-      val.includes(".xyz") ||
-      val.includes(".gov") ||
-      val.includes(".org") ||
-      val.includes(".se") ||
-      val.includes(".fm") ||
-      val.includes(".de") ||
-      val.includes(".uk") ||
-      val.includes(".gg") ||
-      val.includes(".info") ||
-      val.includes(".ai") ||
-      val.includes(".ch") ||
-      val.includes(".edu") ||
-      val.includes(".gl") ||
-      val.includes(".na") ||
-      val.includes(".nz") ||
-      val.includes(".so")
+      currentText.includes(".com") ||
+      currentText.includes(".net") ||
+      currentText.includes(".co") ||
+      currentText.includes(".io") ||
+      currentText.includes(".xyz") ||
+      currentText.includes(".gov") ||
+      currentText.includes(".org") ||
+      currentText.includes(".se") ||
+      currentText.includes(".fm") ||
+      currentText.includes(".de") ||
+      currentText.includes(".uk") ||
+      currentText.includes(".gg") ||
+      currentText.includes(".info") ||
+      currentText.includes(".ai") ||
+      currentText.includes(".ch") ||
+      currentText.includes(".edu") ||
+      currentText.includes(".gl") ||
+      currentText.includes(".na") ||
+      currentText.includes(".nz") ||
+      currentText.includes(".so")
     ) {
-      document.getElementById("search-mode").innerHTML =
-        "url" + '<span class="loading"></span>';
-      if (val.includes("http")) {
-        window.open(val.trim(), "_self");
+      if (currentText.trim().includes(" ")) {
       } else {
-        try {
-          window.open("http://" + val.trim(), "_self");
-        } 
-        catch(err) {
-          document.getElementById("search-mode").innerHTML = 
-            "google" + '<span class="loading"></span>';
-           window.open("https://google.com/search?q=" + val.trim(), "_self");
+        document.getElementById("search-mode").innerHTML =
+          "url" + '<span class="loading"></span>';
+        if (currentText.includes("http")) {
+          window.open(currentText.trim(), "_self");
+        } else {
+          try {
+            window.open("http://" + currentText.trim(), "_self");
+          } catch (err) {
+            document.getElementById("search-mode").innerHTML =
+              "google" + '<span class="loading"></span>';
+            window.open(
+              "https://google.com/search?q=" + currentText.trim(),
+              "_self"
+            );
+          }
         }
       }
     } else {
       document.getElementById("search-mode").innerHTML =
         "google" + '<span class="loading"></span>';
-      window.open("https://google.com/search?q=" + val.trim(), "_self");
+      window.open("https://google.com/search?q=" + currentText.trim(), "_self");
     }
     document
       .getElementById("search-field")
