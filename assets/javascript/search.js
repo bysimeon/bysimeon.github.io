@@ -95,7 +95,7 @@ var bookmarks = {
   "teah": ["teah", "http://teahkbrands.com"],
   "notion": ["notion", "http://notion.so"],
   "albums": ["albums", "https://photos.google.com/albums"],
-  "high": ["the highly", "https://www.thehighly.co/:]
+  "high": ["the highly", "https://www.thehighly.co/:"]
 };
 
 // clear everything except text
