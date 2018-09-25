@@ -116,9 +116,9 @@ function search(e) {
     .toLowerCase();
 
   // first check for bookmarks and searchengines
-  if (key in searchEngines || currentText.trim() in searchEngines) {
+  if (key in searchEngines || currentText.trim().toLowerCase() in searchEngines) {
     if (!(key in searchEngines) && selectedSearchLength == 0) {
-      selectedSearch = currentText.trim();
+      selectedSearch = currentText.trim().toLowerCase();
       selectedSearchLength = currentText.trim().length;
     } else if (key in searchEngines) {
       selectedSearch = key;
@@ -134,8 +134,8 @@ function search(e) {
       searchEngines[selectedSearch][3];
     document.getElementById("search-mode").innerHTML =
       searchEngines[selectedSearch][0];
-  } else if (currentText.trim() in bookmarks) {
-    selectedBookmark = currentText.trim();
+  } else if (currentText.trim().toLowerCase() in bookmarks) {
+    selectedBookmark = currentText.trim().toLowerCase();
     document.getElementById("search-field").style.background = "";
     document.getElementById("search-mode").innerHTML = "bookmark";
     document.getElementById("search-mode").style.color = "#ee0979 ";
