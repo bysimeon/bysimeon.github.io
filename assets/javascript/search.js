@@ -93,7 +93,8 @@ var bookmarks = {
   "calendar": ["calendar", "https://calendar.google.com"],
   "photos": ["photos", "http://photos.google.com"],
   "teah": ["teah", "http://teahkbrands.com"],
-  "notion": ["notion", "http://notion.so"]
+  "notion": ["notion", "http://notion.so"],
+  "albums": ["albums", "https://photos.google.com/albums"]
 };
 
 // clear everything except text
