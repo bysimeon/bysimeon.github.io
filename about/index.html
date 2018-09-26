@@ -32,7 +32,7 @@
 <body>
   <header class="top">
     <div class="corner">
-      <span onclick="nextbackground()" class="button">
+      <span onclick="darkMode()" class="button">
     </div>
     <div class="corner">
       <a href="/"> home </a>
@@ -77,8 +77,8 @@
 
 <script>
   window.onload = () => {
-    document.body.style.background = localStorage.getItem('back1');
-    document.body.style.background = localStorage.getItem('back2');
+    document.documentElement.style.setProperty('--text-color', localStorage.getItem('textColor'));
+    document.documentElement.style.setProperty("--background-color", localStorage.getItem("backgroundColor"));
 
     if (sessionStorage.getItem("song_name") === null) {
       document.getElementById("song_name").innerHTML =

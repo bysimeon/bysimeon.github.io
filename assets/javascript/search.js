@@ -104,9 +104,9 @@ function clear() {
   selectedSearch = "";
   selectedSearchLength = 0;
   selectedBookmark = "";
-  document.getElementById("search-field").style.background = "#000";
+  document.getElementById("search-field").style.background = "var(--text-color)";
+  document.getElementById("search-mode").style.color = "var(--text-color)";
   document.getElementById("search-mode").innerHTML = "google";
-  document.getElementById("search-mode").style.color = "black ";
 }
 
 function search(e) {

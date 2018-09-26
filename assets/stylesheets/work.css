@@ -5,7 +5,7 @@
 
 .projects li {
   margin-bottom: .3rem;
-  color: black;
+  color: var(--text-color);
 }
 
 .placeholder {
@@ -17,12 +17,9 @@
   height: calc(100vh - 10rem);
   display: flex;
   justify-content: flex-end;
-  /* width: 70vw; */
-  /* border: 1px solid; */
 }
 
 .preview img {
   min-width: 100%;
   height: 100%;
-  /* margin: auto; */
 }
