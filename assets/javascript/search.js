@@ -107,6 +107,7 @@ function clear() {
   document.getElementById("search-field").style.background = "var(--text-color)";
   document.getElementById("search-mode").style.color = "var(--text-color)";
   document.getElementById("search-mode").innerHTML = "google";
+  document.getElementById("search-field").style.color = "var(--background-color)";
 }
 
 function search(e) {
@@ -129,6 +130,7 @@ function search(e) {
       "-webkit-linear-gradient" + searchEngines[selectedSearch][2];
     document.getElementById("search-field").style.background =
       "linear-gradient" + searchEngines[selectedSearch][2];
+    document.getElementById("search-field").style.color = "var(--text-color)";
     document.getElementById("search-mode").style.color =
       searchEngines[selectedSearch][3];
     document.getElementById("search-mode").style.color =
@@ -140,6 +142,7 @@ function search(e) {
     document.getElementById("search-field").style.background = "";
     document.getElementById("search-mode").innerHTML = "bookmark";
     document.getElementById("search-mode").style.color = "#ee0979 ";
+    document.getElementById("search-field").style.color = "var(--text-color)";
     document.getElementById("search-field").style.background =
       "linear-gradient" + "(to right, #ee0979, #ff6a00)";
   } else if (!(key in searchEngines) && !(currentText.trim() in bookmarks)) {
