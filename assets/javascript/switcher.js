@@ -1,7 +1,4 @@
-var colors = [
-  ['#fff', '#000'],
-  ['#000', '#fff']
-]
+var colors = [["#fff", "#000"], ["#000", "#fff"], ["#EEEEEE", "#212121"]];
 
 var curr = 0;
 var curr = localStorage.getItem('curr');
