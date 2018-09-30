@@ -103,8 +103,10 @@ var bookmarks = {
   keeb: ["mechanicalkeyboards", "https://www.reddit.com/r/mechanicalkeyboards"],
   ebay: ["ebay", "https://www.ebay.com"],
   yt: ["youtube", "https://www.youtube.com/"],
-  sc: ["soundcloud", "https://soundcloud.com/"],
-  drive: ["google drive", "https://drive.google.com/drive/"]
+  sc: ["soundcloud", "https://www.soundcloud.com/"],
+  drive: ["google drive", "https://www.drive.google.com/drive/"],
+  netflix: ["netflix", "https://www.netflix.com/"],
+  git: ["github", "https://www.github.com"]
 };
 
 // clear everything except text
