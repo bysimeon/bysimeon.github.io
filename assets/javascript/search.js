@@ -92,10 +92,10 @@ var bookmarks = {
   myhr: ["myhr", "http://myhr.northwestern.edu"],
   work: ["whentowork", "https://whentowork.com"],
   calendar: ["calendar", "https://calendar.google.com"],
-  photos: ["photos", "http://photos.google.com"],
+  photos: ["google photos", "http://photos.google.com"],
   teah: ["teah", "http://teahkbrands.com"],
   notion: ["notion", "http://notion.so"],
-  albums: ["albums", "https://photos.google.com/albums"],
+  albums: ["google photos > albums", "https://photos.google.com/albums"],
   high: ["the highly", "https://www.thehighly.co/"],
   messages: ["messages", "https://messages.android.com"],
   sqsp: ["squarespace", "https://www.squarespace.com/"],
@@ -103,7 +103,8 @@ var bookmarks = {
   keeb: ["mechanicalkeyboards", "https://www.reddit.com/r/mechanicalkeyboards"],
   ebay: ["ebay", "https://www.ebay.com"],
   yt: ["youtube", "https://www.youtube.com/"],
-  sc: ["soundcloud", "https://soundcloud.com/"]
+  sc: ["soundcloud", "https://soundcloud.com/"],
+  drive: ["google drive", "https://drive.google.com/drive/"]
 };
 
 // clear everything except text
