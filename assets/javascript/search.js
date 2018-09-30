@@ -81,22 +81,29 @@ var searchEngines = {
 
 // all my bookmarks
 var bookmarks = {
-  "showdown": ["showdown", "https://play.pokemonshowdown.com/"],
-  "simple": ["simple", "https://bank.simple.com/"],
-  "subs": ["subs", "https://horriblesubs.info/"],
-  "amex": ["american express", "https://www.americanexpress.com/"],
-  "music": ["plus premieres", "https://www.pluspremieres.in/"],
-  "caesar": ["caesar", "http://caesar.northwestern.edu"],
-  "canvas": ["canvas", "http://canvas.northwestern.edu"],
-  "myhr": ["myhr", "http://myhr.northwestern.edu"],
-  "work": ["whentowork", "https://whentowork.com"],
-  "calendar": ["calendar", "https://calendar.google.com"],
-  "photos": ["photos", "http://photos.google.com"],
-  "teah": ["teah", "http://teahkbrands.com"],
-  "notion": ["notion", "http://notion.so"],
-  "albums": ["albums", "https://photos.google.com/albums"],
-  "high": ["the highly", "https://www.thehighly.co/"],
-  "messages": ["messages", "https://messages.android.com"]
+  showdown: ["showdown", "https://play.pokemonshowdown.com/"],
+  simple: ["simple", "https://bank.simple.com/"],
+  amex: ["american express", "https://www.americanexpress.com/"],
+  discover: ["discover", "https://www.discover.com/"],
+  subs: ["subs", "https://horriblesubs.info/"],
+  music: ["plus premieres", "https://www.pluspremieres.in/"],
+  caesar: ["caesar", "http://caesar.northwestern.edu"],
+  canvas: ["canvas", "http://canvas.northwestern.edu"],
+  myhr: ["myhr", "http://myhr.northwestern.edu"],
+  work: ["whentowork", "https://whentowork.com"],
+  calendar: ["calendar", "https://calendar.google.com"],
+  photos: ["photos", "http://photos.google.com"],
+  teah: ["teah", "http://teahkbrands.com"],
+  notion: ["notion", "http://notion.so"],
+  albums: ["albums", "https://photos.google.com/albums"],
+  high: ["the highly", "https://www.thehighly.co/"],
+  messages: ["messages", "https://messages.android.com"],
+  sqsp: ["squarespace", "https://www.squarespace.com/"],
+  fixed: ["fixedgearbicycles", "https://www.reddit.com/r/fixedgearbicycle/"],
+  keeb: ["mechanicalkeyboards", "https://www.reddit.com/r/mechanicalkeyboards"],
+  ebay: ["ebay", "https://www.ebay.com"],
+  yt: ["youtube", "https://www.youtube.com/"],
+  sc: ["soundcloud", "https://soundcloud.com/"]
 };
 
 // clear everything except text
