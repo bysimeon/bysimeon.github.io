@@ -106,7 +106,8 @@ var bookmarks = {
   sc: ["soundcloud", "https://www.soundcloud.com/"],
   drive: ["google drive", "https://www.drive.google.com/drive/"],
   netflix: ["netflix", "https://www.netflix.com/"],
-  git: ["github", "https://www.github.com"]
+  git: ["github", "https://www.github.com"],
+  mega: ["megalinks", "https://forum.snahp.it/index.php"]
 };
 
 // clear everything except text
