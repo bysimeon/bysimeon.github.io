@@ -109,7 +109,9 @@ var bookmarks = {
   netflix: ["netflix", "https://www.netflix.com/"],
   git: ["github", "https://www.github.com"],
   mega: ["megalinks", "https://forum.snahp.it/index.php"],
-  cnwb: ["conweb", "https://kb.northwestern.edu/internal/conweb"]
+  cnwb: ["conweb", "https://kb.northwestern.edu/internal/conweb"],
+  piazza: ["piazza", "https://piazza.com/"],
+  keep: ["google keep", "https://keep.google.com"]
 };
 
 // clear everything except text
