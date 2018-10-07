@@ -94,7 +94,7 @@ var bookmarks = {
   myhr: ["myhr", "http://myhr.northwestern.edu"],
   w2w: ["whentowork", "https://whentowork.com"],
   clndr: ["calendar", "https://calendar.google.com"],
-  photos: ["google photos", "http://photos.google.com"],
+  phts: ["google photos", "http://photos.google.com"],
   luv: ["teah", "http://teahkbrands.com"],
   ntn: ["notion", "http://notion.so"],
   highly: ["the highly", "https://www.thehighly.co/"],
@@ -115,7 +115,8 @@ var bookmarks = {
   kick: ["kickstarter", "https://www.kickstarter.com"],
   mail: ["gmail", "https://gmail.com"],
   amzn: ["amazon", "https://smile.amazon.com/"],
-  feed: ["feedly", "https://feedly.com"]
+  feed: ["feedly", "https://feedly.com"],
+  grpme: ["groupme", "https://web.groupme.com/chats"]
 };
 
 // clear everything except text
