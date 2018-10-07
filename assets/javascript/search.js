@@ -81,27 +81,27 @@ var searchEngines = {
 
 // all my bookmarks
 var bookmarks = {
-  sndcld: ["soundcloud", "https://www.soundcloud.com/"],
+  sc: ["soundcloud", "https://www.soundcloud.com/"],
   yt: ["youtube", "https://www.youtube.com/"],
   shwdwn: ["showdown", "https://play.pokemonshowdown.com/"],
-  smpl: ["simple", "https://bank.simple.com/"],
+  simple: ["simple", "https://bank.simple.com/"],
   amex: ["american express", "https://www.americanexpress.com/"],
   dscvr: ["discover", "https://www.discover.com/"],
   hrrbl: ["subs", "https://horriblesubs.info/"],
-  plsprmrs: ["plus premieres", "https://www.pluspremieres.in/"],
+  msc: ["plus premieres", "https://www.pluspremieres.in/"],
   csr: ["caesar", "http://caesar.northwestern.edu"],
   cnvs: ["canvas", "http://canvas.northwestern.edu"],
   myhr: ["myhr", "http://myhr.northwestern.edu"],
-  wrk: ["whentowork", "https://whentowork.com"],
+  w2w: ["whentowork", "https://whentowork.com"],
   clndr: ["calendar", "https://calendar.google.com"],
-  pics: ["google photos", "http://photos.google.com"],
+  photos: ["google photos", "http://photos.google.com"],
   luv: ["teah", "http://teahkbrands.com"],
   ntn: ["notion", "http://notion.so"],
   highly: ["the highly", "https://www.thehighly.co/"],
   msgs: ["messages", "https://messages.android.com"],
   allo: ["allo", "https://allo.google.com/web"],
   sqsp: ["squarespace", "https://www.squarespace.com/"],
-  fxd: ["fixedgearbicycles", "https://www.reddit.com/r/fixedgearbicycle/"],
+  fgb: ["fixedgearbicycles", "https://www.reddit.com/r/fixedgearbicycle/"],
   keeb: ["mechanicalkeyboards", "https://www.reddit.com/r/mechanicalkeyboards"],
   ebay: ["ebay", "https://www.ebay.com"],
   drive: ["google drive", "https://www.drive.google.com/drive/"],
@@ -109,9 +109,12 @@ var bookmarks = {
   netflix: ["netflix", "https://www.netflix.com/"],
   git: ["github", "https://www.github.com"],
   mega: ["megalinks", "https://forum.snahp.it/index.php"],
-  cnwb: ["conweb", "https://kb.northwestern.edu/internal/conweb"],
+  conweb: ["conweb", "https://kb.northwestern.edu/internal/conweb"],
   piazza: ["piazza", "https://piazza.com/"],
-  keep: ["google keep", "https://keep.google.com"]
+  keep: ["google keep", "https://keep.google.com"],
+  kick: ["kickstarter", "https://www.kickstarter.com"],
+  mail: ["gmail", "https://gmail.com"],
+  amzn: ["amazon", "https://smile.amazon.com/"]
 };
 
 // clear everything except text
