@@ -116,7 +116,8 @@ var bookmarks = {
   mail: ["gmail", "https://gmail.com"],
   amzn: ["amazon", "https://smile.amazon.com/"],
   feed: ["feedly", "https://feedly.com"],
-  grpme: ["groupme", "https://web.groupme.com/chats"]
+  grpme: ["groupme", "https://web.groupme.com/chats"],
+  arena: ["are.na", "https://www.are.na/"]
 };
 
 // clear everything except text
