@@ -114,7 +114,8 @@ var bookmarks = {
   keep: ["google keep", "https://keep.google.com"],
   kick: ["kickstarter", "https://www.kickstarter.com"],
   mail: ["gmail", "https://gmail.com"],
-  amzn: ["amazon", "https://smile.amazon.com/"]
+  amzn: ["amazon", "https://smile.amazon.com/"],
+  feed: ["feedly", "https://feedly.com"]
 };
 
 // clear everything except text
