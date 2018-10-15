@@ -76,6 +76,12 @@ var searchEngines = {
     "https://www.netflix.com/search?q=",
     "(to right, #e50914, #e50914)",
     "#e50914"
+  ],
+  "tr:": [
+    "translate",
+    "https://translate.google.com/#auto/fr/",
+    "(to right, #2c3e50, #4ca1af)",
+    "#2c3e50"
   ]
 };
 
@@ -118,7 +124,8 @@ var bookmarks = {
   feed: ["feedly", "https://feedly.com"],
   grpme: ["groupme", "https://web.groupme.com/chats"],
   arena: ["are.na", "https://www.are.na/"],
-  shrtn: ["shorten links", "https://bitly.com/"]
+  shrtn: ["shorten links", "https://bitly.com/"],
+  trns: ["google translate", "https://translate.google.com/"]
 };
 
 // clear everything except text
