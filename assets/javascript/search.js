@@ -117,7 +117,8 @@ var bookmarks = {
   amzn: ["amazon", "https://smile.amazon.com/"],
   feed: ["feedly", "https://feedly.com"],
   grpme: ["groupme", "https://web.groupme.com/chats"],
-  arena: ["are.na", "https://www.are.na/"]
+  arena: ["are.na", "https://www.are.na/"],
+  shrtn: ["shorten links", "https://bitly.com/"]
 };
 
 // clear everything except text
@@ -210,7 +211,8 @@ function search(e) {
       currentText.includes(".gl") ||
       currentText.includes(".na") ||
       currentText.includes(".nz") ||
-      currentText.includes(".so")
+      currentText.includes(".so") ||
+      currentText.includes(".ly")
     ) {
       if (currentText.trim().includes(" ")) {
       } else {
