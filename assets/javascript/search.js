@@ -82,7 +82,13 @@ var searchEngines = {
     "https://translate.google.com/#auto/fr/",
     "(to right, #2c3e50, #4ca1af)",
     "#2c3e50"
-  ]
+  ],
+  "e:": [
+    "ebay",
+     "https://www.ebay.com/sch/",
+     "(to right, #799f0c, #acbb78)",
+     "#799f0c"
+    ]
 };
 
 // all my bookmarks
@@ -101,7 +107,7 @@ var bookmarks = {
   w2w: ["whentowork", "https://whentowork.com"],
   clndr: ["calendar", "https://calendar.google.com"],
   phts: ["google photos", "http://photos.google.com"],
-  luv: ["teah", "http://teahkbrands.com"],
+  teah: ["teah", "http://teahkbrands.com"],
   ntn: ["notion", "http://notion.so"],
   highly: ["the highly", "https://www.thehighly.co/"],
   msgs: ["messages", "https://messages.android.com"],
@@ -125,7 +131,8 @@ var bookmarks = {
   grpme: ["groupme", "https://web.groupme.com/chats"],
   arena: ["are.na", "https://www.are.na/"],
   shrtn: ["shorten links", "https://bitly.com/"],
-  trns: ["google translate", "https://translate.google.com/"]
+  trns: ["google translate", "https://translate.google.com/"],
+  pedal: ["pedalroom", "https://www.pedalroom.com/"]
 };
 
 // clear everything except text
