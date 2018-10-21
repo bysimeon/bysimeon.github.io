@@ -77,7 +77,7 @@ p {
   transform: translate(2px, 3px);
 }
 .nav #nav_about {
-  outline-color: #6b9080;
+  outline-color: #80b39d;
 }
 .nav #nav_projects {
   outline-color: #f6fff8;
@@ -105,9 +105,8 @@ p {
   max-width: 80vw;
   background: rgba(254, 254, 254, 0.99);
   border: solid black 2px;
-  box-shadow: 2px 3px;
   margin: auto auto 100px auto;
-  transition: all 0.1s linear;
+  transition: margin 0.5s linear;
 }
 .window .header {
   font-size: 1.25rem;
@@ -157,6 +156,12 @@ p {
   margin: auto !important;
   justify-content: space-evenly;
 }
+.grid .col {
+  width: 33%;
+}
+.grid .grid-item {
+  margin: 0;
+}
 .grid .third-item {
   display: none;
 }
@@ -180,7 +185,7 @@ p {
   width: 600px;
 }
 .image .header {
-  background: #6b9080;
+  background: #80b39d;
 }
 .image img {
   width: 100%;
@@ -207,10 +212,11 @@ p {
   display: none;
   position: absolute;
   margin: 0;
+  left: -100vw;
   padding: 0 5vw;
-  width: 100%;
+  width: 100vw;
   max-width: 100vw;
-  transition: margin 0.2s linear;
+  transition: left 0.5s linear;
 }
 
 #papersGroup .papers {
@@ -253,6 +259,9 @@ p {
   margin: 0 0 0 0.5rem;
 }
 
+#aboutGroup #about-spacer {
+  height: calc(9vh + 6vw);
+}
 #aboutGroup .window {
   outline: #000;
 }
@@ -260,13 +269,13 @@ p {
   width: 300px;
 }
 #aboutGroup #contact .header {
-  background: #6b9080;
+  background: #80b39d;
 }
 #aboutGroup .twitter {
   width: 500px;
 }
 #aboutGroup .twitter .header {
-  background: #6b9080;
+  background: #80b39d;
 }
 #aboutGroup .twitter .twitter-embed {
   max-height: 300px;
@@ -277,7 +286,7 @@ p {
   overflow: hidden;
 }
 #aboutGroup .map .header {
-  background: #6b9080;
+  background: #80b39d;
 }
 #aboutGroup .map .mapouter {
   text-align: right;

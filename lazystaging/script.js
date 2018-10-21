@@ -1,31 +1,56 @@
 function filterWindows(group, b) {
   tohide = document.getElementsByClassName("aGroup");
   for (let index = 0; index < tohide.length; index++) {
-    tohide[index].style.display = "none";
+    // tohide[index].style.display = "none";
+    tohide[index].style.left = "-100vw";
   }
 
   toshow = document.getElementById(group);
 
   if (toshow != cPage) {
-    for (let index = 0; index < document.getElementsByClassName("filter").length; index++) {
-      document.getElementsByClassName("filter")[index].style.backgroundColor = "#fff";
+    cPage = document.getElementById(group);
+    for (
+      let index = 0;
+      index < document.getElementsByClassName("filter").length;
+      index++
+    ) {
+      document.getElementsByClassName("filter")[index].style.backgroundColor =
+        "#fff";
     }
     b.style.background = b.getAttribute("color");
     zindex += 1;
+    toshow.style.left = "0";
     document.getElementById(group).style.display = "block";
     document.getElementById(group).style.opacity = "1";
     document.getElementById(group).style.zIndex = zindex;
-    cPage = document.getElementById(group);
+    console.log(cPage.id);
+    
+    if (cPage.id == "peopleGroup") {
+      for (index = 0; index < document.getElementsByClassName("person").length; index++) {
+        document.getElementsByClassName("person")[index].style.marginLeft =
+          String(
+            Math.random() *
+          (document.getElementsByClassName("col")[0].offsetWidth / 1.2 - document.getElementsByClassName("person")[index].offsetWidth)
+          ) + "px";
+      }
+    }
   } else {
-    cPage = null;''
+    cPage = null;
+    ("");
     b.style.background = "white";
-    document.getElementById(group).style.display = "none";
+    // document.getElementById(group).style.display = "none";
+    document.getElementById(group).style.left = "-100vw";
   }
 
   for (let index = 0; index < toshow.children.length; index++) {
-    toshow.children[index].style.marginRight = String(Math.random() * (toshow.offsetWidth - toshow.children[index].offsetWidth)) + "px";
-    toshow.children[index].style.marginBottom = String(Math.random() * 90 + 10) + "px";
-    toshow.style.marginTop = String(Math.random() * 1) + "vh"; 
+    toshow.children[index].style.marginRight =
+      String(
+        Math.random() *
+          (toshow.offsetWidth - toshow.children[index].offsetWidth)
+      ) + "px";
+    toshow.children[index].style.marginBottom =
+      String(Math.random() * 90 + 10) + "px";
+    toshow.style.marginTop = String(Math.random() * 1) + "vh";
   }
 }
 
