@@ -1,11 +1,10 @@
 function filterWindows(group, b) {
   tohide = document.getElementsByClassName("aGroup");
-  for (let index = 0; index < tohide.length; index++) {
-    // tohide[index].style.display = "none";
-    tohide[index].style.left = "-100vw";
-  }
-
   toshow = document.getElementById(group);
+
+  for (let index = 0; index < tohide.length; index++) {
+    tohide[index].style.display = "none";
+  }
 
   if (toshow != cPage) {
     cPage = document.getElementById(group);
@@ -14,30 +13,38 @@ function filterWindows(group, b) {
       index < document.getElementsByClassName("filter").length;
       index++
     ) {
-      document.getElementsByClassName("filter")[index].style.backgroundColor =
-        "#fff";
+      document.getElementsByClassName("filter")[index].style.backgroundColor = "rgba(0,0,0,0)";
     }
-    b.style.background = b.getAttribute("color");
+
+    if (document.getElementsByClassName("current-filter")[0]) {
+      document
+        .getElementsByClassName("current-filter")[0]
+        .classList.remove("current-filter");
+    } 
+    b.style.backgroundColor = "rgba(0,0,0,0)";
+    document.body.style.backgroundColor = b.getAttribute("color");
+    b.classList.add("current-filter");
     zindex += 1;
     toshow.style.left = "0";
     document.getElementById(group).style.display = "block";
-    document.getElementById(group).style.opacity = "1";
     document.getElementById(group).style.zIndex = zindex;
     console.log(cPage.id);
     
     if (cPage.id == "peopleGroup") {
       for (index = 0; index < document.getElementsByClassName("person").length; index++) {
+        // document.getElementsByClassName("person")[index].style.display = "block";
         document.getElementsByClassName("person")[index].style.marginLeft =
           String(
             Math.random() *
-          (document.getElementsByClassName("col")[0].offsetWidth / 1.2 - document.getElementsByClassName("person")[index].offsetWidth)
+          (document.getElementsByClassName("col")[0].offsetWidth - document.getElementsByClassName("person")[index].offsetWidth)
           ) + "px";
       }
     }
   } else {
     cPage = null;
-    ("");
-    b.style.background = "white";
+    b.style.backgroundColor = "rgba(0,0,0,0)";
+    b.classList.remove("current-filter");
+    document.body.style.backgroundColor = "white";
     // document.getElementById(group).style.display = "none";
     document.getElementById(group).style.left = "-100vw";
   }
@@ -62,6 +69,10 @@ function hiddenBoxToggle(e) {
   }
 }
 
+function latency() {
+  console.log('lag');
+}
+
 window.onload = () => {
   // variable declaration
   zindex = 0;
@@ -83,31 +94,3 @@ window.onload = () => {
     };
   }
 };
-
-// document.addEventListener('click', function (e) {
-//   console.log(e);
-//   e = e || window.event;
-//   var target = e.target || e.srcElement,
-//     text = target.textContent || target.innerText;
-//   // if (target.classList.contains("window-clicked")) {
-//   //   target.classList.remove("window-clicked");
-//   // } else {
-//   //   target.classList.add("window-clicked");
-//   // }
-//   zindex += 1;
-//   target.style.zIndex = zindex;
-// }, false);
-
-// add margin-top to sections
-// for (
-//   let index = 0;
-//   index < document.getElementsByClassName("aGroup").length;
-//   index++
-// ) {
-//   // document.getElementsByClassName("aGroup")[index].style.Top = String(Math.random() * 15) + "vh";
-
-//   for (let index2 = 0; index < document.getElementsByClassName("aGroup")[index].children.length; index++) {
-//     // document.getElementsByClassName("aGroup")[index].children[index2].style.marginRight = String(Math.random() * 15) + "vw";
-//     // document.getElementsByClassName("aGroup")[index].children[index2].style.marginBottom = String(Math.random() * 150) + "px";
-//   }
-// }

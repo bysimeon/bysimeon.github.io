@@ -12,8 +12,6 @@
 </head>
 
 <body>
-    <!-- <img class="logo" src="img/logo.svg" alt=""> -->
-
     <div class="background_description">
         Technological Innovations for Inclusive Learning &#38; Teaching (tiilt)
         lab aims to improve
@@ -22,13 +20,21 @@
         for students from under-served communities.
     </div>
 
+    <div id="tiilt-logo">
+        <img class="lazy" src="" data-src="/img/logo.svg" alt="">
+    </div>
+
     <nav class="nav primary_nav">
-        <div id="nav_projects" color="#F6FFF8" class="filter" onclick="filterWindows('projectGroup', this)"><span>Projects</span></div>
-        <div id="nav_classes" color="#EAF4F4" class="filter" onclick="filterWindows('classGroup', this)"><span>Classes</span></div>
-        <div id="nav_papers" color="#CCE3DE" class="filter" onclick="filterWindows('papersGroup', this)"><span>Papers</span></div>
-        <div id="nav_team" color="#A4C3B2" class="filter" onclick="filterWindows('peopleGroup', this)"><span>Team</span></div>  
-        <div id="nav_about" color="#80b39d" class="filter" onclick="filterWindows('aboutGroup', this)"><span>???</span></div>
-        
+        <div class="stacked">
+            <h1>Technological Innovations for Inclusive Learning & Teaching</h1>
+            <div class="filters">
+                <div id="nav_projects" color="yellow" class="filter" onclick="filterWindows('projectGroup', this)"><span>Projects</span></div>
+                <div id="nav_classes" color="red" class="filter" onclick="filterWindows('classGroup', this)"><span>Classes</span></div>
+                <div id="nav_papers" color="green" class="filter" onclick="filterWindows('papersGroup', this)"><span>Papers</span></div>
+                <div id="nav_team" color="orange" class="filter" onclick="filterWindows('peopleGroup', this)"><span>Team</span></div>
+                <div id="nav_about" color="lightblue" class="filter" onclick="filterWindows('aboutGroup', this)"><span>___<span></div>
+            </div>
+        </div>
     </nav>
 
     <section class="spacer"></section>
@@ -433,7 +439,6 @@
     </section>
 
     <section class="aGroup" id="aboutGroup">
-        <div id="about-spacer"></div>
         <div class="window" id="contact">
             <div class="header">Contact</div>
             <ul>
@@ -763,7 +768,7 @@
             
                     <div class="">
                         <p class="description">
-                            student, fourth year. kinda made this.
+                            student, fourth year.
                         </p>
                     </div>
                 </div>
