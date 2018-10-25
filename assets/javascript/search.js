@@ -132,7 +132,9 @@ var bookmarks = {
   arena: ["are.na", "https://www.are.na/"],
   shrtn: ["shorten links", "https://bitly.com/"],
   trns: ["google translate", "https://translate.google.com/"],
-  pedal: ["pedalroom", "https://www.pedalroom.com/"]
+  pedal: ["pedalroom", "https://www.pedalroom.com/"],
+  lazy: ["lazy staging", "https://bysimeon.com/lazy/"],
+  rdt: ["reddit", "https://reddit.com"]
 };
 
 // clear everything except text
