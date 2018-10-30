@@ -1,22 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+/* VARIABLES */
 
 :root {
   --text-color: black;
   --background-color: white;
 }
 
-#WIP {
-  font-size: 40vw;
-}
-
-#WIP p {
-  font-size: 1rem;
-}
-
-/* uhh */
+/* BIG BIG */
 
 html {
-  font-family: Inconsolata, serif;
+  font-family: "Space Grotesk", serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -24,11 +16,6 @@ html {
   user-select: none;
   font-size: calc(10px + 0.6vw);
   text-transform: lowercase;
-}
-
-* {
-  box-sizing: border-box;
-  transition: font-size 0.1s linear;
 }
 
 body {
@@ -39,19 +26,56 @@ body {
   overflow-x: hidden;
 }
 
-/* TEXT STYLING */
-
-.strike {
-  text-decoration: line-through;
+* {
+  box-sizing: border-box;
+  transition: font-size 0.1s linear;
 }
 
-.uppercase {
-  text-transform: uppercase;
+/* ELEMENT MODIFICATIONS */
+
+a {
+  cursor: pointer;
+  line-height: 1.4em;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.1s linear;
+  display: inline-block;
+  border-bottom: 0.1em solid var(--text-color);
+}
+
+a:visited {
+  letter-spacing: 0.1em;
+}
+
+a:hover {
+  letter-spacing: 0.1em;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul li::before {
+  content: "~";
+}
+
+/* TEXT STYLING */
+
+.hidden-link {
+  border-bottom: 0 solid #000 !important;
+}
+
+.hidden-link:hover {
+  cursor: pointer;
+  letter-spacing: 0;
 }
 
 .current-page {
-  margin-bottom: -5px;
-  border-bottom: 1px solid var(--text-color);
+  font-weight: bold;
+  letter-spacing: .1em;
 }
 
 .button {
@@ -72,10 +96,15 @@ body {
 }
 
 #song a {
-  border-bottom: 1px solid var(--text-color);
+  border-bottom: 0.1em solid var(--text-color);
 }
 
 /* TOP AND BOTTOM BARS */
+
+.corner {
+  padding: 1rem;
+}
+
 
 .top {
   width: 100vw;
@@ -93,6 +122,14 @@ body {
   overflow: hidden;
 }
 
+.top a {
+  border-bottom: 0 solid #000;
+}
+
+.top a:not(:last-child) {
+  margin-right: 1rem;
+}
+ 
 .bottom {
   width: 100vw;
   border-top: 1px solid var(--text-color);
@@ -100,7 +137,7 @@ body {
   position: fixed;
   left: 0px;
   bottom: 0px;
-  height: 3rem;
+  height: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,34 +147,6 @@ body {
   overflow: hidden;
 }
 
-.corner {
-  padding: 1rem;
-}
-
-.top div:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.top a:not(:last-child) {
-  margin-right: 1rem;
-}
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--text-color);
-  transition: all 0.1s linear;
-}
-
-.container a {
-  border-bottom: 1px solid var(--text-color);
-  /*display: inline-block;*/
-}
-
-a:hover {
-  letter-spacing: 1px;
+.bottom .corner:last-child a {
+  border-bottom: 0px;
 }

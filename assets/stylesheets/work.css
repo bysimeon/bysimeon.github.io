@@ -4,12 +4,20 @@
 }
 
 .projects li {
-  margin-bottom: .3rem;
+  margin-bottom: 0.5em;
   color: var(--text-color);
+}
+
+.projects li a {
+  /* padding-bottom: .05em; */
 }
 
 .placeholder {
   font-size: 7vw;
+}
+
+.filter::after {
+  content: ".";
 }
 
 .preview {
@@ -22,4 +30,45 @@
 .preview img {
   min-width: 100%;
   height: 100%;
+}
+
+.projects {
+  font-size: 3rem;
+}
+
+.personal::after {
+  color: red;
+}
+
+.personal::before {
+  color: red;
+}
+
+.paid::after {
+  color: blue;
+}
+
+.paid::before {
+  color: blue;
+}
+
+.unfinished::before {
+  color: yellow;
+}
+
+.unfinished::after {
+  color: yellow;
+}
+
+.project {
+  /* display: none; */
+}
+
+.project-description {
+  padding: 0px;
+  text-align: right;
+}
+
+.project img {
+  width: 100%;
 }

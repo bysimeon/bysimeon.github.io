@@ -135,7 +135,7 @@ var bookmarks = {
   pedal: ["pedalroom", "https://www.pedalroom.com/"],
   lazy: ["lazy staging", "https://bysimeon.com/lazy/"],
   rdt: ["reddit", "https://reddit.com"],
-  tlt: ["tiilt", "https://tiilt.northwestern.edu"]
+  tlt: ["tiilt lab", "https://tiilt.northwestern.edu"]
 };
 
 // clear everything except text
