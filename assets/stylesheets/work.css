@@ -3,6 +3,9 @@
   overflow: hidden;
 }
 
+
+}
+
 .projects li {
   margin-bottom: 0.5em;
   color: var(--text-color);
@@ -10,6 +13,7 @@
 
 .projects li a {
   /* padding-bottom: .05em; */
+      text-indent: 0em;
 }
 
 .placeholder {
@@ -61,7 +65,7 @@
 }
 
 .project {
-  /* display: none; */
+  display: none;
 }
 
 .project-description {
