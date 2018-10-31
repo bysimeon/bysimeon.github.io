@@ -73,14 +73,14 @@
                 <img draggable="false" class="img-hor" src="/assets/photos/shop/item1.png" alt="">
             </div>
             <div class="description">
-                <h1>Zeus Criterium Fluted seatpost [rare]</h1>
+                <h1>zeus criterium fluted seatpost [rare]</h1>
                 <p>it's old, cool, polished, god of the sky, and has grooves! what more can you want in a seatpost?</p>
                 <ul>
                     <li> 27.2mm width</li>
                     <li> 215mm Length</li>
-                    <li> Aluminum alloy</li>
+                    <li> aluminum alloy</li>
                 </ul>
-                <div><button>interested</button></div>
+                <div><button>sold out</button></div>
             </div>
         </section>
         <!-- <section class="item right-pic" id="item2">
@@ -110,25 +110,5 @@
     window.onload = () => {
         document.documentElement.style.setProperty('--text-color', localStorage.getItem('textColor'));
         document.documentElement.style.setProperty("--background-color", localStorage.getItem("backgroundColor"));
-
-        if (sessionStorage.getItem("song_name") === null) {
-            document.getElementById("song_name").innerHTML =
-                "nothing, but recently heard";
-        } else {
-            document.getElementById("song_name").innerHTML = sessionStorage.getItem(
-                "song_name"
-            );
-        }
-        document
-            .getElementById("song_name")
-            .setAttribute("href", sessionStorage.getItem("song_url"));
-        document.getElementById("artist_name").innerHTML = sessionStorage.getItem(
-            "artist_name"
-        );
-        document
-            .getElementById("artist_name")
-            .setAttribute("href", sessionStorage.getItem("artist_url"));
-        recenttrack();
-        setInterval(recenttrack, 500);
     }
 </script>

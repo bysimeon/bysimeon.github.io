@@ -10,9 +10,8 @@
   src: url("/assets/webfont/SpaceGrotesk-Regular.woff") format("woff");
 }
 
-/* BIG BIG */ s
-
-html {
+/* BIG BIG */
+s html {
   font-family: "Space Grotesk", serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -92,21 +91,18 @@ img {
   letter-spacing: 0.1em;
 }
 
-.button {
-  height: 1rem;
-  width: 1rem;
-  background-color: var(--text-color);
-  border-radius: 50%;
-  display: inline-block;
-  -webkit-transition: -webkit-transform 0.11s;
-  transition: -webkit-transform 0.11s;
-  transition: transform 0.11s;
-  transition: transform 0.11s, -webkit-transform 0.11s;
+.notsmalltext {
+  font-size: 1.2rem;
 }
 
-.button:active {
-  -webkit-transform: translate(0.15em, 0px);
-  transform: translate(0.15em, 0px);
+.mediumtext {
+  font-size: 20vw;
+}
+
+.bigbigtext {
+  font-size: 40vw;
+  font-family: "Space Grotesk", serif;
+  text-transform: uppercase;
 }
 
 #song a {
@@ -133,6 +129,13 @@ img {
   justify-content: space-between;
   z-index: 10;
   overflow: hidden;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
 }
 
 .top a {
@@ -158,6 +161,14 @@ img {
   justify-content: space-between;
   z-index: 10;
   overflow: hidden;
+  text-transform: lowercase;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
 }
 
 .bottom .corner:last-child a {

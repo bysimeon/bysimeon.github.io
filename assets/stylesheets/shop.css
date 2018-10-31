@@ -3,10 +3,6 @@
   overflow: hidden;
 }
 
-.mediumtext {
-  font-size: 20vw;
-}
-
 .item {
   display: flex;
   justify-content: center;
@@ -137,4 +133,28 @@
   display: inline-block;
   padding: 0 1rem;
   color: var(--text-color);
+}
+
+.button {
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.11s;
+  transition: -webkit-transform 0.11s;
+  transition: transform 0.11s;
+  transition: transform 0.11s, -webkit-transform 0.11s;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently */
+}
+
+.button:active {
+  -webkit-transform: translate(0.15em, 0px);
+  transform: translate(0.15em, 0px);
 }
