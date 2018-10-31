@@ -76,7 +76,7 @@
   box-sizing: border-box;
   background-color: var(--text-color);
   border: solid 0px var(--text-color);
-  font-family: Inconsolata;
+  font-family: "Space Grotesk";
   color: var(--background-color);
   outline: none;
   margin-bottom: 1rem;
@@ -103,7 +103,7 @@
   box-sizing: border-box;
   background-color: var(--text-color);
   border: solid 0px var(--text-color);
-  font-family: Inconsolata;
+  font-family: "Space Grotesk";
   font-size: 3.5rem;
   color: var(--background-color);
   outline: none;

@@ -5,7 +5,12 @@
   --background-color: white;
 }
 
-/* BIG BIG */
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/assets/webfont/SpaceGrotesk-Regular.woff") format("woff");
+}
+
+/* BIG BIG */ s
 
 html {
   font-family: "Space Grotesk", serif;
@@ -19,6 +24,7 @@ html {
 }
 
 body {
+  font-family: "Space Grotesk", serif;
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0px;
