@@ -1,0 +1,17 @@
+.container {
+  padding: 4em 3em 3em 3em;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+.bigbigtext {
+  font-size: 40vw;
+  font-family: "Space Grotesk", serif;
+  text-transform: uppercase;
+}
