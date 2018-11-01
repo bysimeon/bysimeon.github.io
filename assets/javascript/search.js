@@ -85,10 +85,16 @@ var searchEngines = {
   ],
   "e:": [
     "ebay",
-     "https://www.ebay.com/sch/",
-     "(to right, #799f0c, #acbb78)",
-     "#799f0c"
-    ]
+    "https://www.ebay.com/sch/",
+    "(to right, #799f0c, #acbb78)",
+    "#799f0c"
+  ],
+  "usps:": [
+    "usps tracking",
+    "https://tools.usps.com/go/TrackConfirmAction?tLabels=",
+    "(to right, #E71921, #333366)",
+    "#E71921"
+  ]
 };
 
 // all my bookmarks
