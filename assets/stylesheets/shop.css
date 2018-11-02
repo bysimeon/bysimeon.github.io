@@ -49,6 +49,7 @@
 }
 
 .item .description button {
+  cursor: pointer;
   width: 100%;
   font-size: 1rem;
   padding: 0.3rem;
