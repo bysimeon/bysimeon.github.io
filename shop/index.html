@@ -22,12 +22,11 @@
     <link rel="stylesheet" type="text/css" href="/assets/stylesheets/shop.css">
     <link rel="stylesheet" type="text/css" href="/assets/stylesheets/universal.css">
     <link rel="stylesheet" type="text/css" href="/assets/stylesheets/mobile.css">
-    <link rel="stylesheet" href="/assets/libraries/spinners.css">
     <link href="/assets/favicon.png" rel="shortcut icon" type="image/x-icon" />
     <script src="/assets/javascript/switcher.js"></script>
     <script src="/assets/javascript/lastfm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@10.19.0/dist/lazyload.min.js"></script>
 </head>
-
 
 <body>
     <div class="top">
@@ -70,22 +69,44 @@
         </div>
         <section class="item left-pic" id="item1">
             <div class="image">
-                <img draggable="false" class="img-hor" src="/assets/photos/shop/item1.png" alt="">
+                <img draggable="false" class="img-hor lazy" data-src="/assets/photos/shop/item3.jpg" alt="">
+                <!-- <div class="image-previews">
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                </div> -->
             </div>
             <div class="description">
-                <h1>zeus criterium fluted seatpost [rare]</h1>
-                <p>it's old, cool, polished, god of the sky, and has grooves! what more can you want in a seatpost?</p>
+                <h1>shirts with pictures</h1>
+                <p> shirts with pictures i take on em, color coordinated! shirts with pictures i take on em, color coordinated!</p>
                 <ul>
-                    <li> 27.2mm width</li>
-                    <li> 215mm Length</li>
-                    <li> aluminum alloy</li>
+                    <li> soft cotton</li>
+                    <li> looks good dirty</li>
+                    <li> pre-shrunk</li>
                 </ul>
-                <div><button>sold out</button></div>
+                <div class="not-a-button">shirt size</div>
+                <div class="horizonatal-buttons">
+                    <button>s</button>
+                    <button>m</button>
+                    <button>l</button>
+                </div>
             </div>
         </section>
         <!-- <section class="item right-pic" id="item2">
              <div class="description">
-                <h1>Shirts with pictures</h1>
+                <h1>shirts with pictures</h1>
                 <p> shirts with pictures i take on em, color coordinated! shirts with pictures i take on em, color coordinated!</p>
                 <ul>
                     <li> soft cotton</li>
@@ -100,7 +121,56 @@
                 </div>
             </div>
             <div class="image">
-                <img draggable="false" class="img-ver" src="/assets/photos/shop/item2.png" alt="">
+                <img draggable="false" class="img-ver" src="/assets/photos/shop/item3.jpg" alt="">
+                <div class="image-previews">
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="item left-pic" id="item1">
+            <div class="image">
+                <img draggable="false" class="img-hor lazy" data-src="/assets/photos/shop/item3.jpg" alt="">
+                <div class="image-previews">
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                    <div>
+                        <img src="/assets/photos/shop/item3.jpg" alt="" class="img-prev lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="description">
+                <h1>zeus criterium fluted seatpost [rare]</h1>
+                <p>it's old, cool, polished, god of the sky, and has grooves! what more can you want in a seatpost?</p>
+                <ul>
+                    <li> 27.2mm width</li>
+                    <li> 215mm Length</li>
+                    <li> aluminum alloy</li>
+                </ul>
+                <div><button>sold out</button></div>
             </div>
         </section> -->
     </div>
@@ -111,4 +181,8 @@
         document.documentElement.style.setProperty('--text-color', localStorage.getItem('textColor'));
         document.documentElement.style.setProperty("--background-color", localStorage.getItem("backgroundColor"));
     }
+
+    var myLazyLoad = new LazyLoad({
+        elements_selector: ".lazy"
+    });
 </script>

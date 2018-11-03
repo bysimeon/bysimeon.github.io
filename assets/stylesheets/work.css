@@ -3,9 +3,6 @@
   overflow: hidden;
 }
 
-
-}
-
 .projects li {
   margin-bottom: 0.5em;
   color: var(--text-color);
@@ -64,10 +61,6 @@
   color: yellow;
 }
 
-.project {
-  display: none;
-}
-
 .project-description {
   padding: 0px;
   text-align: right;
@@ -75,4 +68,5 @@
 
 .project img {
   width: 100%;
+  border: 1px solid black;
 }

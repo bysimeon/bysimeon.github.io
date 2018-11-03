@@ -6,18 +6,50 @@
 .item {
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
+  /* border-bottom: 1px solid #000; */
+}
+
+.item h1 {
+  margin-top: 0;
 }
 
 .item .image {
   min-width: 40vw;
+  max-width: 80vw;
+  max-width: 1000px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 .item .image img {
   width: 100%;
+  border: 1px solid black;
 }
 
-.item .description {
+.item .image-previews {
+  display: flex;
+}
 
+.item .image-previews div {
+  margin: 10px 10px 0 0;
+}
+
+.item .image-previews div:last-child {
+  margin: 10px 0 10px 0;
+}
+
+/* .item .image-previews .img-prev {
+  transition: all 100ms linear;
+}
+
+.item .image-previews .img-prev:hover {
+  
+} */
+
+.item .description {
+  display: block;
 }
 
 @media screen and (max-width: 640px) {
@@ -34,15 +66,13 @@
   .right-pic {
     flex-direction: column-reverse;
   }
-  .bottom {
-  }
 }
 
 .item .description .not-a-button {
   width: 100%;
   font-size: 1rem;
   padding: 0.3rem;
-  border: 2px solid var(--text-color);
+  border: 1px solid var(--text-color);
   color: var(--text-color);
   background-color: var(--background-color);
   text-align: center;
@@ -53,7 +83,7 @@
   width: 100%;
   font-size: 1rem;
   padding: 0.3rem;
-  border: 2px solid var(--text-color);
+  border: 1px solid var(--text-color);
   color: var(--text-color);
   background-color: var(--background-color);
 }

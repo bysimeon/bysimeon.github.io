@@ -142,6 +142,7 @@ var bookmarks = {
   lazy: ["lazy staging", "https://bysimeon.com/lazy/"],
   rdt: ["reddit", "https://reddit.com"],
   tlt: ["tiilt lab", "https://tiilt.northwestern.edu"],
+  mal: ["my anime list", "https://myanimelist.net"],
   "1p": ["1password", "https://my.1password.com"]
 };
 
