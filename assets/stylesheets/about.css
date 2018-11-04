@@ -7,6 +7,7 @@
   height: 50vh;
   position: fixed;
   bottom: 0;
+  right: 5px;
 }
 
 a {
@@ -19,4 +20,12 @@ a {
 
 .about-links a {
 	margin-bottom: .3rem;
+}
+
+@media screen and (max-width: 640px) {
+  .drawing {
+    padding-left: 10vw;
+    max-width: 90vw;
+    display: none;
+  }
 }
