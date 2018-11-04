@@ -25,7 +25,11 @@
 
 .item .image img {
   width: 100%;
+  filter: invert(100%);
   /* border: 1px solid black; */
+}
+
+.iterm .image svg {
 }
 
 .item .image-previews {
