@@ -102,7 +102,7 @@ var bookmarks = {
   sc: ["soundcloud", "https://www.soundcloud.com/"],
   yt: ["youtube", "https://www.youtube.com/"],
   shwdwn: ["showdown", "https://play.pokemonshowdown.com/"],
-  simple: ["simple", "https://bank.simple.com/"],
+  bnk: ["simple", "https://bank.simple.com/"],
   amex: ["american express", "https://www.americanexpress.com/"],
   dscvr: ["discover", "https://www.discover.com/"],
   hrrbl: ["subs", "https://horriblesubs.info/"],
@@ -143,7 +143,8 @@ var bookmarks = {
   rdt: ["reddit", "https://reddit.com"],
   tlt: ["tiilt lab", "https://tiilt.northwestern.edu"],
   mal: ["my anime list", "https://myanimelist.net"],
-  "1p": ["1password", "https://my.1password.com"]
+  "1p": ["1password", "https://my.1password.com"],
+  pp: ["paypal", "https://www.paypal.com/us/home"]
 };
 
 // clear everything except text
