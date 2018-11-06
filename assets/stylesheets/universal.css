@@ -5,6 +5,11 @@
   --background-color: white;
 }
 
+@media (prefers-color-scheme: dark) {
+  --text-color: #eeeeee !important;
+  --background-color: #212121 !important;
+}
+
 @font-face {
   font-family: "Space Grotesk";
   src: url("/assets/webfont/SpaceGrotesk-Regular.woff") format("woff");
