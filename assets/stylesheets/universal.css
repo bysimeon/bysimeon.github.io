@@ -16,8 +16,8 @@
 }
 
 /* BIG BIG */
-s html {
-  font-family: "Space Grotesk", serif;
+html {
+  font-family: "Space Grotesk", sans-serif;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -28,7 +28,7 @@ s html {
 }
 
 body {
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
   margin: 0px;
