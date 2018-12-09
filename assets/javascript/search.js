@@ -130,7 +130,6 @@ var bookmarks = {
   kick: ["kickstarter", "https://www.kickstarter.com"],
   mail: ["gmail", "https://gmail.com"],
   amzn: ["amazon", "https://smile.amazon.com/"],
-  swp: ["swappa", "https://swappa.com"],
   feed: ["feedly", "https://feedly.com"],
   arena: ["are.na", "https://www.are.na/"],
   shrtn: ["bit.ly", "https://bitly.com/"],
