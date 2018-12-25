@@ -1,8 +1,10 @@
+
+// VARIABLES
 var selectedSearch = "";
 var selectedSearchLength = 0;
 var selectedBookmark = "";
 
-// all my searchengines
+// LISTS
 var searchEngines = {
   "s:": [
     "soundcloud",
@@ -27,12 +29,6 @@ var searchEngines = {
     "https://www.youtube.com/results?search_query=",
     "(to right, #e52d27, #b31217)",
     "#e52d27"
-  ],
-  "t:": [
-    "twitch",
-    "https://www.twitch.tv/directory/game/",
-    "(to right, #6441a5, #2a0845)",
-    "#6441a5"
   ],
   "a:": [
     "myanimelist",
@@ -77,7 +73,7 @@ var searchEngines = {
     "(to right, #e50914, #e50914)",
     "#e50914"
   ],
-  "tr:": [
+  "t": [
     "translate",
     "https://translate.google.com/#auto/fr/",
     "(to right, #2c3e50, #4ca1af)",
@@ -89,15 +85,13 @@ var searchEngines = {
     "(to right, #799f0c, #acbb78)",
     "#799f0c"
   ],
-  "usps:": [
+  "p:": [
     "usps tracking",
     "https://tools.usps.com/go/TrackConfirmAction?tLabels=",
     "(to right, #E71921, #333366)",
     "#E71921"
   ]
 };
-
-// all my bookmarks
 var bookmarks = {
   sc: ["soundcloud", "https://www.soundcloud.com/"],
   yt: ["youtube", "https://www.youtube.com/"],
@@ -120,7 +114,7 @@ var bookmarks = {
   sqsp: ["squarespace", "https://www.squarespace.com/"],
   ebay: ["ebay", "https://www.ebay.com"],
   drive: ["google drive", "https://www.drive.google.com/drive/"],
-  docs: ["google docs", "https://www.google.com/docs/"],
+  docs: ["google docs", "https://www.docs.google.com/"],
   netflix: ["netflix", "https://www.netflix.com/"],
   git: ["github", "https://www.github.com"],
   mega: ["megalinks", "https://forum.snahp.it/index.php"],
@@ -136,7 +130,7 @@ var bookmarks = {
   trns: ["translate", "https://translate.google.com/"],
   pdl: ["pedalroom", "https://www.pedalroom.com/"],
   lzy: ["lazy", "https://bysimeon.com/lazy/"],
-  rdt: ["reddit", "https://reddit.com"],
+  rddt: ["reddit", "https://reddit.com"],
   tlt: ["tiilt lab", "https://tiilt.northwestern.edu"],
   mal: ["myanimelist", "https://myanimelist.net"],
   "1p": ["1password", "https://my.1password.com"],
@@ -155,6 +149,7 @@ function clear() {
   document.getElementById("search-field").style.color = "var(--background-color)";
 }
 
+// function that checks for bookmarks and searchengines, also searches on enter
 function search(e) {
   currentText = document.getElementById("search-field").value;
   key = currentText
@@ -270,26 +265,19 @@ function search(e) {
   }
 }
 
-document.addEventListener("keydown", event => {
-  if (event.keyCode == 32) {
-    // Spacebar code to open search
-    opensearchbox();
-  } else if (event.keyCode == 27) {
-    // Esc to close search
-    closeall();
-  }
-});
-
+// shows the help box
 function commands() {
   document.getElementById("command").style.visibility = "visible";
   document.getElementById("command").style.opacity = 1;
   document.getElementById("command-list").focus();
 }
 
+// focus on the search box
 function opensearchbox() {
   document.getElementById("search-field").focus();
 }
 
+// function to close 
 function closeall() {
   document.getElementById("search-field").value = "";
   document.getElementById("search-field").blur();
@@ -299,9 +287,20 @@ function closeall() {
   clear();
 }
 
+// event listener for space and esc
+document.addEventListener("keydown", event => {
+  if (event.keyCode == 32) {
+    // space code to open search
+    opensearchbox();
+  } else if (event.keyCode == 27) {
+    // esc code to close search
+    closeall();
+  }
+});
+
 window.onload = () => {
+   // clear text and focus search
   document.getElementById("search").focus();
-  // Clear Everything on Load
   document.getElementById("search-field").value = "";
   clear();
 };
