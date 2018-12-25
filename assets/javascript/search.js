@@ -73,7 +73,7 @@ var searchEngines = {
     "(to right, #e50914, #e50914)",
     "#e50914"
   ],
-  "t": [
+  "t:": [
     "translate",
     "https://translate.google.com/#auto/fr/",
     "(to right, #2c3e50, #4ca1af)",
