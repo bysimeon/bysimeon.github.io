@@ -136,7 +136,8 @@ var bookmarks = {
   "1p": ["1password", "https://my.1password.com"],
   pp: ["paypal", "https://www.paypal.com/us/home"],
   swpp: ["swappa", "https://swappa.com"],
-  "bs64": ['base64", "https://www.base64decode.org/"]
+  bs64: ["base64", "https://www.base64decode.org/"],
+  groupme: ["groupme", "https://web.groupme.com/"]
 };
 
 // clear everything except text
