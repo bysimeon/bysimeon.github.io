@@ -135,7 +135,8 @@ var bookmarks = {
   mal: ["myanimelist", "https://myanimelist.net"],
   "1p": ["1password", "https://my.1password.com"],
   pp: ["paypal", "https://www.paypal.com/us/home"],
-  swpp: ["swappa", "https://swappa.com"]
+  swpp: ["swappa", "https://swappa.com"],
+  "bs64": ['base64", "https://www.base64decode.org/"]
 };
 
 // clear everything except text
