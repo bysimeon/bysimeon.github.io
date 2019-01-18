@@ -155,8 +155,8 @@ function clear() {
 
 // function that checks for bookmarks and searchengines, also searches on enter
 function search(e) {
-    currentText = document.getElementById("search-field").value
-    key = currentText
+    let currentText = document.getElementById("search-field").value
+    let key = currentText
         .trim()
         .substr(0, 2)
         .toLowerCase()
