@@ -1,5 +1,5 @@
-let apiKey = "a7f8dd0989ae6f42d1be2c4427767c6f"
-let apiBase = "https://ws.audioscrobbler.com/2.0/"
+let apikey = "a7f8dd0989ae6f42d1be2c4427767c6f"
+let apibase = "https://ws.audioscrobbler.com/2.0/"
 let user = "theblindlookout"
 let paused = true
 
