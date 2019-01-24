@@ -1,0 +1,92 @@
+.container--music {
+    margin: 4em 3em 3em 3em;
+    overflow: hidden;
+    .medmedtext--music {
+        margin-bottom: 0.7rem;
+    }
+    .notsmalltext--music {
+        margin: 0 0 1rem 1rem;
+    }
+    .music {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        margin-bottom: 0.35rem;
+        grid-gap: 0.25em;
+        &__column {
+            height: calc(0.8 * (100vh - (14rem + 14vw)));
+            min-height: 500px;
+            overflow: scroll;
+            border-bottom: 2px solid #000;
+            &__item {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0.5em;
+                margin: 0.25em 0;
+                border: black solid 2px;
+                &__title {
+                    font-size: 1em;
+                    width: 85%;
+                }
+                &__plays {
+                    &:first-of-type {
+                        @media screen and (max-width: 430px) {
+                            display: none;
+                        }
+                    }
+                    @media screen and (max-width: 430px) {
+
+                    }
+                    float: right;
+                    font-size: 1em;
+                    line-height: 1em;
+                }
+                &:first-child {
+                    font-weight: bold;
+                    position: sticky;
+                    top: 0;
+                    background: black;
+                    color: white;
+                    margin-top: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &--hovered {
+                    background: #ddd;
+                }
+                &--selected {
+                    background: #999;
+                }
+
+                transition: background 250ms linear;
+            }
+            &--recent {
+                height: calc(0.2 * (100vh - (13.75rem + 14vw)));
+                min-height: 200px;
+            }
+        }
+        &--recent {
+            grid-template-columns: 2fr 0.997fr;
+            margin-bottom: 1.5vh;
+        }
+    }
+
+    .dropdown--music {
+        font-size: 1em;
+        font-weight: normal;
+        background: rgba(0, 0, 0, 0);
+        padding: 0.1em 0.2em;
+        border: solid black 1px;
+        border-radius: 0;
+        text-align: center;
+        text-align-last: center;
+        option {
+            text-align: left;
+        }
+        &:focus {
+            outline-offset: -2px;
+            outline-color: black;
+        }
+    }
+}
