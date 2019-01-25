@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet"
 import "./style.scss"
 
 class Home extends Component {
@@ -10,6 +10,9 @@ class Home extends Component {
                     <title>bysimeon</title>
                 </Helmet>
                 <div className="bigbigtext">
+                    <span>bysimeon</span>
+                </div>
+                <div className="bigbigtext bigbigtext--second">
                     <span>bysimeon</span>
                 </div>
             </div>

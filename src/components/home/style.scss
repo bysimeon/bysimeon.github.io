@@ -9,3 +9,10 @@
     padding-right: 0 !important;
   }
 }
+
+.bigbigtext--second {
+  direction: rtl;
+  @media screen and (max-width: 640px) {
+    padding-right: 2em;
+  }
+}
