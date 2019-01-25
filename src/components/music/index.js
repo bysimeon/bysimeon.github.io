@@ -174,7 +174,7 @@ class Music extends Component {
             this.state.topAlbums &&
             this.state.recentTracks
         ) {
-            this.state.topArtists.topartists.artist.map(artist => {
+            this.state.topArtists.topartists.artist.forEach(artist => {
                 artists.push(
                     <Artist
                         artist={artist.name}
@@ -192,7 +192,7 @@ class Music extends Component {
                 )
             })
 
-            this.state.topAlbums.topalbums.album.map(album => {
+            this.state.topAlbums.topalbums.album.forEach(album => {
                 albums.push(
                     <Album
                         album={album.name}
@@ -211,7 +211,7 @@ class Music extends Component {
                 )
             })
 
-            this.state.topTracks.toptracks.track.map(track => {
+            this.state.topTracks.toptracks.track.forEach(track => {
                 trackplays += parseInt(track.playcount)
                 tracks.push(
                     <Track
@@ -231,7 +231,7 @@ class Music extends Component {
                 )
             })
 
-            this.state.recentTracks.recenttracks.track.map(track => {
+            this.state.recentTracks.recenttracks.track.forEach(track => {
                 if (track.date) {
                     recents.push(
                         <Recent
