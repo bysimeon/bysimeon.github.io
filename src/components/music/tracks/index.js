@@ -16,7 +16,6 @@ class Track extends Component {
             (this.props.hoveredID === this.props.artistID &&
                 this.props.artistID !== "")
         ) {
-            console.log(classes)
             classes += " music__column__item--hovered"
         }
 

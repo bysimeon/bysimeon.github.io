@@ -29,7 +29,7 @@
                     width: 85%;
                 }
                 &__plays {
-                    &:first-of-type {
+                    &:first-child {
                         @media screen and (max-width: 430px) {
                             display: none;
                         }
@@ -48,6 +48,9 @@
                     background: black;
                     color: white;
                     margin-top: 0;
+                    .music__column__item__title {
+                        width: 50%;
+                    }
                 }
                 &:last-child {
                     margin-bottom: 0;
@@ -58,8 +61,19 @@
                 &--selected {
                     background: #999;
                 }
-
                 transition: background 250ms linear;
+                @media screen and (max-width: 520px) {
+                    .music__column__item__title {
+                        width: 100%;
+                        margin-bottom: .25em;
+                    }
+                    .music__column__item__plays {
+                        width: 100%;
+                        padding-top: .25em;
+                        // border-top: 1px solid #000;
+                        text-align: right;
+                    }
+                }
             }
             &--recent {
                 height: calc(0.2 * (100vh - (13.75rem + 14vw)));

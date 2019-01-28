@@ -18,9 +18,12 @@ class Work extends Component {
                 </p>
                 <ul className="projects">
                     <li className="paid">
-                        the highly [w/
+                        the highly [w/{" "}
                         <a href="https://teahkbrands.com"> teah</a>] |{" "}
-                        <a href="https://www.thehighly.co">live</a>
+                        <a href="https://www.thehighly.co">live</a>{" "}
+                        <a href="https://web.archive.org/web/20181203171025/https://www.thehighly.co/">
+                            archive
+                        </a>
                     </li>
                     <li className="personal">
                         startpage | <a href="/start/">live</a>{" "}
@@ -31,7 +34,7 @@ class Work extends Component {
                         <a href="http://tiilt.northwestern.edu/">live</a>
                     </li>
                     <li className="paid">
-                        storymapjs [w/
+                        storymapjs [w/{" "}
                         <a href="https://knightlab.northwestern.edu/">
                             knight lab
                         </a>
@@ -39,6 +42,11 @@ class Work extends Component {
                         <a href="https://github.com/NUKnightLab/StoryMapJS">
                             repo
                         </a>
+                    </li>
+                    <li className="personal">
+                        vista del valle [w/{" "}
+                        <a href="https://teahkbrands.com/">teah</a>] |{" "}
+                        <a href="https://vistadv.github.io/">live</a>{" "}
                     </li>
                 </ul>
             </div>
