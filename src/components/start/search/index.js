@@ -80,6 +80,10 @@ class Search extends Component {
                 color: searchEngines[key][3],
                 key: key
             })
+            this.props.changeBackground(
+                searchEngines[key][0],
+                searchEngines[key][3]
+            )
         } else if (text.trim().toLowerCase() in searchEngines) {
             key = text.trim().toLowerCase()
             this.setState({
@@ -90,6 +94,10 @@ class Search extends Component {
                 color: searchEngines[key][3],
                 key: key
             })
+            this.props.changeBackground(
+                searchEngines[key][0],
+                searchEngines[key][3]
+            )
         } else {
             this.checkBookmarks(text)
         }
@@ -105,6 +113,7 @@ class Search extends Component {
                 background: bookmarks[text][2],
                 color: bookmarks[text][3]
             })
+            this.props.changeBackground(bookmarks[text][0], bookmarks[text][3])
         } else {
             this.setState({
                 searchMod: false,
@@ -115,6 +124,10 @@ class Search extends Component {
                 key: false,
                 url: "https://google.com/search?q="
             })
+            this.props.changeBackground(
+                "",
+                ""
+            )
         }
     }
 
