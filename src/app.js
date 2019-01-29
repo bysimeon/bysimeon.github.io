@@ -58,14 +58,14 @@ class App extends Component {
         return (
             <Router>
                 <div className="App" style={selectedStyle}>
-                <Helmet>
-                    <meta charSet="utf-8" />
-                    <meta description="the website and portfolio of simeon" />
-                    <meta keywords="bysimeon, simeon, charles, website, northwestern, photography, engineer, software, developer, programmer" />
-                    <meta name="viewport"/>
-                    <meta authoer="simeon" />
-                    <meta content="width=device-width, initial-scale=1.0" />
-                </Helmet>
+                    <Helmet>
+                        <meta charSet="utf-8" />
+                        <meta description="the website and portfolio of simeon" />
+                        <meta keywords="bysimeon, simeon, charles, website, northwestern, photography, engineer, software, developer, programmer" />
+                        <meta name="viewport" />
+                        <meta authoer="simeon" />
+                        <meta content="width=device-width, initial-scale=1.0" />
+                    </Helmet>
                     <div className="top">
                         <div className="corner">
                             <StyleSwitcher

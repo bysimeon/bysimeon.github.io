@@ -89,7 +89,7 @@ class NowListening extends Component {
     render() {
         return (
             <div className="corner" id="song">
-                <Link to='/music/' className="hidden-link">
+                <Link to="/music/" className="hidden-link">
                     {" "}
                     listening to:&nbsp;
                 </Link>

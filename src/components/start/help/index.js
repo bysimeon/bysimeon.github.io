@@ -1,12 +1,11 @@
-import React, { Component } from "react" 
+import React, { Component } from "react"
 import "./style.scss"
 
 class Help extends Component {
     render() {
         return (
             <div id="command" className="fade">
-                <div id="close1">
-                </div>
+                <div id="close1" />
                 <div id="command-list">
                     press
                     <span> space </span> to focus the searchbox,

@@ -35,7 +35,6 @@
                         }
                     }
                     @media screen and (max-width: 430px) {
-
                     }
                     float: right;
                     font-size: 1em;
@@ -65,11 +64,11 @@
                 @media screen and (max-width: 520px) {
                     .music__column__item__title {
                         width: 100%;
-                        margin-bottom: .25em;
+                        margin-bottom: 0.25em;
                     }
                     .music__column__item__plays {
                         width: 100%;
-                        padding-top: .25em;
+                        padding-top: 0.25em;
                         // border-top: 1px solid #000;
                         text-align: right;
                     }
