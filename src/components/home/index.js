@@ -9,12 +9,12 @@ class Home extends Component {
                 <Helmet>
                     <title>bysimeon</title>
                 </Helmet>
-                <div className="bigbigtext">
+                <h1 className="bigbigtext">
                     <span>bysimeon</span>
-                </div>
-                <div className="bigbigtext bigbigtext--second">
+                </h1>
+                <h1 className="bigbigtext bigbigtext--second">
                     <span>bysimeon</span>
-                </div>
+                </h1>
             </div>
         )
     }

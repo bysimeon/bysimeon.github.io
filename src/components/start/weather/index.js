@@ -30,27 +30,31 @@ class Weather extends Component {
             this.state.temperature === null ||
             this.state.description === null
         ) {
-            let xhr = new XMLHttpRequest()
-            xhr.open(
-                "GET",
-                "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" +
-                    this.state.latitude +
-                    "&lon=" +
-                    this.state.longitude +
-                    "&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c"
-            )
-            xhr.onload = () => {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        let json = JSON.parse(xhr.responseText)
-                        this.setState({
-                            temperature: json.main.temp.toFixed(0),
-                            description: json.weather[0].description
-                        })
+            if (this.state.latitude && this.state.longitude) {
+                let xhr = new XMLHttpRequest()
+                xhr.open(
+                    "GET",
+                    "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=" +
+                        this.state.latitude +
+                        "&lon=" +
+                        this.state.longitude +
+                        "&units=Imperial&appid=4119dfca25e96bf1f10f35a975835f6c"
+                )
+                xhr.onload = () => {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            let json = JSON.parse(xhr.responseText)
+                            this.setState({
+                                temperature: json.main.temp.toFixed(0),
+                                description: json.weather[0].description
+                            })
+                        }
+                        if (xhr.status === 400) {
+                        }
                     }
                 }
+                xhr.send()
             }
-            xhr.send()
         }
     }
 

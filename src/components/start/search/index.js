@@ -58,6 +58,9 @@ class Search extends Component {
                 this.search(this.state.url + this.state.currentText)
             }
         }
+        if (e.keyCode === 32) {
+            this.nameInput.focus()
+        }
     }
 
     search(url) {
@@ -124,15 +127,13 @@ class Search extends Component {
                 key: false,
                 url: "https://google.com/search?q="
             })
-            this.props.changeBackground(
-                "",
-                ""
-            )
+            this.props.changeBackground("", "")
         }
     }
 
     componentDidMount() {
         this.nameInput.focus()
+        document.addEventListener("keypress", this.enterPressed)
     }
 
     render() {

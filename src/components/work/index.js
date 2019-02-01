@@ -9,13 +9,13 @@ class Work extends Component {
                 <Helmet>
                     <title>work &ndash; bysimeon</title>
                 </Helmet>
-                <p className="medmedtext">
+                <h1 className="medmedtext">
                     {" "}
                     some <span className="personal filter">
                         personal
                     </span> some <span className="paid filter">paid</span> some{" "}
                     <span className="unfinished filter">unfinished</span>
-                </p>
+                </h1>
                 <ul className="projects">
                     <li className="paid">
                         the highly [w/{" "}

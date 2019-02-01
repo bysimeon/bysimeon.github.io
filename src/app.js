@@ -60,7 +60,7 @@ class App extends Component {
                 <div className="App" style={selectedStyle}>
                     <Helmet>
                         <meta charSet="utf-8" />
-                        <meta description="the website and portfolio of simeon" />
+                        <meta description="the website and portfolio of simeon charles" />
                         <meta keywords="bysimeon, simeon, charles, website, northwestern, photography, engineer, software, developer, programmer" />
                         <meta name="viewport" />
                         <meta authoer="simeon" />

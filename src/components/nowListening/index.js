@@ -29,6 +29,7 @@ class NowListening extends Component {
                 user +
                 "&api_key=" +
                 apikey +
+                "&limit=1" +
                 "&format=json"
         )
         xhr.onload = () => {
@@ -94,7 +95,7 @@ class NowListening extends Component {
                     listening to:&nbsp;
                 </Link>
 
-                {this.state.playing && (
+                {this.state.playing ? (
                     <span>
                         <a id="songName" href={this.state.songUrl}>
                             {" "}
@@ -106,9 +107,7 @@ class NowListening extends Component {
                             {this.state.artistName}
                         </a>
                     </span>
-                )}
-
-                {this.state.playing === false && (
+                ) : (
                     <span>
                         <Link id="notScrobbling" to="/music/">
                             {this.state.notScrobbling}

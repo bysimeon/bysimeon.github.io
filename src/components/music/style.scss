@@ -55,10 +55,10 @@
                     margin-bottom: 0;
                 }
                 &--hovered {
-                    background: #ddd;
+                    background: hsl(0, 0%, 84%);
                 }
                 &--selected {
-                    background: #999;
+                    background: rgb(154, 154, 154);
                 }
                 transition: background 250ms linear;
                 @media screen and (max-width: 520px) {
@@ -77,6 +77,11 @@
             &--recent {
                 height: calc(0.2 * (100vh - (13.75rem + 14vw)));
                 min-height: 200px;
+            }
+            &--totals {
+                height: calc(0.2 * (100vh - (13.75rem + 14vw)));
+                min-height: 200px;
+                border-bottom: 0;
             }
         }
         &--recent {

@@ -9,9 +9,9 @@ class Shop extends Component {
                 <Helmet>
                     <title>shop &ndash; bysimeon</title>
                 </Helmet>
-                <div className="mediumtext">
+                <h1 className="mediumtext">
                     <span className="uppercase">for sale</span>
-                </div>
+                </h1>
                 <section className="item left-pic" id="item1">
                     <div className="image">
                         <img

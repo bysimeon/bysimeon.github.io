@@ -10,11 +10,11 @@ class About extends Component {
                     <title>about &ndash; bysimeon</title>
                 </Helmet>
                 <div className="textbox">
-                    <p className="medmedtext medmedtext--about">
+                    <h1 className="medmedtext medmedtext--about">
                         {" "}
                         simeon, a computer science and psychology student at
                         northwestern university{" "}
-                    </p>
+                    </h1>
                     <ul className="notsmalltext">
                         <li> developer </li>
                         <li> designer </li>

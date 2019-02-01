@@ -23,8 +23,7 @@ class Start extends Component {
     }
 
     render() {
-        let backgroundTextRepeat = (this.state.searchMode + " ").repeat(50)
-        console.log(backgroundTextRepeat)
+        let backgroundTextRepeat = (this.state.searchMode + " ").repeat(100)
 
         return (
             <div className="container container--start">

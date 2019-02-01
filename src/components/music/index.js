@@ -151,7 +151,9 @@ class Music extends Component {
             time = this.state.timespan
             this.getJSON("getinfo", time)
         }
-        this.getJSON("gettopartists", time)
+        if (!this.state.topArtists) {
+            this.getJSON("gettopartists", time)
+        }
         this.getJSON("gettoptracks", time)
         this.getJSON("gettopalbums", time)
         this.getJSON("getrecenttracks", time)
@@ -352,7 +354,7 @@ class Music extends Component {
                     {this.state.topArtists &&
                         this.state.topAlbums &&
                         this.state.topTracks && (
-                            <div className="songs music__column music__column--recent">
+                            <div className="songs music__column music__column--totals">
                                 <div className="music__column__item">
                                     {this.state.timespan} day total
                                 </div>
