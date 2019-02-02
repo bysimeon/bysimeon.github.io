@@ -157,6 +157,7 @@ class Search extends Component {
                     {this.state.searchEngine} <span className="loading" />
                 </div>
                 <input
+                    autoComplete="off"
                     className={searchClass}
                     id="search-field"
                     type="text"
