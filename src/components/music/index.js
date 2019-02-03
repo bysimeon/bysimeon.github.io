@@ -2,6 +2,12 @@ import React, { Component } from "react"
 import { Helmet } from "react-helmet"
 import "./style.scss"
 
+import tAr from "../../data/topArtists.json"
+import tAl from "../../data/topAlbums.json"
+import tTr from "../../data/topTracks.json"
+import u from "../../data/user.json"
+import rTr from "../../data/recentTracks.json"
+
 import Artist from "./artists"
 import Album from "./albums"
 import Track from "./tracks"
@@ -25,11 +31,11 @@ class Music extends Component {
         this.state = {
             timespan: "30",
             limit: 50,
-            topArtists: false,
-            topTracks: false,
-            topAlbums: false,
-            recentTracks: false,
-            userInfo: false,
+            topArtists: tAr,
+            topTracks: tTr,
+            topAlbums: tAl,
+            recentTracks: rTr,
+            userInfo: u,
             selectedArtist: false,
             selectedArtistID: false,
             hoveredArtist: false,
@@ -172,7 +178,7 @@ class Music extends Component {
     //         localStorage.getItem("userInfo") === null &&
     //         localStorage.getItem("topAlbums") === null
     //     ) {
-    //     } 
+    //     }
     //     else {
     //         this.setState({
     //             // topAlbums: localStorage.getItem("topAlbums"),
@@ -189,19 +195,22 @@ class Music extends Component {
             time = this.state.timespan
             this.getJSON("getinfo", time)
         }
-
+        this.getJSON("getrecenttracks", time)
         this.getJSON("gettopartists", time)
         this.getJSON("gettoptracks", time)
         this.getJSON("gettopalbums", time)
-        this.getJSON("getrecenttracks", time)
-     }
+    }
 
     componentDidMount() {
         this.updateData()
 
-        setInterval(() => {
+        this.recentInterval = setInterval(() => {
             this.getJSON("getrecenttracks", "30")
         }, 1000)
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.recentInterval)
     }
 
     render() {
@@ -214,8 +223,9 @@ class Music extends Component {
         if (
             this.state.topArtists &&
             this.state.topTracks &&
-            this.state.topAlbums &&
-            this.state.recentTracks
+            this.state.topAlbums
+            // &&
+            // this.state.recentTracks
         ) {
             this.state.topArtists.topartists.artist.forEach(artist => {
                 artists.push(
@@ -273,7 +283,9 @@ class Music extends Component {
                     />
                 )
             })
+        }
 
+        if (this.state.recentTracks) {
             this.state.recentTracks.recenttracks.track.forEach(track => {
                 if (track.date) {
                     recents.push(
@@ -315,32 +327,46 @@ class Music extends Component {
                     <title>music &ndash; bysimeon</title>
                 </Helmet>
                 <h1 className="medmedtext medmedtext--music"> listened to: </h1>
-                {this.state.userInfo && (
-                    <p className="notsmalltext notsmalltext--music">
-                        i've been tracking the music i listen to since 2015.
-                        since then i've listened to around{" "}
-                        {this.state.userInfo.user.playcount
-                            .toString()
-                            .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
-                        songs, all tracked through{" "}
-                        <a href={this.state.userInfo.user.url}> last.fm </a>.
-                        here's a breakdown of what i've been listening to for
-                        the past{" "}
-                        <select
-                            value={this.state.timespan}
-                            onChange={this.updateTimespan}
-                            className="dropdown dropdown--music"
-                        >
-                            <option>7</option>
-                            <option>30</option>
-                            <option>90</option>
-                            <option>180</option>
-                            <option>365</option>
-                            <option>???</option>
-                        </select>{" "}
-                        days
-                    </p>
-                )}
+
+                <p className="notsmalltext notsmalltext--music">
+                    i've been tracking the music i listen to since 2015. since
+                    then i've listened to around{" "}
+                    {this.state.userInfo ? (
+                        <span>
+                            {this.state.userInfo.user.playcount
+                                .toString()
+                                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}{" "}
+                        </span>
+                    ) : (
+                        <span>000,000</span>
+                    )}{" "}
+                    songs, all tracked through{" "}
+                    {this.state.userInfo ? (
+                        <span>
+                            <a href={this.state.userInfo.user.url}> last.fm </a>{" "}
+                        </span>
+                    ) : (
+                        <span>
+                            <a href=""> last.fm </a>{" "}
+                        </span>
+                    )}
+                    . here's a breakdown of what i've been listening to for the
+                    past{" "}
+                    <select
+                        value={this.state.timespan}
+                        onChange={this.updateTimespan}
+                        className="dropdown dropdown--music"
+                    >
+                        <option>7</option>
+                        <option>30</option>
+                        <option>90</option>
+                        <option>180</option>
+                        <option>365</option>
+                        <option>???</option>
+                    </select>{" "}
+                    days
+                </p>
+
                 <div className="music">
                     <div className="artists music__column">
                         <div className="music__column__item">

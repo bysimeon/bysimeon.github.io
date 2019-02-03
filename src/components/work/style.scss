@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .container--work {
     margin: 4em 3em 3em 3em;
     overflow: hidden;
@@ -5,7 +7,7 @@
 
 .projects li {
     margin-bottom: 0.5em;
-    color: var(--text-color);
+    color: $text-color;
 }
 
 .projects li a {

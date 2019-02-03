@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .container--music {
     margin: 4em 3em 3em 3em;
     overflow: hidden;
@@ -17,14 +19,14 @@
             height: calc(0.8 * (100vh - (14rem + 14vw)));
             min-height: 500px;
             overflow: scroll;
-            border-bottom: 2px solid #000;
+            border-bottom: 2px solid;
             &__item {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 padding: 0.5em;
                 margin: 0.25em 0;
-                border: black solid 2px;
+                border: solid 2px;
                 &__title {
                     font-size: 1em;
                     width: 85%;
@@ -45,18 +47,20 @@
                     font-weight: bold;
                     position: sticky;
                     top: 0;
-                    background: black;
-                    color: white;
+                    background: $text-color;
+                    border-color: $text-color;
+                    color: $background-color;
                     margin-top: 0;
                     .music__column__item__title {
                         width: 50%;
+                        color: $background-color;
                     }
                 }
                 &:last-child {
                     margin-bottom: 0;
                 }
                 &--hovered {
-                    background: hsl(0, 0%, 84%);
+                    background: hsl(0, 0%, 50%);
                 }
                 &--selected {
                     background: rgb(154, 154, 154);
@@ -94,9 +98,9 @@
     .dropdown--music {
         font-size: 1em;
         font-weight: normal;
-        background: rgba(0, 0, 0, 0);
+        background: $background-color;
         padding: 0.1em 0.2em;
-        border: solid black 1px;
+        border: solid 2px;
         border-radius: 0;
         text-align: center;
         text-align-last: center;
@@ -105,7 +109,7 @@
         }
         &:focus {
             outline-offset: -2px;
-            outline-color: black;
+            outline-color: $background-color;
         }
     }
 }

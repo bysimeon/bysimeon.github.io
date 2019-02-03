@@ -1,0 +1,13 @@
+$text-color--light: black;
+$background-color--light: white;
+
+$text-color--dark: #eeeeee;
+$background-color--dark: #212121;
+
+$text-color: #eeeeee;
+$background-color: #212121;
+
+@media (prefers-color-scheme: dark) {
+    $text-color: #eeeeee;
+    $background-color: #212121;
+}

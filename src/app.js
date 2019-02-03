@@ -6,7 +6,6 @@ import "./app.scss"
 
 import NowListening from "./components/nowListening"
 import StyleSwitcher from "./components/styleSwitcher"
-import colorSchemes from "./data/colorSchemes.json"
 
 import Home from "./components/home"
 import About from "./components/about"
@@ -36,28 +35,10 @@ class App extends Component {
         }
     }
 
-    changeStyles() {
-        let colorMode = this.state.colorMode
-        this.setState({
-            textColor:
-                colorSchemes.themes[colorMode % colorSchemes.themes.length]
-                    .textColor,
-            backgroundColor:
-                colorSchemes.themes[colorMode % colorSchemes.themes.length]
-                    .backgroundColor,
-            colorMode: colorMode + 1
-        })
-    }
-
     render() {
-        const selectedStyle = {
-            background: this.state.backgroundColor,
-            color: this.state.textColor
-        }
-
         return (
             <Router>
-                <div className="App" style={selectedStyle}>
+                <div className="App">
                     <Helmet>
                         <meta charSet="utf-8" />
                         <meta description="the website and portfolio of simeon charles" />
@@ -68,9 +49,7 @@ class App extends Component {
                     </Helmet>
                     <div className="top">
                         <div className="corner">
-                            <StyleSwitcher
-                                changeStyles={this.changeStyles.bind(this)}
-                            />
+                            <StyleSwitcher />
                         </div>
                         <div className="corner">
                             <NavLink

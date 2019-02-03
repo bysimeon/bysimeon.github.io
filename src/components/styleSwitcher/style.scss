@@ -1,7 +1,10 @@
+@import "../../variables.scss";
+
 .logo {
     height: 1.5rem;
     width: 1.5rem;
     transition: 200ms;
+    fill: $text-color;
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     -khtml-user-select: none; /* Konqueror HTML */

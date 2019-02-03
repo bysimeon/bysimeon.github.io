@@ -1,3 +1,5 @@
+@import "../../variables.scss";
+
 .container--shop {
     margin: 4em 3em 3em 3em;
     overflow: hidden;
@@ -73,9 +75,9 @@
     width: 100%;
     font-size: 1rem;
     padding: 0.3rem;
-    border: 2px solid var(--text-color);
-    color: var(--text-color);
-    background-color: var(--background-color);
+    border: 2px solid $text-color;
+    color: $text-color;
+    background-color: $background-color;
     text-align: center;
 }
 
@@ -84,14 +86,14 @@
     width: 100%;
     font-size: 1rem;
     padding: 0.3rem;
-    border: 2px solid var(--text-color);
-    color: var(--text-color);
-    background-color: var(--background-color);
+    border: 2px solid $text-color;
+    color: $text-color;
+    background-color: $background-color;
 }
 
 .item .description button:active {
-    color: var(--background-color);
-    background-color: var(--text-color);
+    color: $background-color;
+    background-color: $text-color;
 }
 
 .item .description button:focus {
@@ -164,5 +166,5 @@
 .ticker-wrap .ticker .ticker__item {
     display: inline-block;
     padding: 0 1rem;
-    color: var(--text-color);
+    color: $text-color;
 }
