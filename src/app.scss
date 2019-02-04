@@ -41,7 +41,6 @@ body {
 
 a {
     cursor: pointer;
-    line-height: 1.4em;
     text-decoration: none;
     color: $text-color;
     transition: all 0.1s linear;
@@ -133,7 +132,7 @@ img {
     position: fixed;
     left: 0px;
     top: 0px;
-    height: 3rem;
+    height: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -148,14 +147,25 @@ img {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently */
-}
 
-.top a {
-    border-bottom: 0 solid #000;
+    a {
+        border-bottom: 0 solid #000;
+    }
+    a:not(:last-child) {
+        margin-right: 1rem;
+    }
+    .corner:last-child {
+        line-height: 2rem;
+    }
 }
-
-.top a:not(:last-child) {
-    margin-right: 1rem;
+.undertop {
+    position: fixed;
+    left: 0px;
+    top: 4rem;
+    height: 4rem;
+    width: 100vw;
+    z-index: 100;
+    background: linear-gradient($background-color, rgba(256, 256, 256, 0));
 }
 
 .bottom {

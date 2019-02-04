@@ -88,6 +88,7 @@ class App extends Component {
                             </NavLink> */}
                         </div>
                     </div>
+                    <div className="undertop"></div>
                     <div className="bottom">
                         <NowListening />
                         <div className="corner">
