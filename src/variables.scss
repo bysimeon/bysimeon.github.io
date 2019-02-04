@@ -4,8 +4,8 @@ $background-color--light: white;
 $text-color--dark: #eeeeee;
 $background-color--dark: #212121;
 
-$text-color: #FFF;
-$background-color: #000;
+$text-color: #000;
+$background-color: #FFF;
 
 @media (prefers-color-scheme: dark) {
     $text-color: #eeeeee;
