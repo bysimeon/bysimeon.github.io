@@ -60,10 +60,10 @@
                     margin-bottom: 0;
                 }
                 &--hovered {
-                    background: hsl(0, 0%, 50%);
+                    background: rgba(0, 0, 0, .15);
                 }
                 &--selected {
-                    background: rgb(154, 154, 154);
+                    background: rgba(0, 0, 0, .35);
                 }
                 transition: background 250ms linear;
                 @media screen and (max-width: 520px) {
