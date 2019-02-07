@@ -16,7 +16,8 @@ class NowListening extends Component {
             artistName: null,
             artistUrl: null,
             notScrobbling: "nothing, but recently heard",
-            userProfile: "https://www.last.fm/user/" + user
+            userProfile: "https://www.last.fm/user/" + user,
+            setInterval: false
         }
     }
 
@@ -82,9 +83,16 @@ class NowListening extends Component {
 
     componentDidMount() {
         this.nowPlaying()
-        setInterval(() => {
+        let recentInterval = setInterval(() => {
             this.nowPlaying()
         }, 500)
+        this.setState({
+            setInterval: recentInterval
+        })
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.state.setInterval)
     }
 
     render() {

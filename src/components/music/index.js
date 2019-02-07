@@ -39,7 +39,8 @@ class Music extends Component {
             selectedArtist: false,
             selectedArtistID: false,
             hoveredArtist: false,
-            hoveredArtistID: false
+            hoveredArtistID: false,
+            setInterval: false
         }
         this.updateTimespan = this.updateTimespan.bind(this)
         this.selectArtist = this.selectArtist.bind(this)
@@ -190,7 +191,6 @@ class Music extends Component {
     // }
 
     updateData(time) {
-        // this.saveJSON(time)
         if (!time) {
             time = this.state.timespan
             this.getJSON("getinfo", time)
@@ -203,14 +203,16 @@ class Music extends Component {
 
     componentDidMount() {
         this.updateData()
-
-        this.recentInterval = setInterval(() => {
+        let recentInterval = setInterval(() => {
             this.getJSON("getrecenttracks", "30")
         }, 1000)
+        this.setState({
+            setInterval: recentInterval
+        })
     }
 
     componentWillUnmount() {
-        clearInterval(this.recentInterval)
+        clearInterval(this.state.setInterval)
     }
 
     render() {
