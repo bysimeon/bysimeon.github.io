@@ -42,7 +42,7 @@ class Images extends Component {
         return (
             <div className="images">
                 {images}
-                {this.state.loadedImageCount > 5 && (
+                {this.state.loadedImageCount > 6 && (
                     <p className="description">
                         that's the end of pictures taken bysimeon
                     </p>
