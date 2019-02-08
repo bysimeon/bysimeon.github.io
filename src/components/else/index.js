@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import "./style.scss"
 
 import Arena from "./arena"
-import Image from "./image"
+import Images from "./images"
 
 class Else extends Component {
     render() {
@@ -13,9 +13,9 @@ class Else extends Component {
                     <title>else &ndash; bysimeon</title>
                 </Helmet>
                 <div className="actuallysmalltext">
-                    {/* <span>yet to be properly catagorized and organized. for now it's all here. </span> */}
+                
                 </div>
-                <Image />
+                <Images />
             </div>
         )
     }

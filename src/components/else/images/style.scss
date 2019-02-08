@@ -1,0 +1,16 @@
+.images {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-gap: 5vh;
+}
+
+.description {
+    border: solid 2px;
+    margin: auto;
+    text-align: center;
+    padding: 1.5em;
+    font-size: calc(2vh + 2vw);
+    font-style: italic;
+}
+
+
