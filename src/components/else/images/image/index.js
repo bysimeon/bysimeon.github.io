@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import LazyLoad from "react-lazyload"
 import "./style.scss"
 
 class Images extends Component {
@@ -10,22 +9,23 @@ class Images extends Component {
         }
     }
 
-    componentDidMount() {
-        this.setState({
-            loaded: true
-        })
+    handleImageLoaded() {
+        this.setState({ loaded: true });
+    }
+
+    handleImageErrored() {
+        this.setState({ imageStatus: null });
     }
 
     render() {
-        let classes = "image "
+
+        let classes = "image-container"
         if (this.state.loaded) {
-            classes += "image--loaded"
+            classes += " image-container--loaded"
         }
         return (
-            <div className="image-container">
-                <LazyLoad height={0} once key={this.props.image}>
-                    <img className={classes} src={this.props.url} alt="..." />
-                </LazyLoad>
+            <div className={classes}>
+                    <img onLoad={this.handleImageLoaded.bind(this)} className="image" src={this.props.url} alt="..." />
             </div>
         )
     }
