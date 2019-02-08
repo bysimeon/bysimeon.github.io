@@ -349,7 +349,7 @@ class Music extends Component {
                         </span>
                     ) : (
                         <span>
-                            <a href=""> last.fm </a>{" "}
+                                <a href="https://www.last.fm/"> last.fm </a>{" "}
                         </span>
                     )}
                     . here's a breakdown of what i've been listening to for the

@@ -7,7 +7,8 @@ class Images extends Component {
         super()
         this.state = {
             images: [],
-            path: "/images/"
+            path: "/images/",
+            loadedImageCount: 0
         }
     }
 
@@ -21,6 +22,12 @@ class Images extends Component {
         })
     }
 
+    imageLoaded() {
+        this.setState({
+            loadedImageCount: this.state.loadedImageCount + 1
+        })
+    }
+
     componentDidMount() {
         this.createImages()
     }
@@ -29,15 +36,17 @@ class Images extends Component {
         let images = []
         this.state.images.forEach(image => {
             images.push(
-                <Image url={image} />
+                <Image loaded={this.imageLoaded.bind(this)} url={image} key={image} />
             )
         })
         return (
             <div className="images">
                 {images}
-                <p className="description">
-                    that's the end of pictures taken bysimeon
-                </p>
+                {this.state.loadedImageCount > 5 && (
+                    <p className="description">
+                        that's the end of pictures taken bysimeon
+                    </p>
+                )}
             </div>
         )
     }
