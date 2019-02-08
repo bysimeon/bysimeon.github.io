@@ -26,6 +26,7 @@ class Images extends Component {
         this.setState({
             loadedImageCount: this.state.loadedImageCount + 1
         })
+        console.log(this.state.loadedImageCount)
     }
 
     componentDidMount() {
@@ -42,9 +43,9 @@ class Images extends Component {
         return (
             <div className="images">
                 {images}
-                {this.state.loadedImageCount > 6 && (
+                {this.state.loadedImageCount >= 7 && (
                     <p className="description">
-                        that's the end of pictures taken bysimeon
+                        pictures taken bysimeon
                     </p>
                 )}
             </div>
