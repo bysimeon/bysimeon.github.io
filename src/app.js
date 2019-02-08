@@ -82,10 +82,10 @@ class App extends Component {
                                 {" "}
                                 shop
                             </NavLink> */}
-                            {/* <NavLink to="/else/" activeClassName="current-page">
+                            <NavLink to="/else/" activeClassName="current-page">
                                 {" "}
                                 else
-                            </NavLink> */}
+                            </NavLink>
                         </div>
                     </div>
                     <div className="undertop"></div>
