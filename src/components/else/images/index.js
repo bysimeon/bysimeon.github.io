@@ -37,17 +37,23 @@ class Images extends Component {
         let images = []
         this.state.images.forEach(image => {
             images.push(
-                <Image loaded={this.imageLoaded.bind(this)} url={image} key={image} />
+                <Image
+                    loaded={this.imageLoaded.bind(this)}
+                    url={image}
+                    key={image}
+                />
             )
         })
         return (
             <div className="images">
                 {images}
-                {this.state.loadedImageCount >= 7 && (
-                    <p className="description">
-                        pictures taken bysimeon
-                    </p>
-                )}
+                <p className="description">
+                    {this.state.loadedImageCount >= 7 ? (
+                        <span>pictures taken bysimeon</span>
+                    ) : (
+                        <span>loading pictures taken bysimeon</span>
+                    )}
+                </p>
             </div>
         )
     }
