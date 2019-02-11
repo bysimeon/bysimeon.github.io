@@ -6,7 +6,6 @@ class Image extends Component {
         super()
         this.state = {
             loaded: false,
-            preview: false
         }
     }
 
@@ -19,12 +18,6 @@ class Image extends Component {
         this.setState({ imageStatus: null })
     }
 
-    loadPreview() {
-        this.setState({
-            preview: true
-        })
-    }
-
     render() {
         let classes = "image-container"
         if (this.state.loaded) {
@@ -33,11 +26,12 @@ class Image extends Component {
         return (
             <div className={classes}>
                 <img
-                    onClick={this.loadPreview.bind(this)}
+                    onClick={this.props.preview}
                     onLoad={this.handleImageLoaded.bind(this)}
                     className="image"
                     src={this.props.url}
                     alt="..."
+                    id={this.props.index}
                 />
             </div>
         )
