@@ -80,13 +80,13 @@
                 }
             }
             &--recent {
-                height: calc(0.2 * (100vh - (13.75rem + 14vw)));
-                min-height: 200px;
+                height: calc(0.25* (100vh - (13.75rem + 14vw)));
+                min-height: 300px;
             }
             &--totals {
-                height: calc(0.2 * (100vh - (13.75rem + 14vw)));
-                min-height: 200px;
-                border-bottom: 0;
+                height: calc(0.25 * (100vh - (13.75rem + 14vw)));
+                min-height: 300px;
+                // border-bottom: 0
             }
         }
         &--recent {
