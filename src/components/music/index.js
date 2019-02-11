@@ -13,7 +13,8 @@ import Album from "./albums"
 import Track from "./tracks"
 import Recent from "./recents"
 
-const apikey = "a7f8dd0989ae6f42d1be2c4427767c6f"
+const apikey = process.env.REACT_APP_LASTFM_API_KEY
+console.log(apikey)
 const apibase = "https://ws.audioscrobbler.com/2.0/"
 const user = "theblindlookout"
 const timespanConvert = {

@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import "./style.scss"
 
-const apikey = "a7f8dd0989ae6f42d1be2c4427767c6f"
+const apikey = process.env.REACT_APP_LASTFM_API_KEY
 const apibase = "https://ws.audioscrobbler.com/2.0/"
 const user = "theblindlookout"
 
