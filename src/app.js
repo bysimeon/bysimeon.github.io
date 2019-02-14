@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom"
 import { Helmet } from "react-helmet"
 import "./app.scss"
 
+import ReactGA from "react-ga"
+
 import NowListening from "./components/nowListening"
 import StyleSwitcher from "./components/styleSwitcher"
 
@@ -24,6 +26,9 @@ const routeStart = () => <Start />
 const routeMusic = () => <Music />
 const routeError = () => <Error />
 const routeElse = () => <Else />
+
+ReactGA.initialize("UA-118586159-1")
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 class App extends Component {
     constructor(props) {
@@ -88,7 +93,7 @@ class App extends Component {
                             </NavLink>
                         </div>
                     </div>
-                    <div className="undertop"></div>
+                    <div className="undertop" />
                     <div className="bottom">
                         <NowListening />
                         <div className="corner">
