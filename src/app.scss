@@ -45,6 +45,7 @@ a {
     color: $text-color;
     transition: all 0.1s linear;
     display: inline-block;
+    padding-bottom: .1em;
     border-bottom: 0.1em solid $text-color;
 }
 

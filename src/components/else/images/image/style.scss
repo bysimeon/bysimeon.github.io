@@ -1,10 +1,11 @@
 
 
 .image-container {
-    transition: opacity 0.75s;
+    transition: all 0.5s;
     margin: auto;
     opacity: 0;
     overflow: hidden;
+    height: 0;
     .image {
         width: 100%;
         border: solid 2px;
@@ -15,8 +16,9 @@
         opacity: 1;
         .image {
             max-height: 70vh;
+            margin: auto;
             width: auto;
-            max-width: 100%;
+            max-width: 95%;
             position: relative;
             transition: all 0.5s;
         }

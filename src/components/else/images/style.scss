@@ -9,19 +9,25 @@
 .images__navigation {
     padding: 25px;
     height: 100px;
-    width:100px;
+    width: 100px;
     fill: $text-color;
     top: 48%;
     position: fixed;
     cursor: pointer;
     &--left {
-        left: 2vw;
+        left: 0;
     }
     &--right {
-        right: 2vw;
+        right: 0;
         transform: scaleX(-1);
     }
     z-index: 10;
+}
+
+@media screen and (max-width: 424px) {
+    .images__navigation {
+        display: none;
+    }
 }
 
 
