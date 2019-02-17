@@ -141,11 +141,13 @@ class Search extends Component {
             modeStyle = {}
         if (this.state.background && this.state.color) {
             fieldStyle = {
-                background: "linear-gradient" + this.state.background
+                background: "linear-gradient" + this.state.background,
+                color: "white"
             }
             modeStyle = {
                 color: this.state.color
             }
+            
         }
         let searchClass = ""
         if (this.state.searching) {
