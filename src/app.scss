@@ -162,7 +162,7 @@ img {
     height: 4rem;
     width: 100vw;
     z-index: 4;
-    background: linear-gradient($background-color, rgba(256, 256, 256, 0));
+    background: linear-gradient($background-color, rgba($color: $background-color, $alpha: 0));
 }
 
 .bottom {
