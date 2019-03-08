@@ -76,13 +76,13 @@ class App extends Component {
                                 {" "}
                                 work{" "}
                             </NavLink>
-                            {/* <NavLink
+                            <NavLink
                                 to="/music/"
                                 activeClassName="current-page"
                             >
                                 {" "}
-                                music
-                            </NavLink> */}
+                                ♪♪♪
+                            </NavLink>
                             {/* <NavLink to="/shop/" activeClassName="current-page">
                                 {" "}
                                 shop
