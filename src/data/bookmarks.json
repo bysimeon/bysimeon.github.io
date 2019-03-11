@@ -280,5 +280,23 @@
         "https://www.last.fm/user/theblindlookout",
         "(to right, rgb(238, 9, 121), rgb(255, 106, 0))",
         "rgb(238, 9, 121)"
+    ],
+    "f511": [
+        "freitag skipper",
+        "https://www.freitag.ch/en/f511",
+        "(to right, rgb(238, 9, 121), rgb(255, 106, 0))",
+        "rgb(238, 9, 121)"
+    ],
+    "f201": [
+        "freitag pete",
+        "https://www.freitag.ch/en/f201",
+        "(to right, rgb(238, 9, 121), rgb(255, 106, 0))",
+        "rgb(238, 9, 121)"
+    ],
+    "f17": [
+        "freitag joe",
+        "https://www.freitag.ch/en/f17",
+        "(to right, rgb(238, 9, 121), rgb(255, 106, 0))",
+        "rgb(238, 9, 121)"
     ]
 }
