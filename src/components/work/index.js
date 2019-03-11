@@ -30,7 +30,8 @@ class Work extends Component {
                         <a href="https://github.com/bysimeon/startpage">repo</a>
                     </li>
                     <li className="unfinished">
-                        tiilt lab |{" "}
+                        tiilt lab [w/{" "}
+                        durell] |{" "}
                         <a href="http://tiilt.northwestern.edu/">live</a>
                     </li>
                     <li className="paid">

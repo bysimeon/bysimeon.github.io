@@ -1,7 +1,7 @@
 {
     "user": {
         "playlists": "0",
-        "playcount": "134873",
+        "playcount": "139934",
         "gender": "n",
         "name": "theblindlookout",
         "subscriber": "0",
@@ -25,7 +25,10 @@
                 "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/2b1d2b19c5e450521b5eafe423482ad1.png"
             }
         ],
-        "registered": { "unixtime": "1429999966", "#text": 1429999966 },
+        "registered": {
+            "unixtime": "1429999966",
+            "#text": 1429999966
+        },
         "type": "user",
         "age": "0",
         "bootstrap": "0",
