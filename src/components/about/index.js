@@ -37,7 +37,7 @@ class About extends Component {
                             soundcloud/&!
                         </a>
                         <br /> collect:{" "}
-                        <a href="https://www.are.na/s">are.na/s*</a>
+                        <a href="https://www.are.na/s/all?sort=UPDATED_AT">are.na/s*</a>
                         <br /> ride:{" "}
                         <a href="https://www.pedalroom.com/bike/-38950">
                             pedal/438672
