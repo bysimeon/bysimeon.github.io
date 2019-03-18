@@ -11,7 +11,7 @@ class Images extends Component {
             loadedImageCount: 0,
             preview: false,
             previewIndex: 0,
-            totalImageCount: 7
+            totalImageCount: 12
         }
     }
 
@@ -102,7 +102,7 @@ class Images extends Component {
                     <div>
                         <button
                             className="images__navigation-container"
-                            onClick={this.nextPreview.bind(this)}
+                            onClick={this.previousPreview.bind(this)}
                         >
                             <svg className="images__navigation images__navigation--left">
                                 <path
@@ -117,7 +117,7 @@ class Images extends Component {
                         </button>
                         <button
                             className="images__navigation-container"
-                            onClick={this.previousPreview.bind(this)}
+                            onClick={this.nextPreview.bind(this)}
                         >
                             <svg className="images__navigation images__navigation--right">
                                 <path

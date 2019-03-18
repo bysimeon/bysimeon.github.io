@@ -20,11 +20,12 @@ html {
     user-select: none;
     font-size: unquote("calc(10px + 0.6vw)");
     text-transform: lowercase;
+    height: 100vh;
+    background-color: $background-color;
 }
 
 body {
     font-family: "Space Grotesk", sans-serif;
-    background-color: $background-color;
     color: $text-color;
     margin: 0px;
     overscroll-behavior: none;
