@@ -59,7 +59,9 @@ class Work extends Component {
                         <a href="https://github.com/bysimeon/tentativetitle/releases">
                             download
                         </a>{" "}
-                        <a href="https://vistadv.github.io/">repo</a>{" "}
+                        <a href="https://github.com/bysimeon/tentativetitle/">
+                            repo
+                        </a>{" "}
                     </li>
                 </ul>
             </div>
