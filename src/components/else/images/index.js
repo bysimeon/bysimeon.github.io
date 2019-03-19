@@ -7,11 +7,11 @@ class Images extends Component {
         super()
         this.state = {
             images: [],
-            path: "/images/",
+            path: "",
             loadedImageCount: 0,
             preview: false,
             previewIndex: 0,
-            totalImageCount: 12
+            totalImageCount: 0
         }
     }
 
@@ -70,7 +70,12 @@ class Images extends Component {
     }
 
     componentDidMount() {
+        this.setState({
+            path: this.props.path,
+            totalImageCount: this.props.count
+        },() => {
         this.createImages()
+        })
     }
 
     render() {
@@ -89,14 +94,14 @@ class Images extends Component {
         return (
             <div>
                 <div className="images">
-                    {images}
                     <p className="description">
-                        {this.state.loadedImageCount >= 7 ? (
+                        {this.state.loadedImageCount >= this.state.totalImageCount ? (
                             <span>pictures taken bysimeon</span>
                         ) : (
                             <span>loading pictures taken bysimeon</span>
                         )}
                     </p>
+                    {images}
                 </div>
                 {this.state.preview && (
                     <div>

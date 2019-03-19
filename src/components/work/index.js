@@ -29,10 +29,12 @@ class Work extends Component {
                         startpage | <a href="/start/">live</a>{" "}
                         <a href="https://github.com/bysimeon/startpage">repo</a>
                     </li>
-                    <li className="unfinished">
+                    <li className="unfinished paid">
                         tiilt lab [w/{" "}
-                        durell] |{" "}
-                        <a href="http://tiilt.northwestern.edu/">live</a>
+                        <a href="https://github.com/durellg">durell</a>] |{" "}
+                        <a href="http://tiilt.northwestern.edu/">
+                            workinprogress
+                        </a>
                     </li>
                     <li className="paid">
                         storymapjs [w/{" "}
@@ -48,6 +50,16 @@ class Work extends Component {
                         vista del valle [w/{" "}
                         <a href="https://teahkbrands.com/">teah</a>] |{" "}
                         <a href="https://vistadv.github.io/">live</a>{" "}
+                    </li>
+                    <li className="personal">
+                        the grapplers [w/{" "}
+                        <a href="https://github.com/AndrewBridgeman">andrew</a>
+                        {" & "}
+                        <a href="http://zacharyrmckee.com/home/">zach</a>] |{" "}
+                        <a href="https://github.com/bysimeon/tentativetitle/releases">
+                            download
+                        </a>{" "}
+                        <a href="https://vistadv.github.io/">repo</a>{" "}
                     </li>
                 </ul>
             </div>

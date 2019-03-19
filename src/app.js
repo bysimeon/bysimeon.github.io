@@ -34,7 +34,7 @@ class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            colorMode: 1,
+            colorMode: "dark",
             textColor: "#000",
             backgroundColor: "#fff"
         }
@@ -81,7 +81,8 @@ class App extends Component {
                                 activeClassName="current-page"
                             >
                                 {" "}
-                                ♪♪♪
+                                {/* ♪♪♪ */}
+                                music
                             </NavLink>
                             {/* <NavLink to="/shop/" activeClassName="current-page">
                                 {" "}
@@ -89,7 +90,7 @@ class App extends Component {
                             </NavLink> */}
                             <NavLink to="/else/" activeClassName="current-page">
                                 {" "}
-                                ?
+                                photos
                             </NavLink>
                         </div>
                     </div>

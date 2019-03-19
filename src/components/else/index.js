@@ -12,10 +12,10 @@ class Else extends Component {
                 <Helmet>
                     <title>else &ndash; bysimeon</title>
                 </Helmet>
-                <div className="actuallysmalltext">
-                
-                </div>
-                <Images />
+                <div className="actuallysmalltext" />
+
+                <Images path="/images/color/" count={5} />
+                {/* <Images path="/images/black/" count={7} /> */}
             </div>
         )
     }
