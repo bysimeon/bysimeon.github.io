@@ -65,7 +65,7 @@ class Work extends Component {
                     </li>
                 </ul>
             </div>
-        )d
+        )
     }
 }
 
