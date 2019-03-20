@@ -57,7 +57,7 @@ class Work extends Component {
                         {" & "}
                         <a href="http://zacharyrmckee.com/home/">zach</a>] |{" "}
                         <a href="https://github.com/bysimeon/tentativetitle/releases">
-                            download
+                            play
                         </a>{" "}
                         <a href="https://github.com/bysimeon/tentativetitle/">
                             repo
@@ -65,7 +65,7 @@ class Work extends Component {
                     </li>
                 </ul>
             </div>
-        )
+        )d
     }
 }
 
