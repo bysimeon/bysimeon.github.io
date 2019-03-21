@@ -29,13 +29,6 @@ class Work extends Component {
                         startpage | <a href="/start/">live</a>{" "}
                         <a href="https://github.com/bysimeon/startpage">repo</a>
                     </li>
-                    <li className="unfinished paid">
-                        tiilt lab [w/{" "}
-                        <a href="https://github.com/durellg">durell</a>] |{" "}
-                        <a href="http://tiilt.northwestern.edu/">
-                            workinprogress
-                        </a>
-                    </li>
                     <li className="paid">
                         storymapjs [w/{" "}
                         <a href="https://knightlab.northwestern.edu/">
@@ -61,6 +54,22 @@ class Work extends Component {
                         </a>{" "}
                         <a href="https://github.com/bysimeon/tentativetitle/">
                             repo
+                        </a>{" "}
+                    </li>
+                    <li className="unfinished paid">
+                        tiilt lab [w/{" "}
+                        <a href="https://github.com/durellg">durell</a>] |{" "}
+                        <a href="http://tiilt.northwestern.edu/">
+                            workinprogress
+                        </a>
+                    </li>
+
+                    <li className="personal">
+                        papi [w/ <a href="https://github.com/deokfilho">deok</a>
+                        {" & "}
+                        <a href="https://github.com/addierohrbach">addie</a>] |{" "}
+                        <a href="https://papi-law.herokuapp.com/">
+                            workinprogress
                         </a>{" "}
                     </li>
                 </ul>
