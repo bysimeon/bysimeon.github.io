@@ -87,7 +87,7 @@ class App extends Component {
                                 {" "}
                                 shop
                             </NavLink> */}
-                            <NavLink to="/else/" activeClassName="current-page">
+                            <NavLink to="/photos/" activeClassName="current-page">
                                 {" "}
                                 photos
                             </NavLink>
@@ -107,7 +107,7 @@ class App extends Component {
                         <Route path="/shop/" component={routeShop} />
                         <Route path="/start/" component={routeStart} />
                         <Route path="/music/" component={routeMusic} />
-                        <Route path="/else/" component={routeElse} />
+                        <Route path="/photos/" component={routeElse} />
                         <Route component={routeError} />
                     </Switch>
                 </div>
