@@ -5,66 +5,25 @@
     overflow: hidden;
 }
 
-.projects li {
-    margin-bottom: 0.5em;
-    color: $text-color;
-}
-
-.projects li a {
-    /* padding-bottom: .05em; */
-    text-indent: 0em;
-}
-
-.filter::after {
-    content: ".";
-}
-
-.preview {
-    overflow: hidden;
-    height: calc(100vh - 10rem);
-    display: flex;
-    justify-content: flex-end;
-}
-
-.preview img {
-    min-width: 100%;
-    height: 100%;
-}
-
 .projects {
-    font-size: 2.5rem;
-}
-
-// .personal::after {
-//   color: red;
-// }
-
-// .personal::before {
-//   color: red;
-// }
-
-// .paid::after {
-//   color: blue;
-// }
-
-// .paid::before {
-//   color: blue;
-// }
-
-// .unfinished::before {
-//   color: yellow;
-// }
-
-// .unfinished::after {
-//   color: yellow;
-// }
-
-.project-description {
-    padding: 0px;
-    text-align: right;
-}
-
-.project img {
-    width: 100%;
-    border: 1px solid black;
+    margin: 5vh 0;
+    display: grid;
+    grid-gap: 1vh;
+    grid-template-columns: 1fr;
+    .project {
+        padding: 1rem 1rem 0 1rem;
+        font-size: 2rem;
+        a {
+            // border: 2px solid black;
+            // padding: .3em;
+        }
+        b {
+            font-weight: 800;
+        }
+    }
+    .project:hover {
+        &__description {
+            max-height: none;
+        }
+    }
 }
