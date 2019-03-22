@@ -7,7 +7,7 @@ class Error extends Component {
         return (
             <div className="container container--home">
                 <Helmet>
-                    <title>404 &ndash; bysimeon</title>
+                    <title>lost &ndash; bysimeon</title>
                 </Helmet>
                 <div className="bigbigtext">
                     <span>404</span>
