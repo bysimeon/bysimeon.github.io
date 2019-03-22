@@ -63,7 +63,6 @@ class Work extends Component {
                             workinprogress
                         </a>
                     </div>
-
                     <div className="personal project">
                         <b>papi</b> with{" "}
                         <a href="https://github.com/deokfilho">deok</a>
@@ -73,6 +72,24 @@ class Work extends Component {
                         </a> |{" "}
                         <a href="https://papi-law.herokuapp.com/">
                             workinprogress
+                        </a>{" "}
+                    </div>
+                    <div className="personal project">
+                        <b>glocal</b> with{" "}
+                        <a href="https://github.com/esaatci">efe</a>
+                        {" , "}
+                        <a href="https://github.com/noiraG">garion</a>
+                        {" , "}
+                        <a href="https://github.com/jackburtis">jack</a>
+                        {" & "}
+                        <a href="https://github.com/HarishMundluru1998">
+                            harish
+                        </a>{" "}
+                        | <a href="https://streamable.com/rkud7">
+                            demo
+                        </a>{" "}
+                        <a href="https://github.com/cs394-w19/Aqua-Client-Project/">
+                            repo
                         </a>{" "}
                     </div>
                 </div>
