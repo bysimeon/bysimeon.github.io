@@ -81,7 +81,6 @@ class App extends Component {
                                 activeClassName="current-page"
                             >
                                 {" "}
-                                {/* ♪♪♪ */}
                                 music
                             </NavLink>
                             {/* <NavLink to="/shop/" activeClassName="current-page">
