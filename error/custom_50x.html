@@ -1,0 +1,421 @@
+<div class="container container--home">
+    <div class="top">
+        <div class="corner">
+            [ logo ]
+        </div>
+    </div>
+    <div class="bigbigtext">
+        ***
+    </div>
+    <div class="bigbigtext">
+        ***
+    </div>
+    <div class="bottom">
+        <div class="corner">
+                site down temporarily, be back soon.
+        </div>
+    </div>
+</div>
+
+<style>
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../src/space.woff") format("woff");
+}
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("../src/spaceBold.woff") format("woff");
+    font-weight: bold;
+}
+
+/* BIG BIG */
+html {
+    font-family: "Space Grotesk", sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: calc(10px + 0.6vw);
+    text-transform: lowercase;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    color: #212121;
+    margin: 0px;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 4em 3em 3em 3em;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    border-color: #212121;
+    color: #212121;
+}
+
+/* ELEMENT MODIFICATIONS */
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #212121;
+    transition: all 0.1s linear;
+    display: inline-block;
+    padding-bottom: .1em;
+}
+
+a:visited {
+    letter-spacing: 0.1em;
+}
+
+a:hover {
+    letter-spacing: 0.1em;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+ul li::before {
+    content: "~ ";
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+/* TEXT STYLING */
+
+.hidden-link {
+    border-bottom: 0 solid #000 !important;
+}
+
+.hidden-link:hover {
+    cursor: pointer;
+    letter-spacing: 0;
+}
+
+.current-page {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.notsmalltext {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.mediumtext {
+    font-size: 20vw;
+    font-weight: 400;
+    margin: 0;
+}
+
+.medmedtext {
+    font-size: 7vw;
+    font-weight: 400;
+    margin: 0;
+}
+
+.bigbigtext {
+    font-size: 40vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* TOP AND BOTTOM BARS */
+
+.corner {
+    padding: 0 1rem;
+    line-height: 3.5rem;
+}
+
+.top {
+    width: 100vw;
+    background: #eeeeee;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 100;
+    overflow: hidden;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+.undertop {
+    position: fixed;
+    left: 0px;
+    top: 4rem;
+    height: 4rem;
+    width: 100vw;
+    z-index: 4;
+    background: linear-gradient(#eeeeee, rgba(#eeeeee, 0));
+}
+
+.bottom {
+    width: 100vw;
+    border-top: 1px solid #212121;
+    background: #eeeeee;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 100;
+    overflow: hidden;
+    text-transform: lowercase;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+.corner {
+    padding-bottom: 0.3em;
+}
+
+.bottom .corner:last-child a {
+    border-bottom: 0px;
+}
+
+.dropdown {
+    -webkit-appearance: none;
+}
+
+// MOBILE
+
+@media screen and (max-width: 640px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        margin: 4em 1.5em 1.5em 1.5em;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+/* COMPUTERS */
+
+@media screen and (min-width: 640px) {
+}
+
+@media (min-width: 1281px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* PHONES */
+
+@media screen and (max-width: 640px) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        margin: 4em 1em 3em;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    html {
+        font-size: 12px;
+    }
+    .bigbigtext {
+        font-size: 25vw;
+    }
+    .bottom {
+        height: auto !important;
+    }
+    .drawing {
+        position: relative !important;
+    }
+}
+
+</style>
