@@ -81,8 +81,8 @@ class Work extends Component {
                         </div>
                     </div>
                     <div className="personal project">
-                        <b>this website</b> | <a href="/start/">live</a>{" "}
-                        <a href="https://github.com/bysimeon/startpage">repo</a>
+                        <b>this website</b> | <a href="/">live</a>{" "}
+                        <a href="https://github.com/bysimeon/website">repo</a>
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a compilation of my interests and my work.
