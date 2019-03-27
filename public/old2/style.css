@@ -1,0 +1,80 @@
+html {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 40rem) {
+  #container {
+    padding: 6rem 0 5rem 0;
+    height:20vh;
+    margin: 0 0 40vh 0;
+  }
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  #container {
+    height: 90vh;
+  }
+  .mobile_sect {
+    display: none;
+  }
+}
+
+#container {
+  width: calc(100vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container div {
+  overflow: hidden;
+}
+
+.navigation {
+  /* height: 20vh; */
+  margin: 0 9vw 0 9vw;
+  padding: 0.5em 2em 0.5em 2em;
+  /* background-color: rgba(255, 0, 0, 0.7); */
+}
+.navigation div {
+  text-align: center;
+}
+.navigation img {
+  position: fixed;
+  margin-top: -35vh;
+  margin-left: calc(-20vh - 2rem);
+  max-height: 40vh;
+}
+.navigation div a {
+  margin-right: 1rem;
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+}
+
+.mobile_sect {
+  margin: 0 0 0 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.mobile_sect h1 {
+  text-align: center;
+}
+
+.mobile_sect p {
+  max-width: 90vw;
+}
+
+#about_mobile {
+  /* background-color: yellow; */
+}

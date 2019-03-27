@@ -14,8 +14,8 @@ class Else extends Component {
                 </Helmet>
                 <div className="actuallysmalltext" />
 
-                <Images path="/images/color/" count={5} />
-                {/* <Images path="/images/black/" count={7} /> */}
+                <Images path="/images/color/" count={5} tag={"color"}/>
+                <Images path="/images/black/" count={7} tag={"black"}/>
             </div>
         )
     }

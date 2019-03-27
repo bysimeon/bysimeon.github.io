@@ -24,10 +24,49 @@ class Work extends Component {
                         <a href="https://web.archive.org/web/20181203171025/https://www.thehighly.co/">
                             archive
                         </a>
+                        <div className="project__description">
+                            <div className="project__description__blurb">
+                                In mid-march of 2018, cannabis editorialist Nina
+                                Fern reached out to <a href="https://teahkbrands.com"> teah</a> to redesign her website.
+                                the caveat: she needed it finished in a week. so teah recruited me to help design and develop a brand new site, resulting in a dramatic increase in traffic, engagement and <a href="https://www.typewolf.com/site-of-the-day/the-highly">cameos</a>.
+                            </div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">squarespace dev</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">less</span>
+                                <span className="project__description__stack__span project__description__stack__span--des">sketch</span>
+                                <span className="project__description__stack__span project__description__stack__span--des">photoshop</span>
+                                <span className="project__description__stack__span project__description__stack__span--des">illustrator</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="personal project">
                         <b>startpage</b> | <a href="/start/">live</a>{" "}
                         <a href="https://github.com/bysimeon/startpage">repo</a>
+                        <div className="project__description">
+                            <div className="project__description__blurb">
+                                as i fell into the depths of <a href="https://www.reddit.com/r/unixporn">r/unixporn</a> and
+                                window managers, i came across <a href="https://www.reddit.com/r/startpages">something interesting</a> and decided to make my own.
+                            </div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">reactjs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="personal project">
+                        <b>this website</b> | <a href="/start/">live</a>{" "}
+                        <a href="https://github.com/bysimeon/startpage">repo</a>
+                        <div className="project__description">
+                            <div className="project__description__blurb">
+                                a compilation of my interests and my work. decided to remake my <a href="/old1">older </a> <a href="/old2"> websites</a> to be  professional and to learn a few new things. so everything from the server to the seo has been handled by me.
+                            </div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">reactjs</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">mongodb</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">express</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">node</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">nginx</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="paid project">
                         <b>storymapjs</b> with{" "}
@@ -38,11 +77,25 @@ class Work extends Component {
                         <a href="https://github.com/NUKnightLab/StoryMapJS">
                             repo
                         </a>
+                        <div className="project__description">
+                            <div className="project__description__blurb">...</div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">flask</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">node</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">mongodb</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="personal project">
                         <b>vista del valle</b> with{" "}
                         <a href="https://teahkbrands.com/">teah</a> |{" "}
                         <a href="https://vistadv.github.io/">live</a>{" "}
+                        <div className="project__description">
+                            <div className="project__description__blurb">..</div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">jekyll</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="personal project">
                         <b>the grapplers</b> with{" "}
@@ -55,6 +108,39 @@ class Work extends Component {
                         <a href="https://github.com/bysimeon/tentativetitle/">
                             repo
                         </a>{" "}
+                        <div className="project__description">
+                            <div className="project__description__blurb">...</div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">unity</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">csharp</span>
+                                <span className="project__description__stack__span project__description__stack__span--des">asesprite</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="personal project">
+                        <b>glocal</b> with{" "}
+                        {/* <a href="https://github.com/esaatci">efe</a>
+                        {" , "}
+                        <a href="https://github.com/noiraG">garion</a>
+                        {" , "}
+                        <a href="https://github.com/jackburtis">jack</a>
+                        {" & "}
+                        <a href="https://github.com/HarishMundluru1998">
+                            harish
+                        </a>{" "} */}
+                        <a href="https://github.com/cs394-w19/Aqua-Client-Project/graphs/contributors">some others</a>{" "}
+                        | <a href="https://streamable.com/rkud7">demo</a>{" "}
+                        <a href="https://github.com/cs394-w19/Aqua-Client-Project/">
+                            repo
+                        </a>{" "}
+                        <div className="project__description">
+                            <div className="project__description__blurb">...</div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">react native</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">expo</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">firestore</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="unfinished paid project">
                         <b>tiilt lab website</b> with{" "}
@@ -62,6 +148,14 @@ class Work extends Component {
                         <a href="http://tiilt.northwestern.edu/">
                             workinprogress
                         </a>
+                        <div className="project__description">
+                            <div className="project__description__blurb">...</div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">javascript</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">sass</span>
+                                <span className="project__description__stack__span project__description__stack__span--des">sketch</span>
+                            </div>
+                        </div>
                     </div>
                     <div className="personal project">
                         <b>papi</b> with{" "}
@@ -73,24 +167,14 @@ class Work extends Component {
                         <a href="https://papi-law.herokuapp.com/">
                             workinprogress
                         </a>{" "}
-                    </div>
-                    <div className="personal project">
-                        <b>glocal</b> with{" "}
-                        <a href="https://github.com/esaatci">efe</a>
-                        {" , "}
-                        <a href="https://github.com/noiraG">garion</a>
-                        {" , "}
-                        <a href="https://github.com/jackburtis">jack</a>
-                        {" & "}
-                        <a href="https://github.com/HarishMundluru1998">
-                            harish
-                        </a>{" "}
-                        | <a href="https://streamable.com/rkud7">
-                            demo
-                        </a>{" "}
-                        <a href="https://github.com/cs394-w19/Aqua-Client-Project/">
-                            repo
-                        </a>{" "}
+                        <div className="project__description">
+                            <div className="project__description__blurb">...</div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">flask</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">jquery</span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">postgres</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -20,10 +20,30 @@
         b {
             font-weight: 800;
         }
-    }
-    .project:hover {
         &__description {
-            max-height: none;
+            font-size: 1.5rem;
+            margin: .5em .5em 0 .5em;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 1em;
+            &__blurb {
+                text-align: left;
+            }
+            &__stack {
+                font-size: .85em;
+                &__span {
+                    display: inline-block;
+                    border: 2px solid black;
+                    padding: .33em;
+                    margin: .33em;
+                    &--dev {
+
+                    }
+                    &--des {
+                        border-radius: 10px;
+                    }
+                }
+            }
         }
     }
 }

@@ -96,9 +96,9 @@ class Images extends Component {
                 <div className="images">
                     <p className="description">
                         {this.state.loadedImageCount >= this.state.totalImageCount ? (
-                            <span>pictures taken bysimeon</span>
+                            <span>{this.props.tag} pictures taken bysimeon</span>
                         ) : (
-                            <span>loading pictures taken bysimeon</span>
+                            <span>loading {this.props.tag} pictures taken bysimeon</span>
                         )}
                     </p>
                     {images}
