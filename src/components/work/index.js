@@ -65,7 +65,7 @@ class Work extends Component {
                             <div className="project__description__blurb">
                                 as i fell into the depths of{" "}
                                 <a href="https://www.reddit.com/r/unixporn">
-                                    r/unixporn
+                                    unix system ricing
                                 </a>{" "}
                                 and window managers, i came across{" "}
                                 <a href="https://www.reddit.com/r/startpages">
