@@ -30,7 +30,7 @@
                 text-align: left;
             }
             &__stack {
-                font-size: .85em;
+                font-size: .75em;
                 &__span {
                     display: inline-block;
                     border: 2px solid black;
@@ -40,7 +40,7 @@
 
                     }
                     &--des {
-                        border-radius: 10px;
+                        // border-radius: 10px;
                     }
                 }
             }
