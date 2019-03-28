@@ -21,6 +21,8 @@ class About extends Component {
                         <li> researcher </li>
                     </ul>
                     <p className="about-links">
+                        hire:{" "}<a href="/resume.pdf">resume</a>
+                        <br />
                         contact:{" "}
                         <a href="mailto:mail@bysimeon.com">mail@bysimeon.com</a>
                         <br /> pull request:{" "}
@@ -37,7 +39,9 @@ class About extends Component {
                             soundcloud/&!
                         </a>
                         <br /> collect:{" "}
-                        <a href="https://www.are.na/s/all?sort=UPDATED_AT">are.na/s*</a>
+                        <a href="https://www.are.na/s/all?sort=UPDATED_AT">
+                            are.na/s*
+                        </a>
                         <br /> ride:{" "}
                         <a href="https://www.pedalroom.com/bike/-38950">
                             pedal/438672
