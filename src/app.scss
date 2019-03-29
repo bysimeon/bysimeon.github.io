@@ -126,7 +126,7 @@ img {
 
 .top {
     width: 100vw;
-    background: $background-color;
+    background: rgba($color: $background-color, $alpha: .9);
     position: fixed;
     left: 0px;
     top: 0px;
@@ -138,6 +138,8 @@ img {
     justify-content: space-between;
     z-index: 100;
     overflow: hidden;
+
+    border-bottom: 1px solid rgba($color: $text-color, $alpha: .1);
 
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -163,7 +165,7 @@ img {
     height: 4rem;
     width: 100vw;
     z-index: 4;
-    background: linear-gradient($background-color, rgba($color: $background-color, $alpha: 0));
+    // background: linear-gradient($background-color, rgba($color: $background-color, $alpha: 0));
 }
 
 .bottom {
