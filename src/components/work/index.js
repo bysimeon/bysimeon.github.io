@@ -26,7 +26,7 @@ class Work extends Component {
                         </a>
                         <div className="project__description">
                             <div className="project__description__blurb">
-                                In mid-march of 2018, cannabis editorialist Nina
+                                {/* In mid-march of 2018, cannabis editorialist Nina
                                 Fern reached out to{" "}
                                 <a href="https://teahkbrands.com"> teah</a> to
                                 redesign her website. the caveat: she needed it
@@ -37,7 +37,8 @@ class Work extends Component {
                                 <a href="https://www.typewolf.com/site-of-the-day/the-highly">
                                     cameos
                                 </a>
-                                .
+                                . */}
+                                ...
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -63,7 +64,7 @@ class Work extends Component {
                         <a href="https://github.com/bysimeon/startpage">repo</a>
                         <div className="project__description">
                             <div className="project__description__blurb">
-                                as i fell into the depths of{" "}
+                                {/* as i fell into the depths of{" "}
                                 <a href="https://www.reddit.com/r/unixporn">
                                     unix system ricing
                                 </a>{" "}
@@ -71,7 +72,8 @@ class Work extends Component {
                                 <a href="https://www.reddit.com/r/startpages">
                                     something interesting
                                 </a>{" "}
-                                and decided to make my own.
+                                and decided to make my own. */}
+                                ...
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -85,13 +87,14 @@ class Work extends Component {
                         <a href="https://github.com/bysimeon/website">repo</a>
                         <div className="project__description">
                             <div className="project__description__blurb">
-                                a compilation of my interests and my work.
+                                {/* a compilation of my interests and my work.
                                 decided to remake my{" "}
                                 <a href="/old1/index.html">older </a>{" "}
                                 <a href="/old2/index.html"> websites</a> to be
                                 professional and to learn a few new things. so
                                 everything from the server to the seo has been
-                                handled by me.
+                                handled by me. */}
+                                ...
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
