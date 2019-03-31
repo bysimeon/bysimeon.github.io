@@ -60,7 +60,7 @@ class Work extends Component {
                                 <a href="https://www.reddit.com/r/startpages">
                                     startpage
                                 </a>
-                                , goes anywhere on the web with custom shortcuts
+                                , goes anywhere on the web using custom shortcuts
                                 and bookmarks
                             </div>
                             <div className="project__description__stack">
