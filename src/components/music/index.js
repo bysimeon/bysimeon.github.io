@@ -366,7 +366,7 @@ class Music extends Component {
                         <option>365</option>
                         <option>???</option>
                     </select>{" "}
-                    days
+                    days.
                 </p>
 
                 <div className="music">

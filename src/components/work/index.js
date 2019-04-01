@@ -26,18 +26,23 @@ class Work extends Component {
                         </a>
                         <div className="project__description">
                             <div className="project__description__blurb">
-                                website hosting interviews, travel guides and
-                                product reviews for the cannabis editorial,{" "}
-                                <a href="http://instagram.com/thehighly_">
-                                    the highly
-                                </a>
+                                a website hosting the interviews, travel guides
+                                and product reviews of the cannabis editorial,
+                                the highly.
+                                <br />
+                                <br />
+                                co-designed, developed and managed the website,
+                                newsletter and subscriber funnel.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
                                     squarespace dev
                                 </span>
-                                <span className="project__description__stack__span project__description__stack__span--dev">
-                                    less
+                                <span className="project__description__stack__span project__description__stack__span--des">
+                                    mailchimp
+                                </span>
+                                <span className="project__description__stack__span project__description__stack__span--des">
+                                    google analytics
                                 </span>
                                 <span className="project__description__stack__span project__description__stack__span--des">
                                     sketch
@@ -51,6 +56,37 @@ class Work extends Component {
                             </div>
                         </div>
                     </div>
+                    <div className="paid project">
+                        <b>storymapjs</b> with{" "}
+                        <a href="https://knightlab.northwestern.edu/">
+                            knight lab
+                        </a>{" "}
+                        | <a href="https://storymap.knightlab.com/">live</a>{" "}
+                        <a href="https://github.com/NUKnightLab/StoryMapJS">
+                            repo
+                        </a>
+                        <div className="project__description">
+                            <div className="project__description__blurb">
+                                a free tool to help you tell stories on the web
+                                that highlight the locations of a series of
+                                events.
+                                <br />
+                                <br />
+                                created local development for github contributors, fixed bugs and improved documentation.
+                            </div>
+                            <div className="project__description__stack">
+                                <span className="project__description__stack__span project__description__stack__span--dev">
+                                    flask
+                                </span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">
+                                    node
+                                </span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">
+                                    mongodb
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                     <div className="personal project">
                         <b>startpage</b> | <a href="/start/">live</a>{" "}
                         <a href="https://github.com/bysimeon/startpage">repo</a>
@@ -60,8 +96,8 @@ class Work extends Component {
                                 <a href="https://www.reddit.com/r/startpages">
                                     startpage
                                 </a>
-                                , goes anywhere on the web using custom shortcuts
-                                and bookmarks
+                                , goes anywhere on the web using custom
+                                shortcuts and bookmarks.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -75,12 +111,10 @@ class Work extends Component {
                         <a href="https://github.com/bysimeon/website">repo</a>
                         <div className="project__description">
                             <div className="project__description__blurb">
-                                a website that serves as both my space on the
-                                internet and a place to{" "}
-                                <a href="/music">
-                                    {" "}
-                                    experiment with different ideas{" "}
-                                </a>
+                                a website that serves as both my claimed space
+                                on the internet and a place to develop and
+                                showcase different{" "}
+                                <a href="/music"> experiments.</a>
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -101,34 +135,6 @@ class Work extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="paid project">
-                        <b>storymapjs</b> with{" "}
-                        <a href="https://knightlab.northwestern.edu/">
-                            knight lab
-                        </a>{" "}
-                        | <a href="https://storymap.knightlab.com/">live</a>{" "}
-                        <a href="https://github.com/NUKnightLab/StoryMapJS">
-                            repo
-                        </a>
-                        <div className="project__description">
-                            <div className="project__description__blurb">
-                                storymapjs is a free tool to help you tell
-                                stories on the web that highlight the locations
-                                of a series of events
-                            </div>
-                            <div className="project__description__stack">
-                                <span className="project__description__stack__span project__description__stack__span--dev">
-                                    flask
-                                </span>
-                                <span className="project__description__stack__span project__description__stack__span--dev">
-                                    node
-                                </span>
-                                <span className="project__description__stack__span project__description__stack__span--dev">
-                                    mongodb
-                                </span>
-                            </div>
-                        </div>
-                    </div>
                     <div className="personal project">
                         <b>vista del valle</b> with{" "}
                         <a href="https://teahkbrands.com/">teah</a> |{" "}
@@ -136,7 +142,7 @@ class Work extends Component {
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a gallery of an ongoing construction project in
-                                italy
+                                italy.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -159,7 +165,7 @@ class Work extends Component {
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a fighting game about grappling robots who
-                                attack eachother with their hooks and bombs
+                                attack eachother with their hooks and bombs.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -196,7 +202,7 @@ class Work extends Component {
                             <div className="project__description__blurb">
                                 an phone application that creates travel
                                 itineraries with activities personlizaed for the
-                                user taste.
+                                user's taste.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -221,7 +227,7 @@ class Work extends Component {
                             <div className="project__description__blurb">
                                 website for the Technological Innovations for
                                 Inclusive Learning and Teaching lab at
-                                northwestern university
+                                northwestern university.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -248,7 +254,9 @@ class Work extends Component {
                         </a>{" "}
                         <div className="project__description">
                             <div className="project__description__blurb">
-                                a web application that analyzes legal documents and creates reports highlighting important clauses
+                                a web application that analyzes legal documents
+                                and creates reports highlighting important
+                                clauses.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">

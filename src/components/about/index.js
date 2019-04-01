@@ -13,7 +13,7 @@ class About extends Component {
                     <h1 className="medmedtext medmedtext--about">
                         {" "}
                         simeon, a computer science and psychology student at
-                        northwestern university{" "}
+                        northwestern university.
                     </h1>
                     <ul className="notsmalltext">
                         <li> developer </li>
