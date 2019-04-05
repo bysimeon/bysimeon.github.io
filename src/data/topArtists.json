@@ -5,169 +5,9 @@
                 "@attr": {
                     "rank": "1"
                 },
-                "mbid": "187bbdde-343a-4978-9cb4-08df62e18986",
-                "url": "https:\/\/www.last.fm\/music\/Octavian",
-                "playcount": "403",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/06ef20157b7861c91c83631d1aa55699.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/06ef20157b7861c91c83631d1aa55699.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/06ef20157b7861c91c83631d1aa55699.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/06ef20157b7861c91c83631d1aa55699.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/06ef20157b7861c91c83631d1aa55699.png"
-                    }
-                ],
-                "name": "Octavian",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "2"
-                },
-                "mbid": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
-                "url": "https:\/\/www.last.fm\/music\/Travi$+Scott",
-                "playcount": "320",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/4d158ce0627ec1994dc122413eb0b8f3.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/4d158ce0627ec1994dc122413eb0b8f3.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/4d158ce0627ec1994dc122413eb0b8f3.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/4d158ce0627ec1994dc122413eb0b8f3.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/4d158ce0627ec1994dc122413eb0b8f3.jpg"
-                    }
-                ],
-                "name": "Travi$ Scott",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "3"
-                },
-                "mbid": "b8638bdc-728d-4d43-a908-7be7db29073b",
-                "url": "https:\/\/www.last.fm\/music\/AJ+Tracey",
-                "playcount": "277",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/aca9319f721726cd2090e9b203d91a71.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/aca9319f721726cd2090e9b203d91a71.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/aca9319f721726cd2090e9b203d91a71.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/aca9319f721726cd2090e9b203d91a71.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/aca9319f721726cd2090e9b203d91a71.jpg"
-                    }
-                ],
-                "name": "AJ Tracey",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "4"
-                },
-                "mbid": "3f5999c4-6647-45a1-90d6-857c667ca80b",
-                "url": "https:\/\/www.last.fm\/music\/%E7%89%9B%E5%B0%BE%E6%86%B2%E8%BC%94",
-                "playcount": "245",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/715736e5eb2b5f54423be30439a6c39e.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/715736e5eb2b5f54423be30439a6c39e.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/715736e5eb2b5f54423be30439a6c39e.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/715736e5eb2b5f54423be30439a6c39e.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/715736e5eb2b5f54423be30439a6c39e.png"
-                    }
-                ],
-                "name": "牛尾憲輔",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "5"
-                },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Health",
-                "playcount": "207",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/fded26811c6d2dc540d37528e7026685.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/fded26811c6d2dc540d37528e7026685.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/fded26811c6d2dc540d37528e7026685.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/fded26811c6d2dc540d37528e7026685.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/fded26811c6d2dc540d37528e7026685.jpg"
-                    }
-                ],
-                "name": "Health",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "6"
-                },
                 "mbid": "f93bac9e-b20a-403e-abc9-06a2fc151df1",
                 "url": "https:\/\/www.last.fm\/music\/Dave",
-                "playcount": "206",
+                "playcount": "384",
                 "image": [
                     {
                         "size": "small",
@@ -195,43 +35,43 @@
             },
             {
                 "@attr": {
-                    "rank": "7"
+                    "rank": "2"
                 },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/HUNCHO+JACK,+Travis+Scott+&+Quavo",
-                "playcount": "167",
+                "mbid": "87ae83df-6173-40cc-a0f2-bad543faa6aa",
+                "url": "https:\/\/www.last.fm\/music\/DaBaby",
+                "playcount": "328",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/4bfe9366533c2263db9d710640184b02.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/4bfe9366533c2263db9d710640184b02.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/4bfe9366533c2263db9d710640184b02.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/4bfe9366533c2263db9d710640184b02.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/4bfe9366533c2263db9d710640184b02.jpg"
                     }
                 ],
-                "name": "HUNCHO JACK, Travis Scott & Quavo",
+                "name": "DaBaby",
                 "streamable": "0"
             },
             {
                 "@attr": {
-                    "rank": "8"
+                    "rank": "3"
                 },
                 "mbid": "",
                 "url": "https:\/\/www.last.fm\/music\/Juice+WRLD",
-                "playcount": "162",
+                "playcount": "240",
                 "image": [
                     {
                         "size": "small",
@@ -259,98 +99,258 @@
             },
             {
                 "@attr": {
-                    "rank": "9"
+                    "rank": "4"
                 },
-                "mbid": "410e7fd3-b865-4fa0-bb18-1b7fd53382ca",
-                "url": "https:\/\/www.last.fm\/music\/Solange",
-                "playcount": "143",
+                "mbid": "03f3deb7-0419-4bf9-a1e7-511946385717",
+                "url": "https:\/\/www.last.fm\/music\/The+Alchemist",
+                "playcount": "199",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/707992c53f9f118640f05166a08ff784.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/9b6ca146463d4ddfa3494b817c9a227f.png"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/707992c53f9f118640f05166a08ff784.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/9b6ca146463d4ddfa3494b817c9a227f.png"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/707992c53f9f118640f05166a08ff784.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/9b6ca146463d4ddfa3494b817c9a227f.png"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/707992c53f9f118640f05166a08ff784.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/9b6ca146463d4ddfa3494b817c9a227f.png"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/707992c53f9f118640f05166a08ff784.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/9b6ca146463d4ddfa3494b817c9a227f.png"
                     }
                 ],
-                "name": "Solange",
+                "name": "The Alchemist",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "5"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Amir+Ob%C3%A8",
+                "playcount": "186",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/42f096aae2f37119ca07497311fcf49e.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/42f096aae2f37119ca07497311fcf49e.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/42f096aae2f37119ca07497311fcf49e.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/42f096aae2f37119ca07497311fcf49e.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/42f096aae2f37119ca07497311fcf49e.jpg"
+                    }
+                ],
+                "name": "Amir Obè",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "6"
+                },
+                "mbid": "0daad2e7-9b0e-4aea-abc5-d1b21c3c12bd",
+                "url": "https:\/\/www.last.fm\/music\/Phony+Ppl",
+                "playcount": "126",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/e444d446cdc836d7e7e4e0f4c10dc674.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/e444d446cdc836d7e7e4e0f4c10dc674.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/e444d446cdc836d7e7e4e0f4c10dc674.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e444d446cdc836d7e7e4e0f4c10dc674.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e444d446cdc836d7e7e4e0f4c10dc674.jpg"
+                    }
+                ],
+                "name": "Phony Ppl",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "7"
+                },
+                "mbid": "187bbdde-343a-4978-9cb4-08df62e18986",
+                "url": "https:\/\/www.last.fm\/music\/Octavian",
+                "playcount": "118",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/06ef20157b7861c91c83631d1aa55699.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/06ef20157b7861c91c83631d1aa55699.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/06ef20157b7861c91c83631d1aa55699.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/06ef20157b7861c91c83631d1aa55699.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/06ef20157b7861c91c83631d1aa55699.png"
+                    }
+                ],
+                "name": "Octavian",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "8"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Chief+Keef+&+Zaytoven",
+                "playcount": "97",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/4c78f6e14a6acf3431f8681deac6c43c.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/4c78f6e14a6acf3431f8681deac6c43c.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/4c78f6e14a6acf3431f8681deac6c43c.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/4c78f6e14a6acf3431f8681deac6c43c.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/4c78f6e14a6acf3431f8681deac6c43c.jpg"
+                    }
+                ],
+                "name": "Chief Keef & Zaytoven",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "9"
+                },
+                "mbid": "418fe547-4bec-48fe-8df0-ed25e27f4570",
+                "url": "https:\/\/www.last.fm\/music\/NAV",
+                "playcount": "90",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/265e2d13170c04e09517b3fbafa2cd74.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/265e2d13170c04e09517b3fbafa2cd74.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/265e2d13170c04e09517b3fbafa2cd74.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/265e2d13170c04e09517b3fbafa2cd74.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/265e2d13170c04e09517b3fbafa2cd74.jpg"
+                    }
+                ],
+                "name": "NAV",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "10"
                 },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Yung+Bans",
-                "playcount": "141",
+                "mbid": "21a0e450-ae4d-473a-add4-744542ab9bf5",
+                "url": "https:\/\/www.last.fm\/music\/Shlohmo",
+                "playcount": "77",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/79a1194e2cb4a97b2952d8a20c9d5219.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/da51ceb8f1aa426a90409a3594872519.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/79a1194e2cb4a97b2952d8a20c9d5219.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/da51ceb8f1aa426a90409a3594872519.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/79a1194e2cb4a97b2952d8a20c9d5219.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/da51ceb8f1aa426a90409a3594872519.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/79a1194e2cb4a97b2952d8a20c9d5219.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/da51ceb8f1aa426a90409a3594872519.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/79a1194e2cb4a97b2952d8a20c9d5219.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/da51ceb8f1aa426a90409a3594872519.jpg"
                     }
                 ],
-                "name": "Yung Bans",
+                "name": "Shlohmo",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "11"
                 },
-                "mbid": "617f2574-c2bd-4e39-9627-34fc9742a024",
-                "url": "https:\/\/www.last.fm\/music\/Aswad",
-                "playcount": "129",
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Hoodrich+Pablo+Juan",
+                "playcount": "74",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/e66c18af330a4fb2b678751d2e0743bb.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/edeadae96ccef6dafc02eb48bc78fc00.png"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/e66c18af330a4fb2b678751d2e0743bb.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/edeadae96ccef6dafc02eb48bc78fc00.png"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/e66c18af330a4fb2b678751d2e0743bb.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/edeadae96ccef6dafc02eb48bc78fc00.png"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e66c18af330a4fb2b678751d2e0743bb.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/edeadae96ccef6dafc02eb48bc78fc00.png"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e66c18af330a4fb2b678751d2e0743bb.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/edeadae96ccef6dafc02eb48bc78fc00.png"
                     }
                 ],
-                "name": "Aswad",
+                "name": "Hoodrich Pablo Juan",
                 "streamable": "0"
             },
             {
@@ -358,104 +358,8 @@
                     "rank": "12"
                 },
                 "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Rico+Nasty",
-                "playcount": "89",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/9d0b59a1cb6873ba2358cc2410777d3e.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/9d0b59a1cb6873ba2358cc2410777d3e.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/9d0b59a1cb6873ba2358cc2410777d3e.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/9d0b59a1cb6873ba2358cc2410777d3e.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/9d0b59a1cb6873ba2358cc2410777d3e.jpg"
-                    }
-                ],
-                "name": "Rico Nasty",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "13"
-                },
-                "mbid": "8b22acd6-20e6-4463-a75c-c14b5cfdb666",
-                "url": "https:\/\/www.last.fm\/music\/Earl+Sweatshirt",
-                "playcount": "82",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/5cef82416bcd102da0212dc722a9de88.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/5cef82416bcd102da0212dc722a9de88.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/5cef82416bcd102da0212dc722a9de88.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/5cef82416bcd102da0212dc722a9de88.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/5cef82416bcd102da0212dc722a9de88.jpg"
-                    }
-                ],
-                "name": "Earl Sweatshirt",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "14"
-                },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Czarface+&+Ghostface+Killah",
-                "playcount": "75",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/e182eb2c8a89910ca2d814e5c743a1f4.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/e182eb2c8a89910ca2d814e5c743a1f4.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/e182eb2c8a89910ca2d814e5c743a1f4.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e182eb2c8a89910ca2d814e5c743a1f4.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e182eb2c8a89910ca2d814e5c743a1f4.jpg"
-                    }
-                ],
-                "name": "Czarface & Ghostface Killah",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "15"
-                },
-                "mbid": "",
                 "url": "https:\/\/www.last.fm\/music\/Charlie+Heat+&+Denzel+Curry",
-                "playcount": "63",
+                "playcount": "67",
                 "image": [
                     {
                         "size": "small",
@@ -483,327 +387,679 @@
             },
             {
                 "@attr": {
-                    "rank": "16"
+                    "rank": "13"
                 },
-                "mbid": "dd884b36-c727-4c74-bb06-ee7827611098",
-                "url": "https:\/\/www.last.fm\/music\/Knxwledge",
+                "mbid": "5ab8835e-ac44-4055-9c11-7878199606b5",
+                "url": "https:\/\/www.last.fm\/music\/Best+Coast",
                 "playcount": "62",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/4f329645fda8a5aaf4dd907b3a5486a8.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/512904ff418149649dfcc13e666092d6.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/4f329645fda8a5aaf4dd907b3a5486a8.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/512904ff418149649dfcc13e666092d6.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/4f329645fda8a5aaf4dd907b3a5486a8.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/512904ff418149649dfcc13e666092d6.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/4f329645fda8a5aaf4dd907b3a5486a8.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/512904ff418149649dfcc13e666092d6.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/4f329645fda8a5aaf4dd907b3a5486a8.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/512904ff418149649dfcc13e666092d6.jpg"
                     }
                 ],
-                "name": "Knxwledge",
+                "name": "Best Coast",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "14"
+                },
+                "mbid": "3f5999c4-6647-45a1-90d6-857c667ca80b",
+                "url": "https:\/\/www.last.fm\/music\/%E7%89%9B%E5%B0%BE%E6%86%B2%E8%BC%94",
+                "playcount": "59",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/715736e5eb2b5f54423be30439a6c39e.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/715736e5eb2b5f54423be30439a6c39e.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/715736e5eb2b5f54423be30439a6c39e.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/715736e5eb2b5f54423be30439a6c39e.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/715736e5eb2b5f54423be30439a6c39e.png"
+                    }
+                ],
+                "name": "牛尾憲輔",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "15"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Yung+Bans",
+                "playcount": "57",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/d419aad15707abecb5c25b0edff61fce.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/d419aad15707abecb5c25b0edff61fce.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/d419aad15707abecb5c25b0edff61fce.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d419aad15707abecb5c25b0edff61fce.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d419aad15707abecb5c25b0edff61fce.jpg"
+                    }
+                ],
+                "name": "Yung Bans",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "16"
+                },
+                "mbid": "8b22acd6-20e6-4463-a75c-c14b5cfdb666",
+                "url": "https:\/\/www.last.fm\/music\/Earl+Sweatshirt",
+                "playcount": "47",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/e9280a501bf196bc6a8169a0d1647bcf.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/e9280a501bf196bc6a8169a0d1647bcf.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/e9280a501bf196bc6a8169a0d1647bcf.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e9280a501bf196bc6a8169a0d1647bcf.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e9280a501bf196bc6a8169a0d1647bcf.jpg"
+                    }
+                ],
+                "name": "Earl Sweatshirt",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "17"
                 },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Night+Lovell",
-                "playcount": "57",
+                "mbid": "5721c227-4caf-48b1-bbfc-1a4ed3276963",
+                "url": "https:\/\/www.last.fm\/music\/Roddy+Ricch",
+                "playcount": "43",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/e55cc9a3522103734850d6f867aed800.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/a686c904d8c49ff655c51697ee66cc70.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/e55cc9a3522103734850d6f867aed800.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/a686c904d8c49ff655c51697ee66cc70.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/e55cc9a3522103734850d6f867aed800.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/a686c904d8c49ff655c51697ee66cc70.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e55cc9a3522103734850d6f867aed800.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/a686c904d8c49ff655c51697ee66cc70.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e55cc9a3522103734850d6f867aed800.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/a686c904d8c49ff655c51697ee66cc70.jpg"
                     }
                 ],
-                "name": "Night Lovell",
+                "name": "Roddy Ricch",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "18"
                 },
-                "mbid": "c0daae21-ec2a-4dd0-a323-4f53f5945d04",
-                "url": "https:\/\/www.last.fm\/music\/King+Krule",
-                "playcount": "52",
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Sam+Wise",
+                "playcount": "43",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/01dfd911355af23e1c630e97d63f01c5.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/83b4bda6d57767489f75c0e3c157e05d.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/01dfd911355af23e1c630e97d63f01c5.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/83b4bda6d57767489f75c0e3c157e05d.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/01dfd911355af23e1c630e97d63f01c5.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/83b4bda6d57767489f75c0e3c157e05d.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/01dfd911355af23e1c630e97d63f01c5.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/83b4bda6d57767489f75c0e3c157e05d.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/01dfd911355af23e1c630e97d63f01c5.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/83b4bda6d57767489f75c0e3c157e05d.jpg"
                     }
                 ],
-                "name": "King Krule",
+                "name": "Sam Wise",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "19"
                 },
-                "mbid": "e167a029-fd9f-43c1-96c2-c3da6b15164f",
-                "url": "https:\/\/www.last.fm\/music\/Xavier+Wulf",
-                "playcount": "51",
+                "mbid": "410e7fd3-b865-4fa0-bb18-1b7fd53382ca",
+                "url": "https:\/\/www.last.fm\/music\/Solange",
+                "playcount": "43",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/354e4115204d4c93cc8069a1a51481e7.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/d41d56c7bb2b2823313caf1f3e0d7ad1.png"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/354e4115204d4c93cc8069a1a51481e7.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/d41d56c7bb2b2823313caf1f3e0d7ad1.png"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/354e4115204d4c93cc8069a1a51481e7.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/d41d56c7bb2b2823313caf1f3e0d7ad1.png"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/354e4115204d4c93cc8069a1a51481e7.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d41d56c7bb2b2823313caf1f3e0d7ad1.png"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/354e4115204d4c93cc8069a1a51481e7.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d41d56c7bb2b2823313caf1f3e0d7ad1.png"
                     }
                 ],
-                "name": "Xavier Wulf",
+                "name": "Solange",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "20"
                 },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Gunna",
-                "playcount": "46",
+                "mbid": "b8638bdc-728d-4d43-a908-7be7db29073b",
+                "url": "https:\/\/www.last.fm\/music\/AJ+Tracey",
+                "playcount": "41",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/b0fa3da84791cee442bd39d5c28974c4.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/054fada936edb96542c972a632ef9b3f.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/b0fa3da84791cee442bd39d5c28974c4.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/054fada936edb96542c972a632ef9b3f.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/b0fa3da84791cee442bd39d5c28974c4.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/054fada936edb96542c972a632ef9b3f.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/b0fa3da84791cee442bd39d5c28974c4.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/054fada936edb96542c972a632ef9b3f.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/b0fa3da84791cee442bd39d5c28974c4.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/054fada936edb96542c972a632ef9b3f.jpg"
                     }
                 ],
-                "name": "Gunna",
+                "name": "AJ Tracey",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "21"
                 },
-                "mbid": "800760de-bdf8-43a2-8fe0-44a2401a5515",
-                "url": "https:\/\/www.last.fm\/music\/Young+Thug",
-                "playcount": "42",
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/AstralBlack",
+                "playcount": "38",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/d75ceb59e0c5d0203ac645d5564a0f15.jpg"
+                        "#text": ""
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/d75ceb59e0c5d0203ac645d5564a0f15.jpg"
+                        "#text": ""
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/d75ceb59e0c5d0203ac645d5564a0f15.jpg"
+                        "#text": ""
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d75ceb59e0c5d0203ac645d5564a0f15.jpg"
+                        "#text": ""
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d75ceb59e0c5d0203ac645d5564a0f15.jpg"
+                        "#text": ""
                     }
                 ],
-                "name": "Young Thug",
+                "name": "AstralBlack",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "22"
                 },
-                "mbid": "6ac58f4e-d8b1-476d-aa93-efb126ea1b4c",
-                "url": "https:\/\/www.last.fm\/music\/WZRD",
-                "playcount": "37",
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Ld+67",
+                "playcount": "38",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/e807e03006824929b8db9c10d0f12876.png"
+                        "#text": ""
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/e807e03006824929b8db9c10d0f12876.png"
+                        "#text": ""
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/e807e03006824929b8db9c10d0f12876.png"
+                        "#text": ""
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e807e03006824929b8db9c10d0f12876.png"
+                        "#text": ""
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e807e03006824929b8db9c10d0f12876.png"
+                        "#text": ""
                     }
                 ],
-                "name": "WZRD",
+                "name": "Ld 67",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "23"
                 },
-                "mbid": "1a99cc88-aea3-4fe3-96b9-20791667f65f",
-                "url": "https:\/\/www.last.fm\/music\/Dizzee+Rascal",
-                "playcount": "35",
+                "mbid": "3cdb40fe-a63e-4bb9-b40d-17cda5f50979",
+                "url": "https:\/\/www.last.fm\/music\/Little+Simz",
+                "playcount": "38",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/ce828f7c28b54bf587c8ffbc4ba6b1f9.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/2bf9fbd3acae7f9a5615adbd71f6c7f6.png"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/ce828f7c28b54bf587c8ffbc4ba6b1f9.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/2bf9fbd3acae7f9a5615adbd71f6c7f6.png"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/ce828f7c28b54bf587c8ffbc4ba6b1f9.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/2bf9fbd3acae7f9a5615adbd71f6c7f6.png"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/ce828f7c28b54bf587c8ffbc4ba6b1f9.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/2bf9fbd3acae7f9a5615adbd71f6c7f6.png"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/ce828f7c28b54bf587c8ffbc4ba6b1f9.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/2bf9fbd3acae7f9a5615adbd71f6c7f6.png"
                     }
                 ],
-                "name": "Dizzee Rascal",
+                "name": "Little Simz",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "24"
                 },
-                "mbid": "3d254f1e-7d18-431b-baeb-68e57695dfdb",
-                "url": "https:\/\/www.last.fm\/music\/Blood+Orange",
-                "playcount": "34",
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/SOUDIERE",
+                "playcount": "38",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/21970840d7e7a8dc1676fd6a2ab01b2e.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/9d5031ede4ed540ad7f1d5db6d88f6be.png"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/21970840d7e7a8dc1676fd6a2ab01b2e.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/9d5031ede4ed540ad7f1d5db6d88f6be.png"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/21970840d7e7a8dc1676fd6a2ab01b2e.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/9d5031ede4ed540ad7f1d5db6d88f6be.png"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/21970840d7e7a8dc1676fd6a2ab01b2e.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/9d5031ede4ed540ad7f1d5db6d88f6be.png"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/21970840d7e7a8dc1676fd6a2ab01b2e.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/9d5031ede4ed540ad7f1d5db6d88f6be.png"
                     }
                 ],
-                "name": "Blood Orange",
+                "name": "SOUDIERE",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "25"
                 },
-                "mbid": "9b14ef6d-119b-47b8-9d06-fc72901451e2",
-                "url": "https:\/\/www.last.fm\/music\/Roc+Marciano",
-                "playcount": "31",
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/baccyard",
+                "playcount": "37",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/fe73a43d1d8de9e86a95f3e5c366a5cd.jpg"
+                        "#text": ""
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/fe73a43d1d8de9e86a95f3e5c366a5cd.jpg"
+                        "#text": ""
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/fe73a43d1d8de9e86a95f3e5c366a5cd.jpg"
+                        "#text": ""
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/fe73a43d1d8de9e86a95f3e5c366a5cd.jpg"
+                        "#text": ""
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/fe73a43d1d8de9e86a95f3e5c366a5cd.jpg"
+                        "#text": ""
                     }
                 ],
-                "name": "Roc Marciano",
+                "name": "baccyard",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "26"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Gus+Dapperton",
+                "playcount": "36",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/c90a4c5b3560331929590fe1ad249518.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/c90a4c5b3560331929590fe1ad249518.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/c90a4c5b3560331929590fe1ad249518.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/c90a4c5b3560331929590fe1ad249518.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/c90a4c5b3560331929590fe1ad249518.jpg"
+                    }
+                ],
+                "name": "Gus Dapperton",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "27"
+                },
+                "mbid": "6d063567-dbf9-4b2a-bd11-1a4450cd93ca",
+                "url": "https:\/\/www.last.fm\/music\/Rich+the+Kid",
+                "playcount": "36",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/e4330e9fa64be4f4590f48e66d2712a1.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/e4330e9fa64be4f4590f48e66d2712a1.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/e4330e9fa64be4f4590f48e66d2712a1.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e4330e9fa64be4f4590f48e66d2712a1.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/e4330e9fa64be4f4590f48e66d2712a1.jpg"
+                    }
+                ],
+                "name": "Rich the Kid",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "28"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Rico+Nasty",
+                "playcount": "35",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/181245769d51d106c871caf461fa2a8f.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/181245769d51d106c871caf461fa2a8f.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/181245769d51d106c871caf461fa2a8f.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/181245769d51d106c871caf461fa2a8f.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/181245769d51d106c871caf461fa2a8f.png"
+                    }
+                ],
+                "name": "Rico Nasty",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "29"
+                },
+                "mbid": "c42e60f4-4520-4954-b6e4-82bbdf532c11",
+                "url": "https:\/\/www.last.fm\/music\/JPEGMAFIA",
+                "playcount": "33",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/299abc943cada212e63201f47ac94d55.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/299abc943cada212e63201f47ac94d55.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/299abc943cada212e63201f47ac94d55.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/299abc943cada212e63201f47ac94d55.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/299abc943cada212e63201f47ac94d55.jpg"
+                    }
+                ],
+                "name": "JPEGMAFIA",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "30"
+                },
+                "mbid": "29eead4d-3793-4625-8727-c03edbb38b8b",
+                "url": "https:\/\/www.last.fm\/music\/Soulja+Boy",
+                "playcount": "31",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/855cd650ff1a448b0c1376935b756686.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/855cd650ff1a448b0c1376935b756686.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/855cd650ff1a448b0c1376935b756686.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/855cd650ff1a448b0c1376935b756686.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/855cd650ff1a448b0c1376935b756686.jpg"
+                    }
+                ],
+                "name": "Soulja Boy",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "31"
+                },
+                "mbid": "57879ca6-44aa-4b75-9a97-b801f57a1331",
+                "url": "https:\/\/www.last.fm\/music\/JME",
+                "playcount": "29",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
+                    }
+                ],
+                "name": "JME",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "32"
+                },
+                "mbid": "f59a5dac-939a-4f12-a35c-9a49676f6898",
+                "url": "https:\/\/www.last.fm\/music\/Flatbush+ZOMBiES",
+                "playcount": "28",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/5be80317bab524a3af11c21e3196f2c6.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/5be80317bab524a3af11c21e3196f2c6.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/5be80317bab524a3af11c21e3196f2c6.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/5be80317bab524a3af11c21e3196f2c6.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/5be80317bab524a3af11c21e3196f2c6.jpg"
+                    }
+                ],
+                "name": "Flatbush ZOMBiES",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "33"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/HUNCHO+JACK,+Travis+Scott+&+Quavo",
+                "playcount": "28",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/99ffe2067ad6678deacce8f15c015c9b.jpg"
+                    }
+                ],
+                "name": "HUNCHO JACK, Travis Scott & Quavo",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "34"
                 },
                 "mbid": "381086ea-f511-4aba-bdf9-71c753dc5077",
                 "url": "https:\/\/www.last.fm\/music\/Kendrick+Lamar",
@@ -835,290 +1091,34 @@
             },
             {
                 "@attr": {
-                    "rank": "27"
-                },
-                "mbid": "21645c31-fe1c-45a4-955c-3e172b12c3f9",
-                "url": "https:\/\/www.last.fm\/music\/Freddie+Gibbs+&+Madlib",
-                "playcount": "26",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/def6c05c5107a26961381b92c7e28d08.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/def6c05c5107a26961381b92c7e28d08.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/def6c05c5107a26961381b92c7e28d08.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/def6c05c5107a26961381b92c7e28d08.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/def6c05c5107a26961381b92c7e28d08.png"
-                    }
-                ],
-                "name": "Freddie Gibbs & Madlib",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "28"
-                },
-                "mbid": "8dc08b1f-e393-4f85-a5dd-300f7693a8b8",
-                "url": "https:\/\/www.last.fm\/music\/James+Blake",
-                "playcount": "26",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/ba2a02409882a744a7aad1b18368ba0e.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/ba2a02409882a744a7aad1b18368ba0e.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/ba2a02409882a744a7aad1b18368ba0e.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/ba2a02409882a744a7aad1b18368ba0e.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/ba2a02409882a744a7aad1b18368ba0e.png"
-                    }
-                ],
-                "name": "James Blake",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "29"
-                },
-                "mbid": "9f42ba3d-3cfc-499c-ba16-7226f56b622f",
-                "url": "https:\/\/www.last.fm\/music\/Westside+Gunn",
-                "playcount": "25",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/9a1485f7b33d8e033f94c8fb2d4113cd.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/9a1485f7b33d8e033f94c8fb2d4113cd.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/9a1485f7b33d8e033f94c8fb2d4113cd.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/9a1485f7b33d8e033f94c8fb2d4113cd.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/9a1485f7b33d8e033f94c8fb2d4113cd.jpg"
-                    }
-                ],
-                "name": "Westside Gunn",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "30"
-                },
-                "mbid": "164f0d73-1234-4e2c-8743-d77bf2191051",
-                "url": "https:\/\/www.last.fm\/music\/Kanye+West",
-                "playcount": "24",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/947fb668bf7b5f60636c79921144b744.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/947fb668bf7b5f60636c79921144b744.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/947fb668bf7b5f60636c79921144b744.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/947fb668bf7b5f60636c79921144b744.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/947fb668bf7b5f60636c79921144b744.jpg"
-                    }
-                ],
-                "name": "Kanye West",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "31"
-                },
-                "mbid": "c052cec7-bd44-4a13-92bc-f90e34fe812d",
-                "url": "https:\/\/www.last.fm\/music\/KeithCharles+Spacebar",
-                "playcount": "24",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/b988046b9af44136c17e37f634cf4316.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/b988046b9af44136c17e37f634cf4316.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/b988046b9af44136c17e37f634cf4316.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/b988046b9af44136c17e37f634cf4316.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/b988046b9af44136c17e37f634cf4316.jpg"
-                    }
-                ],
-                "name": "KeithCharles Spacebar",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "32"
-                },
-                "mbid": "d0f61299-9caa-4e6b-8b10-2839de120b27",
-                "url": "https:\/\/www.last.fm\/music\/Wiley",
-                "playcount": "24",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/21d9449e8cde4c14937ca1250a8e5db6.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/21d9449e8cde4c14937ca1250a8e5db6.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/21d9449e8cde4c14937ca1250a8e5db6.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/21d9449e8cde4c14937ca1250a8e5db6.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/21d9449e8cde4c14937ca1250a8e5db6.png"
-                    }
-                ],
-                "name": "Wiley",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "33"
-                },
-                "mbid": "2baf3276-ed6a-4349-8d2e-f4601e7b2167",
-                "url": "https:\/\/www.last.fm\/music\/Playboi+Carti",
-                "playcount": "23",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/352de750951af9daeb57d60456b72b09.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/352de750951af9daeb57d60456b72b09.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/352de750951af9daeb57d60456b72b09.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/352de750951af9daeb57d60456b72b09.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/352de750951af9daeb57d60456b72b09.png"
-                    }
-                ],
-                "name": "Playboi Carti",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "34"
-                },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/KASPA.",
-                "playcount": "20",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": ""
-                    },
-                    {
-                        "size": "medium",
-                        "#text": ""
-                    },
-                    {
-                        "size": "large",
-                        "#text": ""
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": ""
-                    },
-                    {
-                        "size": "mega",
-                        "#text": ""
-                    }
-                ],
-                "name": "KASPA.",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
                     "rank": "35"
                 },
-                "mbid": "29eead4d-3793-4625-8727-c03edbb38b8b",
-                "url": "https:\/\/www.last.fm\/music\/Soulja+Boy",
-                "playcount": "20",
+                "mbid": "8837b875-3689-4646-b3fd-d8b53815c7a8",
+                "url": "https:\/\/www.last.fm\/music\/Lil+Uzi+Vert",
+                "playcount": "28",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/855cd650ff1a448b0c1376935b756686.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/b554d07e2cdaefa48e816ca453cf84ff.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/855cd650ff1a448b0c1376935b756686.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/b554d07e2cdaefa48e816ca453cf84ff.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/855cd650ff1a448b0c1376935b756686.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/b554d07e2cdaefa48e816ca453cf84ff.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/855cd650ff1a448b0c1376935b756686.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/b554d07e2cdaefa48e816ca453cf84ff.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/855cd650ff1a448b0c1376935b756686.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/b554d07e2cdaefa48e816ca453cf84ff.jpg"
                     }
                 ],
-                "name": "Soulja Boy",
+                "name": "Lil Uzi Vert",
                 "streamable": "0"
             },
             {
@@ -1126,8 +1126,232 @@
                     "rank": "36"
                 },
                 "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Chill+Children",
+                "playcount": "26",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/df33adee89f733beca82f32bd18f64cb.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/df33adee89f733beca82f32bd18f64cb.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/df33adee89f733beca82f32bd18f64cb.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/df33adee89f733beca82f32bd18f64cb.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/df33adee89f733beca82f32bd18f64cb.jpg"
+                    }
+                ],
+                "name": "Chill Children",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "37"
+                },
+                "mbid": "e4a51f17-a57b-47b1-b37b-f552d0f8e9e6",
+                "url": "https:\/\/www.last.fm\/music\/Travi$+Scott",
+                "playcount": "26",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/217d669d3699818789e9e30ef406c58f.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/217d669d3699818789e9e30ef406c58f.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/217d669d3699818789e9e30ef406c58f.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/217d669d3699818789e9e30ef406c58f.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/217d669d3699818789e9e30ef406c58f.jpg"
+                    }
+                ],
+                "name": "Travi$ Scott",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "38"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Tay-K",
+                "playcount": "25",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/d187d5bdb9bc56429222928e4621f7d3.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/d187d5bdb9bc56429222928e4621f7d3.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/d187d5bdb9bc56429222928e4621f7d3.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d187d5bdb9bc56429222928e4621f7d3.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d187d5bdb9bc56429222928e4621f7d3.jpg"
+                    }
+                ],
+                "name": "Tay-K",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "39"
+                },
+                "mbid": "e167a029-fd9f-43c1-96c2-c3da6b15164f",
+                "url": "https:\/\/www.last.fm\/music\/Xavier+Wulf",
+                "playcount": "25",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/354e4115204d4c93cc8069a1a51481e7.png"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/354e4115204d4c93cc8069a1a51481e7.png"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/354e4115204d4c93cc8069a1a51481e7.png"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/354e4115204d4c93cc8069a1a51481e7.png"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/354e4115204d4c93cc8069a1a51481e7.png"
+                    }
+                ],
+                "name": "Xavier Wulf",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "40"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/Health",
+                "playcount": "23",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/fded26811c6d2dc540d37528e7026685.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/fded26811c6d2dc540d37528e7026685.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/fded26811c6d2dc540d37528e7026685.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/fded26811c6d2dc540d37528e7026685.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/fded26811c6d2dc540d37528e7026685.jpg"
+                    }
+                ],
+                "name": "Health",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "41"
+                },
+                "mbid": "",
+                "url": "https:\/\/www.last.fm\/music\/PRO+ERA+RECORDS.",
+                "playcount": "23",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": ""
+                    },
+                    {
+                        "size": "medium",
+                        "#text": ""
+                    },
+                    {
+                        "size": "large",
+                        "#text": ""
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": ""
+                    },
+                    {
+                        "size": "mega",
+                        "#text": ""
+                    }
+                ],
+                "name": "PRO ERA RECORDS.",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "42"
+                },
+                "mbid": "9b14ef6d-119b-47b8-9d06-fc72901451e2",
+                "url": "https:\/\/www.last.fm\/music\/Roc+Marciano",
+                "playcount": "23",
+                "image": [
+                    {
+                        "size": "small",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/10200b1849fa4424a3381f2982941ccf.jpg"
+                    },
+                    {
+                        "size": "medium",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/10200b1849fa4424a3381f2982941ccf.jpg"
+                    },
+                    {
+                        "size": "large",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/10200b1849fa4424a3381f2982941ccf.jpg"
+                    },
+                    {
+                        "size": "extralarge",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/10200b1849fa4424a3381f2982941ccf.jpg"
+                    },
+                    {
+                        "size": "mega",
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/10200b1849fa4424a3381f2982941ccf.jpg"
+                    }
+                ],
+                "name": "Roc Marciano",
+                "streamable": "0"
+            },
+            {
+                "@attr": {
+                    "rank": "43"
+                },
+                "mbid": "",
                 "url": "https:\/\/www.last.fm\/music\/J.I.D",
-                "playcount": "19",
+                "playcount": "21",
                 "image": [
                     {
                         "size": "small",
@@ -1155,386 +1379,162 @@
             },
             {
                 "@attr": {
-                    "rank": "37"
-                },
-                "mbid": "f7ba7fbe-c6bd-4ac0-bee9-c25c558d7d62",
-                "url": "https:\/\/www.last.fm\/music\/T.I.",
-                "playcount": "19",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/5273706e2a7c48f0a4afdc13ce2b3d9e.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/5273706e2a7c48f0a4afdc13ce2b3d9e.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/5273706e2a7c48f0a4afdc13ce2b3d9e.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/5273706e2a7c48f0a4afdc13ce2b3d9e.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/5273706e2a7c48f0a4afdc13ce2b3d9e.jpg"
-                    }
-                ],
-                "name": "T.I.",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "38"
-                },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Doja+Cat",
-                "playcount": "17",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/ca24d6a7603ac907a036f95959cadc2f.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/ca24d6a7603ac907a036f95959cadc2f.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/ca24d6a7603ac907a036f95959cadc2f.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/ca24d6a7603ac907a036f95959cadc2f.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/ca24d6a7603ac907a036f95959cadc2f.jpg"
-                    }
-                ],
-                "name": "Doja Cat",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "39"
-                },
-                "mbid": "0daad2e7-9b0e-4aea-abc5-d1b21c3c12bd",
-                "url": "https:\/\/www.last.fm\/music\/Phony+Ppl",
-                "playcount": "17",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/67196485709d4f3e91fa33dc1ec57001.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/67196485709d4f3e91fa33dc1ec57001.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/67196485709d4f3e91fa33dc1ec57001.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/67196485709d4f3e91fa33dc1ec57001.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/67196485709d4f3e91fa33dc1ec57001.jpg"
-                    }
-                ],
-                "name": "Phony Ppl",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "40"
-                },
-                "mbid": "4ef982aa-5307-4d49-a4a5-1164b25a16c9",
-                "url": "https:\/\/www.last.fm\/music\/Retch",
-                "playcount": "17",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/5a696be9ded54885c8d998f4883e7ce9.png"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/5a696be9ded54885c8d998f4883e7ce9.png"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/5a696be9ded54885c8d998f4883e7ce9.png"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/5a696be9ded54885c8d998f4883e7ce9.png"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/5a696be9ded54885c8d998f4883e7ce9.png"
-                    }
-                ],
-                "name": "Retch",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "41"
-                },
-                "mbid": "acc12019-10e3-40aa-b4bf-66fbb4a692af",
-                "url": "https:\/\/www.last.fm\/music\/Ab-Soul",
-                "playcount": "16",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/56bb0739fcae451b9ce9248bb617b970.gif"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/56bb0739fcae451b9ce9248bb617b970.gif"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/56bb0739fcae451b9ce9248bb617b970.gif"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/56bb0739fcae451b9ce9248bb617b970.gif"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/56bb0739fcae451b9ce9248bb617b970.gif"
-                    }
-                ],
-                "name": "Ab-Soul",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "42"
-                },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Busta+Rhymes+&+Q-Tip",
-                "playcount": "16",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/b86ac5bfb0f743c7c322292f9988b311.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/b86ac5bfb0f743c7c322292f9988b311.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/b86ac5bfb0f743c7c322292f9988b311.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/b86ac5bfb0f743c7c322292f9988b311.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/b86ac5bfb0f743c7c322292f9988b311.jpg"
-                    }
-                ],
-                "name": "Busta Rhymes & Q-Tip",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
-                    "rank": "43"
-                },
-                "mbid": "57879ca6-44aa-4b75-9a97-b801f57a1331",
-                "url": "https:\/\/www.last.fm\/music\/JME",
-                "playcount": "16",
-                "image": [
-                    {
-                        "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
-                    },
-                    {
-                        "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
-                    },
-                    {
-                        "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
-                    },
-                    {
-                        "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
-                    },
-                    {
-                        "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d5f5fb916583433cbd4b3d84e58fcd4e.jpg"
-                    }
-                ],
-                "name": "JME",
-                "streamable": "0"
-            },
-            {
-                "@attr": {
                     "rank": "44"
                 },
-                "mbid": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
-                "url": "https:\/\/www.last.fm\/music\/Kid+Cudi",
-                "playcount": "16",
+                "mbid": "bce6d667-cde8-485e-b078-c0a05adea36d",
+                "url": "https:\/\/www.last.fm\/music\/ScHoolboy+Q",
+                "playcount": "21",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/81971d4f8b2e4ec5cece2dff69bac089.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/65bb576e7e18453499f1b05ef2b68dc9.png"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/81971d4f8b2e4ec5cece2dff69bac089.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/65bb576e7e18453499f1b05ef2b68dc9.png"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/81971d4f8b2e4ec5cece2dff69bac089.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/65bb576e7e18453499f1b05ef2b68dc9.png"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/81971d4f8b2e4ec5cece2dff69bac089.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/65bb576e7e18453499f1b05ef2b68dc9.png"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/81971d4f8b2e4ec5cece2dff69bac089.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/65bb576e7e18453499f1b05ef2b68dc9.png"
                     }
                 ],
-                "name": "Kid Cudi",
+                "name": "ScHoolboy Q",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "45"
                 },
-                "mbid": "78e854b8-9713-4ff2-9218-6b3784893bff",
-                "url": "https:\/\/www.last.fm\/music\/Vince+Staples",
-                "playcount": "16",
+                "mbid": "d8e95b1a-39eb-4ed5-a6f1-d8e66a126715",
+                "url": "https:\/\/www.last.fm\/music\/emune",
+                "playcount": "20",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/df600b9976912fc1cdc9e2fb75361490.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/d9a025af304e39a48ecc7bdd0943cdbb.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/df600b9976912fc1cdc9e2fb75361490.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/d9a025af304e39a48ecc7bdd0943cdbb.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/df600b9976912fc1cdc9e2fb75361490.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/d9a025af304e39a48ecc7bdd0943cdbb.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/df600b9976912fc1cdc9e2fb75361490.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d9a025af304e39a48ecc7bdd0943cdbb.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/df600b9976912fc1cdc9e2fb75361490.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/d9a025af304e39a48ecc7bdd0943cdbb.jpg"
                     }
                 ],
-                "name": "Vince Staples",
+                "name": "emune",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "46"
                 },
-                "mbid": "25b7b584-d952-4662-a8b9-dd8cdfbfeb64",
-                "url": "https:\/\/www.last.fm\/music\/A$AP+Rocky",
-                "playcount": "15",
+                "mbid": "aea4c9b9-9f8d-49dc-b2ca-57d6f26e8634",
+                "url": "https:\/\/www.last.fm\/music\/Khruangbin",
+                "playcount": "19",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/344efac685c47be8fbeb44b2fd781407.gif"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/be528c580497fa50c95c8c466292cf76.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/344efac685c47be8fbeb44b2fd781407.gif"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/be528c580497fa50c95c8c466292cf76.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/344efac685c47be8fbeb44b2fd781407.gif"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/be528c580497fa50c95c8c466292cf76.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/344efac685c47be8fbeb44b2fd781407.gif"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/be528c580497fa50c95c8c466292cf76.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/344efac685c47be8fbeb44b2fd781407.gif"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/be528c580497fa50c95c8c466292cf76.jpg"
                     }
                 ],
-                "name": "A$AP Rocky",
+                "name": "Khruangbin",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "47"
                 },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Abe+M+Beats",
-                "playcount": "15",
+                "mbid": "63aa26c3-d59b-4da4-84ac-716b54f1ef4d",
+                "url": "https:\/\/www.last.fm\/music\/Tame+Impala",
+                "playcount": "19",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/c16fc90fa38f6f36cf0741bd557b1ba0.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/af87aba641a04fa9836fbf72f08b95cc.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/c16fc90fa38f6f36cf0741bd557b1ba0.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/af87aba641a04fa9836fbf72f08b95cc.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/c16fc90fa38f6f36cf0741bd557b1ba0.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/af87aba641a04fa9836fbf72f08b95cc.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/c16fc90fa38f6f36cf0741bd557b1ba0.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/af87aba641a04fa9836fbf72f08b95cc.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/c16fc90fa38f6f36cf0741bd557b1ba0.jpg"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/af87aba641a04fa9836fbf72f08b95cc.jpg"
                     }
                 ],
-                "name": "Abe M Beats",
+                "name": "Tame Impala",
                 "streamable": "0"
             },
             {
                 "@attr": {
                     "rank": "48"
                 },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/Acidbrain",
-                "playcount": "15",
+                "mbid": "78e854b8-9713-4ff2-9218-6b3784893bff",
+                "url": "https:\/\/www.last.fm\/music\/Vince+Staples",
+                "playcount": "17",
                 "image": [
                     {
                         "size": "small",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/569ec1b383d8a6fd94b7c745bd25c593.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/fc1c2f4848224619d2f29182f1210780.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/569ec1b383d8a6fd94b7c745bd25c593.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/fc1c2f4848224619d2f29182f1210780.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/569ec1b383d8a6fd94b7c745bd25c593.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/fc1c2f4848224619d2f29182f1210780.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/569ec1b383d8a6fd94b7c745bd25c593.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/fc1c2f4848224619d2f29182f1210780.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/569ec1b383d8a6fd94b7c745bd25c593.png"
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/fc1c2f4848224619d2f29182f1210780.jpg"
                     }
                 ],
-                "name": "Acidbrain",
+                "name": "Vince Staples",
                 "streamable": "0"
             },
             {
@@ -1543,7 +1543,7 @@
                 },
                 "mbid": "",
                 "url": "https:\/\/www.last.fm\/music\/DJ+YUNG+VAMP",
-                "playcount": "15",
+                "playcount": "16",
                 "image": [
                     {
                         "size": "small",
@@ -1573,32 +1573,32 @@
                 "@attr": {
                     "rank": "50"
                 },
-                "mbid": "",
-                "url": "https:\/\/www.last.fm\/music\/MYTHIC+(@killmythic)",
-                "playcount": "14",
+                "mbid": "c7a3e868-c6d8-4512-a5ef-f6cbe42899b0",
+                "url": "https:\/\/www.last.fm\/music\/Kamasi+Washington",
+                "playcount": "16",
                 "image": [
                     {
                         "size": "small",
-                        "#text": ""
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/34s\/446695c2d05210ac42daa7a4df8d55b0.jpg"
                     },
                     {
                         "size": "medium",
-                        "#text": ""
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/64s\/446695c2d05210ac42daa7a4df8d55b0.jpg"
                     },
                     {
                         "size": "large",
-                        "#text": ""
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/174s\/446695c2d05210ac42daa7a4df8d55b0.jpg"
                     },
                     {
                         "size": "extralarge",
-                        "#text": ""
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/446695c2d05210ac42daa7a4df8d55b0.jpg"
                     },
                     {
                         "size": "mega",
-                        "#text": ""
+                        "#text": "https:\/\/lastfm-img2.akamaized.net\/i\/u\/300x300\/446695c2d05210ac42daa7a4df8d55b0.jpg"
                     }
                 ],
-                "name": "MYTHIC (@killmythic)",
+                "name": "Kamasi Washington",
                 "streamable": "0"
             }
         ],
@@ -1606,8 +1606,8 @@
             "page": "1",
             "perPage": "50",
             "user": "theblindlookout",
-            "total": "251",
-            "totalPages": "6"
+            "total": "232",
+            "totalPages": "5"
         }
     }
 }

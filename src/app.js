@@ -27,9 +27,6 @@ const routeMusic = () => <Music />
 const routeError = () => <Error />
 const routeElse = () => <Else />
 
-ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS)
-ReactGA.pageview(window.location.pathname + window.location.search)
-
 class App extends Component {
     constructor(props) {
         super(props)
