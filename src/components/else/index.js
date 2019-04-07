@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { Helmet } from "react-helmet"
 import "./style.scss"
 
-import Arena from "./arena"
 import Images from "./images"
 
 class Else extends Component {
@@ -14,8 +13,8 @@ class Else extends Component {
                 </Helmet>
                 <div className="actuallysmalltext" />
 
-                <Images path="/images/color/" count={8} tag={"color"}/>
-                <Images path="/images/black/" count={13} tag={"black"}/>
+                <Images path="/assets/images/color/" count={7} tag={"color"}/>
+                <Images path="/assets/images/black/" count={9} tag={"black"}/>
             </div>
         )
     }
