@@ -107,7 +107,8 @@ class Search extends Component {
     }
 
     checkBookmarks(text) {
-        if (text.trim().toLowerCase() in bookmarks) {
+        text = text.trim().toLowerCase()
+        if (text in bookmarks) {
             this.setState({
                 searchMod: "bookmark",
                 searchEngine: bookmarks[text][0],
@@ -147,7 +148,6 @@ class Search extends Component {
             modeStyle = {
                 color: this.state.color
             }
-            
         }
         let searchClass = ""
         if (this.state.searching) {
