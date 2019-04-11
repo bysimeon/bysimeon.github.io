@@ -13,11 +13,6 @@
 /* BIG BIG */
 html {
     font-family: "Space Grotesk", sans-serif;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     font-size: unquote("calc(10px + 0.6vw)");
     text-transform: lowercase;
     height: 100vh;
@@ -46,7 +41,7 @@ a {
     color: $text-color;
     transition: all 0.1s linear;
     display: inline-block;
-    padding-bottom: .1em;
+    padding-bottom: 0.1em;
     border-bottom: 0.1em solid $text-color;
 }
 
@@ -97,18 +92,33 @@ img {
     font-size: 1.2rem;
     font-weight: 400;
     margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .mediumtext {
     font-size: 20vw;
     font-weight: 400;
     margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .medmedtext {
     font-size: 7vw;
     font-weight: 400;
     margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .bigbigtext {
@@ -116,6 +126,11 @@ img {
     text-transform: uppercase;
     font-weight: 400;
     margin: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 /* TOP AND BOTTOM BARS */
@@ -126,7 +141,7 @@ img {
 
 .top {
     width: 100vw;
-    background: rgba($color: $background-color, $alpha: .9);
+    background: rgba($color: $background-color, $alpha: 0.9);
     position: fixed;
     left: 0px;
     top: 0px;

@@ -21,7 +21,7 @@ class About extends Component {
                         <li> researcher </li>
                     </ul>
                     <p className="about-links">
-                        hire:{" "}<a href="/resume.pdf">resume</a>
+                        hire:{" "}<a href="/assets/resume.pdf">resume</a>
                         <br />
                         contact:{" "}
                         <a href="mailto:mail@bysimeon.com">mail@bysimeon.com</a>

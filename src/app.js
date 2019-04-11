@@ -4,8 +4,6 @@ import { NavLink } from "react-router-dom"
 import { Helmet } from "react-helmet"
 import "./app.scss"
 
-import ReactGA from "react-ga"
-
 import NowListening from "./components/nowListening"
 import StyleSwitcher from "./components/styleSwitcher"
 
