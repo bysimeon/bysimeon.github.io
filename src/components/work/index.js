@@ -1,6 +1,12 @@
 import React, { Component } from "react"
 import { Helmet } from "react-helmet"
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
 import "./style.scss"
+
+import Images from "../else/images"
+
+// import Project from "./components/work/project"
+// const routeProject = () => <Project />
 
 class Work extends Component {
     render() {
@@ -20,10 +26,10 @@ class Work extends Component {
                     <div className="project paid">
                         <b>the highly</b> with{" "}
                         <a href="https://teahkbrands.com"> teah</a> |{" "}
-                        <a href="https://www.thehighly.co">live</a>{" "}
                         <a href="https://web.archive.org/web/20181203171025/https://www.thehighly.co/">
                             archive
-                        </a>
+                        </a>{" "}
+                        {/* <Link to="/work/thehighly">gallery</Link> */}
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a website hosting the interviews, travel guides
@@ -72,7 +78,9 @@ class Work extends Component {
                                 events.
                                 <br />
                                 <br />
-                                created local development for github contributors, fixed bugs and improved documentation.
+                                created local development for github
+                                contributors, fixed bugs and improved
+                                documentation.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -249,9 +257,7 @@ class Work extends Component {
                         <a href="https://github.com/addierohrbach">
                             addie
                         </a> |{" "}
-                        <a href="https://papi-law.herokuapp.com/">
-                            workinprogress
-                        </a>{" "}
+                        <a href="https://papi-law.herokuapp.com/">live</a>{" "}
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a web application that analyzes legal documents

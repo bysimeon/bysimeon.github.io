@@ -82,7 +82,10 @@ class App extends Component {
                                 {" "}
                                 shop
                             </NavLink> */}
-                            <NavLink to="/photos/" activeClassName="current-page">
+                            <NavLink
+                                to="/photos/"
+                                activeClassName="current-page"
+                            >
                                 {" "}
                                 photos
                             </NavLink>
@@ -97,12 +100,12 @@ class App extends Component {
                     </div>
                     <Switch>
                         <Route exact path="/" component={routeHome} />
-                        <Route path="/about/" component={routeAbout} />
-                        <Route path="/work/" component={routeWork} />
-                        <Route path="/shop/" component={routeShop} />
-                        <Route path="/start/" component={routeStart} />
-                        <Route path="/music/" component={routeMusic} />
-                        <Route path="/photos/" component={routeElse} />
+                        <Route exact path="/about/" component={routeAbout} />
+                        <Route exact path="/shop/" component={routeShop} />
+                        <Route exact path="/work/" component={routeWork} />
+                        <Route exact path="/start/" component={routeStart} />
+                        <Route exact path="/music/" component={routeMusic} />
+                        <Route exact path="/photos/" component={routeElse} />
                         <Route component={routeError} />
                     </Switch>
                 </div>

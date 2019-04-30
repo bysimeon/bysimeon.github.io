@@ -104,10 +104,10 @@ class Images extends Component {
                     <p className="description">
                         {this.state.loadedImageCount >=
                         this.state.totalImageCount ? (
-                            <span>{this.props.tag} photos taken bysimeon</span>
+                            <span>{this.props.tag}</span>
                         ) : (
                             <span>
-                                loading {this.props.tag} photos taken bysimeon
+                                loading {this.props.tag}
                             </span>
                         )}
                     </p>
