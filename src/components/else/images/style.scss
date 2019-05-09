@@ -1,5 +1,12 @@
 @import "../../../variables.scss";
 
+.images--two {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 5vh;
+    margin-bottom: 5vh;
+}
+
 .images {
     display: grid;
     grid-template-columns: repeat(3, 3fr);

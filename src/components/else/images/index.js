@@ -11,7 +11,9 @@ class Images extends Component {
             loadedImageCount: 0,
             preview: false,
             previewIndex: 0,
-            totalImageCount: 0
+            totalImageCount: 0,
+            label: false,
+            gridSize: 3
         }
     }
 
@@ -77,7 +79,9 @@ class Images extends Component {
         this.setState(
             {
                 path: this.props.path,
-                totalImageCount: this.props.count
+                totalImageCount: this.props.count,
+                label: this.props.label,
+                gridSize: this.props.size
             },
             () => {
                 this.createImages()
@@ -87,6 +91,12 @@ class Images extends Component {
 
     render() {
         let images = []
+        let gridSize = ""
+        if (this.state.gridSize === 2) {
+            gridSize = "images--two"
+        } else {
+            gridSize = "images"
+        }
         this.state.images.forEach(image => {
             images.push(
                 <Image
@@ -100,8 +110,8 @@ class Images extends Component {
         })
         return (
             <div>
-                <div className="images">
-                    <p className="description">
+                <div className={gridSize}>
+                    {this.state.label && (<p className="description">
                         {this.state.loadedImageCount >=
                         this.state.totalImageCount ? (
                             <span>{this.props.tag}</span>
@@ -110,7 +120,7 @@ class Images extends Component {
                                 loading {this.props.tag}
                             </span>
                         )}
-                    </p>
+                    </p>)}
                     {images}
                 </div>
                 {this.state.preview && (

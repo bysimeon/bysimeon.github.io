@@ -5,11 +5,12 @@ import { Helmet } from "react-helmet"
 import "./app.scss"
 
 import NowListening from "./components/nowListening"
-import StyleSwitcher from "./components/styleSwitcher"
+import Toggle from "./components/toggle"
 
 import Home from "./components/home"
 import About from "./components/about"
 import Work from "./components/work"
+import Project from "./components/work/project"
 import Shop from "./components/shop"
 import Start from "./components/start"
 import Music from "./components/music"
@@ -19,6 +20,7 @@ import Error from "./components/error"
 const routeHome = () => <Home />
 const routeAbout = () => <About />
 const routeWork = () => <Work />
+const routeProject = () => <Project />
 const routeShop = () => <Shop />
 const routeStart = () => <Start />
 const routeMusic = () => <Music />
@@ -49,7 +51,7 @@ class App extends Component {
                     </Helmet>
                     <div className="top">
                         <div className="corner">
-                            <StyleSwitcher />
+                            <Toggle />
                         </div>
                         <div className="corner">
                             <NavLink
@@ -91,7 +93,7 @@ class App extends Component {
                             </NavLink>
                         </div>
                     </div>
-                    <div className="undertop" />
+                    {/* <div className="undertop" /> */}
                     <div className="bottom">
                         <NowListening />
                         <div className="corner">
@@ -99,14 +101,15 @@ class App extends Component {
                         </div>
                     </div>
                     <Switch>
-                        <Route exact path="/" component={routeHome} />
-                        <Route exact path="/about/" component={routeAbout} />
-                        <Route exact path="/shop/" component={routeShop} />
-                        <Route exact path="/work/" component={routeWork} />
-                        <Route exact path="/start/" component={routeStart} />
-                        <Route exact path="/music/" component={routeMusic} />
-                        <Route exact path="/photos/" component={routeElse} />
-                        <Route component={routeError} />
+                        <Route exact path="/" component={Home} />
+                        <Route exact path="/about/" component={About} />
+                        <Route exact path="/shop/" component={Shop} />
+                        <Route exact path="/work/" component={Work} />
+                        <Route path="/work/:id" component={Project} />
+                        <Route exact path="/start/" component={Start} />
+                        <Route exact path="/music/" component={Music} />
+                        <Route exact path="/photos/" component={Else} />
+                        <Route component={Error} />
                     </Switch>
                 </div>
             </Router>

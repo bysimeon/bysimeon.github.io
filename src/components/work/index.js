@@ -3,11 +3,6 @@ import { Helmet } from "react-helmet"
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom"
 import "./style.scss"
 
-import Images from "../else/images"
-
-// import Project from "./components/work/project"
-// const routeProject = () => <Project />
-
 class Work extends Component {
     render() {
         return (
@@ -29,7 +24,7 @@ class Work extends Component {
                         <a href="https://web.archive.org/web/20181203171025/https://www.thehighly.co/">
                             archive
                         </a>{" "}
-                        {/* <Link to="/work/thehighly">gallery</Link> */}
+                        <Link to="/work/thehighly"> gallery </Link>
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a website hosting the interviews, travel guides

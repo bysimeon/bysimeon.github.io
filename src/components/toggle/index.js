@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import "./style.scss"
 
-class StyleSwitcher extends Component {
+class Toggle extends Component {
     constructor() {
         super()
         this.state = {}
@@ -28,4 +28,4 @@ class StyleSwitcher extends Component {
     }
 }
 
-export default StyleSwitcher
+export default Toggle

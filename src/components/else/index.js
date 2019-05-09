@@ -17,11 +17,13 @@ class Else extends Component {
                     path="/assets/images/color/"
                     count={8}
                     tag={"color photos taken bysimeon"}
+                    label={true}
                 />
                 <Images
                     path="/assets/images/black/"
                     count={9}
                     tag={"black photos taken bysimeon"}
+                    label={true}
                 />
             </div>
         )
