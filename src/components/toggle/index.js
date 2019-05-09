@@ -49,11 +49,11 @@ class Toggle extends Component {
                             </li>
                             <li className="feed__items__item">
                                 {" "}
-                                new work added{" "}
+                                fixed an url{" "}
                             </li>
                             <li className="feed__items__item">
                                 {" "}
-                                <a href="/assets/sites/old1/">
+                                <a href="/assets/sites/old1/index.html">
                                     previous version
                                 </a>
                             </li>
