@@ -16,7 +16,7 @@ class Project extends Component {
     constructor() {
         super()
         this.state = {
-            id: "thehighly",
+            id: "",
             name: "",
             collaborators: "",
             stack: "",
@@ -27,6 +27,7 @@ class Project extends Component {
 
     componentDidMount() {
         let id = this.props.match.params.id
+        console.log(id)
         if (projects[id]) {
             let project = projects[id]
             this.setState({
@@ -54,12 +55,17 @@ class Project extends Component {
                     </Helmet>
                     <div className="actuallysmalltext" />
                     <h1 className="medmedtext medmedtext--project"> look! </h1>
-                    <p className="notsmalltext notsmalltext--project"> {this.state.description} </p>
+                    <p className="notsmalltext notsmalltext--project">
+                        {" "}
+                        {this.state.description}{" "}
+                    </p>
 
                     <Images
-                        path={"/assets/images/" + this.state.id + "/"}
+                        path={
+                            "/assets/images/" + this.props.match.params.id + "/"
+                        }
                         count={5}
-                        tag="the highly"
+                        tag={this.props.match.params.id}
                         size={2}
                     />
                 </div>

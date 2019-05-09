@@ -253,11 +253,15 @@ class Work extends Component {
                             addie
                         </a> |{" "}
                         <a href="https://papi-law.herokuapp.com/">live</a>{" "}
+                        <Link to="/work/papi"> gallery </Link>
                         <div className="project__description">
                             <div className="project__description__blurb">
-                                a web application that analyzes legal documents
-                                and creates reports highlighting important
-                                clauses.
+                                a web application made for{" "}
+                                <a href="https://www.mayerbrown.com/en">
+                                    mayer brown
+                                </a>{" "}
+                                that analyzes legal documents and creates
+                                reports highlighting important clauses.
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">

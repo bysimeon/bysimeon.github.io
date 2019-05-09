@@ -13,7 +13,8 @@ class Images extends Component {
             previewIndex: 0,
             totalImageCount: 0,
             label: false,
-            gridSize: 3
+            gridSize: 3,
+            reverse: true
         }
     }
 
