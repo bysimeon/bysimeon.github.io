@@ -12,7 +12,8 @@
             "photoshop",
             "illustrator"
         ],
-        "description": "a website hosting the interviews, travel guides and product reviews of the cannabis editorial, the highly."
+        "description": "a website hosting the interviews, travel guides and product reviews of the cannabis editorial, the highly.",
+        "imageCount": 5
     },
     "papi": {
         "name": "papi",
@@ -25,6 +26,7 @@
             "jquery",
             "postgres"
         ],
-        "description": "a web application made for mayer brown that analyzes legal documents and creates reports highlighting important clauses."
+        "description": "a web application made for mayer brown that analyzes legal documents and creates reports highlighting important clauses.",
+        "imageCount": 5
     }
 }

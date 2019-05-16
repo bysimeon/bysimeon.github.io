@@ -21,7 +21,8 @@ class Project extends Component {
             collaborators: "",
             stack: "",
             description: "",
-            redirect: false
+            redirect: false,
+            imageCount: false
         }
     }
 
@@ -35,7 +36,8 @@ class Project extends Component {
                 name: project.name,
                 collaborators: project.collaborators,
                 stack: project.stack,
-                description: project.description
+                description: project.description,
+                imageCount: project.imageCount
             })
         } else {
             this.setState({
@@ -59,15 +61,18 @@ class Project extends Component {
                         {" "}
                         {this.state.description}{" "}
                     </p>
-
-                    <Images
-                        path={
-                            "/assets/images/" + this.props.match.params.id + "/"
-                        }
-                        count={5}
-                        tag={this.props.match.params.id}
-                        size={2}
-                    />
+                    {this.state.imageCount && (
+                        <Images
+                            path={
+                                "/assets/images/" +
+                                this.props.match.params.id +
+                                "/"
+                            }
+                            tag={this.props.match.params.id}
+                            size={2}
+                            count={this.state.imageCount}
+                        />
+                    )}
                 </div>
             )
         }
