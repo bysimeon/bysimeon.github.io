@@ -16,9 +16,11 @@
         margin-bottom: 0.35rem;
         grid-gap: 0.25em;
         &__column {
+            &::-webkit-scrollbar { width: 0 !important }
             height: calc(0.8 * (100vh - (14rem + 14vw)));
             min-height: 500px;
-            overflow: scroll;
+            overflow-y: scroll;
+            overflow-x: hidden;
             border-bottom: 2px solid;
             &__item {
                 display: flex;

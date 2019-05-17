@@ -42,7 +42,7 @@ class Toggle extends Component {
 
                 {this.state.popup && (
                     <div className="feed">
-                        <div className="feed__title"> v 2.3 </div>
+                        <div className="feed__title"> v2.4 </div>
                         <div className="feed__items">
                             <li className="feed__items__item">
                                 last updated: 05/08/19
@@ -54,7 +54,7 @@ class Toggle extends Component {
                             <li className="feed__items__item">
                                 {" "}
                                 <a href="/assets/sites/old1/index.html">
-                                    view v 1.0
+                                    view v1.0
                                 </a>
                             </li>
                         </div>
