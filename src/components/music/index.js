@@ -153,43 +153,6 @@ class Music extends Component {
         xhr.send()
     }
 
-    // saveJSON(time) {
-    //     if (time === "30") {
-    //         localStorage.setItem(
-    //             "userInfo",
-    //             JSON.stringify(this.state.userInfo)
-    //         )
-    //         localStorage.setItem(
-    //             "topArtists",
-    //             JSON.stringify(this.state.topArtists)
-    //         )
-    //         localStorage.setItem(
-    //             "topAlbums",
-    //             JSON.stringify(this.state.topArtists)
-    //         )
-    //         localStorage.setItem(
-    //             "topTracks",
-    //             JSON.stringify(this.state.topTracks)
-    //         )
-    //     }
-    // }
-
-    // localLoad() {
-    //     if (
-    //         localStorage.getItem("userInfo") === null &&
-    //         localStorage.getItem("topAlbums") === null
-    //     ) {
-    //     }
-    //     else {
-    //         this.setState({
-    //             // topAlbums: localStorage.getItem("topAlbums"),
-    //             // topArtists: localStorage.getItem("topArtists"),
-    //             // topTracks: localStorage.getItem("topTracks"),
-    //             // userInfo: localStorage.getItem("userInfo")
-    //         })
-    //     }
-    // }
-
     updateData(time) {
         if (!time) {
             time = this.state.timespan
@@ -226,8 +189,6 @@ class Music extends Component {
             this.state.topArtists &&
             this.state.topTracks &&
             this.state.topAlbums
-            // &&
-            // this.state.recentTracks
         ) {
             this.state.topArtists.topartists.artist.forEach(artist => {
                 artists.push(
