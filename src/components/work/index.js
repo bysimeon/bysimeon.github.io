@@ -252,7 +252,6 @@ class Work extends Component {
                         <a href="https://github.com/addierohrbach">
                             addie
                         </a> |{" "}
-                        <a href="https://papi-law.herokuapp.com/">live</a>{" "}
                         <Link to="/work/papi"> gallery </Link>
                         <div className="project__description">
                             <div className="project__description__blurb">
