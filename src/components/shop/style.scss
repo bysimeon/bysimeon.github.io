@@ -1,12 +1,14 @@
 @import "../../variables.scss";
 
 .container--shop {
-    margin: 4em 3em 3em 3em;
+    margin: 4em 3em 4em 3em;
     overflow: hidden;
 }
 
 .item {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw;
     justify-content: center;
     margin-bottom: 15px;
     /* border-bottom: 1px solid #000; */
@@ -20,6 +22,7 @@
     min-width: 40vw;
     max-width: 80vw;
     max-width: 1000px;
+    max-height: 60vh;
     padding: 10px 15px;
     display: flex;
     flex-direction: column;
@@ -27,8 +30,7 @@
 
 .item .image img {
     width: 100%;
-    filter: invert(100%);
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .item .image-previews {
@@ -42,14 +44,6 @@
 .item .image-previews div:last-child {
     margin: 10px 0 10px 0;
 }
-
-/* .item .image-previews .img-prev {
-  transition: all 100ms linear;
-}
-
-.item .image-previews .img-prev:hover {
-  
-} */
 
 .item .description {
     display: block;

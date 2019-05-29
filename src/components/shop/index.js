@@ -17,7 +17,7 @@ class Shop extends Component {
                         <img
                             draggable="false"
                             className="img-hor lazy"
-                            data-src="/assets/photos/shop/item1/item1.svg"
+                            src="/assets/images/shop/shirt/image0.jpg"
                             alt=""
                         />
                     </div>
@@ -26,8 +26,7 @@ class Shop extends Component {
                         <p>
                             {" "}
                             shirts with pictures i take on em, color
-                            coordinated! shirts with pictures i take on em,
-                            color coordinated!
+                            coordinated!
                         </p>
                         <ul>
                             <li> soft cotton</li>
