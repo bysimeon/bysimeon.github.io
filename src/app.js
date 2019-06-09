@@ -82,7 +82,7 @@ class App extends Component {
                             </NavLink>
                             {/* <NavLink to="/shop/" activeClassName="current-page">
                                 {" "}
-                                shop
+                                sale
                             </NavLink> */}
                             <NavLink
                                 to="/photos/"

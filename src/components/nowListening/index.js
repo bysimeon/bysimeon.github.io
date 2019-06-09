@@ -49,7 +49,7 @@ class NowListening extends Component {
                         playing = true
                     }
                     if (songName.length >= 50) {
-                        if (songName.includes("(f")) {
+                        if (songName.toLowerCase().includes("(f")) {
                             songName = songName.substr(
                                 0,
                                 songName.indexOf(" (f")

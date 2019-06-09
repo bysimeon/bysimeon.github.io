@@ -5,13 +5,19 @@
     overflow: hidden;
 }
 
-.item {
+.items {
+    margin: 2rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3vw;
+}
+.item {
+    display: grid;
+    grid-template-columns: 1fr;
+
     justify-content: center;
     margin-bottom: 15px;
-    /* border-bottom: 1px solid #000; */
+    border: 2px solid $text-color;
 }
 
 .item h1 {
@@ -19,18 +25,12 @@
 }
 
 .item .image {
-    min-width: 40vw;
-    max-width: 80vw;
-    max-width: 1000px;
-    max-height: 60vh;
-    padding: 10px 15px;
-    display: flex;
-    flex-direction: column;
+
 }
 
 .item .image img {
     width: 100%;
-    border: 1px solid black;
+    
 }
 
 .item .image-previews {
@@ -46,7 +46,12 @@
 }
 
 .item .description {
-    display: block;
+    border: solid 0px;
+    margin: auto;
+    text-align: left;
+    padding: 1.5em;
+    font-size: 1.25rem;
+    font-style: italic;
 }
 
 @media screen and (max-width: 640px) {

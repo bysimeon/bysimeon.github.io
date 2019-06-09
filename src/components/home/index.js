@@ -8,6 +8,8 @@ class Home extends Component {
             <div className="container container--home">
                 <Helmet>
                     <title>bysimeon</title>
+                    <meta description="the website and portfolio of simeon charles" />
+                    <meta keywords="bysimeon, simeon, charles, website, northwestern, photography, engineer, software, developer, programmer" />
                 </Helmet>
                 <h1 className="bigbigtext">
                     <span>bysimeon</span>
