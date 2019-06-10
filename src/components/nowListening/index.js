@@ -15,7 +15,7 @@ class NowListening extends Component {
             songUrl: null,
             artistName: null,
             artistUrl: null,
-            notScrobbling: "nothing, but recently heard",
+            notScrobbling: "nothing, but recently played",
             userProfile: "https://www.last.fm/user/" + user,
             setInterval: false
         }
