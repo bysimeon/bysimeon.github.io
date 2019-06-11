@@ -3,6 +3,14 @@ import { Helmet } from "react-helmet"
 import "./style.scss"
 
 class Shop extends Component {
+    constructor() {
+        super()
+        this.state = {
+            selectedItems: [],
+            cartitems: []
+        }
+    }
+
     render() {
         return (
             <div className="container container--shop">
@@ -36,9 +44,9 @@ class Shop extends Component {
                             </ul>
                             <div className="not-a-button">shirt size</div>
                             <div className="horizontal-buttons">
-                                <button>s</button>
-                                <button>m</button>
-                                <button>l</button>
+                                <button>lil</button>
+                                <button>mid</button>
+                                <button>big</button>
                             </div>
                         </div>
                     </div>
