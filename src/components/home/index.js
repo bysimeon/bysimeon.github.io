@@ -8,7 +8,7 @@ class Home extends Component {
             <div className="container container--home">
                 <Helmet>
                     <title>bysimeon</title>
-                    <link rel="canonical" href="bysimeon.com" />
+                    <link rel="canonical" href="https://bysimeon.com/" />
                 </Helmet>
                 <h1 className="bigbigtext">
                     <span>bysimeon</span>
