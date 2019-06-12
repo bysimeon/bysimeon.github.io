@@ -43,11 +43,10 @@ class App extends Component {
                 <div className="App">
                     <Helmet>
                         <meta charSet="utf-8" />
-                        <meta description="the website and portfolio of simeon charles" />
-                        <meta keywords="bysimeon, simeon, charles, website, northwestern, photography, engineer, software, developer, programmer" />
-                        <meta name="viewport" />
-                        <meta authoer="simeon" />
-                        <meta content="width=device-width, initial-scale=1.0" />
+                        <meta name="description" content="the website and portfolio of simeon charles" />
+                        <meta name="keywords" content="bysimeon, simeon, charles, website, northwestern, photography, engineer, software, developer, programmer, photographer, music" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="author" content="simeon charles" />
                     </Helmet>
                     <div className="top">
                         <div className="corner">
