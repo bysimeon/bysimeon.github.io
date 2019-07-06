@@ -16,7 +16,7 @@ class Shop extends Component {
             <div className="container container--shop">
                 <Helmet>
                     <title>shop &ndash; bysimeon</title>
-                    <meta name="description" content="the store of simeon charles" />
+                    <meta name="description" content="the store by simeon" />
                 </Helmet>
                 <h1 className="medmedtext">
                     <span className="uppercase">for sale</span>
