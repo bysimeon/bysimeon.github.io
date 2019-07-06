@@ -239,6 +239,12 @@
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
+    "twitch": [
+        "twitch",
+        "https://twitch.tv",
+        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
+        "#6873ca"
+    ],
     "1p": [
         "1password",
         "https://my.1password.com",
