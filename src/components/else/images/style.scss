@@ -36,6 +36,22 @@
     .images__navigation {
         display: none;
     }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 5vh;
+        margin-bottom: 5vh;
+    }
+}
+
+
+@media screen and (max-width: 624px) {
+    .images {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 5vh;
+        margin-bottom: 5vh;
+    }
 }
 
 
@@ -47,7 +63,7 @@
     width: 100vw;
     height: 100vh;
     z-index: 5;
-    background: rgba($color: $background-color, $alpha: 0.90);
+    background: rgba($color: $background-color, $alpha: 0.9);
     .image-container {
         width: 100%;
         height: 100%;
