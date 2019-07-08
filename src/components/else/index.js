@@ -9,7 +9,7 @@ class Else extends Component {
         return (
             <div className="container container--else">
                 <Helmet>
-                    <title>else &ndash; bysimeon</title>
+                    <title>photos &ndash; bysimeon</title>
                 </Helmet>
                 <div className="actuallysmalltext" />
 
