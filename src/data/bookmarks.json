@@ -304,5 +304,11 @@
         "https://www.freitag.ch/en/f17",
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
+    ],
+    "french": [
+        "myfrenchlab",
+        "portal.mypearson.com",
+        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
+        "#6873ca"
     ]
 }
