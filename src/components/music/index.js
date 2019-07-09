@@ -29,7 +29,7 @@ class Music extends Component {
     constructor() {
         super()
         this.state = {
-            timespan: "30",
+            timespan: "7",
             limit: 50,
             topArtists: tAr,
             topTracks: tTr,
