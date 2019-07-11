@@ -189,7 +189,7 @@ img {
     background: $background-color;
     position: fixed;
     left: 0px;
-    bottom: 0px;
+    bottom: 2rem;
     height: 3.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -206,6 +206,49 @@ img {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently */
+}
+
+.banner {
+    width: 100vw;
+    border-top: 1px solid $background-color;
+    background: $text-color;
+    position: fixed;
+    left: 0px;
+    bottom: 0rem;
+    height: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    z-index: 101;
+    overflow: hidden;
+    text-transform: lowercase;
+    white-space: nowrap;
+    padding-left: 100%;
+    box-sizing: content-box;
+    .ticker {
+        display: inline-block;
+        height: 2rem;
+        line-height: 2rem;
+        white-space: nowrap;
+        padding-right: 100%;
+        box-sizing: content-box;
+
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: ticker;
+        animation-name: ticker;
+        -webkit-animation-duration: 30s;
+        animation-duration: 30s;
+        .ticker__item {
+            display: inline-block;
+            padding: 0 1rem;
+            color: $background-color;
+        }
+    }
 }
 
 .bottom .corner:last-child a {
@@ -413,5 +456,31 @@ img {
     }
     .drawing {
         position: relative !important;
+    }
+}
+
+@-webkit-keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
     }
 }

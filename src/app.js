@@ -34,9 +34,18 @@ class App extends Component {
                 <div className="App">
                     <Helmet>
                         <meta charSet="utf-8" />
-                        <meta name="description" content="the website and portfolio of simeon" />
-                        <meta name="keywords" content="bysimeon, simeon, website, northwestern, photography, engineer, software, developer, programmer, photographer, music" />
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta
+                            name="description"
+                            content="the website and portfolio of simeon"
+                        />
+                        <meta
+                            name="keywords"
+                            content="bysimeon, simeon, website, northwestern, photography, engineer, software, developer, programmer, photographer, music"
+                        />
+                        <meta
+                            name="viewport"
+                            content="width=device-width, initial-scale=1.0"
+                        />
                         <meta name="author" content="simeon" />
                     </Helmet>
                     <div className="top">
@@ -83,12 +92,31 @@ class App extends Component {
                             </NavLink>
                         </div>
                     </div>
+                    <div className="banner">
+                        <div class="ticker">
+                            <div class="ticker__item">for hire!</div>
+                            <div class="ticker__item">
+                                full-time @ new york or remote!
+                            </div>
+                            <div class="ticker__item">full stack!</div>
+                            <div class="ticker__item">
+                                creative technologist!
+                            </div>
+                            <div class="ticker__item">tell your employer!</div>
+                            <div class="ticker__item">freelance too!</div>
+                            <div class="ticker__item">
+                                e-commerce, portfolio, etc!
+                            </div>
+                            <div class="ticker__item">limited quantity!</div>
+                        </div>
+                    </div>
                     <div className="bottom">
                         <NowListening />
                         <div className="corner">
                             <Link to="/start/">***</Link>
                         </div>
                     </div>
+
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/about/" component={About} />
@@ -100,6 +128,7 @@ class App extends Component {
                         <Route exact path="/photos/" component={Else} />
                         <Route component={Error} />
                     </Switch>
+                    <div className="invisible">.</div>
                 </div>
             </Router>
         )
