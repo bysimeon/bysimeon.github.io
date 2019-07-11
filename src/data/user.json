@@ -1,10 +1,10 @@
 {
     "user": {
         "playlists": "0",
-        "playcount": "139934",
+        "playcount": "155741",
         "gender": "n",
         "name": "theblindlookout",
-        "subscriber": "0",
+        "subscriber": "1",
         "url": "https://www.last.fm/user/theblindlookout",
         "country": "None",
         "image": [
@@ -25,11 +25,8 @@
                 "#text": "https://lastfm-img2.akamaized.net/i/u/300x300/2b1d2b19c5e450521b5eafe423482ad1.png"
             }
         ],
-        "registered": {
-            "unixtime": "1429999966",
-            "#text": 1429999966
-        },
-        "type": "user",
+        "registered": { "unixtime": "1429999966", "#text": 1429999966 },
+        "type": "subscriber",
         "age": "0",
         "bootstrap": "0",
         "realname": "bysimeon"
