@@ -28,14 +28,15 @@
     &__title {
         background: rgba($color: $text-color, $alpha: 1);
         color: rgba($color: $background-color, $alpha: 1);
-        padding: .5em;
+        padding: .5em 1em;
         border-bottom: 2px solid #000;
     }
     &__items {
-        padding: .55em;
+        padding: .5em;
         &__item {
             list-style-type: none;
-            margin: .5rem;
+            padding: .5em;
+            border-bottom: 1px solid #000;
         }
     }
 }

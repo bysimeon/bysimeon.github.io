@@ -42,20 +42,16 @@ class Toggle extends Component {
 
                 {this.state.popup && (
                     <div className="feed">
-                        <div className="feed__title"> v2.4 </div>
+                        <div className="feed__title"> feed </div>
                         <div className="feed__items">
                             <li className="feed__items__item">
-                                last updated: 05/08/19
+                                7.17 added a feed to site
                             </li>
                             <li className="feed__items__item">
-                                {" "}
-                                fixed an url{" "}
+                                7.15 added hire me banner
                             </li>
                             <li className="feed__items__item">
-                                {" "}
-                                <a href="/assets/sites/old1/index.html">
-                                    view v1.0
-                                </a>
+                                7.14 uploaded new color photo
                             </li>
                         </div>
                     </div>
