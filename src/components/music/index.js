@@ -331,7 +331,7 @@ class Music extends Component {
                 </p>
                 <p className="notsmalltext notsmalltext--music">
                     note: currently using an modified ipod classic, so live
-                    music tracking will is less frequent.
+                    music tracking is less frequent.
                 </p>
 
                 <div className="music">
