@@ -128,7 +128,7 @@ class App extends Component {
                         <Route exact path="/photos/" component={Else} />
                         <Route component={Error} />
                     </Switch>
-                    <div className="invisible">.</div>
+                    <div className="invisible">&nbsp;</div>
                 </div>
             </Router>
         )
