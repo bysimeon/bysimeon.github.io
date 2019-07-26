@@ -45,6 +45,9 @@ class Toggle extends Component {
                         <div className="feed__title"> feed </div>
                         <div className="feed__items">
                             <li className="feed__items__item">
+                                7.26 uploaded two new color photos
+                            </li>
+                            <li className="feed__items__item">
                                 7.17 added a feed to site
                             </li>
                             <li className="feed__items__item">
