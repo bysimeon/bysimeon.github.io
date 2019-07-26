@@ -111,7 +111,6 @@ class Work extends Component {
                     </div>
                     <div className="personal project">
                         <b>this website</b> | <a href="/">live</a>{" "}
-                        <a href="https://github.com/bysimeon/website">repo</a>
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a website that serves as both my claimed space
