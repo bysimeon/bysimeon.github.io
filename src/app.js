@@ -249,6 +249,7 @@ class App extends Component {
                                     topAlbums={this.state.topAlbums}
                                     topTracks={this.state.topTracks}
                                     userInfo={this.state.userInfo}
+                                    timespan={this.state.timespan}
                                     updateTimespan={this.updateTimespan.bind(
                                         this
                                     )}

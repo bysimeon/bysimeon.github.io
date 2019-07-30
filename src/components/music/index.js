@@ -30,6 +30,7 @@ class Music extends Component {
         super()
         this.state = {
             limit: 50,
+            timespan: "7",
             topArtists: tAr,
             topTracks: tTr,
             topAlbums: tAl,
@@ -42,6 +43,15 @@ class Music extends Component {
             setInterval: false
         }
         this.selectArtist = this.selectArtist.bind(this)
+        this.updateTimespan = this.updateTimespan.bind(this)
+    }
+
+    updateTimespan(event) {
+        this.setState({
+            timespan: event.target.value
+        })
+        console.log(event.target.value)
+        this.props.updateTimespan(event)
     }
 
     unixTimestamp(t) {
@@ -90,30 +100,28 @@ class Music extends Component {
     }
 
     componentWillMount() {
-        if (
-            this.props.topArtists
-        ) {
+        if (this.props.topArtists) {
             this.setState({
                 topArtists: this.props.topArtists,
                 topTracks: this.props.topTracks,
                 topAlbums: this.props.topAlbums,
                 recentTracks: this.props.recentTracks,
-                userInfo: this.props.userInfo
+                userInfo: this.props.userInfo,
+                timespan: this.props.timespan
             })
         }
     }
 
     componentDidMount() {
         let recentInterval = setInterval(() => {
-            if (
-                this.props.topArtists
-            ) {
+            if (this.props.topArtists) {
                 this.setState({
                     topArtists: this.props.topArtists,
                     topTracks: this.props.topTracks,
                     topAlbums: this.props.topAlbums,
                     recentTracks: this.props.recentTracks,
-                    userInfo: this.props.userInfo
+                    userInfo: this.props.userInfo,
+                    timespan: this.props.timespan
                 })
             }
         }, 80)
@@ -265,7 +273,7 @@ class Music extends Component {
                     past{" "}
                     <select
                         value={this.state.timespan}
-                        onChange={this.props.updateTimespan}
+                        onChange={this.updateTimespan}
                         className="dropdown dropdown--music"
                     >
                         <option>7</option>
