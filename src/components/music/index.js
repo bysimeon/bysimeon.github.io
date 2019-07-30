@@ -29,7 +29,6 @@ class Music extends Component {
     constructor() {
         super()
         this.state = {
-            timespan: "7",
             limit: 50,
             topArtists: tAr,
             topTracks: tTr,
@@ -42,15 +41,7 @@ class Music extends Component {
             hoveredArtistID: false,
             setInterval: false
         }
-        this.updateTimespan = this.updateTimespan.bind(this)
         this.selectArtist = this.selectArtist.bind(this)
-    }
-
-    updateTimespan(event) {
-        this.setState({
-            timespan: event.target.value
-        })
-        this.updateData(event.target.value)
     }
 
     unixTimestamp(t) {
@@ -98,77 +89,34 @@ class Music extends Component {
         })
     }
 
-    getJSON(request, time) {
-        let xhr = new XMLHttpRequest()
-        xhr.open(
-            "GET",
-            apibase +
-                "?method=user." +
-                request +
-                "&user=" +
-                user +
-                "&period=" +
-                timespanConvert[time] +
-                "&limit=" +
-                this.state.limit +
-                "&api_key=" +
-                apikey +
-                "&format=json"
-        )
-        xhr.onload = () => {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    switch (request) {
-                        case "gettopartists":
-                            this.setState({
-                                topArtists: JSON.parse(xhr.responseText)
-                            })
-                            break
-                        case "gettoptracks":
-                            this.setState({
-                                topTracks: JSON.parse(xhr.responseText)
-                            })
-                            break
-                        case "gettopalbums":
-                            this.setState({
-                                topAlbums: JSON.parse(xhr.responseText)
-                            })
-                            break
-                        case "getinfo":
-                            this.setState({
-                                userInfo: JSON.parse(xhr.responseText)
-                            })
-                            break
-                        case "getrecenttracks":
-                            this.setState({
-                                recentTracks: JSON.parse(xhr.responseText)
-                            })
-                            break
-                        default:
-                            break
-                    }
-                }
-            }
+    componentWillMount() {
+        if (
+            this.props.topArtists
+        ) {
+            this.setState({
+                topArtists: this.props.topArtists,
+                topTracks: this.props.topTracks,
+                topAlbums: this.props.topAlbums,
+                recentTracks: this.props.recentTracks,
+                userInfo: this.props.userInfo
+            })
         }
-        xhr.send()
-    }
-
-    updateData(time) {
-        if (!time) {
-            time = this.state.timespan
-            this.getJSON("getinfo", time)
-        }
-        this.getJSON("getrecenttracks", time)
-        this.getJSON("gettopartists", time)
-        this.getJSON("gettoptracks", time)
-        this.getJSON("gettopalbums", time)
     }
 
     componentDidMount() {
-        this.updateData()
         let recentInterval = setInterval(() => {
-            this.getJSON("getrecenttracks", "30")
-        }, 1000)
+            if (
+                this.props.topArtists
+            ) {
+                this.setState({
+                    topArtists: this.props.topArtists,
+                    topTracks: this.props.topTracks,
+                    topAlbums: this.props.topAlbums,
+                    recentTracks: this.props.recentTracks,
+                    userInfo: this.props.userInfo
+                })
+            }
+        }, 80)
         this.setState({
             setInterval: recentInterval
         })
@@ -317,7 +265,7 @@ class Music extends Component {
                     past{" "}
                     <select
                         value={this.state.timespan}
-                        onChange={this.updateTimespan}
+                        onChange={this.props.updateTimespan}
                         className="dropdown dropdown--music"
                     >
                         <option>7</option>

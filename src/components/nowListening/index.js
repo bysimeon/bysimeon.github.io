@@ -22,70 +22,48 @@ class NowListening extends Component {
     }
 
     nowPlaying() {
-        let xhr = new XMLHttpRequest()
-        xhr.open(
-            "GET",
-            apibase +
-                "?method=user.getrecenttracks&user=" +
-                user +
-                "&api_key=" +
-                apikey +
-                "&limit=1" +
-                "&format=json"
-        )
-        xhr.onload = () => {
-            if (xhr.readyState === 4) {
-                if (xhr.status === 200) {
-                    let json = JSON.parse(xhr.responseText)
-                    let songName = json.recenttracks.track[0].name
-                    let artistName = json.recenttracks.track[0].artist["#text"]
-                    let playing
-                    if (
-                        typeof json.recenttracks.track[0]["@attr"] ===
-                        "undefined"
-                    ) {
-                        playing = false
-                    } else {
-                        playing = true
-                    }
-                    if (songName.length >= 50) {
-                        if (songName.toLowerCase().includes("(f")) {
-                            songName = songName.substr(
-                                0,
-                                songName.indexOf(" (f")
-                            )
-                        } else {
-                            songName = songName.substr(0, 50) + "..."
-                        }
-                    }
-                    if (playing) {
-                        this.setState({
-                            playing: playing,
-                            songName: songName,
-                            artistName: artistName,
-                            songUrl: json.recenttracks.track[0].url,
-                            artistUrl: "https://www.last.fm/music/" + artistName
-                        })
-                    } else {
-                        this.setState({
-                            playing: false,
-                            songName: null,
-                            artistName: null,
-                            songUrl: null,
-                            artistUrl: null
-                        })
-                    }
+        let json = this.props.recentTracks
+        if (json) {
+            let songName = json.recenttracks.track[0].name
+            let artistName = json.recenttracks.track[0].artist["#text"]
+            let playing
+            if (typeof json.recenttracks.track[0]["@attr"] === "undefined") {
+                playing = false
+            } else {
+                playing = true
+            }
+            if (songName.length >= 50) {
+                if (songName.toLowerCase().includes("(f")) {
+                    songName = songName.substr(0, songName.indexOf(" (f"))
+                } else {
+                    songName = songName.substr(0, 50) + "..."
                 }
             }
+            if (playing) {
+                this.setState({
+                    playing: playing,
+                    songName: songName,
+                    artistName: artistName,
+                    songUrl: json.recenttracks.track[0].url,
+                    artistUrl: "https://www.last.fm/music/" + artistName
+                })
+            } else {
+                this.setState({
+                    playing: false,
+                    songName: null,
+                    artistName: null,
+                    songUrl: null,
+                    artistUrl: null
+                })
+            }
         }
-        xhr.send()
     }
 
     componentDidMount() {
         this.nowPlaying()
         let recentInterval = setInterval(() => {
             this.nowPlaying()
-        }, 500)
+        }, 80)
         this.setState({
             setInterval: recentInterval
         })
