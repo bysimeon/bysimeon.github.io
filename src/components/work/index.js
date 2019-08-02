@@ -91,7 +91,7 @@ class Work extends Component {
                         </div>
                     </div>
                     <div className="personal project">
-                        <b>startpage</b> | <a href="/start/">live</a>{" "}
+                        <b>startpage</b> | <Link to="/start/">live</Link>{" "}
                         <a href="https://github.com/bysimeon/startpage">repo</a>
                         <div className="project__description">
                             <div className="project__description__blurb">
@@ -110,13 +110,14 @@ class Work extends Component {
                         </div>
                     </div>
                     <div className="personal project">
-                        <b>this website</b> | <a href="/">live</a>{" "}
+                        <b>this website</b> | <Link to="/">live</Link>{" "}
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a website that serves as both my claimed space
                                 on the internet and a place to develop and
                                 showcase different{" "}
-                                <a href="/music"> experiments.</a>
+                                <Link to="/music"> experiments.</Link>
+                               
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -250,8 +251,7 @@ class Work extends Component {
                         {" & "}
                         <a href="https://github.com/addierohrbach">
                             addie
-                        </a> |{" "}
-                        <Link to="/work/papi"> gallery </Link>
+                        </a> | <Link to="/work/papi"> gallery </Link>
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 a web application made for{" "}
