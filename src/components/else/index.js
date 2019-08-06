@@ -21,7 +21,7 @@ class Else extends Component {
                 />
                 <Images
                     path="/assets/images/black/"
-                    count={9}
+                    count={10}
                     tag={"black photos taken bysimeon"}
                     label={true}
                 />
