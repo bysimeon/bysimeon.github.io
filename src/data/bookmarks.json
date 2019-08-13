@@ -328,5 +328,17 @@
         "https://habitica.com", 
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
         "#6873ca"
+    ],
+    "realm": [
+        "realmeye",
+        "https://realmeye.com", 
+        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
+        "#6873ca"
+    ],
+    "key": [
+        "keybr",
+        "https://keybr.com", 
+        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
+        "#6873ca"
     ]
 }
