@@ -340,5 +340,11 @@
         "https://keybr.com", 
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
         "#6873ca"
+    ],
+    "mule": [
+        "muledump",
+        "https://jakcodex.github.io/muledump/muledump.html", 
+        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
+        "#6873ca"
     ]
 }
