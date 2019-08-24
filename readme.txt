@@ -1,3 +1,2 @@
 a website bysimeon, forsimeon
-
-can be found at https://bysimeon.com/
+can be found at https://bysimeon.com
