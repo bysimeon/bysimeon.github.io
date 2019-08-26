@@ -151,6 +151,7 @@
     height: 2.5em;
     overflow-y: scroll;
     white-space: nowrap;
+    &::-webkit-scrollbar { width: 0 !important }
     &__option:first-of-type{
         margin: 0 .5em 0 0;
     }

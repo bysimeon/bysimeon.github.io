@@ -59,18 +59,6 @@
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
-    "myhr": [
-        "myhr",
-        "http://myhr.northwestern.edu",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "w2w": [
-        "whentowork",
-        "https://whentowork.com",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
     "clndr": [
         "calendar",
         "https://calendar.google.com",
@@ -83,12 +71,6 @@
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
-    "teah": [
-        "teah",
-        "http://teahkbrands.com",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
     "ntn": [
         "notion",
         "http://notion.so",
@@ -98,18 +80,6 @@
     "txt": [
         "messages",
         "https://messages.google.com/web/",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "allo": [
-        "allo",
-        "https://allo.google.com/web",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "sqsp": [
-        "squarespace",
-        "https://www.squarespace.com/",
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
@@ -149,18 +119,6 @@
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
-    "conweb": [
-        "conweb",
-        "https://kb.northwestern.edu/internal/conweb",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "piazza": [
-        "piazza",
-        "https://piazza.com/",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
     "keep": [
         "google keep",
         "https://keep.google.com",
@@ -182,12 +140,6 @@
     "amzn": [
         "amazon",
         "https://smile.amazon.com/",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "feed": [
-        "feedly",
-        "https://feedly.com",
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
@@ -215,21 +167,9 @@
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
-    "lzy": [
-        "lazy",
-        "https://bysimeon.com/lazy/",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "rddt": [
+    "rdt": [
         "reddit",
         "https://reddit.com",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "tlt": [
-        "tiilt lab",
-        "https://tiilt.northwestern.edu",
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
@@ -245,21 +185,9 @@
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
-    "1p": [
-        "1password",
-        "https://my.1password.com",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
     "pp": [
         "paypal",
         "https://www.paypal.com/us/home",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "swpp": [
-        "swappa",
-        "https://swappa.com",
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
@@ -287,43 +215,13 @@
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
         "#6873ca"
     ],
-    "f511": [
-        "freitag skipper",
-        "https://www.freitag.ch/en/f511",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "f201": [
-        "freitag pete",
-        "https://www.freitag.ch/en/f201",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "f17": [
-        "freitag joe",
-        "https://www.freitag.ch/en/f17",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
-    "french": [
-        "myfrenchlab",
-        "portal.mypearson.com",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)",
-        "#6873ca"
-    ],
     "stacko": [
         "stack overflow",
         "https://stackoverflow.com",
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
         "#6873ca"
     ],
-    "maps": [
-        "google maps",
-        "https://maps.google.com",
-        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
-        "#6873ca"
-    ],
-    "habit": [
+    "hbt": [
         "habitica",
         "https://habitica.com", 
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
