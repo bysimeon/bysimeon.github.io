@@ -3,6 +3,8 @@ import "./style.scss"
 import bookmarks from "../../../data/bookmarks.json"
 import searchEngines from "../../../data/searchEngines.json"
 
+const bookmarkKeys = Object.keys(bookmarks)
+const searchEnginesKeys = Object.keys(searchEngines)
 const isUrl = new RegExp(
     /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/
 )
@@ -19,7 +21,8 @@ class Search extends Component {
             background: false,
             color: false,
             url: "https://google.com/search?q=",
-            searching: false
+            searching: false,
+            possibleKeys: []
         }
     }
 
@@ -74,6 +77,7 @@ class Search extends Component {
     }
 
     checkSearchEngines(text, key) {
+        this.possibleKeys(text)
         if (key in searchEngines) {
             this.setState({
                 searchMod: "searchEngine",
@@ -132,6 +136,39 @@ class Search extends Component {
         }
     }
 
+    possibleKeys(text) {
+        text = text.trim().toLowerCase()
+        const keyList = bookmarkKeys.concat(searchEnginesKeys)
+        const charNumber = text.length
+        if (charNumber >= 1) {
+            const possibleKeysArray = keyList.filter(
+                key => key.substr(0, charNumber) === text
+            )
+            let possibleKeys = []
+            possibleKeysArray.map(key => {
+                possibleKeys = [
+                    ...possibleKeys,
+                    searchEngines[key]
+                        ? [key, ...searchEngines[key]]
+                        : [key, ...bookmarks[key]]
+                ]
+            })
+            if (possibleKeys.length === 1 && text === possibleKeys[0][0]) {
+                this.setState({
+                    possibleKeys: []
+                })
+            } else {
+                this.setState({
+                    possibleKeys: possibleKeys
+                })
+            }
+        } else {
+            this.setState({
+                possibleKeys: []
+            })
+        }
+    }
+
     componentDidMount() {
         this.nameInput.focus()
         document.addEventListener("keypress", this.enterPressed)
@@ -153,6 +190,7 @@ class Search extends Component {
         if (this.state.searching) {
             searchClass = "move-off-right"
         }
+
         return (
             <div id="inline-search">
                 <div id="search-mode" className={searchClass} style={modeStyle}>
@@ -171,6 +209,23 @@ class Search extends Component {
                         this.nameInput = input
                     }}
                 />
+                <div
+                    id="search-options"
+                    className={searchClass + " options"}
+                >
+                    {this.state.possibleKeys.map(key => (
+                        <div className="options__option">
+                            <span className="options__option__key">
+                                {" "}
+                                {key[0]}{" "}
+                            </span>
+                            <span className="options__option__title">
+                                {" "}
+                                {key[1]} {key[0].includes(":") ? "search" : ""}
+                            </span>
+                        </div>
+                    ))}
+                </div>
             </div>
         )
     }

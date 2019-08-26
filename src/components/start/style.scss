@@ -108,6 +108,7 @@
 
 #inline-search {
     z-index: 10;
+    width: 55vw;
 }
 
 #search-field {
@@ -142,6 +143,30 @@
 
 .inline {
     display: inline-block;
+}
+
+.options {
+    display: flex;
+    width: 55vw;
+    height: 2.5em;
+    overflow-y: scroll;
+    white-space: nowrap;
+    &__option:first-of-type{
+        margin: 0 .5em 0 0;
+    }
+    &__option {
+        margin: 0 0.5em;
+        padding: 0 0.5em;
+        line-height: 2.5em;
+        vertical-align: middle;
+        background-color: $text-color;
+        &__key {
+            color: $background-color;
+        }
+        &__title {
+            color: $background-color;
+        }
+    }
 }
 
 @media screen and (max-width: 640px) {
