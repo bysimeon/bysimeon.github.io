@@ -112,20 +112,20 @@ class Images extends Component {
         return (
             <div>
                 <div className={gridSize}>
-                    {this.state.label && (<p className="description">
-                        {this.state.loadedImageCount >=
-                        this.state.totalImageCount ? (
-                            <span>{this.props.tag}</span>
-                        ) : (
-                            <span>
-                                loading {this.props.tag}
-                            </span>
-                        )}
-                    </p>)}
+                    {this.state.label && (
+                        <p className="description">
+                            {this.state.loadedImageCount >=
+                            this.state.totalImageCount ? (
+                                <span>{this.props.tag}</span>
+                            ) : (
+                                <span>loading {this.props.tag}</span>
+                            )}
+                        </p>
+                    )}
                     {images}
                 </div>
                 {this.state.preview && (
-                    <div>
+                    <div className="container--preview">
                         <button
                             className="images__navigation-container"
                             onClick={this.previousPreview.bind(this)}
