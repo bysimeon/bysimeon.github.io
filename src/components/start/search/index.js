@@ -22,7 +22,8 @@ class Search extends Component {
             color: false,
             url: "https://google.com/search?q=",
             searching: false,
-            possibleKeys: []
+            possibleKeys: [],
+            helper: false
         }
     }
 
@@ -209,10 +210,8 @@ class Search extends Component {
                         this.nameInput = input
                     }}
                 />
-                <div
-                    id="search-options"
-                    className={searchClass + " options"}
-                >
+                {this.state.helper &&
+                <div id="search-options" className={searchClass + " options"}>
                     {this.state.possibleKeys.map(key => (
                         <div className="options__option">
                             <span className="options__option__key">
@@ -226,6 +225,7 @@ class Search extends Component {
                         </div>
                     ))}
                 </div>
+                }
             </div>
         )
     }
