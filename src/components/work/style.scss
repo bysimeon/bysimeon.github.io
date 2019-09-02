@@ -13,6 +13,7 @@
     .project {
         padding: 1rem 1rem 0 1rem;
         font-size: 2rem;
+        width: 80%;
         a {
             // border: 2px solid black;
             // padding: .3em;
@@ -24,7 +25,7 @@
             font-size: 1.5rem;
             margin: .5em .5em 0 .5em;
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr;
             grid-gap: 1em;
             &__blurb {
                 text-align: left;
@@ -36,8 +37,8 @@
                     border: 2px solid black;
                     padding: .33em;
                     margin: .33em;
-                    &--dev {
-
+                    &:first-of-type {
+                        margin: .33em .33em .33em 0;
                     }
                     &--des {
                         // border-radius: 10px;

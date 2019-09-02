@@ -37,7 +37,13 @@ class Work extends Component {
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
-                                    squarespace dev
+                                    json-t
+                                </span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">
+                                    less
+                                </span>
+                                <span className="project__description__stack__span project__description__stack__span--dev">
+                                    javascript
                                 </span>
                                 <span className="project__description__stack__span project__description__stack__span--des">
                                     mailchimp
@@ -117,7 +123,6 @@ class Work extends Component {
                                 on the internet and a place to develop and
                                 showcase different{" "}
                                 <Link to="/music"> experiments.</Link>
-                               
                             </div>
                             <div className="project__description__stack">
                                 <span className="project__description__stack__span project__description__stack__span--dev">
@@ -204,7 +209,7 @@ class Work extends Component {
                         <div className="project__description">
                             <div className="project__description__blurb">
                                 an phone application that creates travel
-                                itineraries with activities personlizaed for the
+                                itineraries with activities personalized for the
                                 user's taste.
                             </div>
                             <div className="project__description__stack">
