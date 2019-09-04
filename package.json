@@ -30,7 +30,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "sitemap": "babel-node src/sitemap.js",
-        "postbuild": "react-snap"
+        "postbuild": ""
     },
     "reactSnap": {
         "cacheAjaxRequests": false,
