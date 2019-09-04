@@ -1,48 +1,57 @@
 {
-  "name": "persite",
-  "hompage": "https://bysimeon.com",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "babel": "^6.23.0",
-    "babel-preset-react-app": "^9.0.0",
-    "express": "^4.17.1",
-    "gh-pages": "^2.0.1",
-    "ignore-styles": "^5.0.1",
-    "node-sass": "^4.12.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-ga": "^2.5.7",
-    "react-gtm-module": "^2.0.4",
-    "react-helmet": "^5.2.0",
-    "react-lazyload": "^2.5.0",
-    "react-router-dom": "^4.3.1",
-    "react-router-sitemap": "^1.2.0",
-    "react-scripts": "^3.0.1",
-    "sass": "^1.20.1"
-  },
-  "scripts": {
-    "predeploy": "npm run build && npm run sitemap",
-    "deploy": "gh-pages -b master -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "sitemap": "babel-node src/sitemap.js"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0"
-  }
+    "name": "persite",
+    "hompage": "https://bysimeon.com",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "babel": "^6.23.0",
+        "babel-preset-react-app": "^9.0.0",
+        "express": "^4.17.1",
+        "gh-pages": "^2.0.1",
+        "ignore-styles": "^5.0.1",
+        "node-sass": "^4.12.0",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "react-ga": "^2.5.7",
+        "react-gtm-module": "^2.0.4",
+        "react-helmet": "^5.2.0",
+        "react-lazyload": "^2.5.0",
+        "react-router-dom": "^4.3.1",
+        "react-router-sitemap": "^1.2.0",
+        "react-scripts": "^3.0.1",
+        "react-snap": "^1.23.0",
+        "sass": "^1.20.1"
+    },
+    "scripts": {
+        "predeploy": "npm run build && npm run sitemap",
+        "deploy": "gh-pages -b master -d build",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "sitemap": "babel-node src/sitemap.js",
+        "postbuild": "react-snap"
+    },
+    "reactSnap": {
+        "cacheAjaxRequests": false,
+        "skipThirdPartyRequests": true
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "puppeteer": {
+        "cache": false
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-preset-react": "^6.24.1",
+        "babel-register": "^6.26.0"
+    }
 }
