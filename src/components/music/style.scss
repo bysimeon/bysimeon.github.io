@@ -63,10 +63,10 @@
                     margin-bottom: 0;
                 }
                 &--hovered {
-                    background: rgba($color: $text-color, $alpha: 0.25);
+                    background: rgba($color: $text-color, $alpha: 0.20);
                 }
                 &--selected {
-                    background: rgba($color: $text-color, $alpha: 0.25);
+                    background: rgba($color: $text-color, $alpha: 0.15);
                     border-left-width: 15px;
                 }
                 transition: background 250ms linear;
