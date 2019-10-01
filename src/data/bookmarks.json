@@ -244,5 +244,23 @@
         "https://jakcodex.github.io/muledump/muledump.html", 
         "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
         "#6873ca"
+    ],
+    "inst": [
+        "instapaper",
+        "https://www.instapaper.com/u", 
+        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
+        "#6873ca"
+    ],
+    "cnct": [
+        "garmin connect",
+        "https://connect.garmin.com/", 
+        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
+        "#6873ca"
+    ],
+    "mfp": [
+        "my fitness pal",
+        "https://connect.garmin.com/", 
+        "(to right, #6873ca 0%, #6873ca 1%, #e6dee9 100%)", 
+        "#6873ca"
     ]
 }
