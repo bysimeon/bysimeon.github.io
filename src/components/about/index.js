@@ -12,7 +12,8 @@ class About extends Component {
                 <div className="textbox">
                     <h1 className="medmedtext medmedtext--about">
                         {" "}
-                        simeon: a based web designer, developer and creative technologist.
+                        simeon: a based web designer, developer and creative
+                        technologist.
                     </h1>
                     <ul className="notsmalltext">
                         <li> developer </li>
@@ -20,7 +21,7 @@ class About extends Component {
                         <li> researcher </li>
                     </ul>
                     <p className="about-links">
-                        hire:{" "}<a href="/assets/resume.pdf">resume</a>
+                        hire: <a href="/assets/resume.pdf">resume</a>
                         <br />
                         contact:{" "}
                         <a href="mailto:mail@bysimeon.com">mail@bysimeon.com</a>
@@ -50,7 +51,7 @@ class About extends Component {
                 <img
                     draggable="false"
                     className="lazy drawing"
-                    data-src="/assets/photos/me2.png"
+                    src="/assets/images/about/graduation.png"
                     alt=""
                 />
             </div>
