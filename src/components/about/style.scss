@@ -10,7 +10,7 @@
     position: fixed;
     bottom: 0;
     right: 5px;
-    animation: popUp 300ms linear;
+    animation: popUp 600ms linear;
 }
 
 .medmedtext--about {
@@ -40,11 +40,20 @@ a {
 
 @keyframes popUp {
     0% {
+        visibility: hidden;
+        opacity: 0;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
 
-    80% {
+    50% {
+        visibility: visible;
+        opacity: 100;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    90% {
         -webkit-transform: translate3d(0, -2%, 0);
         transform: translate3d(0, -2%, 0);
     }
