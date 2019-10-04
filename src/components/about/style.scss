@@ -10,7 +10,7 @@
     position: fixed;
     bottom: 0;
     right: 5px;
-    animation: popUp 600ms linear;
+    animation: popUp 1200ms linear;
 }
 
 .medmedtext--about {
@@ -46,14 +46,14 @@ a {
         transform: translate3d(0, 100%, 0);
     }
 
-    50% {
+    75% {
         visibility: visible;
         opacity: 100;
         -webkit-transform: translate3d(0, 100%, 0);
         transform: translate3d(0, 100%, 0);
     }
 
-    90% {
+    95% {
         -webkit-transform: translate3d(0, -2%, 0);
         transform: translate3d(0, -2%, 0);
     }
