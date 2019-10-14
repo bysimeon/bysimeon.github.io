@@ -193,13 +193,13 @@ class App extends Component {
                                 {" "}
                                 sale
                             </NavLink> */}
-                            <NavLink
+                            {/* <NavLink
                                 to="/photos/"
                                 activeClassName="current-page"
                             >
                                 {" "}
                                 photos
-                            </NavLink>
+                            </NavLink> */}
                         </div>
                     </div>
                     <div className="banner">
