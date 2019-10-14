@@ -12,7 +12,7 @@ class About extends Component {
                 <div className="textbox">
                     <h1 className="medmedtext medmedtext--about">
                         {" "}
-                        simeon: a based web designer, developer and creative
+                        simeon: a new york based web designer, developer and creative
                         technologist.
                     </h1>
                     <ul className="notsmalltext">
