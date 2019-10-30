@@ -48,12 +48,12 @@ class About extends Component {
                         </a>
                     </p>
                 </div>
-                <img
+                {/* <img
                     draggable="false"
                     className="lazy drawing"
                     src="/assets/images/about/graduation.png"
                     alt=""
-                />
+                /> */}
             </div>
         )
     }
