@@ -15,12 +15,12 @@ class Search extends Component {
         this.state = {
             currentText: "",
             searchMod: false,
-            searchEngine: "google",
+            searchEngine: "duckduckgo",
             bookmark: false,
             key: false,
             background: false,
             color: false,
-            url: "https://google.com/search?q=",
+            url: "https://duckduckgo.com/?q=",
             searching: false,
             possibleKeys: [],
             helper: false
@@ -126,12 +126,12 @@ class Search extends Component {
         } else {
             this.setState({
                 searchMod: false,
-                searchEngine: "google",
+                searchEngine: "duckduckgo",
                 background: false,
                 bookmark: false,
                 color: false,
                 key: false,
-                url: "https://google.com/search?q="
+                url: "https://duckduckgo.com/?q="
             })
             this.props.changeBackground("", "")
         }
